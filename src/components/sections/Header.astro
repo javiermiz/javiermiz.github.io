@@ -1,1 +1,60 @@
-<header>Header</header>
+---
+const MENU_ITEMS = [
+  { name: 'Item 1', href: '/' },
+  { name: 'Item 2', href: '/' },
+  { name: 'Item 3', href: '/' },
+];
+---
+
+<header class='container absolute top-4 z-50'>
+  <div
+    class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full border bg-white backdrop-filter backdrop-blur-lg bg-opacity-70'
+  >
+    <a href='/' class='font-bold font-primary text-2xl'>Javier Miz</a>
+
+    <button class='open-menu rounded-full bg-primary p-4 md:hidden'></button>
+
+    <ul class='hidden gap-4 md:flex'>
+      {
+        MENU_ITEMS.map((item) => (
+          <li>
+            <a href={item.href} class='font-bold'>
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</header>
+
+<div
+  class='menu-mobile fixed left-0 right-0 -top-full container transition-all md:hidden'
+>
+  <ul
+    class='w-full max-w-3xl mx-auto px-8 py-6 rounded-4xl bg-primary flex flex-col gap-4'
+  >
+    {
+      MENU_ITEMS.map((item) => (
+        <li>
+          <a href={item.href} class='font-bold'>
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  const openMenuButton = document.querySelector('.open-menu');
+  if (openMenuButton) {
+    openMenuButton.addEventListener('click', () => {
+      const menuMobile = document.querySelector('.menu-mobile');
+      if (menuMobile) {
+        menuMobile.classList.toggle('-top-full');
+        menuMobile.classList.toggle('top-24');
+      }
+    });
+  }
+</script>

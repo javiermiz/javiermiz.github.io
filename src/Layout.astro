@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='flex flex-col'>
+  <body class='flex flex-col pt-24'>
     <Header />
     <slot />
     <Footer />
@@ -28,7 +28,7 @@ const { title } = Astro.props;
 
 <style is:global>
   @font-face {
-    font-family: 'Averta';
+    font-family: 'Saira';
     src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
