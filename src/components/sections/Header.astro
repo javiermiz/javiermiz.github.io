@@ -1,56 +1,37 @@
 ---
-import Close from '@components/icons/Close.astro';
-import Menu from '@components/icons/Menu.astro';
+import MobileMenu from '@components/blocks/MobileMenu.astro';
+import MenuItem from '@components/elements/MenuItem.astro';
+import MenuToggle from '@components/elements/MenuToggle.astro';
 
-const MENU_ITEMS = [
-  { name: 'Item 1', href: '/' },
-  { name: 'Item 2', href: '/' },
-  { name: 'Item 3', href: '/' },
-];
+type Props = {
+  title: string;
+  menu_items: NAV_ITEM[];
+};
+
+const { title, menu_items } = Astro.props;
 ---
 
-<header class='container absolute top-4 left-0 right-0 z-50'>
+<header class='container absolute top-4 left-0 right-0 z-50 md:top-8'>
   <div
     class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full border bg-white backdrop-filter backdrop-blur-lg bg-opacity-70'
   >
-    <a href='/' class='font-bold font-primary text-2xl'>Javier Miz</a>
+    <a href='/' class='font-bold font-primary text-2xl'>{title}</a>
 
-    <button class='toggle-menu rounded-full md:hidden'>
-      <Menu class='toggle-menu__open' />
-      <Close class='toggle-menu__close hidden' />
-    </button>
+    <MenuToggle />
 
     <ul class='hidden gap-4 md:flex'>
       {
-        MENU_ITEMS.map((item) => (
-          <li>
-            <a href={item.href} class='font-bold'>
-              {item.name}
-            </a>
-          </li>
+        menu_items.map((item) => (
+          <MenuItem href={item.href} variant='desktop'>
+            {item.name}
+          </MenuItem>
         ))
       }
     </ul>
   </div>
 </header>
 
-<div
-  class='menu-mobile absolute left-0 right-0 -top-96 container transition-all md:hidden'
->
-  <ul
-    class='w-full max-w-3xl mx-auto px-8 py-6 rounded-4xl bg-primary flex flex-col gap-4'
-  >
-    {
-      MENU_ITEMS.map((item) => (
-        <li>
-          <a href={item.href} class='font-bold'>
-            {item.name}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-</div>
+<MobileMenu menu_items={menu_items} />
 
 <script>
   const openMenuButton = document.querySelector('.toggle-menu');

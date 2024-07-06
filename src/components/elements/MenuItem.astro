@@ -1,0 +1,21 @@
+---
+interface Props {
+  href: string;
+  variant: 'desktop' | 'mobile';
+}
+
+const { href, variant = 'mobile' } = Astro.props;
+
+const classes = {
+  desktop: 'font-bold',
+  mobile: 'font-bold text-2xl',
+};
+
+const classList = classes[variant] || '';
+---
+
+<li>
+  <a href={href} class={classList}>
+    <slot />
+  </a>
+</li>

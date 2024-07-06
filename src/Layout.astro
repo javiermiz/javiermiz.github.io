@@ -2,6 +2,8 @@
 import Header from '@components/sections/Header.astro';
 import Footer from '@components/sections/Footer.astro';
 
+import { HEADER } from '@constants/layout';
+
 interface Props {
   title: string;
 }
@@ -20,7 +22,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class='flex flex-col pt-24 text-dark bg-amber-50'>
-    <Header />
+    <Header title={HEADER.title} menu_items={HEADER.menu_items} />
     <slot />
     <Footer />
   </body>

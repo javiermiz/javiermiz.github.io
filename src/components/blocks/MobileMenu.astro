@@ -1,0 +1,25 @@
+---
+import MenuItem from '@components/elements/MenuItem.astro';
+
+type Props = {
+  menu_items: NAV_ITEM[];
+};
+
+const { menu_items } = Astro.props;
+---
+
+<div
+  class='menu-mobile absolute left-0 right-0 -top-96 container transition-all md:hidden'
+>
+  <ul
+    class='w-full max-w-3xl mx-auto px-8 py-6 rounded-4xl bg-primary flex flex-col gap-4 border-4 border-amber-50'
+  >
+    {
+      menu_items.map((item) => (
+        <MenuItem href={item.href} variant='mobile'>
+          {item.name}
+        </MenuItem>
+      ))
+    }
+  </ul>
+</div>
