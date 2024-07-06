@@ -1,4 +1,7 @@
 ---
+import Close from '@components/icons/Close.astro';
+import Menu from '@components/icons/Menu.astro';
+
 const MENU_ITEMS = [
   { name: 'Item 1', href: '/' },
   { name: 'Item 2', href: '/' },
@@ -6,13 +9,16 @@ const MENU_ITEMS = [
 ];
 ---
 
-<header class='container absolute top-4 z-50'>
+<header class='container absolute top-4 left-0 right-0 z-50'>
   <div
     class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full border bg-white backdrop-filter backdrop-blur-lg bg-opacity-70'
   >
     <a href='/' class='font-bold font-primary text-2xl'>Javier Miz</a>
 
-    <button class='open-menu rounded-full bg-primary p-4 md:hidden'></button>
+    <button class='toggle-menu rounded-full md:hidden'>
+      <Menu class='toggle-menu__open' />
+      <Close class='toggle-menu__close hidden' />
+    </button>
 
     <ul class='hidden gap-4 md:flex'>
       {
@@ -29,7 +35,7 @@ const MENU_ITEMS = [
 </header>
 
 <div
-  class='menu-mobile fixed left-0 right-0 -top-full container transition-all md:hidden'
+  class='menu-mobile absolute left-0 right-0 -top-96 container transition-all md:hidden'
 >
   <ul
     class='w-full max-w-3xl mx-auto px-8 py-6 rounded-4xl bg-primary flex flex-col gap-4'
@@ -47,13 +53,22 @@ const MENU_ITEMS = [
 </div>
 
 <script>
-  const openMenuButton = document.querySelector('.open-menu');
+  const openMenuButton = document.querySelector('.toggle-menu');
+  const closeMenuIcon = document.querySelector('.toggle-menu__close');
+  const openMenuIcon = document.querySelector('.toggle-menu__open');
+
   if (openMenuButton) {
     openMenuButton.addEventListener('click', () => {
       const menuMobile = document.querySelector('.menu-mobile');
+
       if (menuMobile) {
-        menuMobile.classList.toggle('-top-full');
+        menuMobile.classList.toggle('-top-96');
         menuMobile.classList.toggle('top-24');
+      }
+
+      if (closeMenuIcon && openMenuIcon) {
+        closeMenuIcon.classList.toggle('hidden');
+        openMenuIcon.classList.toggle('hidden');
       }
     });
   }

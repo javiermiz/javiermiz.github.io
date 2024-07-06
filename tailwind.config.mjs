@@ -19,6 +19,7 @@ export default {
       },
       colors: {
         primary: '#fff064',
+        dark: '#1D1F28',
       },
       fontFamily: {
         primary: ['Saira', 'sans-serif'],
