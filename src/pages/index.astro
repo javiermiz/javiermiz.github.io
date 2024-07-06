@@ -1,5 +1,9 @@
 ---
-import Layout from '../Layout.astro';
+import Layout from '@components/Layout.astro';
+import HeroHome from '@components/sections/HeroHome.astro';
+import { Hero } from '@constants/home';
 ---
 
-<Layout title='Inicio' />
+<Layout title='Inicio'>
+  <HeroHome {...Hero} />
+</Layout>

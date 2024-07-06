@@ -21,7 +21,9 @@ const { title } = Astro.props;
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='flex flex-col pt-24 text-dark bg-amber-50'>
+  <body
+    class='flex flex-col text-dark bg-amber-50 overflow-x-hidden max-w-full'
+  >
     <Header title={HEADER.title} menu_items={HEADER.menu_items} />
     <slot />
     <Footer />
@@ -33,6 +35,13 @@ const { title } = Astro.props;
     font-family: 'Saira';
     src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
     font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 400 600;
     font-style: normal;
     font-display: swap;
   }

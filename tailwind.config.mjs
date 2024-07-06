@@ -12,17 +12,22 @@ export default {
     },
     extend: {
       transitionDuration: {
-        DEFAULT: '500ms',
+        DEFAULT: '300ms',
       },
       borderRadius: {
         '4xl': '2rem',
       },
       colors: {
-        primary: '#fff064',
-        dark: '#1D1F28',
+        primary: {
+          DEFAULT: '#FEDE7A',
+        },
+        secondary: {
+          DEFAULT: '#f472b6',
+        },
       },
       fontFamily: {
         primary: ['Saira', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },
