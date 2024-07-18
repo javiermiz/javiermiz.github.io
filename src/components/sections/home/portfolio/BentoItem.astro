@@ -1,9 +1,16 @@
 ---
 interface Props {
+  style?: string;
   class: string;
 }
 
-const { class: className } = Astro.props;
+const { style, class: className } = Astro.props;
 ---
 
-<div class={`rounded-3xl p-4 md:p-8 ${className}`}></div>
+<a
+  class={`rounded-3xl bg-cover bg-no-repeat shadow-sm ${className}`}
+  href='/'
+  style={style}
+>
+  <slot />
+</a>
