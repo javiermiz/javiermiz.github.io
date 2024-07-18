@@ -1,0 +1,38 @@
+---
+import Title from './Title.astro';
+import Subtitle from './Subtitle.astro';
+import PrimaryButton from './PrimaryButton.astro';
+import SecondaryButton from './SecondaryButton.astro';
+import BackgroundPattern from './BackgroundPattern.astro';
+
+interface Props {
+  title: string;
+  catchTitle: string;
+  subtitle?: string;
+  primaryButtonText?: string;
+  primaryButtonLink?: string;
+  secondaryButtonText?: string;
+  secondaryButtonLink?: string;
+}
+
+const { title, catchTitle, subtitle, primaryButtonLink, secondaryButtonLink } =
+  Astro.props;
+---
+
+<section
+  class='container text-center relative overflow-hidden py-16 md:pt-44 md:pb-24'
+>
+  <BackgroundPattern />
+  <Title catchTitle={catchTitle}>{title}</Title>
+
+  {subtitle && <Subtitle>{subtitle}</Subtitle>}
+
+  <div class='flex flex-col gap-4 items-center mt-12'>
+    <PrimaryButton primaryButtonLink={primaryButtonLink}
+      >Trabajemos juntos</PrimaryButton
+    >
+    <SecondaryButton secondaryButtonLink={secondaryButtonLink}
+      >Proyectos realizados</SecondaryButton
+    >
+  </div>
+</section>

@@ -1,8 +1,8 @@
 ---
-import Header from '@components/sections/Header.astro';
+import Header from '@components/sections/header/Header.astro';
 import Footer from '@components/sections/Footer.astro';
 
-import { HEADER } from '@constants/layout';
+import { METADATA, HEADER } from '@constants/layout';
 
 interface Props {
   title: string;
@@ -15,7 +15,7 @@ const { title } = Astro.props;
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content='Javier Miz Portfolio' />
+    <meta name='description' content={METADATA.description} />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
@@ -24,7 +24,7 @@ const { title } = Astro.props;
       name='googlebot'
       content='noindex, nofollow'
     />
-    <title>{title}</title>
+    <title>{title || METADATA.title}</title>
   </head>
 
   <body

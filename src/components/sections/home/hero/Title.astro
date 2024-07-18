@@ -1,0 +1,21 @@
+---
+interface Props {
+  catchTitle: string;
+}
+
+const { catchTitle } = Astro.props;
+---
+
+<h1
+  class='text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-primary uppercase !leading-[0.8em]'
+>
+  <slot />
+
+  {
+    catchTitle && (
+      <span class='inline-block bg-gradient-to-r from-primary via-secondary to-primary text-transparent bg-clip-text'>
+        {catchTitle}
+      </span>
+    )
+  }
+</h1>
