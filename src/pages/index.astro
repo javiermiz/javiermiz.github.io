@@ -2,10 +2,12 @@
 import Layout from '@components/Layout.astro';
 import BrandsList from '@components/sections/home/brands/BrandsList.astro';
 import Hero from '@components/sections/home/hero/Hero.astro';
+import Portfolio from '@components/sections/home/portfolio/Portfolio.astro';
 import { HeroData } from '@constants/home';
 ---
 
 <Layout title='Inicio'>
   <Hero {...HeroData} />
   <BrandsList />
+  <Portfolio />
 </Layout>
