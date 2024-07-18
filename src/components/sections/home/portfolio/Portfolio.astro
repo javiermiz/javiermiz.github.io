@@ -15,15 +15,13 @@ import { Image } from 'astro:assets';
     >
       <BentoItem
         class=`
-          bg-white
+          bg-red-600
           flex
           items-center
           justify-center
           order-1
-          p-4
-          md:p-10
           md:col-span-2
-          lg:p-14
+          p-8
           `
       >
         <Image src={BanorteChat} alt='' class='w-auto max-h-full h-auto' />
@@ -53,7 +51,7 @@ import { Image } from 'astro:assets';
 
       <BentoItem
         style=`background-image: url('${PrettySmartBG.src}')`
-        class=`order-4 bg-primary
+        class=`order-4
           bg-center
           flex
           items-end
@@ -66,14 +64,13 @@ import { Image } from 'astro:assets';
 
       <BentoItem
         class=`
-        bg-[#322A27]
+          bg-[#322A27]
           order-5
           flex
           items-center
           justify-center
-          bg-orange-300
           bg-center
-          px-4
+
           md:col-span-2`
       >
         <Image src={Meridianbrands} alt='' class='w-auto max-h-full h-auto' />
