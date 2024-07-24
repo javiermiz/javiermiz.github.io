@@ -13,11 +13,11 @@ export const HEADER = {
     },
     {
       name: 'Portfolio',
-      href: '/',
+      href: '/portfolio',
     },
     {
       name: 'CV',
-      href: '/',
+      href: '/cv',
     },
   ],
 };
