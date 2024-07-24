@@ -4,35 +4,25 @@ import Subtitle from './Subtitle.astro';
 import PrimaryButton from './PrimaryButton.astro';
 import SecondaryButton from './SecondaryButton.astro';
 import BackgroundPattern from './BackgroundPattern.astro';
-
-interface Props {
-  title: string;
-  catchTitle: string;
-  subtitle?: string;
-  primaryButtonText?: string;
-  primaryButtonLink?: string;
-  secondaryButtonText?: string;
-  secondaryButtonLink?: string;
-}
-
-const { title, catchTitle, subtitle, primaryButtonLink, secondaryButtonLink } =
-  Astro.props;
+import { HERO_DATA } from '@constants/home';
 ---
 
 <section
   class='container text-center relative overflow-hidden py-16 md:pt-44 md:pb-24'
 >
   <BackgroundPattern />
-  <Title catchTitle={catchTitle}>{title}</Title>
+  <Title catchTitle={HERO_DATA.catch_title}>
+    {HERO_DATA.title}
+  </Title>
 
-  {subtitle && <Subtitle>{subtitle}</Subtitle>}
+  {HERO_DATA.subtitle && <Subtitle>{HERO_DATA.subtitle}</Subtitle>}
 
   <div class='flex flex-col gap-4 items-center mt-12'>
-    <PrimaryButton primaryButtonLink={primaryButtonLink}
-      >Trabajemos juntos</PrimaryButton
+    <PrimaryButton primaryButtonLink={HERO_DATA.primary_button_link}
+      >{HERO_DATA.primary_button_text}</PrimaryButton
     >
-    <SecondaryButton secondaryButtonLink={secondaryButtonLink}
-      >Proyectos realizados</SecondaryButton
+    <SecondaryButton secondaryButtonLink={HERO_DATA.secondary_button_link}
+      >{HERO_DATA.secondary_button_text}</SecondaryButton
     >
   </div>
 </section>

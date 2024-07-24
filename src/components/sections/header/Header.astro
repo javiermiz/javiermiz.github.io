@@ -2,13 +2,7 @@
 import MobileMenu from '@components/sections/header/MobileMenu.astro';
 import MenuItem from '@components/sections/header/MenuItem.astro';
 import MenuToggle from '@components/sections/header/MenuToggle.astro';
-
-type Props = {
-  title: string;
-  menu_items: NAV_ITEM[];
-};
-
-const { title, menu_items } = Astro.props;
+import { HEADER } from '@constants/layout';
 ---
 
 <header
@@ -17,13 +11,13 @@ const { title, menu_items } = Astro.props;
   <div
     class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full border border-primary bg-amber-50 backdrop-filter backdrop-blur-lg bg-opacity-70'
   >
-    <a href='/' class='font-bold font-primary text-2xl'>{title}</a>
+    <a href='/' class='font-bold font-primary text-2xl'>{HEADER.title}</a>
 
     <MenuToggle />
 
     <ul class='hidden gap-4 md:flex'>
       {
-        menu_items.map((item) => (
+        HEADER.menu_items.map((item) => (
           <MenuItem href={item.href} variant='desktop'>
             {item.name}
           </MenuItem>
@@ -33,7 +27,7 @@ const { title, menu_items } = Astro.props;
   </div>
 </header>
 
-<MobileMenu menu_items={menu_items} />
+<MobileMenu menu_items={HEADER.menu_items} />
 
 <script>
   const BOTTOM_CLASS = '-bottom-96';

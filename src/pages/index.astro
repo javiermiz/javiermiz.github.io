@@ -4,11 +4,10 @@ import BrandsList from '@components/sections/home/brands/BrandsList.astro';
 import Hero from '@components/sections/home/hero/Hero.astro';
 import Portfolio from '@components/sections/home/portfolio/Portfolio.astro';
 import Quote from '@components/sections/home/quote/Quote.astro';
-import { HeroData } from '@constants/home';
 ---
 
 <Layout title='Inicio'>
-  <Hero {...HeroData} />
+  <Hero />
   <BrandsList />
   <Portfolio />
   <Quote />

@@ -7,15 +7,18 @@ interface Props {
 const { href, variant = 'mobile' } = Astro.props;
 
 const classes = {
-  desktop: 'font-bold',
-  mobile: 'font-bold text-2xl',
+  desktop: '',
+  mobile: 'text-2xl',
 };
 
 const classList = classes[variant] || '';
 ---
 
 <li>
-  <a href={href} class={classList}>
+  <a
+    href={href}
+    class={`font-bold transition-colors hover:text-secondary ${classList}`}
+  >
     <slot />
   </a>
 </li>
