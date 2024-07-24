@@ -2,14 +2,15 @@
 interface Props {
   style?: string;
   class: string;
+  href: string;
 }
 
-const { style, class: className } = Astro.props;
+const { href, style, class: className } = Astro.props;
 ---
 
 <a
   class={`rounded-3xl bg-cover bg-no-repeat shadow-sm transition-all ease-in-out hover:scale-105 hover:shadow-2xl ${className}`}
-  href='/'
+  href={href}
   style={style}
 >
   <slot />
