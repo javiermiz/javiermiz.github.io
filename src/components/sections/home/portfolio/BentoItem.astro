@@ -8,7 +8,7 @@ const { style, class: className } = Astro.props;
 ---
 
 <a
-  class={`rounded-3xl bg-cover bg-no-repeat shadow-sm ${className}`}
+  class={`rounded-3xl bg-cover bg-no-repeat shadow-sm transition-all ease-in-out hover:scale-105 hover:shadow-2xl ${className}`}
   href='/'
   style={style}
 >
