@@ -3,6 +3,7 @@ import Layout from '@components/Layout.astro';
 import BrandsList from '@components/sections/home/brands/BrandsList.astro';
 import Hero from '@components/sections/home/hero/Hero.astro';
 import Portfolio from '@components/sections/home/portfolio/Portfolio.astro';
+import Quote from '@components/sections/home/quote/Quote.astro';
 import { HeroData } from '@constants/home';
 ---
 
@@ -10,4 +11,5 @@ import { HeroData } from '@constants/home';
   <Hero {...HeroData} />
   <BrandsList />
   <Portfolio />
+  <Quote />
 </Layout>
