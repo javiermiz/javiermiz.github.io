@@ -11,11 +11,5 @@ const { catchTitle } = Astro.props;
 >
   <slot />
 
-  {
-    catchTitle && (
-      <span class='inline-block bg-gradient-to-r from-primary via-secondary to-primary text-transparent bg-clip-text'>
-        {catchTitle}
-      </span>
-    )
-  }
+  {catchTitle && <span class='text-primary'>{catchTitle}</span>}
 </h1>

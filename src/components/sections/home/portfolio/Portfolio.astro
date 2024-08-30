@@ -1,84 +1,74 @@
 ---
-import BentoItem from './BentoItem.astro';
 import AdrienneLandau from './images/adrienne-landau.png';
 import PrettySmart from './images/pretty-smart.png';
 import Meridianbrands from './images/meridianbrands.png';
-import PrettySmartBG from './images/pretty-smart-background.png';
-import BanorteChat from './images/Banorte-chat.png';
 import { Image } from 'astro:assets';
-import { PORTFOLIO_DATA } from '@constants/home';
 ---
 
 <section class='py-16 md:py-24'>
   <div class='container'>
-    <div
-      class='grid gap-4 auto-rows-[10rem] md:grid-cols-3 lg:auto-rows-[15rem]'
-    >
-      <BentoItem
-        href='/'
-        class=`
-          bg-red-600
-          flex
-          items-center
-          justify-center
-          order-1
-          md:col-span-2
-          p-8
-          `
-      >
-        <Image src={BanorteChat} alt='' class='w-auto max-h-full h-auto' />
-      </BentoItem>
-
-      <BentoItem
-        href='/'
-        class=`
-              bg-[#EAF0F4]
-              order-2
-              flex
-              justify-center
-              items-end
-              row-span-2`
-      >
-        <Image src={AdrienneLandau} alt='' class='w-auto max-h-full h-auto' />
-      </BentoItem>
-
-      <BentoItem
-        href='/portfolio'
-        class=`order-3 bg-primary flex flex-col items-center justify-center p-4 md:p-8 md:order-4`
-      >
-        <h3
-          class='text-2xl font-bold text-center text-balance max-w-[30ch] md:text-base lg:text-3xl'
+    <div class='max-w-[80ch] grid gap-4 mb-8'>
+      <h2 class='text-2xl font-bold rounded-xl flex gap-2 items-center'>
+        <div
+          class='w-8 h-8 bg-transparent rounded-full border-4 border-primary flex items-center justify-center'
         >
-          {PORTFOLIO_DATA.middle_message}
-        </h3>
-      </BentoItem>
-      <BentoItem
-        href='/'
-        style=`background-image: url('${PrettySmartBG.src}')`
-        class=`order-4
-          bg-center
-          flex
-          items-end
-          justify-center
-          row-span-2
-          md:order-3`
-      >
-        <Image src={PrettySmart} alt='' class='w-auto max-h-full h-auto' />
-      </BentoItem>
+          <div class='bg-primary h-4 w-4 rounded-full'></div>
+        </div>
+        Portfolio
+      </h2>
+      <h3 class='text-3xl'>
+        Descubre los proyectos destacados que hemos <strong
+          class='text-secondary'>implementado en los últimos años</strong
+        >
+      </h3>
+      <p class='text-lg'>
+        Colaboramos con corporaciones multinacionales, startups en rápido
+        crecimiento y empresas de comercio electrónico más pequeñas. Explora los
+        beneficios que puedes obtener al trabajar con nosotros.
+      </p>
+    </div>
 
-      <BentoItem
-        href='/'
-        class=`
-          bg-[#322A27]
-          order-5
-          flex
-          items-center
-          justify-center
-          bg-center
-          md:col-span-2`
-      >
-        <Image src={Meridianbrands} alt='' class='w-auto max-h-full h-auto' />
-      </BentoItem>
+    <div class='grid gap-4 lg:grid-cols-3'>
+      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
+        <div class='p-8'>
+          <h3 class='text-2xl font-bold text-primary mb-2'>Adrienne Landau</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            harum itaque commodi totam aspernatur quasi omnis sapiente,
+            accusantium esse vitae eum, modi quibusdam facere earum nobis
+            molestias repellat recusandae ducimus exercitationem maxime id unde
+            cumque consectetur. Pariatur fugiat quis soluta!
+          </p>
+        </div>
+
+        <Image src={AdrienneLandau} alt='' />
+      </div>
+      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
+        <div class='p-8'>
+          <h3 class='text-2xl font-bold text-primary mb-2'>Meridian Brands</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            harum itaque commodi totam aspernatur quasi omnis sapiente,
+            accusantium esse vitae eum, modi quibusdam facere earum nobis
+            molestias repellat recusandae ducimus exercitationem maxime id unde
+            cumque consectetur. Pariatur fugiat quis soluta!
+          </p>
+        </div>
+        <Image src={Meridianbrands} alt='' />
+      </div>
+      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
+        <div class='p-8'>
+          <h3 class='text-2xl font-bold text-primary mb-2'>PrettySmart</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            harum itaque commodi totam aspernatur quasi omnis sapiente,
+            accusantium esse vitae eum, modi quibusdam facere earum nobis
+            molestias repellat recusandae ducimus exercitationem maxime id unde
+            cumque consectetur. Pariatur fugiat quis soluta!
+          </p>
+        </div>
+        <Image src={PrettySmart} alt='' />
+      </div>
     </div>
   </div>
 </section>

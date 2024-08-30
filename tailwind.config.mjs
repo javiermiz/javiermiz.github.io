@@ -18,11 +18,18 @@ export default {
         '4xl': '2rem',
       },
       colors: {
+        background: {
+          DEFAULT: '#f7f7f5',
+        },
+        dark: {
+          DEFAULT: '#2B2117',
+        },
         primary: {
-          DEFAULT: '#FEDE7A',
+          DEFAULT: '#2294B1',
+          dark: '#ffd30b',
         },
         secondary: {
-          DEFAULT: '#f472b6',
+          DEFAULT: '#DD34D1',
         },
       },
       fontFamily: {

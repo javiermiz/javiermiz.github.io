@@ -2,17 +2,19 @@
 import { QUOTE } from '@constants/home';
 ---
 
-<section class='py-16 md:py-24'>
+<section>
   <div class='container text-center'>
-    <h2
-      class='text-4xl font-primary text-balance uppercase md:text-6xl lg:text-8xl'
-    >
-      {QUOTE.text}
-      <span
-        class='block bg-gradient-to-r from-secondary via-primary to-secondary text-transparent bg-clip-text'
-      >
-        {QUOTE.decorated_text}
-      </span>
-    </h2>
+    <div class='bg-white rounded-4xl py-16 md:py-24'>
+      <h2 class='text-3xl font-primary text-balance uppercase mb-4 md:text-6xl'>
+        {QUOTE.text}
+        <span class='block bg-secondary text-transparent bg-clip-text'>
+          {QUOTE.decorated_text}
+        </span>
+      </h2>
+      <p class='text-xl max-w-[50ch] mx-auto'>
+        Creamos soluciones web que no solo impresionan, sino que impulsan
+        resultados tangibles para tu negocio.
+      </p>
+    </div>
   </div>
 </section>
