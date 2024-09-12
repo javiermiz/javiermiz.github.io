@@ -6,9 +6,10 @@ import { METADATA } from '@constants/layout';
 
 interface Props {
   title: string;
+  frontmatter: any;
 }
 
-const { title } = Astro.props;
+const { title, frontmatter } = Astro.props;
 ---
 
 <!doctype html>
@@ -24,17 +25,26 @@ const { title } = Astro.props;
       name='googlebot'
       content='noindex, nofollow'
     />
-    <title>{title || METADATA.title}</title>
+    <title>Portfolio | {frontmatter.title || METADATA.title}</title>
   </head>
 
   <body
-    class='flex flex-col text-dark bg-background overflow-x-hidden max-w-full'
+    class='flex flex-col text-dark overflow-x-hidden max-w-full'
+    style=`background-color:${frontmatter.color}`
   >
     <Header />
-    <main class='pt-16 lg:pt-32'>
-      <div class='container project-content'>
+    <main class='pt-32 lg:pt-36'>
+      <article class='container project-content'>
+        <h1 class='text-3xl lg:text-7xl mb-4 font-bold'>{frontmatter.title}</h1>
+        <ul class='flex flex-wrap gap-2 mb-8'>
+          {
+            frontmatter.technologies.map((tech: string) => (
+              <li class='bg-gray-200 px-3 py-1 rounded-full'>{tech}</li>
+            ))
+          }
+        </ul>
         <slot />
-      </div>
+      </article>
     </main>
     <Footer />
   </body>
@@ -55,8 +65,12 @@ const { title } = Astro.props;
       font-display: swap;
     }
 
-    .project-content img {
-      border-radius: 2rem;
+    .project-content {
+      img {
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
     }
   </style>
 </html>
