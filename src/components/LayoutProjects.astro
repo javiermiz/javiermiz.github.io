@@ -1,0 +1,62 @@
+---
+import Header from '@components/sections/header/Header.astro';
+import Footer from '@components/sections/footer/Footer.astro';
+
+import { METADATA } from '@constants/layout';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content={METADATA.description} />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/x-icon' href='/favicon.png' />
+    <meta name='generator' content={Astro.generator} />
+    <!-- TODO: Remove when finished -->
+    <meta name='robots' content='noindex, nofollow' /><meta
+      name='googlebot'
+      content='noindex, nofollow'
+    />
+    <title>{title || METADATA.title}</title>
+  </head>
+
+  <body
+    class='flex flex-col text-dark bg-background overflow-x-hidden max-w-full'
+  >
+    <Header />
+    <main class='pt-16 lg:pt-32'>
+      <div class='container project-content'>
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+
+  <style is:global>
+    @font-face {
+      font-family: 'Saira';
+      src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Inter';
+      src: url('/fonts/Inter.ttf') format('truetype');
+      font-weight: 400 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .project-content img {
+      border-radius: 2rem;
+    }
+  </style>
+</html>

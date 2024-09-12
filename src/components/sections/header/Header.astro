@@ -6,7 +6,7 @@ import { HEADER } from '@constants/layout';
 ---
 
 <header
-  class='container fixed bottom-8 left-0 right-0 z-50 md:top-8 md:absolute md:bottom-auto'
+  class='container fixed top-8 left-0 right-0 z-50 md:absolute md:bottom-auto'
 >
   <div
     class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full bg-white lg:bg-background'
@@ -30,8 +30,8 @@ import { HEADER } from '@constants/layout';
 <MobileMenu menu_items={HEADER.menu_items} />
 
 <script>
-  const BOTTOM_CLASS = '-bottom-96';
-  const BOTTOM_CLASS_ACTIVE = 'bottom-28';
+  const POSITION_CLASS = '-top-96';
+  const POSITION_CLASS_ACTIVE = 'top-28';
 
   const openMenuButton = document.querySelector('.toggle-menu');
   const closeMenuIcon = document.querySelector('.toggle-menu__close');
@@ -42,8 +42,8 @@ import { HEADER } from '@constants/layout';
       const menuMobile = document.querySelector('.menu-mobile');
 
       if (menuMobile) {
-        menuMobile.classList.toggle(BOTTOM_CLASS);
-        menuMobile.classList.toggle(BOTTOM_CLASS_ACTIVE);
+        menuMobile.classList.toggle(POSITION_CLASS);
+        menuMobile.classList.toggle(POSITION_CLASS_ACTIVE);
       }
 
       if (closeMenuIcon && openMenuIcon) {
