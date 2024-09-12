@@ -30,13 +30,18 @@ const { title, frontmatter } = Astro.props;
 
   <body
     class='flex flex-col text-dark overflow-x-hidden max-w-full'
-    style=`background-color:${frontmatter.color}`
+    style=`background-color:${frontmatter.color_bg}`
   >
     <Header />
     <main class='pt-32 lg:pt-36'>
       <article class='container project-content'>
-        <h1 class='text-3xl lg:text-7xl mb-4 font-bold'>{frontmatter.title}</h1>
-        <ul class='flex flex-wrap gap-2 mb-8'>
+        <h1
+          class='text-center text-3xl lg:text-7xl mb-4 font-bold'
+          style=`color: ${frontmatter.color_text}`
+        >
+          {frontmatter.title}
+        </h1>
+        <ul class='flex flex-wrap justify-center gap-2 mb-8'>
           {
             frontmatter.technologies.map((tech: string) => (
               <li class='bg-gray-200 px-3 py-1 rounded-full'>{tech}</li>
@@ -68,7 +73,7 @@ const { title, frontmatter } = Astro.props;
     .project-content {
       img {
         border-radius: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         width: 100%;
       }
     }
