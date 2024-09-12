@@ -3,7 +3,6 @@ layout: ../../../components/LayoutProjects.astro
 
 color: '#e1dbcb'
 title: 'Adrienne Landau'
-thumbnail: '/images/adrienne-landau-thumbnail.jpg'
 technologies: ['Shopify', 'Liquid', 'JavaScript', 'CSS', 'HTML']
 url: 'https://adriennelandau.com'
 ---
