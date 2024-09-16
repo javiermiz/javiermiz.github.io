@@ -1,10 +1,10 @@
 ---
 import Layout from '@components/Layout.astro';
+import { Image } from 'astro:assets';
 
 const projects = Object.values(
   await import.meta.glob('./**/*.md', { eager: true })
 );
-console.log('hello', projects);
 ---
 
 <Layout title='Javier Miz - Portfolio'>
@@ -15,6 +15,7 @@ console.log('hello', projects);
           projects.map((project: any) => (
             <a href={project.url}>
               <div class='bg-white rounded-3xl'>
+                <img src={project.frontmatter.thumbnail} />
                 <h1>{project.frontmatter.title}</h1>
               </div>
             </a>
