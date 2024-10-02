@@ -16,17 +16,22 @@ const { link, image, title, viewProjectText } = Astro.props;
   <div
     class='bg-white rounded-3xl overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:rotate-1'
   >
-    <div class='relative overflow-hidden'>
-      <Image
-        src={image}
-        alt={title || 'project image'}
-        width={600}
-        height={600}
-        format='webp'
-        quality={90}
-        class='w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-300'
-      />
-    </div>
+    {
+      image && (
+        <div class='relative overflow-hidden'>
+          <Image
+            src={image}
+            alt={title || 'project image'}
+            width={600}
+            height={600}
+            format='webp'
+            quality={90}
+            class='w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-300'
+          />
+        </div>
+      )
+    }
+
     <div class='p-6'>
       <h2
         class='text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors'
