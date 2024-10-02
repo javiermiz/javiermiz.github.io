@@ -6,11 +6,10 @@ interface Props {
   link: string;
   image: ImageMetadata;
   title: string;
-  description: string;
   viewProjectText: string;
 }
 
-const { link, image, title, description, viewProjectText } = Astro.props;
+const { link, image, title, viewProjectText } = Astro.props;
 ---
 
 <a href={link} class='group'>
@@ -34,7 +33,6 @@ const { link, image, title, description, viewProjectText } = Astro.props;
       >
         {title}
       </h2>
-      <p class='text-gray-600 mb-4'>{description}</p>
       <span class='text-primary font-semibold inline-flex items-center'>
         {viewProjectText}
         <svg
