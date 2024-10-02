@@ -5,9 +5,58 @@ import Step2 from './images/step-2.png';
 import Step3 from './images/step-3.png';
 import Step4 from './images/step-4.png';
 import Step5 from './images/step-5.png';
+
+export const CONTENT = {
+  section: {
+    title: 'Tu éxito, paso a paso',
+    subtitle: {
+      text: 'Desde la idea hasta el lanzamiento,',
+      highlight: ' construimos tu presencia digital juntos',
+    },
+    description:
+      'Nuestro proceso está diseñado para adaptarse a las necesidades únicas de pequeñas y medianas empresas como la tuya. Transformamos tu visión en una poderosa herramienta de crecimiento, sin complicaciones y a un precio accesible. Descubre cómo nuestra experiencia impulsa tu negocio en el mundo digital.',
+  },
+  steps: [
+    {
+      number: 'Paso 1',
+      title: 'Descubrimos tu visión',
+      description:
+        'En una charla amigable, exploramos tus objetivos y necesidades. Ya sea un sitio nuevo o una mejora, definimos juntos la estrategia para que tu web no solo impresione, sino que también impulse tu negocio.',
+      image: Step1,
+    },
+    {
+      number: 'Paso 2',
+      title: 'Diseñamos la ruta',
+      description:
+        'Creamos un plan a tu medida. Seleccionamos las características que más beneficiarán a tu negocio, asegurándonos de que cada elemento aporte valor real a tu presencia online.',
+      image: Step2,
+    },
+    {
+      number: 'Paso 3',
+      title: 'Construimos tu sitio',
+      description:
+        'Desarrollamos tu sitio con código eficiente y moderno. El resultado: una web rápida, segura y adaptable a todos los dispositivos, preparada para crecer con tu negocio.',
+      image: Step3,
+    },
+    {
+      number: 'Paso 4',
+      title: 'Perfeccionamos cada detalle',
+      description:
+        'Revisamos minuciosamente tu sitio para garantizar una experiencia impecable. Optimizamos la velocidad y el rendimiento, asegurando que cada visita se convierta en una oportunidad para tu negocio.',
+      image: Step4,
+    },
+    {
+      number: 'Paso 5',
+      title: '¡Lanzamos tu éxito!',
+      description:
+        'Tu sitio está listo para brillar. Te entregamos las llaves de tu nueva presencia digital y te guiamos en los primeros pasos. Además, te enseñamos cómo mantenerlo actualizado fácilmente, empoderándote para el futuro.',
+      image: Step5,
+    },
+  ],
+};
 ---
 
-<section class='pt-16 md:pt-24'>
+<section class='py-16 md:py-24'>
   <div class='container'>
     <div class='max-w-[80ch] grid gap-4 mb-8'>
       <h2 class='text-2xl font-bold rounded-xl flex gap-2 items-center'>
@@ -16,109 +65,38 @@ import Step5 from './images/step-5.png';
         >
           <div class='bg-secondary h-4 w-4 rounded-full'></div>
         </div>
-        Proceso de trabajo
+        {CONTENT.section.title}
       </h2>
       <h3 class='text-3xl'>
-        De proyectos integrales a mejoras puntuales,
-        <strong class='text-primary'> así es como creamos valor juntos </strong>
+        {CONTENT.section.subtitle.text}
+        <strong class='text-primary'
+          >{CONTENT.section.subtitle.highlight}</strong
+        >
       </h3>
       <p class='text-lg'>
-        Nos adaptamos a las necesidades únicas de cada cliente, ya sean startups
-        innovadoras, PyMEs en crecimiento o corporaciones establecidas. Descubre
-        cómo nuestra experiencia y enfoque personalizado pueden impulsar tu
-        presencia digital y potenciar tu negocio.
+        {CONTENT.section.description}
       </p>
     </div>
   </div>
 
   <div class='container'>
     <div class='flex flex-col gap-6'>
-      <div
-        class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'
-      >
-        <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
-          <span class='text-secondary text-lg font-bold mb-auto'>Paso 1</span>
-          <h3 class='text-3xl font-bold lg:text-6xl'>
-            Charlemos sobre tu Proyecto
-          </h3>
-          <p class='text-lg mb-auto'>
-            Nos reunimos para entender tu visión. ¿Quieres un sitio nuevo o
-            mejorar uno existente? Definimos juntos cómo hacer que tu web
-            destaque y funcione perfectamente.
-          </p>
-        </div>
-        <div class='mt-auto'>
-          <Image src={Step1} alt='' />
-        </div>
-      </div>
-
-      <div
-        class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'
-      >
-        <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
-          <span class='text-secondary text-lg font-bold mb-auto'>Paso 2</span>
-          <h3 class='text-3xl font-bold lg:text-6xl'>Trazamos el Plan</h3>
-          <p class='text-lg mb-auto'>
-            Diseño la estructura de tu sitio web. Decidimos qué características
-            necesitas y cómo haremos que todo funcione de manera fluida y
-            atractiva.
-          </p>
-        </div>
-        <div class='mt-auto'>
-          <Image src={Step2} alt='' />
-        </div>
-      </div>
-
-      <div
-        class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'
-      >
-        <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
-          <span class='text-secondary text-lg font-bold mb-auto'>Paso 3</span>
-          <h3 class='text-3xl font-bold lg:text-6xl'>Manos a la Obra</h3>
-          <p class='text-lg mb-auto'>
-            Construyo tu sitio web con código limpio y eficiente. Me aseguro de
-            que se vea genial y funcione perfectamente en cualquier dispositivo,
-            desde móviles hasta computadoras de escritorio.
-          </p>
-        </div>
-        <div class='mt-auto'>
-          <Image src={Step3} alt='' />
-        </div>
-      </div>
-
-      <div
-        class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'
-      >
-        <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
-          <span class='text-secondary text-lg font-bold mb-auto'>Paso 4</span>
-          <h3 class='text-3xl font-bold lg:text-6xl'>Pulimos los Detalles</h3>
-          <p class='text-lg mb-auto'>
-            Reviso minuciosamente cada aspecto de tu sitio. Optimizo la
-            velocidad y me aseguro de que todo funcione como un reloj,
-            ofreciendo la mejor experiencia a tus visitantes.
-          </p>
-        </div>
-        <div class='mt-auto'>
-          <Image src={Step4} alt='' />
-        </div>
-      </div>
-
-      <div
-        class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'
-      >
-        <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
-          <span class='text-secondary text-lg font-bold mb-auto'>Paso 5</span>
-          <h3 class='text-3xl font-bold lg:text-6xl'>¡Tu Web está Lista!</h3>
-          <p class='text-lg mb-auto'>
-            Lanzo tu sitio y te muestro cómo funciona todo. Te entrego las
-            llaves de tu nueva web, lista para impresionar a tus clientes, con
-            un poco de apoyo extra para que arranques con confianza.
-          </p>
-        </div>
-        <div class='mt-auto'>
-          <Image src={Step5} alt='' />
-        </div>
-      </div>
+      {
+        CONTENT.steps.map((step) => (
+          <div class='bg-white rounded-4xl flex gap-6 flex-col overflow-hidden lg:flex-row'>
+            <div class='flex flex-col gap-2 max-w-[60ch] p-8'>
+              <span class='text-secondary text-lg font-bold mb-auto'>
+                {step.number}
+              </span>
+              <h3 class='text-3xl font-bold lg:text-6xl'>{step.title}</h3>
+              <p class='text-lg mb-auto'>{step.description}</p>
+            </div>
+            <div class='mt-auto'>
+              <Image src={step.image} alt={`Ilustración para ${step.title}`} />
+            </div>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

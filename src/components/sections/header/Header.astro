@@ -2,20 +2,33 @@
 import MobileMenu from '@components/sections/header/MobileMenu.astro';
 import MenuItem from '@components/sections/header/MenuItem.astro';
 import MenuToggle from '@components/sections/header/MenuToggle.astro';
-import { HEADER } from '@constants/layout';
+
+export const CONTENT = {
+  title: 'Javier Miz',
+  menu_items: [
+    {
+      name: 'Inicio',
+      href: '/',
+    },
+    {
+      name: 'Proyectos',
+      href: '/proyectos',
+    },
+  ],
+};
 ---
 
 <header class='container fixed top-8 left-0 right-0 z-50 md:bottom-auto'>
   <div
     class='flex items-center justify-between w-full max-w-3xl mx-auto p-4 rounded-full bg-white'
   >
-    <a href='/' class='font-bold font-primary text-2xl'>{HEADER.title}</a>
+    <a href='/' class='font-bold font-primary text-2xl'>{CONTENT.title}</a>
 
     <MenuToggle />
 
     <ul class='hidden gap-4 md:flex'>
       {
-        HEADER.menu_items.map((item) => (
+        CONTENT.menu_items.map((item) => (
           <MenuItem href={item.href} variant='desktop'>
             {item.name}
           </MenuItem>
@@ -25,7 +38,7 @@ import { HEADER } from '@constants/layout';
   </div>
 </header>
 
-<MobileMenu menu_items={HEADER.menu_items} />
+<MobileMenu menu_items={CONTENT.menu_items} />
 
 <script>
   const POSITION_CLASS = '-top-96';

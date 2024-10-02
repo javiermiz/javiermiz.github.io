@@ -3,6 +3,34 @@ import AdrienneLandau from './images/adrienne-landau.png';
 import PrettySmart from './images/pretty-smart.png';
 import SSI from './images/ssi.png';
 import { Image } from 'astro:assets';
+
+const CONTENT = {
+  title: 'Nuestros Éxitos Compartidos',
+  subtitle: 'Descubre cómo hemos ayudado a empresas como la tuya a',
+  subtitleHighlight: 'brillar en el mundo digital',
+  description:
+    'Cada proyecto es una historia de crecimiento y colaboración. Desde pequeños negocios hasta empresas medianas, hemos construido soluciones web que impulsan el éxito. Explora cómo podemos hacer lo mismo por ti, con soluciones asequibles y de alto impacto.',
+  projects: [
+    {
+      title: 'Adrienne Landau',
+      description:
+        'Transformamos la visión de Adrienne Landau en una experiencia de compra online cautivadora. Resultado: un aumento del 40% en ventas y una plataforma que refleja la sofisticación de su marca de moda.',
+      image: AdrienneLandau,
+    },
+    {
+      title: 'Sandblast Solutions',
+      description:
+        'Creamos para Sandblast un sitio web que es tan robusto como sus servicios. Con un panel de control intuitivo, ahora actualizan su contenido fácilmente, manteniendo su imagen fresca y relevante sin esfuerzo.',
+      image: SSI,
+    },
+    {
+      title: 'PrettySmart',
+      description:
+        'Diseñamos para PrettySmart una tienda online ágil y atractiva. Su nuevo sitio no solo vende productos, sino que también se ajusta rápidamente a las tendencias, manteniendo a la marca un paso adelante en el competitivo mundo de la belleza.',
+      image: PrettySmart,
+    },
+  ],
+};
 ---
 
 <section class='pt-16 pb-6 md:pt-24'>
@@ -14,60 +42,31 @@ import { Image } from 'astro:assets';
         >
           <div class='bg-primary h-4 w-4 rounded-full'></div>
         </div>
-        Portfolio
+        {CONTENT.title}
       </h2>
       <h3 class='text-3xl'>
-        Descubre los proyectos destacados que hemos <strong
-          class='text-secondary'>implementado en los últimos años</strong
-        >
+        {CONTENT.subtitle}
+        <strong class='text-secondary'>{CONTENT.subtitleHighlight}</strong>
       </h3>
       <p class='text-lg'>
-        Colaboramos con corporaciones multinacionales, startups en rápido
-        crecimiento y empresas de comercio electrónico más pequeñas. Explora los
-        beneficios que puedes obtener al trabajar con nosotros.
+        {CONTENT.description}
       </p>
     </div>
 
     <div class='grid gap-6 lg:grid-cols-3'>
-      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
-        <div class='p-8'>
-          <h3 class='text-2xl font-bold text-primary mb-2'>Adrienne Landau</h3>
-          <p>
-            Transformé la presencia digital de Adrienne Landau con una tienda en
-            línea elegante y funcional. El resultado: un aumento significativo
-            en ventas y una experiencia de compra que encanta a sus clientes de
-            moda de lujo.
-          </p>
-        </div>
-
-        <Image src={AdrienneLandau} alt='' />
-      </div>
-      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
-        <div class='p-8'>
-          <h3 class='text-2xl font-bold text-primary mb-2'>
-            Sandblast Solutions
-          </h3>
-          <p>
-            Trabajé en un sitio web que refleja perfectamente su
-            profesionalismo. Ahora cuentan con una plataforma fácil de
-            actualizar, lo que les permite mantener su contenido siempre
-            relevante y su imagen corporativa impecable.
-          </p>
-        </div>
-        <Image src={SSI} alt='' />
-      </div>
-      <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
-        <div class='p-8'>
-          <h3 class='text-2xl font-bold text-primary mb-2'>PrettySmart</h3>
-          <p>
-            Desarrollé para PrettySmart una tienda en línea que se adapta a sus
-            necesidades cambiantes. Un diseño personalizado les permite
-            mantenerse al día con las últimas tendencias, asegurando que su
-            marca siempre se vea fresca y atractiva para sus clientes.
-          </p>
-        </div>
-        <Image src={PrettySmart} alt='' />
-      </div>
+      {
+        CONTENT.projects.map((project) => (
+          <div class='bg-white rounded-4xl flex flex-col overflow-hidden'>
+            <div class='p-8'>
+              <h3 class='text-2xl font-bold text-primary mb-2'>
+                {project.title}
+              </h3>
+              <p>{project.description}</p>
+            </div>
+            <Image src={project.image} alt={`Proyecto ${project.title}`} />
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

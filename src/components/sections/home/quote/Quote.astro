@@ -1,21 +1,28 @@
 ---
-import { QUOTE } from '@constants/home';
+export const CONTENT = {
+  title: {
+    text: 'Construyamos juntos tu',
+    decorated_text: ' éxito digital',
+  },
+  description:
+    'Creamos sitios web asequibles y efectivos que impulsan el crecimiento de tu negocio. Soluciones a medida para pequeñas y medianas empresas que buscan destacar en línea.',
+  cta: 'Inicia tu proyecto',
+};
 ---
 
 <section>
   <div class='container text-center'>
     <div
-      class='bg-gradient-to-bl from-primary-light via-primary to-primary-light text-white rounded-4xl py-16 md:py-24'
+      class='bg-gradient-to-bl from-primary-light via-primary to-primary-light text-white rounded-4xl px-8 py-16 md:py-24'
     >
       <h2 class='text-3xl font-primary text-balance uppercase mb-4 md:text-6xl'>
-        {QUOTE.text}
+        {CONTENT.title.text}
         <span class='block'>
-          {QUOTE.decorated_text}
+          {CONTENT.title.decorated_text}
         </span>
       </h2>
       <p class='text-xl max-w-[50ch] mx-auto'>
-        Desarrollo soluciones web que no solo impresionan, sino que impulsan
-        resultados tangibles para tu negocio.
+        {CONTENT.description}
       </p>
     </div>
   </div>

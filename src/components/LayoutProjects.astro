@@ -2,7 +2,7 @@
 import Header from '@components/sections/header/Header.astro';
 import Footer from '@components/sections/footer/Footer.astro';
 
-import { METADATA } from '@constants/layout';
+import { METADATA } from './layout';
 
 interface Props {
   title: string;
@@ -13,7 +13,7 @@ const { title, frontmatter } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content={METADATA.description} />
@@ -25,7 +25,7 @@ const { title, frontmatter } = Astro.props;
       name='googlebot'
       content='noindex, nofollow'
     />
-    <title>Portfolio | {frontmatter.title || METADATA.title}</title>
+    <title>Proyectos | {frontmatter.title || METADATA.title}</title>
   </head>
 
   <body

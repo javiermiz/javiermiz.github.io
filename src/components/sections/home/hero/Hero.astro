@@ -4,25 +4,34 @@ import Subtitle from './Subtitle.astro';
 import PrimaryButton from './PrimaryButton.astro';
 import SecondaryButton from './SecondaryButton.astro';
 import BackgroundPattern from './BackgroundPattern.astro';
-import { HERO_DATA } from '@constants/home';
+
+export const CONTENT = {
+  title: 'IMPULSA TU NEGOCIO AL',
+  catch_title: 'SIGUIENTE NIVEL',
+  subtitle: 'Experiencias web que conectan tu marca con tus clientes ideales',
+  primary_button_text: 'Colaboremos juntos',
+  primary_button_link: '#contacto',
+  secondary_button_text: 'Explora nuestros proyectos',
+  secondary_button_link: '/proyectos',
+};
 ---
 
 <section
   class='container text-center relative overflow-hidden pt-40 pb-16 md:pt-64 md:pb-24'
 >
   <BackgroundPattern />
-  <Title catchTitle={HERO_DATA.catch_title}>
-    {HERO_DATA.title}
+  <Title catchTitle={CONTENT.catch_title}>
+    {CONTENT.title}
   </Title>
 
-  {HERO_DATA.subtitle && <Subtitle>{HERO_DATA.subtitle}</Subtitle>}
+  {CONTENT.subtitle && <Subtitle>{CONTENT.subtitle}</Subtitle>}
 
   <div class='flex flex-col gap-4 items-center mt-12'>
-    <PrimaryButton primaryButtonLink={HERO_DATA.primary_button_link}
-      >{HERO_DATA.primary_button_text}</PrimaryButton
+    <PrimaryButton primaryButtonLink={CONTENT.primary_button_link}
+      >{CONTENT.primary_button_text}</PrimaryButton
     >
-    <SecondaryButton secondaryButtonLink={HERO_DATA.secondary_button_link}
-      >{HERO_DATA.secondary_button_text}</SecondaryButton
+    <SecondaryButton secondaryButtonLink={CONTENT.secondary_button_link}
+      >{CONTENT.secondary_button_text}</SecondaryButton
     >
   </div>
 </section>
