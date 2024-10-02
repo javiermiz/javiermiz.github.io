@@ -1,18 +1,71 @@
 ---
 import Layout from '@components/Layout.astro';
-import { Image } from 'astro:assets';
+import ProjectCard from './ProjectCard.astro';
+
+export const CONTENT = {
+  title: 'Hechos Realidad',
+  metaTitle: 'Nuestro Portafolio | Proyectos Web Innovadores',
+  description:
+    'Descubre cómo hemos ayudado a pequeñas y medianas empresas a crecer en el mundo digital con soluciones web a medida.',
+  viewProject: 'Ver proyecto',
+};
+
+// Importa todas las imágenes de los proyectos dinámicamente
+const images = import.meta.glob<{ default: ImageMetadata }>('./*/image.png');
+
+// Estructura de datos para los proyectos
+const projectsData = [
+  {
+    title: 'Adrienne Landau',
+    folder: 'adrienne-landau',
+    link: '/proyectos/adrienne-landau',
+  },
+  {
+    title: 'Sandblast Solutions',
+    folder: 'sandblast-solutions',
+    link: '/proyectos/sandblast-solutions',
+  },
+];
+
+// Crea el array de proyectos con las imágenes
+const projects = await Promise.all(
+  projectsData.map(async (project) => {
+    const imagePath = `./${project.folder}/image.png`;
+    const imageModule = images[imagePath];
+    if (!imageModule) {
+      throw new Error(
+        `No se encontró la imagen para el proyecto ${project.title}`
+      );
+    }
+    const image = await imageModule();
+    return { ...project, image: image.default };
+  })
+);
 ---
 
-<Layout title='Javier Miz - Portfolio'>
-  <section class='pt-32 lg:pt-40'>
+<Layout title={CONTENT.metaTitle}>
+  <section class='pt-32 lg:pt-40 pb-20'>
     <div class='container'>
-      <div class='grid grid-cols-3 gap-6'>
-        <a href='/portfolio/adrienne-landau'>
-          <div class='bg-white rounded-3xl'>
-            <img src='' />
-            <h2>Adrienne Landau</h2>
-          </div>
-        </a>
+      <div class='text-center mb-16'>
+        <h1
+          class='text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-primary uppercase !leading-[0.8em] mb-4'
+        >
+          {CONTENT.title}
+        </h1>
+      </div>
+
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        {
+          projects.map((project) => (
+            <ProjectCard
+              link={project.link}
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              viewProjectText={CONTENT.viewProject}
+            />
+          ))
+        }
       </div>
     </div>
   </section>
