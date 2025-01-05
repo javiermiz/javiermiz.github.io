@@ -1,6 +1,4 @@
 ---
-layout: ../../../components/LayoutProjects.astro
-
 color_bg: '#fff4db'
 title: 'Sandblast Solutions'
 thumbnail: './image.png'

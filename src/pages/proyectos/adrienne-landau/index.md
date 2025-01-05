@@ -1,6 +1,4 @@
 ---
-layout: ../../../components/LayoutProjects.astro
-
 color_bg: '#fcf7ea'
 title: 'Adrienne Landau'
 thumbnail: './image.png'
