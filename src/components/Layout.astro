@@ -1,54 +1,95 @@
 ---
-import Header from '@components/sections/header/Header.astro';
-import Footer from '@components/sections/footer/Footer.astro';
-
-import { METADATA } from './layout';
+// src/layouts/Layout.astro
+import { SITE_CONFIG } from './layout'
 
 interface Props {
-  title: string;
+  title?: string
+  description?: string
+  ogImage?: string
+  noIndex?: boolean
 }
 
-const { title } = Astro.props;
+const {
+  title = SITE_CONFIG.title,
+  description = SITE_CONFIG.description,
+  ogImage = SITE_CONFIG.ogImage,
+  noIndex = false
+} = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
 ---
 
 <!doctype html>
-<html lang='en' class='scroll-smooth'>
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content={METADATA.description} />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/x-icon' href='/favicon.png' />
-    <meta name='generator' content={Astro.generator} />
-    <!-- TODO: Remove when finished -->
-    <meta name='robots' content='noindex, nofollow' /><meta
-      name='googlebot'
-      content='noindex, nofollow'
-    />
-    <title>{title || METADATA.title}</title>
+    <!-- Character encoding and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Robots -->
+    {noIndex && (
+      <meta name="robots" content="noindex, nofollow" />
+      <meta name="googlebot" content="noindex, nofollow" />
+    )}
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    <meta name="twitter:creator" content={SITE_CONFIG.creator} />
+    
+    <!-- Theme -->
+    <meta name="theme-color" content={SITE_CONFIG.metadata.themeColor} />
+    <meta name="generator" content={Astro.generator} />
   </head>
 
-  <body
-    class='flex flex-col text-dark bg-background overflow-x-hidden max-w-full'
-  >
-    <Header />
-    <slot />
-    <Footer />
+  <body class="flex min-h-screen flex-col bg-background font-secondary text-foreground antialiased">
+    <main class="flex-1">
+      <slot />
+    </main>
   </body>
-
-  <style is:global>
-    @font-face {
-      font-family: 'Saira';
-      src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Inter';
-      src: url('/fonts/Inter.ttf') format('truetype');
-      font-weight: 400 600;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
 </html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Saira';
+    src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    font-feature-settings: "liga" 1;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 400 600;
+    font-style: normal;
+    font-display: swap;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  :root {
+    --font-heading: 'Saira', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+</style>
