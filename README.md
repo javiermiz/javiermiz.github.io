@@ -96,14 +96,11 @@ After building (`pnpm build`), the output will be in the `dist` directory, ready
 - The site is optimized for performance with lazy-loaded images and responsive design
 - The layout is mobile-first and fully responsive
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature/my-new-feature`
-5. Submit a pull request
-
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Feel free to use this portfolio template for your personal projects. You can modify and adapt it as needed.
+
+**Restrictions:**
+
+- No commercial use allowed (you cannot sell this template or use it in commercial projects)
+- Attribution is appreciated but not required
