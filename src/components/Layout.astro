@@ -20,7 +20,7 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark:bg-zinc-900">
   <head>
     <!-- Character encoding and viewport -->
     <meta charset="UTF-8" />
@@ -58,11 +58,12 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
     <meta name="twitter:creator" content={SITE_CONFIG.creator} />
     
     <!-- Theme -->
-    <meta name="theme-color" content={SITE_CONFIG.metadata.themeColor} />
+    <meta name="theme-color" content={SITE_CONFIG.metadata.themeColor} media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
     <meta name="generator" content={Astro.generator} />
   </head>
 
-  <body class="flex min-h-screen flex-col bg-background font-secondary text-foreground antialiased bg-zinc-50">
+  <body class="flex min-h-screen flex-col bg-zinc-50 font-secondary text-zinc-900 antialiased transition-colors duration-300 dark:bg-zinc-900 dark:text-zinc-100">
     <main class="flex-1">
       <slot />
     </main>

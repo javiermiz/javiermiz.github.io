@@ -220,19 +220,26 @@ export const CV_DATA = {
 
 <Layout title="Javier Miz - Frontend Developer">
   {/* Top Contact Bar */}
-  <div class="sticky top-0 bg-white border-b z-10">
+  <div
+    class="sticky top-0 bg-white dark:bg-zinc-900 border-b dark:border-zinc-800 z-10"
+  >
     <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
       <div class="flex gap-3 ml-auto">
         <a
           href="/es"
-          class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100
+        dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm
+        hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
         >
           <Languages className="w-4 h-4" />
           ES
         </a>
+
         <a
           href={`mailto:${CV_DATA.contact.email}`}
-          class="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full text-sm hover:bg-zinc-800 transition-colors"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-black dark:bg-white text-white
+        dark:text-black rounded-full text-sm hover:bg-zinc-800 dark:hover:bg-zinc-100
+        transition-colors"
         >
           <Mail className="w-4 h-4" />
           Contact Me
@@ -244,12 +251,12 @@ export const CV_DATA = {
   <main class="max-w-4xl mx-auto p-4 lg:px-6 lg:py-16">
     {/* Profile Header */}
     <section
-      class="bg-white border-2 border-black rounded-xl p-6 lg:p-10 space-y-8"
+      class="bg-white dark:bg-zinc-900 border-2 border-black dark:border-zinc-600 rounded-xl p-6 lg:p-10 space-y-8"
     >
       <div class="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
-        {/* Avatar - Aumentado ligeramente */}
+        {/* Avatar */}
         <div
-          class="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-400 overflow-hidden"
+          class="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-400 dark:text-zinc-500 overflow-hidden"
         >
           <Image
             class="w-full h-full object-cover"
@@ -263,7 +270,9 @@ export const CV_DATA = {
         {/* Info */}
         <div class="flex-1 space-y-4">
           <div class="flex items-center gap-4 text-sm">
-            <span class="flex items-center gap-1.5 text-green-600 font-bold">
+            <span
+              class="flex items-center gap-1.5 text-green-600 dark:text-green-400 font-bold"
+            >
               <Clock className="w-4 h-4" />
               {CV_DATA.profile.availability}
             </span>
@@ -271,22 +280,21 @@ export const CV_DATA = {
 
           <div>
             <h1
-              class="text-3xl lg:text-4xl font-bold text-zinc-900 font-primary"
+              class="text-3xl lg:text-4xl font-bold text-zinc-900 dark:text-white font-primary"
             >
               {CV_DATA.profile.name}
             </h1>
-            <p class="text-xl lg:text-2xl text-zinc-800 mt-1">
+            <p
+              class="text-xl lg:text-2xl text-zinc-800 dark:text-zinc-200 mt-1"
+            >
               {CV_DATA.profile.role}
             </p>
           </div>
 
-          <div class="flex gap-3 text-base text-zinc-600">
-            <!-- <span class="flex items-center gap-2">
-                <MapPin className="w-5 h-5" />
-                {CV_DATA.profile.location}
-              </span>
-              <span class="text-zinc-300">•</span> -->
-            <span class="font-bold text-amber-600 flex items-center gap-2">
+          <div class="flex gap-3 text-base text-zinc-600 dark:text-zinc-400">
+            <span
+              class="font-bold text-amber-600 dark:text-amber-400 flex items-center gap-2"
+            >
               <MapPin className="w-5 h-5" />
               {CV_DATA.contact.location}
             </span>
@@ -294,33 +302,33 @@ export const CV_DATA = {
         </div>
       </div>
 
-      <div class="pt-8 border-t">
+      <div class="pt-8 border-t dark:border-zinc-800">
         {/* Navigation Buttons */}
         <div class="flex flex-wrap gap-3">
           <a
             href="#expertise"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
           >
             <Briefcase className="w-4 h-4" />
             Expertise
           </a>
           <a
             href="#projects"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
           >
             <FolderGit2 className="w-4 h-4" />
             Projects
           </a>
           <a
             href="#experience"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             Experience
           </a>
           <a
             href="#education"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
           >
             <GraduationCap className="w-4 h-4" />
             Education
@@ -328,24 +336,28 @@ export const CV_DATA = {
         </div>
       </div>
 
-      <div class="pt-8 border-t space-y-6">
+      <div class="pt-8 border-t dark:border-zinc-800 space-y-6">
         {/* Headline */}
         <div class="space-y-2">
-          <h2 class="text-xl lg:text-2xl font-bold text-zinc-900">
+          <h2
+            class="text-xl lg:text-2xl font-bold text-zinc-900 dark:text-white"
+          >
             {CV_DATA.profile.headline}
           </h2>
-          <p class="text-lg lg:text-xl text-zinc-800">
+          <p class="text-lg lg:text-xl text-zinc-800 dark:text-zinc-200">
             {CV_DATA.profile.subheadline}
           </p>
         </div>
 
         {/* Key Achievements */}
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-zinc-800">Key Achievements</h3>
+          <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-200">
+            Key Achievements
+          </h3>
           <ul class="space-y-3">
             {
               CV_DATA.highlights.map((highlight) => (
-                <li class="flex gap-3 text-zinc-700">
+                <li class="flex gap-3 text-zinc-700 dark:text-zinc-300">
                   <ArrowRight className="w-5 h-5 mt-1 shrink-0" />
                   <span class="text-base leading-relaxed">{highlight}</span>
                 </li>
@@ -355,15 +367,15 @@ export const CV_DATA = {
         </div>
 
         {/* About */}
-        <p class="text-base text-zinc-700 leading-relaxed">
+        <p class="text-base text-zinc-700 dark:text-zinc-300 leading-relaxed">
           {CV_DATA.profile.about}
         </p>
       </div>
 
       {/* Expertise */}
-      <div id="expertise" class="pt-8 border-t space-y-6">
+      <div id="expertise" class="pt-8 border-t dark:border-zinc-800 space-y-6">
         <h2
-          class="flex gap-2 items-center text-xl lg:text-2xl font-bold text-zinc-900"
+          class="flex gap-2 items-center text-xl lg:text-2xl font-bold text-zinc-900 dark:text-white"
         >
           <Briefcase className="w-6 h-6" />
           Skills & Expertise
@@ -372,15 +384,17 @@ export const CV_DATA = {
         <div class="space-y-8">
           {/* Technical Skills */}
           <div>
-            <h3 class="text-base font-semibold text-zinc-700 mb-4">
+            <h3
+              class="text-base font-semibold text-zinc-700 dark:text-zinc-300 mb-4"
+            >
               Technical Skills
             </h3>
             <div class="flex flex-wrap gap-3">
               {
                 CV_DATA.expertise.technical_skills.map((skill) => (
-                  <span class="px-4 py-2 bg-black text-white text-base rounded-full flex items-center gap-2">
+                  <span class="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-base rounded-full flex items-center gap-2">
                     {skill.name}
-                    <span class="text-sm px-2 py-0.5 bg-white/20 rounded-full">
+                    <span class="text-sm px-2 py-0.5 bg-white/20 dark:bg-black/20 rounded-full">
                       {skill.level}
                     </span>
                   </span>
@@ -388,15 +402,18 @@ export const CV_DATA = {
               }
             </div>
           </div>
+
           {/* Soft Skills */}
           <div>
-            <h3 class="text-base font-semibold text-zinc-700 mb-4">
+            <h3
+              class="text-base font-semibold text-zinc-700 dark:text-zinc-300 mb-4"
+            >
               Professional Skills
             </h3>
             <div class="flex flex-wrap gap-2">
               {
                 CV_DATA.expertise.soft_skills.map((skill) => (
-                  <span class="px-4 py-2 bg-zinc-100 text-zinc-700 text-base rounded-full">
+                  <span class="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-base rounded-full">
                     {skill}
                   </span>
                 ))
@@ -406,13 +423,15 @@ export const CV_DATA = {
 
           {/* Tools & Platforms */}
           <div>
-            <h3 class="text-base font-semibold text-zinc-700 mb-4">
+            <h3
+              class="text-base font-semibold text-zinc-700 dark:text-zinc-300 mb-4"
+            >
               Tools & Platforms
             </h3>
             <div class="flex flex-wrap gap-2">
               {
                 CV_DATA.expertise.tools_platforms.map((tool) => (
-                  <span class="px-4 py-2 border-2 border-zinc-200 text-zinc-700 text-base rounded-full">
+                  <span class="px-4 py-2 border-2 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-base rounded-full">
                     {tool}
                   </span>
                 ))
@@ -426,23 +445,25 @@ export const CV_DATA = {
     {/* Projects */}
     <section
       id="projects"
-      class="mt-8 bg-white border-2 border-black rounded-xl p-6 lg:p-10 space-y-8"
+      class="mt-8 bg-white dark:bg-zinc-900 border-2 border-black dark:border-zinc-700 rounded-xl p-6 lg:p-10 space-y-8"
     >
-      <h2 class="text-2xl lg:text-3xl font-bold text-zinc-900">
+      <h2 class="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-white">
         Recent Projects
       </h2>
-      <div class="divide-y space-y-6">
+      <div class="divide-y dark:divide-zinc-800 space-y-6">
         {
           CV_DATA.projects.map((project) => (
             <div class="pt-6 first:pt-0">
               <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                 <div class="space-y-2">
-                  <h3 class="text-xl font-bold text-zinc-900">
+                  <h3 class="text-xl font-bold text-zinc-900 dark:text-white">
                     {project.name}
                   </h3>
-                  <p class="text-base text-zinc-600">{project.involvement}</p>
+                  <p class="text-base text-zinc-600 dark:text-zinc-400">
+                    {project.involvement}
+                  </p>
                   {project.note && (
-                    <p class="text-sm text-zinc-500 italic mt-2">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-500 italic mt-2">
                       {project.note}
                     </p>
                   )}
@@ -450,7 +471,7 @@ export const CV_DATA = {
                 {project.url && (
                   <a
                     href={project.url}
-                    class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm hover:bg-zinc-200 transition-colors shrink-0"
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -468,30 +489,36 @@ export const CV_DATA = {
     {/* Experience */}
     <section
       id="experience"
-      class="mt-8 bg-white border-2 border-black rounded-xl p-6 lg:p-10 space-y-8"
+      class="mt-8 bg-white dark:bg-zinc-900 border-2 border-black dark:border-zinc-700 rounded-xl p-6 lg:p-10 space-y-8"
     >
-      <h2 class="text-2xl lg:text-3xl font-bold text-zinc-900">
+      <h2 class="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-white">
         Professional Experience
       </h2>
-      <div class="divide-y space-y-2">
+      <div class="divide-y dark:divide-zinc-800 space-y-2">
         {
           CV_DATA.experience.map((job) => (
             <div class="py-8 first:pt-0 last:pb-0 space-y-6">
               <div class="flex justify-between items-start gap-4">
                 <div>
-                  <h3 class="text-xl lg:text-2xl font-bold text-zinc-900">
+                  <h3 class="text-xl lg:text-2xl font-bold text-zinc-900 dark:text-white">
                     {job.company}
                   </h3>
-                  <p class="text-lg text-zinc-800 mt-1">{job.role}</p>
+                  <p class="text-lg text-zinc-800 dark:text-zinc-200 mt-1">
+                    {job.role}
+                  </p>
                   {job.location && (
-                    <p class="text-base text-zinc-600 mt-2">{job.location}</p>
+                    <p class="text-base text-zinc-600 dark:text-zinc-400 mt-2">
+                      {job.location}
+                    </p>
                   )}
                 </div>
                 <div class="text-right shrink-0">
-                  <span class="text-base text-zinc-600">{job.period}</span>
+                  <span class="text-base text-zinc-600 dark:text-zinc-400">
+                    {job.period}
+                  </span>
                   {job.current && (
                     <div class="mt-2">
-                      <span class="px-3 py-1.5 bg-green-100 text-green-700 text-sm font-medium rounded-full">
+                      <span class="px-3 py-1.5 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-sm font-medium rounded-full">
                         Current
                       </span>
                     </div>
@@ -500,8 +527,8 @@ export const CV_DATA = {
               </div>
 
               {/* Impact Summary */}
-              <div class="bg-zinc-50 p-6 rounded-lg">
-                <p class="text-base text-zinc-700 leading-relaxed">
+              <div class="bg-zinc-50 dark:bg-zinc-800 p-6 rounded-lg">
+                <p class="text-base text-zinc-700 dark:text-zinc-300 leading-relaxed">
                   {job.impact_summary}
                 </p>
               </div>
@@ -509,7 +536,7 @@ export const CV_DATA = {
               {/* Tech Stack */}
               <div class="flex flex-wrap gap-2">
                 {job.tech_stack.map((tech) => (
-                  <span class="px-3 py-1.5 bg-zinc-100 text-zinc-700 text-sm font-medium rounded-full">
+                  <span class="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-sm font-medium rounded-full">
                     {tech}
                   </span>
                 ))}
@@ -518,7 +545,7 @@ export const CV_DATA = {
               {/* Key Contributions */}
               <ul class="space-y-4">
                 {job.key_contributions.map((contribution) => (
-                  <li class="flex items-start gap-3 text-zinc-700">
+                  <li class="flex items-start gap-3 text-zinc-700 dark:text-zinc-300">
                     <ArrowRight className="w-5 h-5 mt-1 shrink-0" />
                     <span class="text-base leading-relaxed">
                       {contribution}
@@ -535,25 +562,32 @@ export const CV_DATA = {
     {/* Education */}
     <section
       id="education"
-      class="mt-8 bg-white border-2 border-black rounded-xl p-6 lg:p-10"
+      class="mt-8 bg-white dark:bg-zinc-900 border-2 border-black dark:border-zinc-700 rounded-xl p-6 lg:p-10"
     >
-      <h2 class="text-2xl lg:text-3xl font-bold text-zinc-900 mb-6">
+      <h2
+        class="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-white mb-6"
+      >
         Education
       </h2>
       <div class="space-y-3">
-        <h3 class="text-xl font-bold text-zinc-800">
+        <h3 class="text-xl font-bold text-zinc-800 dark:text-zinc-200">
           {CV_DATA.education.degree}
         </h3>
-        <p class="text-lg text-zinc-700">{CV_DATA.education.institution}</p>
-        <p class="text-base text-zinc-600">{CV_DATA.education.year}</p>
-        <p class="text-base text-zinc-700 leading-relaxed mt-6">
+        <p class="text-lg text-zinc-700 dark:text-zinc-300">
+          {CV_DATA.education.institution}
+        </p>
+        <p class="text-base text-zinc-600 dark:text-zinc-400">
+          {CV_DATA.education.year}
+        </p>
+        <p
+          class="text-base text-zinc-700 dark:text-zinc-300 leading-relaxed mt-6"
+        >
           {CV_DATA.education.relevance}
         </p>
       </div>
     </section>
   </main>
 </Layout>
-
 <style>
   #expertise,
   #experience,
