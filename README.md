@@ -63,7 +63,9 @@ Before you begin, you need to install the following on your computer:
 │   └── profile-og.jpg     # Profile image
 ├── src/
 │   ├── components/
+│   │   └── Header.astro # Header with Links and language switcher
 │   │   └── Layout.astro   # Main layout component
+│   │   └── layout.ts # Layout strings
 │   ├── pages/
 │   │   ├── index.astro    # English version (default)
 │   │   └── es/
