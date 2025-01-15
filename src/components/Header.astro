@@ -1,0 +1,91 @@
+---
+// src/components/layout/Header.astro
+import { Languages, Mail, Github, Linkedin } from "lucide-react";
+import { type SiteLanguage, SITE_CONFIG } from "./layout";
+
+interface Props {
+  email: string;
+  currentLang: SiteLanguage;
+  toggleLangUrl: string;
+}
+
+const { email, currentLang, toggleLangUrl } = Astro.props;
+
+// Text content based on current language
+const content = {
+  en: {
+    contact: "Contact Me",
+    toggle: "ES",
+    github: "GitHub Profile",
+    linkedin: "LinkedIn Profile",
+  },
+  es: {
+    contact: "Contáctame",
+    toggle: "EN",
+    github: "Perfil de GitHub",
+    linkedin: "Perfil de LinkedIn",
+  },
+}[currentLang];
+---
+
+<!-- =============================================
+  Header with social links and language toggle
+  Uses position sticky for persistent navigation
+============================================= -->
+<header
+  class="sticky top-0 z-10 border-b bg-white dark:border-zinc-800 dark:bg-zinc-900"
+>
+  <div class="mx-auto flex max-w-4xl items-center justify-end px-6 py-3">
+    <nav class="flex gap-3" aria-label="Main navigation">
+      <!-- Social Links -->
+      <div class="flex gap-2">
+        <a
+          href={SITE_CONFIG.social.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-zinc-100 p-2
+          text-zinc-700 transition-colors hover:bg-zinc-200 dark:bg-zinc-800
+          dark:text-zinc-300 dark:hover:bg-zinc-700"
+          aria-label={content.github}
+        >
+          <Github className="h-4 w-4" />
+        </a>
+
+        <a
+          href={SITE_CONFIG.social.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-zinc-100 p-2
+          text-zinc-700 transition-colors hover:bg-zinc-200 dark:bg-zinc-800
+          dark:text-zinc-300 dark:hover:bg-zinc-700"
+          aria-label={content.linkedin}
+        >
+          <Linkedin className="h-4 w-4" />
+        </a>
+      </div>
+
+      <!-- Language Toggle -->
+      <a
+        href={toggleLangUrl}
+        class="inline-flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2 text-sm
+        text-zinc-700 transition-colors hover:bg-zinc-200 dark:bg-zinc-800
+        dark:text-zinc-300 dark:hover:bg-zinc-700"
+        aria-label={`Change language to ${content.toggle}`}
+      >
+        <Languages className="h-4 w-4" />
+        <span>{content.toggle}</span>
+      </a>
+
+      <!-- Contact Button -->
+      <a
+        href={`mailto:${email}`}
+        class="inline-flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm
+        text-white transition-colors hover:bg-zinc-800 dark:bg-white
+        dark:text-black dark:hover:bg-zinc-100"
+      >
+        <Mail className="h-4 w-4" />
+        <span>{content.contact}</span>
+      </a>
+    </nav>
+  </div>
+</header>

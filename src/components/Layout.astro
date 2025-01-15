@@ -1,22 +1,27 @@
 ---
 // src/layouts/Layout.astro
-import { SITE_CONFIG } from './layout'
+import Header from './Header.astro';
+import { SITE_CONFIG, type SiteLanguage } from './layout'
 
 interface Props {
   title?: string
   description?: string
   ogImage?: string
   noIndex?: boolean
+  lang?: SiteLanguage
 }
 
 const {
   title = SITE_CONFIG.title,
   description = SITE_CONFIG.description,
   ogImage = SITE_CONFIG.ogImage,
-  noIndex = false
+  noIndex = false,
+  lang = SITE_CONFIG.i18n.defaultLang
 } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
+
+const toggleLangUrl = lang === 'en' ? '/es' : '/'
 ---
 
 <!doctype html>
@@ -64,6 +69,13 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
   </head>
 
   <body class="flex min-h-screen flex-col bg-zinc-50 font-secondary text-zinc-900 antialiased transition-colors duration-300 dark:bg-zinc-900 dark:text-zinc-100">
+
+    <Header 
+      email={SITE_CONFIG.contact.email}
+      currentLang={lang}
+      toggleLangUrl={toggleLangUrl}
+    />
+
     <main class="flex-1">
       <slot />
     </main>
@@ -71,15 +83,6 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
 </html>
 
 <style is:global>
-  @font-face {
-    font-family: 'Saira';
-    src: url('/fonts/SairaCondensed-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-    font-feature-settings: "liga" 1;
-  }
-  
   @font-face {
     font-family: 'Inter';
     src: url('/fonts/Inter.ttf') format('truetype');
@@ -90,7 +93,6 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
   }
 
   :root {
-    --font-heading: 'Saira', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
   }
 </style>

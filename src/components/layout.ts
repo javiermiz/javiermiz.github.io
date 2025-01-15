@@ -9,6 +9,29 @@ export const SITE_CONFIG = {
     themeColor: "#0F172A",
   },
   creator: "@javiermiz",
+  contact: {
+    email: "javiermizarevalo@gmail.com",
+  },
+  social: {
+    github: "https://github.com/javiermiz",
+    linkedin: "https://www.linkedin.com/in/javier-miz/",
+  },
+  i18n: {
+    defaultLang: "en" as const,
+    languages: {
+      en: {
+        code: "en",
+        name: "English",
+        dir: "ltr",
+      },
+      es: {
+        code: "es",
+        name: "Español",
+        dir: "ltr",
+      },
+    },
+  },
 } as const;
 
 export type SiteConfig = typeof SITE_CONFIG;
+export type SiteLanguage = keyof typeof SITE_CONFIG.i18n.languages;

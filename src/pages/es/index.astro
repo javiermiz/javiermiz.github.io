@@ -17,7 +17,7 @@ export const CV_DATA = {
   profile: {
     name: "Javier Miz Arévalo",
     role: "Desarrollador Frontend",
-    location: "Remoto (GMT-6)",
+    location: "Preferentemente remoto",
     availability: "Disponible en 2 semanas",
     headline: "He trabajado como Senior y Mid Frontend developer",
     subheadline:
@@ -211,42 +211,10 @@ export const CV_DATA = {
     relevance:
       "Base sólida en principios de ingeniería de software y arquitectura de sistemas",
   },
-  contact: {
-    email: "javiermizarevalo@gmail.com",
-    location: "Preferentemente remoto",
-  },
 };
 ---
 
-<Layout title="Javier Miz - Desarrollador Frontend">
-  {/* Top Contact Bar */}
-  <div
-    class="sticky top-0 bg-white dark:bg-zinc-900 border-b dark:border-zinc-800 z-10"
-  >
-    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
-      <div class="flex gap-3 ml-auto">
-        <a
-          href="/"
-          class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100
-        dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm
-        hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
-        >
-          <Languages className="w-4 h-4" />
-          EN
-        </a>
-        <a
-          href={`mailto:${CV_DATA.contact.email}`}
-          class="inline-flex items-center gap-2 px-4 py-2 bg-black dark:bg-white text-white
-        dark:text-black rounded-full text-sm hover:bg-zinc-800 dark:hover:bg-zinc-100
-        transition-colors"
-        >
-          <Mail className="w-4 h-4" />
-          Contáctame
-        </a>
-      </div>
-    </div>
-  </div>
-
+<Layout lang="es" title="Javier Miz - Desarrollador Frontend">
   <main class="max-w-4xl mx-auto p-4 lg:px-6 lg:py-16">
     {/* Profile Header */}
     <section
@@ -300,7 +268,7 @@ export const CV_DATA = {
               class="font-bold text-amber-600 dark:text-amber-400 flex items-center gap-2"
             >
               <MapPin className="w-5 h-5" />
-              {CV_DATA.contact.location}
+              {CV_DATA.profile.location}
             </span>
           </div>
         </div>
