@@ -7,6 +7,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://javiermiz.github.io',
+  output: 'static',
   i18n: {
     locales: ['es', 'en'],
     defaultLocale: 'en',
