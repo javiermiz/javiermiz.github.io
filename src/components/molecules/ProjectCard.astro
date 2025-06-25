@@ -1,7 +1,8 @@
 ---
+import { Image } from "astro:assets";
 import { ArrowRight } from "lucide-react";
-
 export interface Props {
+  icon: string;
   name: string;
   involvement: string;
   note?: string;
@@ -10,34 +11,48 @@ export interface Props {
   defaultButtonText: string;
 }
 
-const { name, involvement, note, url, buttonText, defaultButtonText } = Astro.props;
+const { icon, name, involvement, note, url, buttonText, defaultButtonText } =
+  Astro.props;
 ---
 
 <div class="pt-3 first:pt-0">
   <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
     <div class="space-y-1 min-w-0">
-      <h3 class="text-lg font-bold text-zinc-900 dark:text-white">
+      <h3
+        class="text-lg font-bold text-zinc-900 dark:text-white flex items-center gap-2"
+      >
+        {
+          icon && (
+            <div class="w-4 h-4">
+              <img src={icon} alt={name} />
+            </div>
+          )
+        }
         {name}
       </h3>
       <p class="text-sm text-zinc-600 dark:text-zinc-400">
         {involvement}
       </p>
-      {note && (
-        <p class="text-xs text-zinc-500 dark:text-zinc-500 italic mt-1">
-          {note}
-        </p>
-      )}
+      {
+        note && (
+          <p class="text-xs text-zinc-500 dark:text-zinc-500 italic mt-1">
+            {note}
+          </p>
+        )
+      }
     </div>
-    {url && (
-      <a
-        href={url}
-        class="inline-flex items-center justify-between gap-1.5 px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0 lg:text-sm"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {buttonText || defaultButtonText}
-        <ArrowRight className="w-3 h-3 ml-auto" />
-      </a>
-    )}
+    {
+      url && (
+        <a
+          href={url}
+          class="inline-flex items-center justify-between gap-1.5 px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors shrink-0 lg:text-sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {buttonText || defaultButtonText}
+          <ArrowRight className="w-3 h-3 ml-auto" />
+        </a>
+      )
+    }
   </div>
-</div> 
+</div>

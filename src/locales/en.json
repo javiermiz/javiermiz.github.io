@@ -64,13 +64,15 @@
   },
   "projects": [
     {
+      "icon": "/project-icons/mc-donalds.png",
       "name": "McDonald's McRib Sauce Campaign",
       "involvement": "Frontend Developer - Led development for high-profile nationwide e-commerce campaign that sold out limited edition McRib sauce, featured in major publications including PEOPLE Magazine",
       "url": "https://people.com/a-whole-lotta-mcrib-sauce-mcdonald-s-releases-half-gallon-jugs-8748982",
       "buttonText": "Read Press Coverage",
       "note": "Campaign website was time-limited by design as part of the marketing strategy for this exclusive product launch"
     },
-    {
+    { 
+      "icon": "/project-icons/the-home-depot.png",
       "name": "Home Depot Delivery System",
       "involvement": "Frontend Developer - Developed critical features for large-scale delivery estimation system, impacting millions of daily deliveries for Fortune 500 retailer"
     },
@@ -92,6 +94,7 @@
   ],
   "experience": [
     {
+      "icon": "/experience-logos/ibm.png",
       "company": "IBM (Project Home Depot)",
       "role": "Frontend Developer",
       "project": "Home Depot",
@@ -109,6 +112,7 @@
       ]
     },
     {
+      "icon": "/experience-logos/klever-cookie.png",
       "company": "Klever Cookie",
       "role": "Frontend Developer",
       "period": "2021 - Present",

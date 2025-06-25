@@ -9,6 +9,9 @@
       "@constants/*": [
         "src/constants/*"
       ],
+      "@icons/*": [
+        "src/icons/*"
+      ]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

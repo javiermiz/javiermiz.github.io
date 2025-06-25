@@ -64,6 +64,7 @@
   },
   "projects": [
     {
+      "icon": "/experience-logos/mc-donalds.png",
       "name": "Campaña Salsa McRib - McDonald's",
       "involvement": "Desarrollador Frontend - Lideré el desarrollo de una campaña nacional de e-commerce que agotó la edición limitada de salsa McRib, destacada en importantes publicaciones incluyendo la revista PEOPLE",
       "url": "https://people.com/a-whole-lotta-mcrib-sauce-mcdonald-s-releases-half-gallon-jugs-8748982",
@@ -71,6 +72,7 @@
       "note": "El sitio web de la campaña fue limitado en tiempo por diseño como parte de la estrategia de marketing para este lanzamiento exclusivo"
     },
     {
+      "icon": "/experience-logos/the-home-depot.png",
       "name": "Sistema de Entregas Home Depot",
       "involvement": "Desarrollador Frontend - Desarrollé funcionalidades críticas para el sistema de estimación de entregas a gran escala, impactando millones de entregas diarias para minorista Fortune 500"
     },
@@ -92,6 +94,7 @@
   ],
   "experience": [
     {
+      "icon": "/experience-logos/ibm.png",
       "company": "IBM (Proyecto Home Depot)",
       "role": "Desarrollador Frontend",
       "project": "Home Depot",
@@ -109,6 +112,7 @@
       ]
     },
     {
+      "icon": "/experience-logos/klever-cookie.png",
       "company": "Klever Cookie",
       "role": "Desarrollador Frontend",
       "period": "2021 - Presente",
