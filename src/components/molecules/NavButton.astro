@@ -1,0 +1,19 @@
+---
+import type { ComponentProps } from "astro/types";
+
+export interface Props {
+  href: string;
+  icon: any;
+  text: string;
+}
+
+const { href, icon: Icon, text } = Astro.props;
+---
+
+<a
+  href={href}
+  class="inline-flex items-center gap-1.5 px-4 py-2 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 rounded-lg text-sm border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors shadow-sm"
+>
+  <Icon className="w-4 h-4" />
+  {text}
+</a> 

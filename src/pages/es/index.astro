@@ -1,11 +1,11 @@
 ---
-import CVLayout from "@components/CVLayout.astro";
+import MainTemplate from "@components/templates/main-template.astro";
 import { getLocaleData } from "../../utils/i18n";
 
 const CV_DATA = await getLocaleData('es');
 ---
 
-<CVLayout 
+<MainTemplate 
   lang="es" 
   title="Javier Miz - Desarrollador Frontend"
   data={CV_DATA}
