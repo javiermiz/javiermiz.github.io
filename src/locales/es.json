@@ -1,0 +1,183 @@
+{
+  "profile": {
+    "name": "Javier Miz Arévalo",
+    "role": "Desarrollador Frontend",
+    "location": "Preferentemente remoto",
+    "availability": "Disponible en 2 semanas",
+    "headline": "He trabajado como Senior y Mid Frontend developer",
+    "subheadline": "Más de 5 años desarrollando aplicaciones web de alto rendimiento con impacto comercial medible",
+    "about": "Especializado en el ecosistema React y soluciones de comercio electrónico. Experimentado en arquitectura de aplicaciones escalables y desarrollo de experiencias personalizadas en Shopify para clientes internacionales. Sólida experiencia en optimización de rendimiento web y creación de sistemas de componentes mantenibles. Capacidad comprobada para entregar soluciones de alto impacto tanto en startups como en empresas Fortune 500, combinando consistentemente excelencia técnica con valor comercial."
+  },
+  "highlights": [
+    "Lideré el desarrollo de un sistema de entregas reduciendo los retrasos en un 3.4% para minorista Fortune 500",
+    "Diseñé soluciones personalizadas de Shopify para marcas internacionales aumentando las tasas de conversión"
+  ],
+  "expertise": {
+    "technical_skills": [
+      {
+        "name": "React/Next.js",
+        "level": "+5 años",
+        "proficiency": "Experto"
+      },
+      {
+        "name": "TypeScript",
+        "level": "+3 años",
+        "proficiency": "Avanzado"
+      },
+      {
+        "name": "Shopify/Liquid",
+        "level": "+2 años",
+        "proficiency": "Avanzado"
+      },
+      {
+        "name": "Node.js",
+        "level": "+3 años",
+        "proficiency": "Intermedio"
+      },
+      {
+        "name": "Testing (Jest/RTL)",
+        "level": "+1 año",
+        "proficiency": "Medio"
+      },
+      {
+        "name": "REST APIs",
+        "level": "+4 años",
+        "proficiency": "Avanzado"
+      }
+    ],
+    "soft_skills": [
+      "Resolución de Problemas",
+      "Liderazgo Técnico",
+      "Comunicación",
+      "Mentorías",
+      "Agile/Scrum",
+      "Relación con Clientes"
+    ],
+    "tools_platforms": [
+      "Git/GitHub",
+      "AWS",
+      "Firebase",
+      "Vercel",
+      "Figma",
+      "WordPress"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Campaña Salsa McRib - McDonald's",
+      "involvement": "Desarrollador Frontend - Lideré el desarrollo de una campaña nacional de e-commerce que agotó la edición limitada de salsa McRib, destacada en importantes publicaciones incluyendo la revista PEOPLE",
+      "url": "https://people.com/a-whole-lotta-mcrib-sauce-mcdonald-s-releases-half-gallon-jugs-8748982",
+      "buttonText": "Ver Cobertura",
+      "note": "El sitio web de la campaña fue limitado en tiempo por diseño como parte de la estrategia de marketing para este lanzamiento exclusivo"
+    },
+    {
+      "name": "Sistema de Entregas Home Depot",
+      "involvement": "Desarrollador Frontend - Desarrollé funcionalidades críticas para el sistema de estimación de entregas a gran escala, impactando millones de entregas diarias para minorista Fortune 500"
+    },
+    {
+      "name": "Adrienne Landau - Tienda de Moda",
+      "url": "https://adriennelandau.com",
+      "involvement": "Desarrollador Frontend Principal - Transformé el diseño en una tienda Shopify de alto rendimiento, impulsando un crecimiento significativo en ventas a través de características personalizadas y optimizaciones"
+    },
+    {
+      "name": "Pretty Smart Cosmetics",
+      "url": "https://pretty-smartcosmetics.com",
+      "involvement": "Desarrollador Frontend Principal - Construí una tienda Shopify personalizada desde el diseño hasta el despliegue, implementando características únicas y experiencia de compra optimizada"
+    },
+    {
+      "name": "Plataforma E-commerce Sandblast Solutions",
+      "url": "https://sandblastinc.com",
+      "involvement": "Desarrollador Frontend Principal - Ejecuté el rediseño completo y modernización de la plataforma usando Shopify y Tailwind, entregando una solución B2B de alto rendimiento con características personalizadas y experiencia de usuario mejorada"
+    }
+  ],
+  "experience": [
+    {
+      "company": "IBM (Proyecto Home Depot)",
+      "role": "Desarrollador Frontend",
+      "project": "Home Depot",
+      "period": "2023 - 2024",
+      "location": "Remoto",
+      "impact_summary": "Impulsando mejoras críticas en el rendimiento del sistema de entregas y modernización frontend",
+      "tech_stack": ["React", "TypeScript", "Jest", "CI/CD"],
+      "key_contributions": [
+        "Encabecé iniciativas de optimización de lógica de entregas logrando una reducción del 3.4% en entregas tardías y mejora del 1.5% en precisión",
+        "Modernizé aplicaciones frontend mediante actualizaciones del stack tecnológico, resultando en mejoras medibles de rendimiento y experiencia de usuario",
+        "Implementé un sistema robusto de ajuste de entregas para temporadas festivas mejorando la precisión de estimaciones en temporadas pico",
+        "Lideré esfuerzos de mejora de seguridad identificando y actualizando dependencias vulnerables en la aplicación",
+        "Establecí e implementé estándares de interfaz frontend, aumentando la consistencia en toda la plataforma",
+        "Mejoré la infraestructura de pruebas resolviendo problemas de integración, asegurando reportes precisos de cobertura y calidad de código"
+      ]
+    },
+    {
+      "company": "Klever Cookie",
+      "role": "Desarrollador Frontend",
+      "period": "2021 - Presente",
+      "location": "Remoto",
+      "current": true,
+      "impact_summary": "Especializado en desarrollo Shopify y soluciones React para e-commerce",
+      "tech_stack": ["Shopify/Liquid", "Next.js", "React", "TypeScript", "Vue.js", "WordPress"],
+      "key_contributions": [
+        "Dominé el desarrollo de temas Shopify, creando secciones y características personalizadas usando Liquid y JavaScript",
+        "Implementé animaciones complejas y elementos interactivos en múltiples tiendas Shopify para mejorar la exhibición de productos",
+        "Lideré el desarrollo del sitio web de la empresa con Next.js, enfocándome en optimización de rendimiento y diseño responsivo",
+        "Construí componentes React reutilizables tanto para el sitio web de la empresa como para proyectos de clientes",
+        "Expandí habilidades aprendiendo Vue.js para desarrollar aplicaciones de negocio",
+        "Creé soluciones WordPress personalizadas mientras mantenía el enfoque en Shopify y desarrollo React"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "role": "Desarrollador Frontend",
+      "period": "2020 - 2022",
+      "impact_summary": "Entregué soluciones web personalizadas para pequeñas empresas enfocándome en experiencia de usuario",
+      "tech_stack": ["React", "Angular", "Ionic", "Firebase", "Google Maps API", "WordPress"],
+      "key_contributions": [
+        "Construí un sistema de reservas para restaurantes basado en React manejando reservaciones diarias",
+        "Desarrollé una aplicación de seguimiento de entregas usando Angular/Ionic y Firebase",
+        "Implementé características basadas en localización usando Google Maps API",
+        "Creé soluciones WordPress personalizadas incluyendo sistemas de reserva de citas",
+        "Me enfoqué en principios de diseño mobile-first mejorando la experiencia de usuario general"
+      ]
+    },
+    {
+      "company": "Nett",
+      "role": "Desarrollador Frontend",
+      "period": "2018 - 2021",
+      "location": "Monterrey, NL",
+      "impact_summary": "Desarrollé aplicaciones web responsivas y soluciones móviles usando tecnologías frontend modernas",
+      "tech_stack": ["React", "TypeScript", "Ionic", "SASS", "Bootstrap", "WordPress", "Node.js", "Git"],
+      "key_contributions": [
+        "Desarrollé aplicaciones móviles usando frameworks React e Ionic",
+        "Creé componentes React reutilizables para mejorar la eficiencia del desarrollo",
+        "Implementé diseños responsivos asegurando una visualización óptima en todos los dispositivos",
+        "Utilicé herramientas modernas de desarrollo incluyendo Webpack y Git para control de versiones",
+        "Construí y mantuve sitios WordPress con temas y funcionalidades personalizadas"
+      ]
+    }
+  ],
+  "education": {
+    "degree": "Ingeniería en Sistemas Computacionales",
+    "institution": "Universidad de Montemorelos",
+    "year": "2018",
+    "relevance": "Base sólida en principios de ingeniería de software y arquitectura de sistemas"
+  },
+  "ui": {
+    "sections": {
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "experience": "Experiencia",
+      "education": "Educación"
+    },
+    "labels": {
+      "keyAchievements": "Logros Principales",
+      "technicalSkills": "Habilidades Técnicas",
+      "professionalSkills": "Habilidades Profesionales",
+      "toolsPlatforms": "Herramientas y Plataformas",
+      "recentProjects": "Proyectos Recientes",
+      "workExperience": "Experiencia Laboral",
+      "current": "Actual",
+      "viewProject": "Ver Proyecto",
+      "viewCoverage": "Ver Cobertura"
+    }
+  }
+} 
