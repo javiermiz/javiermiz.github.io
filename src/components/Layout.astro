@@ -9,6 +9,9 @@ interface Props {
   ogImage?: string
   noIndex?: boolean
   lang?: SiteLanguage
+  keywords?: string
+  author?: string
+  structuredData?: object
 }
 
 const {
@@ -16,7 +19,10 @@ const {
   description = SITE_CONFIG.description,
   ogImage = SITE_CONFIG.ogImage,
   noIndex = false,
-  lang = SITE_CONFIG.i18n.defaultLang
+  lang = SITE_CONFIG.i18n.defaultLang,
+  keywords = SITE_CONFIG.metadata.keywords,
+  author = SITE_CONFIG.creator,
+  structuredData = SITE_CONFIG.metadata.structuredData
 } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
@@ -25,7 +31,7 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth dark:bg-zinc-900">
+<html lang={lang} class="scroll-smooth dark:bg-zinc-900">
   <head>
     <!-- Character encoding and viewport -->
     <meta charset="UTF-8" />
@@ -39,6 +45,8 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
     <link rel="canonical" href={canonicalURL} />
     
     <!-- Robots -->
@@ -53,6 +61,10 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang} />
+    <meta property="og:site_name" content="Javier Miz - Frontend Developer" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -62,10 +74,25 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
     <meta property="twitter:image" content={ogImage} />
     <meta name="twitter:creator" content={SITE_CONFIG.creator} />
     
+    <!-- Additional SEO Meta Tags -->
+    <meta name="language" content={lang} />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
     <!-- Theme -->
     <meta name="theme-color" content={SITE_CONFIG.metadata.themeColor} media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- Structured Data -->
+    {structuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
 
   <body class="flex min-h-screen flex-col bg-zinc-50 font-secondary text-zinc-900 antialiased transition-colors duration-300 dark:bg-zinc-900 dark:text-zinc-100">

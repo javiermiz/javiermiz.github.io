@@ -1,0 +1,119 @@
+---
+export interface Props {
+  lang: "en" | "es";
+}
+
+const { lang } = Astro.props;
+
+const services =
+  lang === "en"
+    ? [
+        {
+          title: "React.js Development",
+          description:
+            "Expert React.js development with modern hooks, context API, and performance optimization. Building scalable single-page applications.",
+          keywords: [
+            "React.js",
+            "React development",
+            "SPA",
+            "hooks",
+            "context API",
+          ],
+        },
+        {
+          title: "Next.js Applications",
+          description:
+            "Full-stack Next.js development with server-side rendering, static generation, and API routes. Creating fast, SEO-friendly web applications.",
+          keywords: ["Next.js", "SSR", "SSG", "full-stack", "API routes"],
+        },
+        {
+          title: "TypeScript Development",
+          description:
+            "Type-safe development with TypeScript for better code quality, maintainability, and developer experience. Reducing bugs and improving scalability.",
+          keywords: [
+            "TypeScript",
+            "type safety",
+            "code quality",
+            "maintainability",
+          ],
+        },
+        {
+          title: "Modern CSS & Styling",
+          description:
+            "Expert styling with Tailwind CSS, CSS-in-JS, and modern CSS features. Creating responsive, accessible, and beautiful user interfaces.",
+          keywords: ["Tailwind CSS", "CSS-in-JS", "responsive design", "UI/UX"],
+        },
+      ]
+    : [
+        {
+          title: "Desarrollo con React.js",
+          description:
+            "Desarrollo experto con React.js utilizando hooks modernos, Context API y optimización de rendimiento. Construyendo aplicaciones escalables.",
+          keywords: [
+            "React.js",
+            "desarrollo React",
+            "SPA",
+            "hooks",
+            "context API",
+          ],
+        },
+        {
+          title: "Aplicaciones Next.js",
+          description:
+            "Desarrollo full-stack con Next.js incluyendo renderizado del lado del servidor, generación estática y rutas API. Aplicaciones web rápidas.",
+          keywords: ["Next.js", "SSR", "SSG", "full-stack", "rutas API"],
+        },
+        {
+          title: "Desarrollo con TypeScript",
+          description:
+            "Desarrollo con tipos seguros usando TypeScript para mejor calidad de código, mantenibilidad y experiencia del desarrollador.",
+          keywords: [
+            "TypeScript",
+            "tipos seguros",
+            "calidad de código",
+            "mantenibilidad",
+          ],
+        },
+        {
+          title: "CSS Moderno y Estilos",
+          description:
+            "Estilos expertos con Tailwind CSS, CSS-in-JS y características modernas de CSS. Interfaces responsivas y accesibles.",
+          keywords: ["Tailwind CSS", "CSS-in-JS", "diseño responsivo", "UI/UX"],
+        },
+      ];
+---
+
+<section
+  class="bg-white dark:bg-zinc-900 border border-black dark:border-zinc-700 rounded-lg p-4 lg:p-6 space-y-4"
+>
+  <h2 class="text-xl lg:text-2xl font-bold text-zinc-900 dark:text-white">
+    {
+      lang === "en"
+        ? "Frontend Development Services"
+        : "Servicios de Desarrollo Frontend"
+    }
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {
+      services.map((service) => (
+        <div class="space-y-3">
+          <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-200">
+            {service.title}
+          </h3>
+          <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+            {service.description}
+          </p>
+          <div class="flex flex-wrap gap-1">
+            {service.keywords.map((keyword) => (
+              <span class="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs rounded">
+                {keyword}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+

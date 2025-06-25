@@ -6,6 +6,7 @@ import SkillItem from "@components/molecules/SkillItem.astro";
 import AchievementItem from "@components/molecules/AchievementItem.astro";
 import ProjectCard from "@components/molecules/ProjectCard.astro";
 import ExperienceCard from "@components/molecules/ExperienceCard.astro";
+import SEOServices from "@components/molecules/SEOServices.astro";
 import {
   Mail,
   MapPin,
@@ -21,14 +22,15 @@ import {
 export interface Props {
   lang: "en" | "es";
   title: string;
+  description?: string;
   data: any; // CV_DATA from locale
 }
 
-const { lang, title, data } = Astro.props;
+const { lang, title, description, data } = Astro.props;
 const CV_DATA = data;
 ---
 
-<Layout lang={lang} title={title}>
+<Layout lang={lang} title={title} description={description}>
   <main class="max-w-3xl mx-auto p-3 lg:px-4 lg:py-8 grid gap-4">
     {/* Profile Header */}
     <section
@@ -299,6 +301,9 @@ const CV_DATA = data;
         </p>
       </div>
     </section>
+
+    {/* SEO Services Section */}
+    <SEOServices lang={lang} />
 
     <style>
       #expertise,

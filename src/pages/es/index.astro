@@ -2,11 +2,12 @@
 import MainTemplate from "@components/templates/main-template.astro";
 import { getLocaleData } from "../../utils/i18n";
 
-const CV_DATA = await getLocaleData('es');
+const CV_DATA = await getLocaleData("es");
 ---
 
-<MainTemplate 
-  lang="es" 
-  title="Javier Miz - Desarrollador Frontend"
+<MainTemplate
+  lang="es"
+  title="Javier Miz - Desarrollador Frontend Senior | Experto en React.js y Next.js"
+  description="Desarrollador Frontend Senior con más de 5 años de experiencia en React.js, Next.js, TypeScript y tecnologías web modernas. Disponible para proyectos freelance y oportunidades a tiempo completo."
   data={CV_DATA}
 />
