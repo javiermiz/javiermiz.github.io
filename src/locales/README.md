@@ -133,8 +133,7 @@ const CV_DATA = await getLocaleData("fr");
 
 The `src/utils/i18n.ts` file provides:
 
-- `getLocaleData(locale)`: Loads locale data from JSON files
-- `getLocaleFromUrl(Astro)`: Extracts locale from URL path
+- `getLocaleData({language: Locale, page: string}): Promise<LocaleData>`: Loads locale data from JSON files
 - TypeScript interfaces for type safety
 
 ## Benefits

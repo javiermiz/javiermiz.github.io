@@ -1,6 +1,6 @@
 ---
 // src/layouts/Layout.astro
-import Header from './Header.astro';
+import Sidebar from './Sidebar.astro';
 import { SITE_CONFIG, type SiteLanguage } from './layout'
 
 interface Props {
@@ -95,24 +95,32 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
 
-  <body class="flex min-h-screen flex-col bg-zinc-50 font-secondary text-zinc-900 antialiased transition-colors duration-300 dark:bg-zinc-900 dark:text-zinc-100">
+  <body class="min-h-screen bg-zinc-50 font-article antialiased transition-colors duration-300 text-zinc-900">
 
-    <Header 
+    <Sidebar 
       email={SITE_CONFIG.contact.email}
       currentLang={lang}
-      toggleLangUrl={toggleLangUrl}
     />
 
-    <main class="flex-1">
-      <slot />
-    </main>
+    <div class="flex-1 pt-16 lg:pt-0 lg:ml-[calc(50%-220px)] transition-all duration-300 bg-amber-50">
+        <slot />
+    </div>
   </body>
 </html>
 
 <style is:global>
   @font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter.ttf') format('truetype');
+    font-family: 'SchibstedGrotesk';
+    src: url('/fonts/SchibstedGrotesk.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+  
+  @font-face {
+    font-family: 'Domine';
+    src: url('/fonts/Domine.ttf') format('truetype');
     font-weight: 400 600;
     font-style: normal;
     font-display: swap;
@@ -120,6 +128,11 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
   }
 
   :root {
-    --font-body: 'Inter', system-ui, sans-serif;
+    --font-primary: 'SchibstedGrotesk', system-ui, sans-serif;
+    --font-article: 'Domine', serif;
+  }
+
+  html {
+    font-size: 18px;
   }
 </style>

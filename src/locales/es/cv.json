@@ -119,7 +119,14 @@
       "location": "Remoto",
       "current": true,
       "impact_summary": "Especializado en desarrollo Shopify y soluciones React para e-commerce",
-      "tech_stack": ["Shopify/Liquid", "Next.js", "React", "TypeScript", "Vue.js", "WordPress"],
+      "tech_stack": [
+        "Shopify/Liquid",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Vue.js",
+        "WordPress"
+      ],
       "key_contributions": [
         "Dominé el desarrollo de temas Shopify, creando secciones y características personalizadas usando Liquid y JavaScript",
         "Implementé animaciones complejas y elementos interactivos en múltiples tiendas Shopify para mejorar la exhibición de productos",
@@ -134,7 +141,14 @@
       "role": "Desarrollador Frontend",
       "period": "2020 - 2022",
       "impact_summary": "Entregué soluciones web personalizadas para pequeñas empresas enfocándome en experiencia de usuario",
-      "tech_stack": ["React", "Angular", "Ionic", "Firebase", "Google Maps API", "WordPress"],
+      "tech_stack": [
+        "React",
+        "Angular",
+        "Ionic",
+        "Firebase",
+        "Google Maps API",
+        "WordPress"
+      ],
       "key_contributions": [
         "Construí un sistema de reservas para restaurantes basado en React manejando reservaciones diarias",
         "Desarrollé una aplicación de seguimiento de entregas usando Angular/Ionic y Firebase",
@@ -149,7 +163,16 @@
       "period": "2018 - 2021",
       "location": "Monterrey, NL",
       "impact_summary": "Desarrollé aplicaciones web responsivas y soluciones móviles usando tecnologías frontend modernas",
-      "tech_stack": ["React", "TypeScript", "Ionic", "SASS", "Bootstrap", "WordPress", "Node.js", "Git"],
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "Ionic",
+        "SASS",
+        "Bootstrap",
+        "WordPress",
+        "Node.js",
+        "Git"
+      ],
       "key_contributions": [
         "Desarrollé aplicaciones móviles usando frameworks React e Ionic",
         "Creé componentes React reutilizables para mejorar la eficiencia del desarrollo",
@@ -184,4 +207,4 @@
       "viewCoverage": "Ver Cobertura"
     }
   }
-} 
+}

@@ -71,7 +71,7 @@
       "buttonText": "Read Press Coverage",
       "note": "Campaign website was time-limited by design as part of the marketing strategy for this exclusive product launch"
     },
-    { 
+    {
       "icon": "/project-icons/the-home-depot.png",
       "name": "Home Depot Delivery System",
       "involvement": "Frontend Developer - Developed critical features for large-scale delivery estimation system, impacting millions of daily deliveries for Fortune 500 retailer"
@@ -119,7 +119,14 @@
       "location": "Remote",
       "current": true,
       "impact_summary": "Specialized in Shopify development and React-based solutions for e-commerce",
-      "tech_stack": ["Shopify/Liquid", "Next.js", "React", "TypeScript", "Vue.js", "WordPress"],
+      "tech_stack": [
+        "Shopify/Liquid",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Vue.js",
+        "WordPress"
+      ],
       "key_contributions": [
         "Mastered Shopify theme development, creating custom sections and features using Liquid templating and JavaScript",
         "Implemented complex animations and interactive elements across multiple Shopify stores to enhance product showcases",
@@ -134,7 +141,14 @@
       "role": "Frontend Developer",
       "period": "2020 - 2022",
       "impact_summary": "Delivered custom web solutions for small businesses focusing on user experience",
-      "tech_stack": ["React", "Angular", "Ionic", "Firebase", "Google Maps API", "WordPress"],
+      "tech_stack": [
+        "React",
+        "Angular",
+        "Ionic",
+        "Firebase",
+        "Google Maps API",
+        "WordPress"
+      ],
       "key_contributions": [
         "Built a React-based restaurant reservation system handling daily bookings",
         "Developed a delivery tracking application using Angular/Ionic and Firebase",
@@ -149,7 +163,16 @@
       "period": "2018 - 2021",
       "location": "Monterrey, NL",
       "impact_summary": "Developed responsive web applications and mobile solutions using modern frontend technologies",
-      "tech_stack": ["React", "TypeScript", "Ionic", "SASS", "Bootstrap", "WordPress", "Node.js", "Git"],
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "Ionic",
+        "SASS",
+        "Bootstrap",
+        "WordPress",
+        "Node.js",
+        "Git"
+      ],
       "key_contributions": [
         "Developed mobile applications using React and Ionic frameworks",
         "Created reusable React components to improve development efficiency",
@@ -184,4 +207,4 @@
       "viewCoverage": "Read Press Coverage"
     }
   }
-} 
+}

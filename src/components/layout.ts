@@ -7,34 +7,36 @@ export const SITE_CONFIG = {
   ogImage: "/profile-og.jpg",
   metadata: {
     themeColor: "#0F172A",
-    keywords: "frontend developer, react developer, next.js developer, javascript developer, web developer, frontend engineer, react.js, next.js, typescript, tailwind css, astro, web development, software engineer",
+    keywords:
+      "frontend developer, react developer, astro developer, javascript developer, web developer, frontend engineer, react.js, next.js, typescript, tailwind css, astro, web development, software engineer",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Javier Miz Arévalo",
-      "jobTitle": "Frontend Developer",
-      "description": "Senior Frontend Developer with +5 years of experience specializing in React.js, Next.js, and modern web technologies.",
-      "url": "https://javiermiz.github.io/",
-      "image": "https://javiermiz.github.io/profile-og.jpg",
-      "sameAs": [
+      name: "Javier Miz Arévalo",
+      jobTitle: "Frontend Developer",
+      description:
+        "Senior Frontend Developer with +5 years of experience specializing in React.js, Next.js, and modern web technologies.",
+      url: "https://javiermiz.github.io/",
+      image: "https://javiermiz.github.io/profile-og.jpg",
+      sameAs: [
         "https://github.com/javiermiz",
-        "https://www.linkedin.com/in/javier-miz/"
+        "https://www.linkedin.com/in/javier-miz/",
       ],
-      "knowsAbout": [
+      knowsAbout: [
         "React.js",
-        "Next.js", 
+        "Next.js",
         "JavaScript",
         "TypeScript",
         "Frontend Development",
         "Web Development",
         "Tailwind CSS",
-        "Astro"
+        "Astro",
       ],
-      "worksFor": {
+      worksFor: {
         "@type": "Organization",
-        "name": "Freelance"
-      }
-    }
+        name: "Freelance",
+      },
+    },
   },
   creator: "@javiermiz",
   contact: {
@@ -50,12 +52,10 @@ export const SITE_CONFIG = {
       en: {
         code: "en",
         name: "English",
-        dir: "ltr",
       },
       es: {
         code: "es",
         name: "Español",
-        dir: "ltr",
       },
     },
   },

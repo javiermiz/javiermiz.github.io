@@ -1,13 +1,7 @@
 ---
-import MainTemplate from "@components/templates/main-template.astro";
-import { getLocaleData } from "../utils/i18n";
-
-const CV_DATA = await getLocaleData("en");
+import Layout from "@components/Layout.astro";
 ---
 
-<MainTemplate
-  lang="en"
-  title="Javier Miz - Senior Frontend Developer | React.js & Next.js Expert"
-  description="Senior Frontend Developer with 5+ years experience in React.js, Next.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities."
-  data={CV_DATA}
-/>
+<Layout lang="en">
+  <h1>Hello World</h1>
+</Layout>

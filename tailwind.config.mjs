@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-body)", "sans-serif"],
+        primary: ["var(--font-primary)", "sans-serif"],
+        article: ["var(--font-article)", "serif"],
       },
     },
   },

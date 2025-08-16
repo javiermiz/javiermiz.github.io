@@ -8,16 +8,16 @@ export interface Props {
 const { name, level, isLast = false } = Astro.props;
 ---
 
-<span class="flex items-center gap-2">
-  <span class="text-sm font-medium text-zinc-900 dark:text-white">
+<span>
+  <span>
     {name}
   </span>
   {level && (
-    <span class="text-xs text-zinc-700 dark:text-zinc-300">
+    <span>
       {level}
     </span>
   )}
 </span>
 {!isLast && (
-  <span class="text-zinc-400 dark:text-zinc-600 mx-1">•</span>
-)} 
+  <span>•</span>
+)}
