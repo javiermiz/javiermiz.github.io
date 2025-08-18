@@ -164,7 +164,6 @@ const page_description = post.data.seo_description || post.data.description;
     margin-bottom: var(--space-8);
     line-height: var(--line-height-relaxed);
     font-family: var(--font-serif-body);
-    font-size: var(--text-sm);
     color: var(--color-text-body);
   }
 
@@ -181,7 +180,7 @@ const page_description = post.data.seo_description || post.data.description;
     margin-top: var(--space-6);
     margin-bottom: var(--space-2);
     line-height: var(--line-height-tight);
-    letter-spacing: var(--letter-spacing-tight);
+    letter-spacing: var(--letter-spacing-normal);
   }
 
   .post-content h1 {
@@ -198,6 +197,7 @@ const page_description = post.data.seo_description || post.data.description;
 
   .post-content h3 {
     font-size: var(--text-base);
+    color: var(--color-primary-hover);
   }
 
   .post-content h4 {
@@ -491,7 +491,6 @@ const page_description = post.data.seo_description || post.data.description;
       margin-bottom: var(--space-6);
     }
     .post-content {
-      font-size: var(--text-base);
       margin-bottom: var(--space-12);
     }
     .post-content h1 {
@@ -608,7 +607,6 @@ const page_description = post.data.seo_description || post.data.description;
     }
     .post-content {
       color: #000;
-      font-size: var(--text-sm);
       line-height: 1.4;
     }
     .post-content a {
