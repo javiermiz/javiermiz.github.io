@@ -1,5 +1,5 @@
 ---
-title: "De no saber qué hacer de mi vida a ganar $120,000 MXN remoto"
+title: "De no saber qué hacer de mi vida a ganar $200,000 MXN remoto"
 description: "Siempre me preguntan cómo conseguí trabajo para empresas gringas. La verdad es que solo optimicé mi LinkedIn y me aventé a hablar inglés."
 published_date: 2025-01-18
 category: "personal"
@@ -8,7 +8,7 @@ seo_title: "Cómo conseguir trabajo remoto para empresas gringas optimizando Lin
 seo_description: "La estrategia real que me llevó de la incertidumbre a ganar $6k USD mensuales. Todo cambió cuando optimicé mi LinkedIn correctamente."
 ---
 
-Siempre me preguntan cómo conseguí el trabajo que tengo. "¿Cómo le haces para que te contacten empresas gringas?" "¿Qué debería hacer para que me lleguen ofertas?"
+Siempre me preguntan cómo conseguí el trabajo que tengo. "¿Cómo le haces para que te contacten empresas estadounidenses?" "¿Qué debería hacer para que me lleguen ofertas?"
 
 La verdad es que siento que no he hecho nada especial. Más que nada optimicé mi LinkedIn y me aventé a hablar inglés aunque fuera mal.
 
@@ -20,7 +20,7 @@ Tenía 24 años, sabía programar, pero no tenía dirección. Veía ofertas de $
 
 Mi LinkedIn era básico. Headline genérico, resumen aburrido, todo en español. Era invisible.
 
-Hasta que me llegó un mensaje de Klever Cookie. Era presencial, no remoto, pero me dieron chance. Lo que me daba más miedo era que tenían clientes gringas y había que hablar en inglés.
+Hasta que me llegó un mensaje de Klever Cookie. Era presencial, no remoto, pero me dieron chance. Lo que me daba más miedo era que tenían clientes estadounidenses y había que hablar en inglés.
 
 Les dije que me daba miedo porque hablaba súper lento y tenía cero práctica. Me dijeron "no te preocupes, tus compañeros te pueden ayudar a traducir si quieres hablar en español".
 
@@ -61,7 +61,7 @@ No es casualidad.
 
 **Después:**
 
-- Headline: "Frontend Developer | Reactjs Specialist | Remote Work"
+- Headline: "Frontend Developer | Next.js Specialist | Remote Work"
 - Resumen en inglés explicando valor
 - Experiencia detallada con keywords
 - Visible para el mercado global
@@ -74,7 +74,7 @@ No necesitas ser perfecto. Yo todavía no tengo el mejor vocabulario, pero ya no
 
 Lo importante es la confianza. Cuando dejas de tener miedo a sonar mal, empiezas a comunicarte mejor.
 
-En mis entrevistas con empresas gringas hablo normal, cometo errores, pero me comunico. Eso es suficiente.
+En mis entrevistas con empresas estadounidenses hablo normal, cometo errores, pero me comunico. Eso es suficiente.
 
 ## Los resultados sin exagerar
 
@@ -90,7 +90,7 @@ Y algo curioso: aunque mi CV dice que estudié Ingeniería en Sistemas, nunca na
 ## Lo que deberías hacer
 
 **1. Cambia tu LinkedIn al inglés**
-Si quieres mercado global, piensa global.
+**Si quieres mercado global, piensa global.**
 
 **2. No tengas miedo de hablar mal**
 Yo empecé hablando súper mal. La confianza se construye practicando.
@@ -112,7 +112,7 @@ Es matemática simple: más oportunidades = mejores ofertas.
 
 ## Mi situación actual
 
-Trabajo para Maven Trading, empresa gringa de trading. $6k USD mensuales, 100% remoto, mejor trabajo que he tenido.
+Trabajo para Maven Trading, empresa estadounidense de trading. $6k USD mensuales, 100% remoto, mejor trabajo que he tenido.
 
 Sigo recibiendo ofertas aunque no busque. Mi perfil trabaja 24/7.
 
@@ -133,9 +133,3 @@ No necesitas contactos especiales. Necesitas un LinkedIn que comunique valor.
 El mercado mexicano en español está saturado y mal pagado. El mercado global en inglés tiene mejores oportunidades y mejores salarios.
 
 Cambiar tu LinkedIn al inglés no te va a conseguir trabajo mágicamente, pero sí te va a abrir puertas que ni sabías que existían.
-
-La diferencia entre ganar $20k pesos y $120k pesos puede ser tan simple como dejar de tener miedo al inglés y optimizar tu perfil.
-
-No estoy diciendo que sea fácil, pero sí estoy diciendo que es más simple de lo que piensas.
-
-x

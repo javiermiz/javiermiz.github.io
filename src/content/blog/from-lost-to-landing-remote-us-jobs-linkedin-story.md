@@ -6,6 +6,7 @@ category: "personal"
 draft: false
 seo_title: "How to get remote work with US companies by optimizing LinkedIn"
 seo_description: "The real strategy that took me from uncertainty to earning $6k USD monthly. Everything changed when I optimized my LinkedIn properly."
+slug: "how-i-got-remote-work-us-companies-linkedin"
 ---
 
 People always ask me how I got the job I have. "How do you get US companies to contact you?" "What should I do to get job offers?"
@@ -61,7 +62,7 @@ Not a coincidence.
 
 **After:**
 
-- Headline: "Frontend Developer | Reactjs Specialist | Remote Work"
+- Headline: "Frontend Developer | Next.js Specialist | Remote Work"
 - English summary explaining value
 - Detailed experience with keywords
 - Visible to the global market
@@ -133,7 +134,3 @@ You don't need special connections. You need a LinkedIn that communicates value.
 The local market in most countries is saturated and underpaid. The global English market has better opportunities and better salaries.
 
 Changing your LinkedIn to English won't magically get you a job, but it will open doors you didn't even know existed.
-
-The difference between earning $1k USD and $6k USD can be as simple as stopping being afraid of English and optimizing your profile.
-
-I'm not saying it's easy, but I am saying it's simpler than you think.
