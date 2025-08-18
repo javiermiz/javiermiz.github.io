@@ -11,6 +11,7 @@ import {
   Book,
 } from "lucide-react";
 import { type SiteLanguage, SITE_CONFIG } from "./layout";
+import { Image } from "astro:assets";
 
 interface Props {
   email: string;
@@ -49,6 +50,14 @@ const sidebar_config = {
         aria_label: "LinkedIn Profile",
         external: true,
       },
+      {
+        type: "link",
+        href: "/contact",
+        icon: Mail,
+        classes: "text-pink-400 hover:bg-pink-300 hover:text-violet-800",
+        label: "Contact",
+        aria_label: "Contact",
+      },
     ],
     action_items: [
       {
@@ -57,13 +66,6 @@ const sidebar_config = {
         icon: Languages,
         label: "ES",
         aria_label: "Change language to ES",
-      },
-      {
-        type: "button",
-        id: "copy-email",
-        label: "Contact",
-        aria_label: "Copy email to clipboard",
-        data_email: email,
       },
     ],
   },
@@ -95,6 +97,14 @@ const sidebar_config = {
         aria_label: "Perfil de LinkedIn",
         external: true,
       },
+      {
+        type: "link",
+        href: "/es/contacto",
+        icon: Mail,
+        classes: "text-pink-400 hover:bg-pink-300 hover:text-violet-800",
+        label: "Contacto",
+        aria_label: "Contacto",
+      },
     ],
     action_items: [
       {
@@ -104,72 +114,54 @@ const sidebar_config = {
         label: "EN",
         aria_label: "Change language to EN",
       },
-      {
-        type: "button",
-        id: "copy-email",
-        label: "Contacto",
-        aria_label: "Copy email to clipboard",
-        data_email: email,
-      },
     ],
   },
 }[currentLang];
 ---
 
-<!-- =============================================
-  App-style Sidebar Navigation
-  Activated by longpress or swipe gesture
-============================================= -->
-<aside
-  id="sidebar"
-  class="fixed left-0 top-0 h-full w-60 lg:w-[calc(50%-220px)] transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-40 flex flex-col bg-violet-800 text-white"
->
-  <div class="w-52 ml-auto px-4 lg:px-6 flex flex-col h-full py-8">
-    <!-- Sidebar Header -->
-    <div class="p-6 hidden lg:flex">
-      <h2 class="text-xl font-bold text-white">Javier Miz</h2>
+<aside id="sidebar">
+  <div>
+    <div>
+      <Image
+        src="/profile-og.jpg"
+        alt="Javier Miz"
+        width="96"
+        height="96"
+      />
+      <h2>Javier Miz</h2>
     </div>
 
-    <!-- Navigation Items -->
-    <nav class="" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
       {
         sidebar_config.navigation_items.map((item) => (
           <a
             href={item.href}
             aria-label={item.aria_label}
-            class={`flex items-center space-x-3 px-4 py-3  ${item.classes} transition-colors group justify-center`}
           >
-            {item.icon && <item.icon class="w-5 h-5 " />}
-            <span class="font-primary uppercase font-extrabold">
-              {item.label}
-            </span>
+            {item.icon && <item.icon />}
+            <span>{item.label}</span>
           </a>
         ))
       }
     </nav>
 
-    <!-- Action Items Section -->
-    <div class="mt-auto flex flex-col">
+    <div>
       {
         sidebar_config.action_items.map((item) => {
           return (
             <button
               id={item.id}
               aria-label={item.aria_label}
-              data-email={item.data_email}
-              class="flex items-center space-x-3 w-full px-4 py-3 transition-colors group justify-center hover:bg-white hover:text-violet-800"
             >
               {item.icon && <item.icon />}
-              <span class="font-primary  font-extrabold">{item.label}</span>
+              <span>{item.label}</span>
             </button>
           );
         })
       }
     </div>
 
-    <!-- Social Links Section -->
-
-    <div class="flex">
+    <div>
       {
         sidebar_config.social_links.map((link) => (
           <a
@@ -177,10 +169,9 @@ const sidebar_config = {
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
             aria-label={link.aria_label}
-            class="flex items-center bg-yellow-400 p-2 rounded-full text-violet-800"
           >
-            <link.icon class="w-5 h-5" />
-            <span class="sr-only">{link.label}</span>
+            <link.icon />
+            <span>{link.label}</span>
           </a>
         ))
       }
@@ -188,252 +179,5 @@ const sidebar_config = {
   </div>
 </aside>
 
-<!-- Overlay for mobile -->
-<div
-  id="sidebar-overlay"
-  class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden hidden"
->
-</div>
-
-<!-- Touch area for longpress detection -->
-<div id="longpress-area" class="fixed left-0 top-0 w-10 h-full z-10 lg:hidden">
-</div>
-
-<script>
-  // Sidebar and language toggle elements
-  const sidebar = document.getElementById("sidebar");
-  const sidebar_overlay = document.getElementById("sidebar-overlay");
-  const longpress_area = document.getElementById("longpress-area");
-  const toggle_language = document.getElementById("toggle-language");
-
-  // Touch and gesture variables
-  let longpress_timer: number | null = null;
-  let touch_start_x = 0;
-  let touch_start_y = 0;
-  let touch_start_time = 0;
-  let is_longpress_active = false;
-
-  // Language configuration - accessible in client-side script
-  const languages = ["en", "es"];
-  const default_lang = "en";
-
-  /**
-   * Opens the mobile sidebar
-   */
-  const open_sidebar = () => {
-    sidebar?.classList.remove("-translate-x-full");
-    sidebar_overlay?.classList.remove("hidden");
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
-  };
-
-  /**
-   * Closes the mobile sidebar
-   */
-  const close_sidebar = () => {
-    sidebar?.classList.add("-translate-x-full");
-    sidebar_overlay?.classList.add("hidden");
-    document.body.style.overflow = ""; // Restore scrolling
-  };
-
-  /**
-   * Handles longpress detection
-   */
-  const handle_longpress_start = (e: TouchEvent) => {
-    is_longpress_active = false;
-    longpress_timer = setTimeout(() => {
-      is_longpress_active = true;
-      open_sidebar();
-      // Add haptic feedback if available
-      if (navigator.vibrate) {
-        navigator.vibrate(50);
-      }
-    }, 500); // 500ms longpress duration
-  };
-
-  /**
-   * Cancels longpress detection
-   */
-  const handle_longpress_end = () => {
-    if (longpress_timer) {
-      clearTimeout(longpress_timer);
-      longpress_timer = null;
-    }
-  };
-
-  /**
-   * Handles swipe gesture detection
-   */
-  const handle_touch_start = (e: TouchEvent) => {
-    const touch = e.touches[0];
-    touch_start_x = touch.clientX;
-    touch_start_y = touch.clientY;
-    touch_start_time = Date.now();
-  };
-
-  /**
-   * Handles swipe gesture completion
-   */
-  const handle_touch_end = (e: TouchEvent) => {
-    if (is_longpress_active) {
-      is_longpress_active = false;
-      return;
-    }
-
-    const touch = e.changedTouches[0];
-    const touch_end_x = touch.clientX;
-    const touch_end_y = touch.clientY;
-    const touch_duration = Date.now() - touch_start_time;
-
-    const distance_x = touch_end_x - touch_start_x;
-    const distance_y = Math.abs(touch_end_y - touch_start_y);
-
-    // Swipe right detection (from anywhere on screen)
-    const is_swipe_right =
-      distance_x > 50 && distance_y < 100 && touch_duration < 300;
-
-    if (is_swipe_right) {
-      open_sidebar();
-    }
-  };
-
-  /**
-   * Determines the current language from the URL pathname
-   * Checks if the first path segment matches any supported language
-   *
-   * @returns {string} The current language code ("en" or "es"), defaults to "en" if not found
-   *
-   * @example
-   * // URL: https://example.com/es/about
-   * get_current_language(); // Returns: "es"
-   *
-   * // URL: https://example.com/about
-   * get_current_language(); // Returns: "en"
-   */
-  const get_current_language = () => {
-    const path_segments = window.location.pathname.split("/").filter(Boolean);
-    return languages.includes(path_segments[0])
-      ? path_segments[0]
-      : default_lang;
-  };
-
-  /**
-   * Generates a localized URL path for the target locale
-   * Removes existing locale prefix and adds the new one if needed
-   *
-   * @param {URL} url - The URL object to process
-   * @param {string} target_locale - The target language code ("en" or "es")
-   * @returns {string} The localized path with proper locale prefix
-   *
-   * @example
-   * const url = new URL("https://example.com/es/about");
-   * get_localized_path(url, "en"); // Returns: "/about"
-   * get_localized_path(url, "es"); // Returns: "/es/about"
-   */
-  const get_localized_path = (url: URL, target_locale: string) => {
-    const [, ...segments] = url.pathname.split("/");
-    const current_locale_segment = languages.includes(segments[0])
-      ? segments[0]
-      : null;
-
-    // Remove current locale segment if present
-    if (current_locale_segment) {
-      segments.shift();
-    }
-
-    // Build new path
-    return target_locale === default_lang
-      ? `/${segments.join("/")}`
-      : `/${target_locale}/${segments.join("/")}`;
-  };
-
-  /**
-   * Handles language toggle functionality
-   * Switches between English and Spanish by redirecting to the localized URL
-   *
-   * @listens click - Listens for click events on the language toggle button
-   */
-  toggle_language?.addEventListener("click", () => {
-    const current_url = new URL(window.location.href);
-    const current_lang = get_current_language();
-    const target_lang = current_lang === "en" ? "es" : "en";
-    const new_url = get_localized_path(current_url, target_lang);
-
-    window.location.href = new_url;
-  });
-
-  // Longpress area event listeners
-  longpress_area?.addEventListener("touchstart", handle_longpress_start, {
-    passive: false,
-  });
-  longpress_area?.addEventListener("touchend", handle_longpress_end, {
-    passive: false,
-  });
-  longpress_area?.addEventListener("touchcancel", handle_longpress_end, {
-    passive: false,
-  });
-
-  // Global swipe detection
-  document.addEventListener("touchstart", handle_touch_start, {
-    passive: false,
-  });
-  document.addEventListener("touchend", handle_touch_end, { passive: false });
-
-  // Sidebar overlay click to close
-  sidebar_overlay?.addEventListener("click", close_sidebar);
-
-  // Close sidebar when clicking on navigation links (mobile)
-  const nav_links = sidebar?.querySelectorAll("nav a, div a");
-  nav_links?.forEach((link) => {
-    link.addEventListener("click", () => {
-      // Only close on mobile (when overlay is visible)
-      if (!sidebar_overlay?.classList.contains("hidden")) {
-        close_sidebar();
-      }
-    });
-  });
-
-  // Close sidebar on escape key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !sidebar_overlay?.classList.contains("hidden")) {
-      close_sidebar();
-    }
-  });
-
-  // Handle window resize - close mobile menu if window becomes large
-  window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024) {
-      // lg breakpoint
-      close_sidebar();
-    }
-  });
-
-  // Handle copy email to clipboard
-  const copy_email_button = document.getElementById("copy-email");
-  copy_email_button?.addEventListener("click", async () => {
-    const email = copy_email_button.getAttribute("data-email");
-    const button_text = copy_email_button.querySelector("span");
-    const original_text = button_text?.textContent || "";
-    const current_lang = get_current_language();
-
-    if (email && button_text) {
-      try {
-        await navigator.clipboard.writeText(email);
-        button_text.textContent =
-          current_lang === "es" ? "¡Correo Copiado!" : "Copied email!";
-
-        // Reset text after 2 seconds
-        setTimeout(() => {
-          button_text.textContent = original_text;
-        }, 2000);
-      } catch (error) {
-        console.error("Failed to copy email:", error);
-        button_text.textContent = current_lang === "es" ? "Error" : "Error";
-
-        // Reset text after 2 seconds
-        setTimeout(() => {
-          button_text.textContent = original_text;
-        }, 2000);
-      }
-    }
-  });
-</script>
+<div id="sidebar-overlay"></div>
+<div id="longpress-area"></div>
