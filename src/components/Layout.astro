@@ -1,6 +1,7 @@
 ---
 // Minimal Layout for Blog Project
 import { SITE_CONFIG, type SiteLanguage } from "./layout";
+import { get_language_url } from "../utils/language-manager";
 
 interface Props {
   title?: string;
@@ -26,20 +27,10 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url);
 
-// Simple language toggle - always use English path structure
-function getToggleLangUrl(currentPath: string, currentLang: string): string {
-  if (currentLang === "en") {
-    // English to Spanish - add /es prefix
-    if (currentPath === "/") return "/es";
-    return "/es" + currentPath;
-  } else {
-    // Spanish to English - remove /es prefix
-    if (currentPath === "/es" || currentPath === "/es/") return "/";
-    return currentPath.replace("/es", "") || "/";
-  }
-}
-
-const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
+// Get toggle language URL using the new language manager
+const toggle_lang = lang === "en" ? "es" : "en";
+const toggle_lang_url = get_language_url(Astro.url.pathname, toggle_lang);
+console.log(toggle_lang_url);
 ---
 
 <!doctype html>
@@ -111,9 +102,14 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
         <nav class="main-nav">
           <a href={lang === "en" ? "/" : "/es/"}>Blog</a>
           <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
-          <a href={toggleLangUrl} class="lang-toggle"
-            >{lang === "en" ? "ES" : "EN"}</a
+          <a
+            href={toggle_lang_url}
+            class="lang-toggle"
+            data-language-toggle
+            data-target-language={toggle_lang}
           >
+            {lang === "en" ? "ES" : "EN"}
+          </a>
         </nav>
       </div>
     </header>
@@ -518,3 +514,12 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
     text-decoration: none;
   }
 </style>
+
+<script>
+  import { initialize_language_system } from "../utils/language-manager";
+
+  // Initialize language system when DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    initialize_language_system();
+  });
+</script>

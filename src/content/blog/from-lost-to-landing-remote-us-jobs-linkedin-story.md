@@ -6,7 +6,6 @@ category: "personal"
 draft: false
 seo_title: "How to get remote work with US companies by optimizing LinkedIn"
 seo_description: "The real strategy that took me from uncertainty to earning $6k USD monthly. Everything changed when I optimized my LinkedIn properly."
-slug: "how-i-got-remote-work-us-companies-linkedin"
 ---
 
 People always ask me how I got the job I have. "How do you get US companies to contact you?" "What should I do to get job offers?"
