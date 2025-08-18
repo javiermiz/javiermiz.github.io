@@ -219,29 +219,28 @@ const CV_DATA = data;
   .cv-main {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--space-3);
-    font-family: var(--font-primary);
+    padding: var(--space-2);
+    font-family: var(--font-serif-body);
     line-height: var(--line-height-normal);
     color: var(--color-text-primary);
   }
 
-  /* Profile Header - Simplified */
+  /* Profile Header - Mobile First */
   .cv-profile {
-    margin-bottom: var(--space-6);
-    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-3);
   }
 
   .profile-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: var(--space-4);
-    flex-wrap: wrap;
-    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+    gap: var(--space-2);
   }
 
   .profile-name {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin: 0 0 var(--space-1) 0;
@@ -249,13 +248,13 @@ const CV_DATA = data;
   }
 
   .profile-role {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     color: var(--color-text-secondary);
     margin: 0;
   }
 
   .profile-details {
-    text-align: right;
+    text-align: left;
   }
 
   .profile-location,
@@ -265,12 +264,12 @@ const CV_DATA = data;
     font-size: var(--text-sm);
   }
 
-  /* Navigation - Minimal */
+  /* Navigation - Mobile First */
   .cv-nav {
     display: flex;
-    gap: var(--space-3);
-    margin-bottom: var(--space-4);
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
   }
 
   .cv-nav-link {
@@ -283,13 +282,13 @@ const CV_DATA = data;
     text-decoration: underline;
   }
 
-  /* Headline - Streamlined */
+  /* Headline - Mobile First */
   .cv-headline {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
   }
 
   .headline-title {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin: 0 0 var(--space-2) 0;
@@ -301,13 +300,13 @@ const CV_DATA = data;
     margin: 0;
   }
 
-  /* Achievements - Simplified */
+  /* Achievements - Mobile First */
   .cv-achievements {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
   }
 
   .achievements-title {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin: 0 0 var(--space-2) 0;
@@ -332,13 +331,13 @@ const CV_DATA = data;
     margin: 0;
   }
 
-  /* Sections - Simplified */
+  /* Sections - Mobile First */
   .cv-section {
-    margin-bottom: 3rem;
+    margin-bottom: var(--space-4);
   }
 
   .section-title {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin: 0 0 var(--space-3) 0;
@@ -347,13 +346,13 @@ const CV_DATA = data;
     font-family: var(--font-serif);
   }
 
-  /* Skills - Minimal */
+  /* Skills - Mobile First */
   .skill-group {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
   }
 
   .skill-group-title {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin: 0 0 var(--space-2) 0;
@@ -379,14 +378,14 @@ const CV_DATA = data;
     color: var(--color-text-secondary);
   }
 
-  /* Projects - Simplified */
+  /* Projects - Mobile First */
   .projects-container {
     display: grid;
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   .project-item {
-    padding: var(--space-3) 0;
+    padding: var(--space-2) 0;
     border-bottom: 1px solid var(--color-border-light);
   }
 
@@ -431,19 +430,19 @@ const CV_DATA = data;
     text-decoration: underline;
   }
 
-  /* Experience - Simplified */
+  /* Experience - Mobile First */
   .experience-container {
     display: grid;
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   .experience-item {
-    padding: var(--space-3) 0;
+    padding: var(--space-2) 0;
     border-bottom: 1px solid var(--color-border-light);
   }
 
   .experience-header {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
   }
 
   .experience-company {
@@ -533,56 +532,150 @@ const CV_DATA = data;
     margin: 0;
   }
 
-  /* Responsive Design - Mobile first */
+  /* Responsive Design - Mobile First */
   @media (min-width: 481px) {
+    .cv-main {
+      padding: var(--space-3);
+    }
+
+    .cv-profile {
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-4);
+    }
+
+    .profile-header {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: var(--space-4);
+      gap: var(--space-3);
+    }
+
+    .profile-name {
+      font-size: var(--text-xl);
+    }
+
+    .profile-role {
+      font-size: var(--text-base);
+    }
+
+    .profile-details {
+      text-align: right;
+    }
+
+    .cv-nav {
+      flex-direction: row;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+
+    .cv-headline {
+      margin-bottom: var(--space-4);
+    }
+
+    .headline-title {
+      font-size: var(--text-lg);
+    }
+
+    .cv-achievements {
+      margin-bottom: var(--space-4);
+    }
+
+    .achievements-title {
+      font-size: var(--text-base);
+    }
+
+    .section-title {
+      font-size: var(--text-xl);
+    }
+
+    .skill-group {
+      margin-bottom: var(--space-4);
+    }
+
+    .skill-group-title {
+      font-size: var(--text-base);
+    }
+
+    .projects-container,
+    .experience-container {
+      gap: var(--space-4);
+    }
+
+    .project-item,
+    .experience-item {
+      padding: var(--space-3) 0;
+    }
+
+    .experience-header {
+      margin-bottom: var(--space-3);
+    }
+
+    .cv-section {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media (min-width: 769px) {
     .cv-main {
       padding: var(--space-6);
     }
   }
 
-  @media (max-width: 480px) {
-    .profile-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--space-2);
-    }
-
-    .profile-details {
-      text-align: left;
-    }
-
-    .cv-nav {
-      flex-direction: column;
-      gap: var(--space-2);
-    }
-  }
-
-  /* Print Styles - Simplified */
+  /* Print Styles - Mobile First Optimized */
   @media print {
     .cv-main {
       max-width: none;
-      padding: var(--space-2);
-      font-size: 12px;
+      padding: var(--space-1);
+      font-size: 11px;
     }
 
     .cv-nav {
       display: none;
     }
 
+    .cv-profile {
+      margin-bottom: var(--space-2);
+      padding-bottom: var(--space-1);
+    }
+
     .cv-section {
-      margin-bottom: var(--space-3);
+      margin-bottom: var(--space-2);
+    }
+
+    .section-title {
+      font-size: 14px;
+      margin-bottom: var(--space-1);
+      padding-bottom: var(--space-1);
+    }
+
+    .profile-name {
+      font-size: 16px;
+    }
+
+    .headline-title {
+      font-size: 13px;
     }
 
     .project-link {
       color: var(--color-text-primary) !important;
+      text-decoration: none;
     }
 
     .experience-item,
     .project-item,
     .education-item {
       break-inside: avoid;
-      padding: 0 var(--space-2) !important;
-      margin-bottom: var(--space-2) !important;
+      padding: var(--space-1) 0;
+      margin-bottom: var(--space-1);
+    }
+
+    .skill-list {
+      gap: var(--space-1);
+    }
+
+    .skill-item {
+      padding: 2px var(--space-1);
+      font-size: 10px;
     }
   }
 </style>
