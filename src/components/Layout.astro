@@ -1,17 +1,16 @@
 ---
-// src/layouts/Layout.astro
-import Sidebar from './Sidebar.astro';
-import { SITE_CONFIG, type SiteLanguage } from './layout'
+// Minimal Layout for Blog Project
+import { SITE_CONFIG, type SiteLanguage } from "./layout";
 
 interface Props {
-  title?: string
-  description?: string
-  ogImage?: string
-  noIndex?: boolean
-  lang?: SiteLanguage
-  keywords?: string
-  author?: string
-  structuredData?: object
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  noIndex?: boolean;
+  lang?: SiteLanguage;
+  keywords?: string;
+  author?: string;
+  structuredData?: object;
 }
 
 const {
@@ -22,25 +21,38 @@ const {
   lang = SITE_CONFIG.i18n.defaultLang,
   keywords = SITE_CONFIG.metadata.keywords,
   author = SITE_CONFIG.creator,
-  structuredData = SITE_CONFIG.metadata.structuredData
-} = Astro.props
+  structuredData = SITE_CONFIG.metadata.structuredData,
+} = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url)
+const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url);
 
-const toggleLangUrl = lang === 'en' ? '/es' : '/'
+// Simple language toggle - always use English path structure
+function getToggleLangUrl(currentPath: string, currentLang: string): string {
+  if (currentLang === "en") {
+    // English to Spanish - add /es prefix
+    if (currentPath === "/") return "/es";
+    return "/es" + currentPath;
+  } else {
+    // Spanish to English - remove /es prefix
+    if (currentPath === "/es" || currentPath === "/es/") return "/";
+    return currentPath.replace("/es", "") || "/";
+  }
+}
+
+const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
 ---
 
 <!doctype html>
-<html lang={lang} class="scroll-smooth dark:bg-zinc-900">
+<html lang={lang}>
   <head>
     <!-- Character encoding and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    
+
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
@@ -48,91 +60,297 @@ const toggleLangUrl = lang === 'en' ? '/es' : '/'
     <meta name="keywords" content={keywords} />
     <meta name="author" content={author} />
     <link rel="canonical" href={canonicalURL} />
-    
-    <!-- Robots -->
-    {noIndex && (
-      <meta name="robots" content="noindex, nofollow" />
-      <meta name="googlebot" content="noindex, nofollow" />
-    )}
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content={lang} />
-    <meta property="og:site_name" content="Javier Miz - Frontend Developer" />
-    
+    <meta property="og:image" content={new URL(ogImage, SITE_CONFIG.url)} />
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImage} />
-    <meta name="twitter:creator" content={SITE_CONFIG.creator} />
-    
-    <!-- Additional SEO Meta Tags -->
-    <meta name="language" content={lang} />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="distribution" content="global" />
-    <meta name="rating" content="general" />
-    
-    <!-- Theme -->
-    <meta name="theme-color" content={SITE_CONFIG.metadata.themeColor} media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
-    <meta name="generator" content={Astro.generator} />
-    
-    <!-- Structured Data -->
-    {structuredData && (
-      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-    )}
-    
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-
-  <body class="min-h-screen bg-zinc-50 font-article antialiased transition-colors duration-300 text-zinc-900">
-
-    <Sidebar 
-      email={SITE_CONFIG.contact.email}
-      currentLang={lang}
+    <meta
+      property="twitter:image"
+      content={new URL(ogImage, SITE_CONFIG.url)}
     />
 
-    <div class="flex-1 pt-16 lg:pt-0 lg:ml-[calc(50%-220px)] transition-all duration-300 bg-amber-50">
-        <slot />
-    </div>
+    <!-- Structured Data -->
+    {
+      structuredData && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(structuredData)}
+        />
+      )
+    }
+
+    <!-- Robots -->
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FFFFFF" />
+  </head>
+
+  <body>
+    <!-- Minimal Header -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href={lang === "en" ? "/" : "/es"} class="site-logo">Javier Miz</a>
+        <nav class="main-nav">
+          <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
+          <a href={toggleLangUrl} class="lang-toggle">{lang === "en" ? "ES" : "EN"}</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <slot />
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Javier Miz Arévalo</p>
+        <div class="footer-links">
+          <a href="https://github.com/javiermiz">GitHub</a>
+          <a href="https://www.linkedin.com/in/javier-miz/">LinkedIn</a>
+          <a href="/rss.xml">RSS</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
-<style is:global>
-  @font-face {
-    font-family: 'SchibstedGrotesk';
-    src: url('/fonts/SchibstedGrotesk.ttf') format('truetype');
-    font-weight: 400 800;
-    font-style: normal;
-    font-display: swap;
-    font-feature-settings: "liga" 1, "calt" 1;
-  }
-  
-  @font-face {
-    font-family: 'Domine';
-    src: url('/fonts/Domine.ttf') format('truetype');
-    font-weight: 400 600;
-    font-style: normal;
-    font-display: swap;
-    font-feature-settings: "liga" 1, "calt" 1;
-  }
-
-  :root {
-    --font-primary: 'SchibstedGrotesk', system-ui, sans-serif;
-    --font-article: 'Domine', serif;
+<style>
+  /* Global Minimal Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   html {
-    font-size: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header Styles */
+  .site-header {
+    border-bottom: 1px solid #f3f4f6;
+    padding: 1rem 0;
+  }
+
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-logo {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    text-decoration: none;
+  }
+
+  .site-logo:hover {
+    color: #374151;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .main-nav a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+  }
+
+  .main-nav a:hover {
+    color: #111827;
+  }
+
+  .lang-toggle {
+    color: #9ca3af !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .lang-toggle:hover {
+    color: #6b7280 !important;
+  }
+
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+  /* Footer Styles */
+  .site-footer {
+    border-top: 1px solid #f5f5f5;
+    padding: 2rem 0;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-content p {
+    color: #666666;
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .footer-links a:hover {
+    color: #dc2626;
+    text-decoration: underline;
+  }
+
+  /* Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Inter, "Helvetica Neue", sans-serif;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #dc2626;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #b91c1c;
+    text-decoration: underline;
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  /* Code */
+  code {
+    font-family: "Fira Code", monospace;
+    background-color: #f5f5f5;
+    padding: 0.125rem 0.25rem;
+    border-radius: 2px;
+    font-size: 0.9rem;
+  }
+
+  pre {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  pre code {
+    background: none;
+    padding: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .header-content {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .main-nav {
+      gap: 1.5rem;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .main-content {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
   }
 </style>

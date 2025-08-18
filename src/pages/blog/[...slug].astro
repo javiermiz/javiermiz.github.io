@@ -1,0 +1,360 @@
+---
+// Dynamic blog post page
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../components/Layout.astro";
+import { SITE_CONFIG } from "../../components/layout";
+
+// Generate static paths for English blog posts only
+export async function getStaticPaths() {
+  const blog_posts = await getCollection("blog");
+  // Filter only English posts (those that don't start with "es/")
+  const english_posts = blog_posts.filter((post) => !post.slug.startsWith("es/"));
+  
+  return english_posts.map((post) => {
+    return {
+      params: { slug: post.slug },
+      props: { post },
+    };
+  });
+}
+
+// Define props interface
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+// Get the post from props
+const { post } = Astro.props as Props;
+const { Content } = await post.render();
+
+// This file only handles English posts
+const post_language = "en";
+
+// Format date helper function
+function format_date(date: Date, language: "en" | "es"): string {
+  const locale = language === "es" ? "es-ES" : "en-US";
+  return new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+}
+
+// SEO meta
+const page_title = post.data.seo_title || post.data.title;
+const page_description = post.data.seo_description || post.data.description;
+---
+
+<Layout
+  title={`${page_title} | ${SITE_CONFIG.title}`}
+  description={page_description}
+  lang={post_language}
+>
+  <!-- Article Header -->
+  <article class="blog-post">
+    <header class="post-header">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb">
+        <a href="/">Blog</a>
+        <span class="separator">→</span>
+        <span class="current">{post.data.title}</span>
+      </nav>
+
+      <!-- Post Meta -->
+      <div class="post-meta">
+        <time datetime={post.data.published_date.toISOString()}>
+          {format_date(post.data.published_date, post_language)}
+        </time>
+        <span class="separator">•</span>
+        <span class="category">{post.data.category}</span>
+        <span class="separator">•</span>
+      </div>
+
+      <!-- Post Title -->
+      <h1 class="post-title">{post.data.title}</h1>
+
+      <!-- Post Description -->
+      <p class="post-description">{post.data.description}</p>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-content">
+      <Content />
+    </div>
+
+    <!-- Post Footer -->
+    <footer class="post-footer">
+      {
+        post.data.updated_date && (
+          <p class="updated-date">
+            Last updated: {format_date(post.data.updated_date, post_language)}
+          </p>
+        )
+      }
+
+      <div class="post-actions">
+        <a href="/" class="back-link">← Back to Blog</a>
+      </div>
+    </footer>
+  </article>
+</Layout>
+
+<style>
+  /* Article Layout */
+  .blog-post {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Post Header */
+  .post-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+  }
+
+  .breadcrumb a {
+    color: #dc2626;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb .separator {
+    margin: 0 0.5rem;
+    color: #999999;
+  }
+
+  .breadcrumb .current {
+    color: #333333;
+  }
+
+  /* Post Meta */
+  .post-meta {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .post-meta .separator {
+    color: #999999;
+  }
+
+  .post-meta .category {
+    text-transform: capitalize;
+    color: #dc2626;
+  }
+
+  /* Post Title */
+  .post-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+
+  /* Post Description */
+  .post-description {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Tags */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    background-color: #f5f5f5;
+    color: #666666;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+
+  /* Post Content */
+  .post-content {
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+
+  /* Typography within content */
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+
+  .post-content h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 0.5rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .post-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .post-content p {
+    margin-bottom: 1.5rem;
+    color: #333333;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  .post-content li {
+    margin-bottom: 0.5rem;
+    color: #333333;
+  }
+
+  .post-content blockquote {
+    border-left: 4px solid #dc2626;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #666666;
+  }
+
+  .post-content code {
+    background-color: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+  }
+
+  .post-content pre {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+
+  .post-content pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .post-content a {
+    color: #dc2626;
+    text-decoration: none;
+  }
+
+  .post-content a:hover {
+    text-decoration: underline;
+  }
+
+  /* Post Footer */
+  .post-footer {
+    padding-top: 2rem;
+    border-top: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .updated-date {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0;
+  }
+
+  .back-link {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .post-title {
+      font-size: 2rem;
+    }
+
+    .post-description {
+      font-size: 1.1rem;
+    }
+
+    .post-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .post-meta .separator {
+      display: none;
+    }
+
+    .post-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .post-title {
+      font-size: 1.75rem;
+    }
+
+    .post-content {
+      font-size: 1rem;
+    }
+
+    .post-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .post-content h3 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

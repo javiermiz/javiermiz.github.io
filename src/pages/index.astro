@@ -1,7 +1,9 @@
 ---
-import Layout from "@components/Layout.astro";
+import BlogTemplate from "../components/templates/BlogTemplate.astro";
+import { getLocaleData } from "../utils/i18n";
+
+// Get blog data from locale
+const blog_data = await getLocaleData({ language: "en", page: "blog" });
 ---
 
-<Layout lang="en">
-  <h1>Hello World</h1>
-</Layout>
+<BlogTemplate blog_data={blog_data} lang="en" />

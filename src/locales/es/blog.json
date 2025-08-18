@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Blog Personal",
+    "description": "Bienvenido a mi blog personal donde comparto pensamientos, experiencias y reflexiones sobre tecnología, vida y todo lo que está en el medio.",
+    "author": "Javier Miz"
+  },
+  "ui": {
+    "filter_all": "Todas las Categorías",
+    "no_results": "No se encontraron posts que coincidan con tu búsqueda.",
+    "read_more": "Leer más",
+    "back_to_blog": "← Volver al Blog",
+    "published_on": "Publicado el",
+    "updated_on": "Actualizado el",
+    "reading_time": "min de lectura",
+    "categories": "Categorías",
+    "tags": "Etiquetas",
+    "min_read": "min de lectura"
+  },
+  "categories": {
+    "technology": "Tecnología",
+    "personal": "Personal",
+    "thoughts": "Reflexiones",
+    "projects": "Proyectos",
+    "tutorials": "Tutoriales",
+    "reviews": "Reseñas"
+  },
+  "navigation": {
+    "blog": "Blog",
+    "cv": "CV"
+  },
+  "sample_posts": [
+    {
+      "title": "Bienvenido a Mi Blog Personal",
+      "description": "Una introducción a este espacio donde compartiré mis pensamientos, experiencias y aprendizajes.",
+      "category": "personal",
+      "tags": ["bienvenida", "introducción", "personal"]
+    },
+    {
+      "title": "Construyendo Aplicaciones Web Modernas",
+      "description": "Mis reflexiones sobre las tendencias actuales en desarrollo web y las herramientas que están dando forma al futuro.",
+      "category": "technology",
+      "tags": ["desarrollo web", "javascript", "react", "astro"]
+    },
+    {
+      "title": "Lecciones Aprendidas en el Trabajo Remoto",
+      "description": "Reflexiones sobre trabajar de forma remota y las estrategias que me han ayudado a mantenerme productivo.",
+      "category": "thoughts",
+      "tags": ["trabajo remoto", "productividad", "estilo de vida"]
+    }
+  ]
+}
