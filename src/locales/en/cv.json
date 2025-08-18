@@ -1,23 +1,29 @@
 {
   "profile": {
     "name": "Javier Miz Arévalo",
-    "role": "Frontend Developer",
+    "role": "Senior Frontend Developer",
     "location": "Remote preferred",
     "availability": "Ready in 5 weeks",
-    "headline": "Worked as Senior and Mid Frontend Engineer",
-    "subheadline": "5+ years crafting high-performance web applications with measurable business impact",
-    "about": "Expertise in React ecosystem and e-commerce solutions. Experienced in architecting scalable applications and developing custom Shopify experiences for international clients. Strong background in optimizing web performance and creating maintainable component systems. Proven ability to deliver high-impact solutions in both startup and enterprise environments, consistently combining technical excellence with business value."
+    "headline": "Senior Frontend Lead with headless architecture expertise",
+    "subheadline": "6+ years crafting scalable web applications with focus on modern architectures and technical leadership",
+    "about": "Expertise in React ecosystem, headless architectures, and e-commerce solutions. Experienced in leading frontend teams and developing scalable architectures with Astro, Next.js, and headless WooCommerce integration. Strong background in optimizing web performance and creating maintainable component systems. Proven ability to deliver high-impact solutions in both startup and enterprise environments, consistently combining technical excellence with team leadership and business value."
   },
   "highlights": [
-    "Led development of delivery system reducing late deliveries by 3.4% for Fortune 500 retailer",
-    "Architected custom Shopify solutions for international brands increasing conversion rates"
+    "Led complete multi-language website development with headless architecture using Astro and WooCommerce API",
+    "Directed frontend team implementing headless checkout integration and multi-region payment system",
+    "Designed and implemented complete trading challenges system with country validation and multiple payment processors"
   ],
   "expertise": {
     "technical_skills": [
       {
         "name": "React/Next.js",
-        "level": "5+ years",
+        "level": "6+ years",
         "proficiency": "Expert"
+      },
+      {
+        "name": "Astro",
+        "level": "1+ years",
+        "proficiency": "Advanced"
       },
       {
         "name": "TypeScript",
@@ -27,6 +33,11 @@
       {
         "name": "Shopify/Liquid",
         "level": "2+ years",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "WooCommerce Headless",
+        "level": "1+ years",
         "proficiency": "Advanced"
       },
       {
@@ -46,8 +57,9 @@
       }
     ],
     "soft_skills": [
+      "Frontend Team Leadership",
+      "Software Architecture",
       "Problem Solving",
-      "Technical Leadership",
       "Communication",
       "Mentoring",
       "Agile/Scrum",
@@ -59,10 +71,20 @@
       "Firebase",
       "Vercel",
       "Figma",
-      "WordPress"
+      "WordPress",
+      "Confluence",
+      "Jira"
     ]
   },
   "projects": [
+    {
+      "icon": "/project-icons/maven-trading.png",
+      "name": "Maven Trading - Forex Website Headless",
+      "involvement": "Lead Frontend Developer - Architected and developed complete website with Astro, implementing headless architecture with WooCommerce, multi-language system (ES/PT), and custom checkout with country validation",
+      "url": "https://forex-website.maventesting.com",
+      "buttonText": "View Project",
+      "note": "Modern headless architecture project using Astro, WooCommerce API integration, and trading challenges system"
+    },
     {
       "icon": "/project-icons/mc-donalds.png",
       "name": "McDonald's McRib Sauce Campaign",
@@ -85,20 +107,43 @@
       "name": "Pretty Smart Cosmetics",
       "url": "https://pretty-smartcosmetics.com",
       "involvement": "Lead Frontend Developer - Built custom Shopify storefront from design to deployment, implementing bespoke features and optimized shopping experience"
-    },
-    {
-      "name": "Sandblast Solutions E-commerce Platform",
-      "url": "https://sandblastinc.com",
-      "involvement": "Lead Frontend Developer - Executed complete platform redesign and modernization using Shopify and Tailwind, delivering a high-performance B2B e-commerce solution with custom features and improved user experience"
     }
   ],
   "experience": [
+    {
+      "icon": "/experience-logos/maven-trading.png",
+      "company": "Maven Trading (via PIT Solutions)",
+      "role": "Lead Frontend Developer",
+      "period": "2025 - Present",
+      "location": "Remote",
+      "current": true,
+      "impact_summary": "Leading frontend development and headless architecture for international trading platform",
+      "tech_stack": [
+        "Astro",
+        "React",
+        "TypeScript",
+        "WooCommerce API",
+        "WordPress Headless",
+        "Multi-language",
+        "REST APIs"
+      ],
+      "key_contributions": [
+        "Led complete forex website development with headless architecture using Astro, implementing SSG for maximum performance",
+        "Designed and implemented multi-language system (Spanish/Portuguese) with static page generation per language",
+        "Developed complete headless integration with WooCommerce API for custom checkout system",
+        "Implemented trading challenges system with dynamic country validation and multiple payment processors",
+        "Established scalable component architecture and design token system for visual consistency",
+        "Led research initiatives and technical documentation for headless WooCommerce integration",
+        "Mentored junior developer in Astro technologies and frontend development best practices",
+        "Collaborated closely with backend, design, and product teams to define technical architecture"
+      ]
+    },
     {
       "icon": "/experience-logos/ibm.png",
       "company": "IBM (Project Home Depot)",
       "role": "Frontend Developer",
       "project": "Home Depot",
-      "period": "2023 - 2024",
+      "period": "2023 - 2025",
       "location": "Remote",
       "impact_summary": "Driving critical improvements in delivery system performance and frontend modernization",
       "tech_stack": ["React", "TypeScript", "Jest", "CI/CD"],
@@ -115,9 +160,8 @@
       "icon": "/experience-logos/klever-cookie.png",
       "company": "Klever Cookie",
       "role": "Frontend Developer",
-      "period": "2021 - Present",
+      "period": "2021 - 2023",
       "location": "Remote",
-      "current": true,
       "impact_summary": "Specialized in Shopify development and React-based solutions for e-commerce",
       "tech_stack": [
         "Shopify/Liquid",
