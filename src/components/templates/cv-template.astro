@@ -1,6 +1,4 @@
 ---
-import Layout from "@components/Layout.astro";
-
 export interface Props {
   data: any; // CV_DATA from locale
 }
@@ -9,315 +7,638 @@ const { data } = Astro.props;
 const CV_DATA = data;
 ---
 
-<main class="cv-content">
+<style>
+  .cv-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--font-primary);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+  }
+
+  /* Profile Header */
+  .cv-profile {
+    margin-bottom: var(--space-8);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .profile-name {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2) 0;
+    font-family: var(--font-serif);
+  }
+
+  .profile-role {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .profile-details {
+    text-align: right;
+  }
+
+  .profile-location,
+  .profile-availability {
+    margin: 0 0 var(--space-1) 0;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+  }
+
+  /* Navigation */
+  .cv-nav {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .cv-nav-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    transition: var(--transition-colors);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+  }
+
+  .cv-nav-link:hover {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-primary);
+  }
+
+  /* Headline */
+  .cv-headline {
+    margin-bottom: var(--space-6);
+  }
+
+  .headline-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-2) 0;
+    line-height: var(--line-height-tight);
+  }
+
+  .headline-subtitle {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Achievements */
+  .cv-achievements {
+    margin-bottom: var(--space-6);
+  }
+
+  .achievements-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-3) 0;
+  }
+
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .achievements-list li {
+    padding: var(--space-2) 0;
+    border-left: 2px solid var(--color-primary);
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-2);
+    background-color: var(--color-bg-secondary);
+    font-size: var(--text-sm);
+  }
+
+  /* About */
+  .cv-about {
+    font-size: var(--text-sm);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Sections */
+  .cv-section {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-4) 0;
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border-subtle);
+    font-family: var(--font-display);
+  }
+
+  /* Skills */
+  .skill-group {
+    margin-bottom: var(--space-5);
+  }
+
+  .skill-group-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-3) 0;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-item {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .skill-level {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+  }
+
+  /* Projects */
+  .projects-container {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .project-item {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-secondary);
+  }
+
+  .project-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .project-involvement {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-3) 0;
+    font-size: var(--text-sm);
+  }
+
+  .project-note {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-3) 0;
+    font-size: var(--text-xs);
+  }
+
+  .project-link {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--space-2) var(--space-4);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: var(--font-medium);
+    transition: var(--transition-colors);
+    font-size: var(--text-sm);
+    font-family: var(--font-sans);
+  }
+
+  .project-link:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  /* Experience */
+  .experience-container {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  .experience-item {
+    padding: var(--space-5);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-secondary);
+  }
+
+  .experience-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .experience-company {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2) 0;
+    font-family: var(--font-display);
+  }
+
+  .experience-role {
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-1) 0;
+  }
+
+  .experience-location {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-1) 0;
+    font-size: var(--text-sm);
+  }
+
+  .experience-period {
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  .experience-current {
+    color: var(--color-primary);
+    font-weight: var(--font-medium);
+  }
+
+  .experience-summary {
+    margin: 0 0 var(--space-4) 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+    font-size: var(--text-sm);
+  }
+
+  .experience-tech {
+    margin: 0 0 var(--space-4) 0;
+    padding: var(--space-3);
+    background-color: var(--color-bg-primary);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
+  }
+
+  .experience-tech strong {
+    color: var(--color-text-primary);
+    margin-right: var(--space-2);
+  }
+
+  .experience-contributions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contribution-item {
+    padding: var(--space-1) 0;
+    border-left: 2px solid var(--color-border-accent);
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-2);
+    position: relative;
+    font-size: var(--text-sm);
+  }
+
+  .contribution-item::before {
+    content: "▸";
+    color: var(--color-primary);
+    font-weight: bold;
+    position: absolute;
+    left: -var(--space-2);
+  }
+
+  /* Education */
+  .education-item {
+    padding: var(--space-5);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-secondary);
+  }
+
+  .education-degree {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2) 0;
+    font-family: var(--font-display);
+  }
+
+  .education-institution {
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .education-year {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-3) 0;
+    font-size: var(--text-sm);
+  }
+
+  .education-relevance {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cv-main {
+      padding: var(--space-3);
+    }
+
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+
+    .profile-details {
+      text-align: left;
+    }
+
+    .cv-nav {
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .cv-nav-link {
+      display: block;
+      text-align: center;
+      padding: var(--space-2);
+    }
+
+    .skill-list {
+      gap: var(--space-1);
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item {
+      padding: var(--space-3);
+    }
+
+    .cv-section {
+      margin-bottom: var(--space-6);
+    }
+  }
+
+  /* Print Styles */
+  @media print {
+    .cv-main {
+      max-width: none;
+      padding: 0;
+      font-size: 12px;
+    }
+
+    .cv-nav {
+      display: none;
+    }
+
+    .cv-section {
+      margin-bottom: var(--space-4);
+    }
+
+    .project-link {
+      color: var(--color-text-primary) !important;
+      background: none !important;
+      border: 1px solid var(--color-border-medium) !important;
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item {
+      break-inside: avoid;
+      border: 1px solid var(--color-border-medium) !important;
+      padding: var(--space-2) !important;
+      margin-bottom: var(--space-2) !important;
+    }
+
+    .profile-header {
+      margin-bottom: var(--space-3);
+    }
+  }
+</style>
+
+<main class="cv-main">
   <!-- Profile Header -->
-  <section class="profile-section">
-    <div class="profile-info">
-      <h1>{CV_DATA.profile.name}</h1>
-      <p class="role">{CV_DATA.profile.role}</p>
-      <p class="location">{CV_DATA.profile.location}</p>
-      <p class="availability">{CV_DATA.profile.availability}</p>
+  <section class="cv-profile">
+    <div class="profile-header">
+      <div class="profile-info">
+        <h1 class="profile-name">
+          {CV_DATA.profile.name}
+        </h1>
+        <p class="profile-role">{CV_DATA.profile.role}</p>
+      </div>
+      <div class="profile-details">
+        <p class="profile-location">{CV_DATA.profile.location}</p>
+        <p class="profile-availability">{CV_DATA.profile.availability}</p>
+      </div>
     </div>
 
     <!-- Simple Navigation -->
-    <nav class="section-nav">
-      <a href="#expertise">{CV_DATA.ui.sections.skills}</a>
-      <a href="#projects">{CV_DATA.ui.sections.projects}</a>
-      <a href="#experience">{CV_DATA.ui.sections.experience}</a>
-      <a href="#education">{CV_DATA.ui.sections.education}</a>
+    <nav class="cv-nav">
+      <a href="#expertise" class="cv-nav-link">
+        {CV_DATA.ui.sections.skills}
+      </a>
+      <a href="#projects" class="cv-nav-link">
+        {CV_DATA.ui.sections.projects}
+      </a>
+      <a href="#experience" class="cv-nav-link">
+        {CV_DATA.ui.sections.experience}
+      </a>
+      <a href="#education" class="cv-nav-link">
+        {CV_DATA.ui.sections.education}
+      </a>
     </nav>
 
     <!-- Headline -->
-    <div class="headline-section">
-      <h2>{CV_DATA.profile.headline}</h2>
-      <p>{CV_DATA.profile.subheadline}</p>
+    <div class="cv-headline">
+      <h2 class="headline-title">
+        {CV_DATA.profile.headline}
+      </h2>
+      <p class="headline-subtitle">{CV_DATA.profile.subheadline}</p>
     </div>
 
     <!-- Key Achievements -->
-    <div class="achievements-section">
-      <h3>{CV_DATA.ui.labels.keyAchievements}</h3>
-      <ul>
-        {CV_DATA.highlights.map((highlight: string) => (
-          <li>{highlight}</li>
-        ))}
+    <div class="cv-achievements">
+      <h3 class="achievements-title">
+        {CV_DATA.ui.labels.keyAchievements}
+      </h3>
+      <ul class="achievements-list">
+        {CV_DATA.highlights.map((highlight: string) => <li>{highlight}</li>)}
       </ul>
     </div>
 
     <!-- About -->
-    <p class="about-text">{CV_DATA.profile.about}</p>
+    <p class="cv-about">{CV_DATA.profile.about}</p>
   </section>
 
   <!-- Expertise -->
-  <section id="expertise" class="expertise-section">
-    <h2>{CV_DATA.ui.sections.skills}</h2>
+  <section id="expertise" class="cv-section">
+    <h2 class="section-title">
+      {CV_DATA.ui.sections.skills}
+    </h2>
 
     <!-- Technical Skills -->
-    <div class="skills-group">
-      <h3>{CV_DATA.ui.labels.technicalSkills}</h3>
-      <ul class="skills-list">
-        {CV_DATA.expertise.technical_skills.map((skill: any) => (
-          <li>
-            {skill.name}
-            {skill.level && <span class="skill-level"> - {skill.level}</span>}
-          </li>
-        ))}
+    <div class="skill-group">
+      <h3 class="skill-group-title">
+        {CV_DATA.ui.labels.technicalSkills}
+      </h3>
+      <ul class="skill-list">
+        {
+          CV_DATA.expertise.technical_skills.map((skill: any) => (
+            <li class="skill-item">
+              {skill.name}
+              {skill.level && <span class="skill-level"> - {skill.level}</span>}
+            </li>
+          ))
+        }
       </ul>
     </div>
 
     <!-- Soft Skills -->
-    <div class="skills-group">
-      <h3>{CV_DATA.ui.labels.professionalSkills}</h3>
-      <ul class="skills-list">
-        {CV_DATA.expertise.soft_skills.map((skill: string) => (
-          <li>{skill}</li>
-        ))}
+    <div class="skill-group">
+      <h3 class="skill-group-title">
+        {CV_DATA.ui.labels.professionalSkills}
+      </h3>
+      <ul class="skill-list">
+        {
+          CV_DATA.expertise.soft_skills.map((skill: string) => (
+            <li class="skill-item">{skill}</li>
+          ))
+        }
       </ul>
     </div>
 
     <!-- Tools & Platforms -->
-    <div class="skills-group">
-      <h3>{CV_DATA.ui.labels.toolsPlatforms}</h3>
-      <ul class="skills-list">
-        {CV_DATA.expertise.tools_platforms.map((tool: string) => (
-          <li>{tool}</li>
-        ))}
+    <div class="skill-group">
+      <h3 class="skill-group-title">
+        {CV_DATA.ui.labels.toolsPlatforms}
+      </h3>
+      <ul class="skill-list">
+        {
+          CV_DATA.expertise.tools_platforms.map((tool: string) => (
+            <li class="skill-item">{tool}</li>
+          ))
+        }
       </ul>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects-section">
-    <h2>{CV_DATA.ui.labels.recentProjects}</h2>
-    <div class="projects-list">
-      {CV_DATA.projects.map((project: any) => (
-        <div class="project-item">
-          <h3>{project.name}</h3>
-          <p>{project.involvement}</p>
-          {project.note && <p class="project-note">{project.note}</p>}
-          {project.url && (
-            <a href={project.url} target="_blank" rel="noopener noreferrer" class="project-link">
-              {project.buttonText || CV_DATA.ui.labels.viewProject}
-            </a>
-          )}
-        </div>
-      ))}
+  <section id="projects" class="cv-section">
+    <h2 class="section-title">
+      {CV_DATA.ui.labels.recentProjects}
+    </h2>
+    <div class="projects-container">
+      {
+        CV_DATA.projects.map((project: any) => (
+          <div class="project-item">
+            <h3 class="project-title">{project.name}</h3>
+            <p class="project-involvement">{project.involvement}</p>
+            {project.note && <p class="project-note">{project.note}</p>}
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                {project.buttonText || CV_DATA.ui.labels.viewProject}
+              </a>
+            )}
+          </div>
+        ))
+      }
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="experience-section">
-    <h2>{CV_DATA.ui.labels.workExperience}</h2>
-    <div class="experience-list">
-      {CV_DATA.experience.map((job: any) => (
-        <div class="experience-item">
-          <div class="job-header">
-            <h3>{job.company}</h3>
-            <p class="job-role">{job.role}</p>
-            {job.location && <p class="job-location">{job.location}</p>}
-            <p class="job-period">
-              {job.period}
-              {job.current && <span class="current-label"> - {CV_DATA.ui.labels.current}</span>}
-            </p>
+  <section id="experience" class="cv-section">
+    <h2 class="section-title">
+      {CV_DATA.ui.labels.workExperience}
+    </h2>
+    <div class="experience-container">
+      {
+        CV_DATA.experience.map((job: any) => (
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3 class="experience-company">{job.company}</h3>
+              <p class="experience-role">{job.role}</p>
+              {job.location && (
+                <p class="experience-location">{job.location}</p>
+              )}
+              <p class="experience-period">
+                {job.period}
+                {job.current && (
+                  <span class="experience-current">
+                    {" "}
+                    - {CV_DATA.ui.labels.current}
+                  </span>
+                )}
+              </p>
+            </div>
+
+            <p class="experience-summary">{job.impact_summary}</p>
+
+            <div class="experience-tech">
+              <strong>Tech Stack:</strong>
+              {job.tech_stack.map((tech: string, index: number) => (
+                <span>
+                  {tech}
+                  {index < job.tech_stack.length - 1 && ", "}
+                </span>
+              ))}
+            </div>
+
+            <ul class="experience-contributions">
+              {job.key_contributions.map((contribution: string) => (
+                <li class="contribution-item">{contribution}</li>
+              ))}
+            </ul>
           </div>
-          
-          <p class="impact-summary">{job.impact_summary}</p>
-          
-          <div class="tech-stack">
-            <strong>Tech Stack:</strong>
-            {job.tech_stack.map((tech: string, index: number) => (
-              <span>
-                {tech}
-                {index < job.tech_stack.length - 1 && ", "}
-              </span>
-            ))}
-          </div>
-          
-          <ul class="contributions-list">
-            {job.key_contributions.map((contribution: string) => (
-              <li>{contribution}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </section>
 
   <!-- Education -->
-  <section id="education" class="education-section">
-    <h2>{CV_DATA.ui.sections.education}</h2>
+  <section id="education" class="cv-section">
+    <h2 class="section-title">
+      {CV_DATA.ui.sections.education}
+    </h2>
     <div class="education-item">
-      <h3>{CV_DATA.education.degree}</h3>
-      <p>{CV_DATA.education.institution}</p>
-      <p>{CV_DATA.education.year}</p>
-      <p>{CV_DATA.education.relevance}</p>
+      <h3 class="education-degree">
+        {CV_DATA.education.degree}
+      </h3>
+      <p class="education-institution">{CV_DATA.education.institution}</p>
+      <p class="education-year">{CV_DATA.education.year}</p>
+      <p class="education-relevance">{CV_DATA.education.relevance}</p>
     </div>
   </section>
 </main>
-
-<style>
-  /* Minimal CSS following the project vision */
-  .cv-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.6;
-    color: #333333;
-  }
-
-  h1, h2, h3 {
-    font-family: Inter, 'Helvetica Neue', sans-serif;
-    color: #000000;
-    margin-bottom: 0.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #F5F5F5;
-    padding-bottom: 0.5rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .role {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .location, .availability {
-    color: #666666;
-    margin-bottom: 0.25rem;
-  }
-
-  .section-nav {
-    margin: 2rem 0;
-    padding: 1rem 0;
-    border-top: 1px solid #F5F5F5;
-    border-bottom: 1px solid #F5F5F5;
-  }
-
-  .section-nav a {
-    color: #DC2626;
-    text-decoration: none;
-    margin-right: 2rem;
-  }
-
-  .section-nav a:hover {
-    color: #B91C1C;
-    text-decoration: underline;
-  }
-
-  .headline-section {
-    margin: 2rem 0;
-  }
-
-  .achievements-section {
-    margin: 2rem 0;
-  }
-
-  .achievements-section ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-  }
-
-  .about-text {
-    margin: 2rem 0;
-    font-style: italic;
-  }
-
-  .skills-group {
-    margin-bottom: 2rem;
-  }
-
-  .skills-list {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-  }
-
-  .skill-level {
-    color: #666666;
-    font-size: 0.9rem;
-  }
-
-  .project-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #F5F5F5;
-  }
-
-  .project-note {
-    font-style: italic;
-    color: #666666;
-  }
-
-  .project-link {
-    color: #DC2626;
-    text-decoration: none;
-  }
-
-  .project-link:hover {
-    color: #B91C1C;
-    text-decoration: underline;
-  }
-
-  .experience-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #F5F5F5;
-  }
-
-  .job-role {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-
-  .job-location, .job-period {
-    color: #666666;
-    margin-bottom: 0.25rem;
-  }
-
-  .current-label {
-    color: #DC2626;
-    font-weight: 600;
-  }
-
-  .impact-summary {
-    margin: 1rem 0;
-    font-style: italic;
-  }
-
-  .tech-stack {
-    margin: 1rem 0;
-    color: #666666;
-  }
-
-  .contributions-list {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  .education-item {
-    margin-bottom: 1rem;
-  }
-
-  /* Scroll margin for anchor links */
-  #expertise,
-  #experience,
-  #projects,
-  #education {
-    scroll-margin-top: 2rem;
-  }
-</style>

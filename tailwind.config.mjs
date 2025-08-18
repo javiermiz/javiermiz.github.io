@@ -4,8 +4,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["var(--font-primary)", "sans-serif"],
-        article: ["var(--font-article)", "serif"],
+        // Primary font for UI elements (Inter)
+        sans: [
+          "var(--font-primary)",
+          "Inter",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+
+        // Article/content font (Georgia)
+        serif: ["var(--font-article)", "Georgia", "Times New Roman", "serif"],
       },
     },
   },

@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   url: "https://javiermiz.github.io/",
   ogImage: "/profile-og.jpg",
   metadata: {
-    themeColor: "#0F172A",
+    themeColor: "#dc2626", // Using primary brand color
     keywords:
       "frontend developer, react developer, astro developer, javascript developer, web developer, frontend engineer, react.js, next.js, typescript, tailwind css, astro, web development, software engineer",
     structuredData: {

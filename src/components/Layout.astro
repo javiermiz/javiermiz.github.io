@@ -51,6 +51,14 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
+    <!-- Classic Minimalism Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Primary Meta Tags -->
@@ -95,14 +103,16 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
     <meta name="theme-color" content="#FFFFFF" />
   </head>
 
-  <body>
+  <body class="font-serif">
     <!-- Minimal Header -->
     <header class="site-header">
       <div class="header-content">
         <a href={lang === "en" ? "/" : "/es"} class="site-logo">Javier Miz</a>
         <nav class="main-nav">
           <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
-          <a href={toggleLangUrl} class="lang-toggle">{lang === "en" ? "ES" : "EN"}</a>
+          <a href={toggleLangUrl} class="lang-toggle"
+            >{lang === "en" ? "ES" : "EN"}</a
+          >
         </nav>
       </div>
     </header>
@@ -117,17 +127,140 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
       <div class="footer-content">
         <p>&copy; 2025 Javier Miz Arévalo</p>
         <div class="footer-links">
-          <a href="https://github.com/javiermiz">GitHub</a>
-          <a href="https://www.linkedin.com/in/javier-miz/">LinkedIn</a>
-          <a href="/rss.xml">RSS</a>
+          <a target="_blank" href="https://github.com/javiermiz">GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/javier-miz/"
+            >LinkedIn</a
+          >
         </div>
       </div>
     </footer>
   </body>
 </html>
 
-<style>
-  /* Global Minimal Styles */
+<style is:global>
+  /* Classic Minimalism Design Tokens */
+  :root {
+    /* Typography - Serif First */
+    --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+    --font-serif-body: "Georgia", "Times New Roman", serif;
+    --font-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
+    --font-mono: "Fira Code", "Monaco", monospace;
+
+    /* Primary Colors - Red Accent on White */
+    --color-primary: #dc2626;
+    --color-primary-hover: #b91c1c;
+    --color-primary-light: #f87171;
+
+    /* Neutral Palette - Clean Whites & Grays */
+    --color-neutral-50: #fafafa;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-200: #e5e5e5;
+    --color-neutral-300: #d4d4d4;
+    --color-neutral-400: #a3a3a3;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
+    --color-neutral-900: #171717;
+
+    /* Text Colors - Dark on White with Red Accents */
+    --color-text-primary: #171717;
+    --color-text-secondary: #404040;
+    --color-text-muted: #737373;
+    --color-text-light: #a3a3a3;
+    --color-text-body: #262626;
+
+    /* Background Colors - Clean White Base */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #fafafa;
+    --color-bg-tertiary: #f5f5f5;
+    --color-bg-code: #f8f8f8;
+
+    /* Border Colors - Subtle Grays */
+    --color-border-light: #e5e5e5;
+    --color-border-medium: #d4d4d4;
+    --color-border-subtle: #f5f5f5;
+    --color-border-elegant: #c0c0c0;
+
+    /* Typography Scale - Elegant Proportions */
+    --text-xs: 0.8rem;
+    --text-sm: 0.9rem;
+    --text-base: 1.1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.4rem;
+    --text-2xl: 1.75rem;
+    --text-3xl: 2.25rem;
+    --text-4xl: 3rem;
+
+    /* Font Weights - Refined Hierarchy */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Line Heights - Generous & Classical */
+    --line-height-tight: 1.25;
+    --line-height-snug: 1.375;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.65;
+    --line-height-loose: 1.8;
+
+    /* Letter Spacing - Subtle Refinement */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.025em;
+    --letter-spacing-wider: 0.05em;
+
+    /* Spacing Scale - Generous & Measured */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* Content Spacing - Classical Proportions */
+    --content-spacing-xs: var(--space-4);
+    --content-spacing-sm: var(--space-6);
+    --content-spacing-md: var(--space-8);
+    --content-spacing-lg: var(--space-12);
+    --content-spacing-xl: var(--space-16);
+
+    /* Shadows - Soft & Natural */
+    --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+    --shadow-elegant: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+    /* Transitions - Elegant & Smooth */
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Border Radius - Subtle Refinement */
+    --radius-none: 0;
+    --radius-sm: 0.125rem;
+    --radius-md: 0.25rem;
+    --radius-lg: 0.375rem;
+    --radius-xl: 0.5rem;
+    --radius-elegant: 0.375rem;
+
+    /* Layout - Classical Proportions */
+    --max-width-content: 800px;
+    --max-width-wide: 1200px;
+    --max-width-reading: 65ch;
+  }
+
+  /* Global Classic Minimalism Styles */
   * {
     margin: 0;
     padding: 0;
@@ -135,10 +268,27 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
   }
 
   html {
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #ffffff;
+    font-family: var(--font-serif-body);
+    font-size: var(--text-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-body);
+    background-color: var(--color-bg-primary);
+    letter-spacing: var(--letter-spacing-normal);
+  }
+
+  /* Elegant serif headings with generous spacing */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    color: var(--color-text-primary);
+    font-weight: var(--font-semibold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--content-spacing-sm);
   }
 
   body {
@@ -147,210 +297,179 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
     flex-direction: column;
   }
 
-  /* Header Styles */
+  /* Header Styles - Classic Minimalism */
   .site-header {
-    border-bottom: 1px solid #f3f4f6;
-    padding: 1rem 0;
+    padding: var(--content-spacing-xs) 0;
+    background-color: var(--color-bg-primary);
+    box-shadow: var(--shadow-subtle);
   }
 
   .header-content {
-    max-width: 800px;
+    max-width: var(--max-width-content);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 var(--content-spacing-sm);
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .site-logo {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: #111827;
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-primary);
     text-decoration: none;
+    letter-spacing: var(--letter-spacing-tight);
+    transition: color var(--transition-elegant);
   }
 
   .site-logo:hover {
-    color: #374151;
+    color: var(--color-primary);
   }
 
   .main-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: var(--content-spacing-md);
     align-items: center;
   }
 
   .main-nav a {
-    color: #6b7280;
+    font-family: var(--font-serif);
+    color: var(--color-text-secondary);
     text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.2s ease;
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
+    letter-spacing: var(--letter-spacing-normal);
+    transition: color var(--transition-elegant);
+    padding: var(--space-1) 0;
+    position: relative;
   }
 
   .main-nav a:hover {
-    color: #111827;
+    color: var(--color-primary);
   }
-
-  .lang-toggle {
-    color: #9ca3af !important;
-    font-size: 0.75rem !important;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .lang-toggle:hover {
-    color: #6b7280 !important;
-  }
-
-  /* Main Content */
-  .main-content {
-    flex: 1;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+  .main-nav a:hover::after {
     width: 100%;
   }
 
-  /* Footer Styles */
+  .lang-toggle {
+    font-family: var(--font-sans) !important;
+    color: var(--color-text-muted) !important;
+    font-size: var(--text-xs) !important;
+    font-weight: var(--font-semibold) !important;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    padding: var(--space-1) var(--space-2) !important;
+    border: 1px solid var(--color-border-subtle) !important;
+    background-color: var(--color-bg-primary) !important;
+    min-width: 2.5rem;
+    text-align: center;
+  }
+
+  .lang-toggle:hover {
+    color: var(--color-primary) !important;
+    background-color: var(--color-bg-tertiary) !important;
+  }
+
+  .lang-toggle::after {
+    display: none !important;
+  }
+
+  /* Main Content - Classic Minimalism */
+  .main-content {
+    flex: 1;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: var(--content-spacing-xl) var(--content-spacing-sm);
+    width: 100%;
+    min-height: 60vh;
+  }
+
+  /* Footer Styles - Classic Minimalism */
   .site-footer {
-    border-top: 1px solid #f5f5f5;
-    padding: 2rem 0;
+    border-top: 1px solid var(--color-border-elegant);
+    padding: var(--content-spacing-lg) 0;
     margin-top: auto;
+    background-color: var(--color-bg-secondary);
   }
 
   .footer-content {
-    max-width: 800px;
+    max-width: var(--max-width-content);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 var(--content-spacing-sm);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--content-spacing-sm);
   }
 
   .footer-content p {
-    color: #666666;
-    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    letter-spacing: var(--letter-spacing-wide);
   }
 
   .footer-links {
     display: flex;
-    gap: 1.5rem;
+    gap: var(--content-spacing-md);
   }
 
   .footer-links a {
-    color: #666666;
+    font-family: var(--font-sans);
+    color: var(--color-text-secondary);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    transition: all var(--transition-elegant);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-elegant);
   }
 
   .footer-links a:hover {
-    color: #dc2626;
-    text-decoration: underline;
-  }
-
-  /* Typography */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: Inter, "Helvetica Neue", sans-serif;
-    color: #000000;
-    margin-bottom: 0.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: #dc2626;
+    color: var(--color-primary);
+    background-color: var(--color-bg-tertiary);
+    box-shadow: var(--shadow-subtle);
     text-decoration: none;
   }
 
-  a:hover {
-    color: #b91c1c;
-    text-decoration: underline;
-  }
-
-  /* Lists */
-  ul,
-  ol {
-    margin-bottom: 1rem;
-    margin-left: 1.5rem;
-  }
-
-  li {
-    margin-bottom: 0.25rem;
-  }
-
-  /* Code */
-  code {
-    font-family: "Fira Code", monospace;
-    background-color: #f5f5f5;
-    padding: 0.125rem 0.25rem;
-    border-radius: 2px;
-    font-size: 0.9rem;
-  }
-
-  pre {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 4px;
-    overflow-x: auto;
-    margin-bottom: 1rem;
-  }
-
-  pre code {
-    background: none;
-    padding: 0;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 640px) {
+  /* Responsive Design - Classic Minimalism */
+  @media (max-width: 768px) {
     .header-content {
       flex-direction: column;
-      gap: 1rem;
+      gap: var(--content-spacing-sm);
+      padding: 0 var(--space-4);
     }
 
     .main-nav {
-      gap: 1.5rem;
+      gap: var(--content-spacing-sm);
     }
 
     .footer-content {
       flex-direction: column;
       text-align: center;
+      gap: var(--content-spacing-xs);
     }
 
     .main-content {
-      padding: 1rem;
+      padding: var(--content-spacing-md) var(--space-4);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .site-header {
+      padding: var(--content-spacing-sm) 0;
     }
 
-    h1 {
-      font-size: 1.75rem;
+    .main-content {
+      padding: var(--content-spacing-sm) var(--space-3);
     }
 
-    h2 {
-      font-size: 1.25rem;
+    .main-nav a {
+      padding: var(--space-1) var(--space-2);
+      font-size: 0.8rem;
     }
   }
 </style>
