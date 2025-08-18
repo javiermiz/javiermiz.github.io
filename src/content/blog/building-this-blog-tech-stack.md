@@ -10,8 +10,6 @@ seo_title: "Building a Modern Blog with Astro, TypeScript & Tailwind CSS"
 seo_description: "Learn how I built this minimalist blog using Astro, TypeScript, Tailwind CSS, and modern web development practices. Complete tech stack breakdown."
 ---
 
-# Building This Blog: A Modern Tech Stack Journey
-
 When I decided to create a new personal blog, I wanted something that would be fast, maintainable, and enjoyable to work with. After exploring various options, I settled on a modern tech stack that perfectly balances performance, developer experience, and simplicity.
 
 ## The Core Technologies

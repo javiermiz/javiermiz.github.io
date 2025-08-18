@@ -7,443 +7,6 @@ const { data } = Astro.props;
 const CV_DATA = data;
 ---
 
-<style>
-  .cv-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: var(--font-primary);
-    line-height: var(--line-height-normal);
-    color: var(--color-text-primary);
-    background-color: var(--color-bg-primary);
-  }
-
-  /* Profile Header */
-  .cv-profile {
-    margin-bottom: var(--space-8);
-    padding-bottom: var(--space-6);
-    border-bottom: 1px solid var(--color-border-subtle);
-  }
-
-  .profile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: var(--space-6);
-    flex-wrap: wrap;
-    gap: var(--space-4);
-  }
-
-  .profile-name {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-semibold);
-    color: var(--color-primary);
-    margin: 0 0 var(--space-2) 0;
-    font-family: var(--font-serif);
-  }
-
-  .profile-role {
-    font-size: var(--text-lg);
-    color: var(--color-text-secondary);
-    margin: 0;
-  }
-
-  .profile-details {
-    text-align: right;
-  }
-
-  .profile-location,
-  .profile-availability {
-    margin: 0 0 var(--space-1) 0;
-    color: var(--color-text-secondary);
-    font-size: var(--text-sm);
-  }
-
-  /* Navigation */
-  .cv-nav {
-    display: flex;
-    gap: var(--space-4);
-    margin-bottom: var(--space-6);
-    flex-wrap: wrap;
-  }
-
-  .cv-nav-link {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: var(--font-medium);
-    padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-md);
-    transition: var(--transition-colors);
-    font-family: var(--font-sans);
-    font-size: var(--text-sm);
-  }
-
-  .cv-nav-link:hover {
-    background-color: var(--color-bg-secondary);
-    color: var(--color-primary);
-  }
-
-  /* Headline */
-  .cv-headline {
-    margin-bottom: var(--space-6);
-  }
-
-  .headline-title {
-    font-size: var(--text-xl);
-    font-weight: var(--font-semibold);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--space-2) 0;
-    line-height: var(--line-height-tight);
-  }
-
-  .headline-subtitle {
-    font-size: var(--text-base);
-    color: var(--color-text-secondary);
-    margin: 0;
-  }
-
-  /* Achievements */
-  .cv-achievements {
-    margin-bottom: var(--space-6);
-  }
-
-  .achievements-title {
-    font-size: var(--text-base);
-    font-weight: var(--font-semibold);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--space-3) 0;
-  }
-
-  .achievements-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .achievements-list li {
-    padding: var(--space-2) 0;
-    border-left: 2px solid var(--color-primary);
-    padding-left: var(--space-3);
-    margin-bottom: var(--space-2);
-    background-color: var(--color-bg-secondary);
-    font-size: var(--text-sm);
-  }
-
-  /* About */
-  .cv-about {
-    font-size: var(--text-sm);
-    line-height: var(--line-height-normal);
-    color: var(--color-text-secondary);
-    margin: 0;
-  }
-
-  /* Sections */
-  .cv-section {
-    margin-bottom: var(--space-8);
-  }
-
-  .section-title {
-    font-size: var(--text-xl);
-    font-weight: var(--font-semibold);
-    color: var(--color-primary);
-    margin: 0 0 var(--space-4) 0;
-    padding-bottom: var(--space-2);
-    border-bottom: 1px solid var(--color-border-subtle);
-    font-family: var(--font-display);
-  }
-
-  /* Skills */
-  .skill-group {
-    margin-bottom: var(--space-5);
-  }
-
-  .skill-group-title {
-    font-size: var(--text-base);
-    font-weight: var(--font-semibold);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--space-3) 0;
-  }
-
-  .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .skill-item {
-    background-color: var(--color-bg-secondary);
-    color: var(--color-text-primary);
-    padding: var(--space-1) var(--space-3);
-    border-radius: var(--radius-full);
-    font-size: var(--text-xs);
-    border: 1px solid var(--color-border-subtle);
-  }
-
-  .skill-level {
-    color: var(--color-text-secondary);
-    font-weight: var(--font-weight-medium);
-  }
-
-  /* Projects */
-  .projects-container {
-    display: grid;
-    gap: var(--space-5);
-  }
-
-  .project-item {
-    padding: var(--space-4);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: var(--radius-lg);
-    background-color: var(--color-bg-secondary);
-  }
-
-  .project-title {
-    font-size: var(--text-base);
-    font-weight: var(--font-semibold);
-    color: var(--color-primary);
-    margin: 0 0 var(--space-2) 0;
-  }
-
-  .project-involvement {
-    color: var(--color-text-secondary);
-    margin: 0 0 var(--space-3) 0;
-    font-size: var(--text-sm);
-  }
-
-  .project-note {
-    font-style: italic;
-    color: var(--color-text-secondary);
-    margin: 0 0 var(--space-3) 0;
-    font-size: var(--text-xs);
-  }
-
-  .project-link {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: white;
-    padding: var(--space-2) var(--space-4);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    font-weight: var(--font-medium);
-    transition: var(--transition-colors);
-    font-size: var(--text-sm);
-    font-family: var(--font-sans);
-  }
-
-  .project-link:hover {
-    background-color: var(--color-primary-hover);
-  }
-
-  /* Experience */
-  .experience-container {
-    display: grid;
-    gap: var(--space-6);
-  }
-
-  .experience-item {
-    padding: var(--space-5);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: var(--radius-lg);
-    background-color: var(--color-bg-secondary);
-  }
-
-  .experience-header {
-    margin-bottom: var(--space-4);
-  }
-
-  .experience-company {
-    font-size: var(--text-lg);
-    font-weight: var(--font-semibold);
-    color: var(--color-primary);
-    margin: 0 0 var(--space-2) 0;
-    font-family: var(--font-display);
-  }
-
-  .experience-role {
-    font-size: var(--text-base);
-    font-weight: var(--font-medium);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--space-1) 0;
-  }
-
-  .experience-location {
-    color: var(--color-text-secondary);
-    margin: 0 0 var(--space-1) 0;
-    font-size: var(--text-sm);
-  }
-
-  .experience-period {
-    color: var(--color-text-secondary);
-    margin: 0;
-    font-size: var(--text-sm);
-  }
-
-  .experience-current {
-    color: var(--color-primary);
-    font-weight: var(--font-medium);
-  }
-
-  .experience-summary {
-    margin: 0 0 var(--space-4) 0;
-    font-style: italic;
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-normal);
-    font-size: var(--text-sm);
-  }
-
-  .experience-tech {
-    margin: 0 0 var(--space-4) 0;
-    padding: var(--space-3);
-    background-color: var(--color-bg-primary);
-    border-radius: var(--radius-md);
-    font-size: var(--text-xs);
-  }
-
-  .experience-tech strong {
-    color: var(--color-text-primary);
-    margin-right: var(--space-2);
-  }
-
-  .experience-contributions {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .contribution-item {
-    padding: var(--space-1) 0;
-    border-left: 2px solid var(--color-border-accent);
-    padding-left: var(--space-3);
-    margin-bottom: var(--space-2);
-    position: relative;
-    font-size: var(--text-sm);
-  }
-
-  .contribution-item::before {
-    content: "▸";
-    color: var(--color-primary);
-    font-weight: bold;
-    position: absolute;
-    left: -var(--space-2);
-  }
-
-  /* Education */
-  .education-item {
-    padding: var(--space-5);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: var(--radius-lg);
-    background-color: var(--color-bg-secondary);
-  }
-
-  .education-degree {
-    font-size: var(--text-lg);
-    font-weight: var(--font-semibold);
-    color: var(--color-primary);
-    margin: 0 0 var(--space-2) 0;
-    font-family: var(--font-display);
-  }
-
-  .education-institution {
-    font-size: var(--text-base);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--space-2) 0;
-  }
-
-  .education-year {
-    color: var(--color-text-secondary);
-    margin: 0 0 var(--space-3) 0;
-    font-size: var(--text-sm);
-  }
-
-  .education-relevance {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-normal);
-    margin: 0;
-    font-size: var(--text-sm);
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .cv-main {
-      padding: var(--space-3);
-    }
-
-    .profile-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--space-2);
-    }
-
-    .profile-details {
-      text-align: left;
-    }
-
-    .cv-nav {
-      flex-direction: column;
-      gap: var(--space-2);
-    }
-
-    .cv-nav-link {
-      display: block;
-      text-align: center;
-      padding: var(--space-2);
-    }
-
-    .skill-list {
-      gap: var(--space-1);
-    }
-
-    .experience-item,
-    .project-item,
-    .education-item {
-      padding: var(--space-3);
-    }
-
-    .cv-section {
-      margin-bottom: var(--space-6);
-    }
-  }
-
-  /* Print Styles */
-  @media print {
-    .cv-main {
-      max-width: none;
-      padding: 0;
-      font-size: 12px;
-    }
-
-    .cv-nav {
-      display: none;
-    }
-
-    .cv-section {
-      margin-bottom: var(--space-4);
-    }
-
-    .project-link {
-      color: var(--color-text-primary) !important;
-      background: none !important;
-      border: 1px solid var(--color-border-medium) !important;
-    }
-
-    .experience-item,
-    .project-item,
-    .education-item {
-      break-inside: avoid;
-      border: 1px solid var(--color-border-medium) !important;
-      padding: var(--space-2) !important;
-      margin-bottom: var(--space-2) !important;
-    }
-
-    .profile-header {
-      margin-bottom: var(--space-3);
-    }
-  }
-</style>
-
 <main class="cv-main">
   <!-- Profile Header -->
   <section class="cv-profile">
@@ -559,7 +122,16 @@ const CV_DATA = data;
       {
         CV_DATA.projects.map((project: any) => (
           <div class="project-item">
-            <h3 class="project-title">{project.name}</h3>
+            <div class="project-header">
+              {project.icon && (
+                <img
+                  src={project.icon}
+                  alt={`${project.name} icon`}
+                  class="project-icon"
+                />
+              )}
+              <h3 class="project-title">{project.name}</h3>
+            </div>
             <p class="project-involvement">{project.involvement}</p>
             {project.note && <p class="project-note">{project.note}</p>}
             {project.url && (
@@ -642,3 +214,375 @@ const CV_DATA = data;
     </div>
   </section>
 </main>
+
+<style>
+  .cv-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-3);
+    font-family: var(--font-primary);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+  }
+
+  /* Profile Header - Simplified */
+  .cv-profile {
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .profile-name {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-1) 0;
+    font-family: var(--font-serif);
+  }
+
+  .profile-role {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .profile-details {
+    text-align: right;
+  }
+
+  .profile-location,
+  .profile-availability {
+    margin: 0 0 var(--space-1) 0;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+  }
+
+  /* Navigation - Minimal */
+  .cv-nav {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .cv-nav-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+  }
+
+  .cv-nav-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Headline - Streamlined */
+  .cv-headline {
+    margin-bottom: var(--space-4);
+  }
+
+  .headline-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-2) 0;
+    line-height: var(--line-height-tight);
+  }
+
+  .headline-subtitle {
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Achievements - Simplified */
+  .cv-achievements {
+    margin-bottom: var(--space-4);
+  }
+
+  .achievements-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .achievements-list {
+    list-style: disc;
+    padding-left: var(--space-4);
+    margin: 0;
+  }
+
+  .achievements-list li {
+    margin-bottom: var(--space-1);
+
+    color: var(--color-text-body);
+  }
+
+  /* About */
+  .cv-about {
+    line-height: var(--line-height-loose);
+    color: var(--color-text-body);
+    margin: 0;
+  }
+
+  /* Sections - Simplified */
+  .cv-section {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-3) 0;
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border-light);
+    font-family: var(--font-serif);
+  }
+
+  /* Skills - Minimal */
+  .skill-group {
+    margin-bottom: var(--space-4);
+  }
+
+  .skill-group-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-item {
+    color: var(--color-text-body);
+    padding: var(--space-1) var(--space-2);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .skill-level {
+    color: var(--color-text-secondary);
+  }
+
+  /* Projects - Simplified */
+  .projects-container {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .project-item {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .project-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-1);
+  }
+
+  .project-icon {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .project-title {
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .project-involvement {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .project-note {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .project-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Experience - Simplified */
+  .experience-container {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .experience-item {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .experience-header {
+    margin-bottom: var(--space-3);
+  }
+
+  .experience-company {
+    font-size: var(--text-base);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-1) 0;
+    font-family: var(--font-serif);
+  }
+
+  .experience-role {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-1) 0;
+  }
+
+  .experience-location {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-1) 0;
+  }
+
+  .experience-period {
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  .experience-current {
+    color: var(--color-primary);
+  }
+
+  .experience-summary {
+    margin: 0 0 var(--space-3) 0;
+    color: var(--color-text-body);
+    line-height: var(--line-height-loose);
+  }
+
+  .experience-tech {
+    margin: 0 0 var(--space-3) 0;
+    font-size: var(--text-sm);
+  }
+
+  .experience-tech strong {
+    color: var(--color-text-primary);
+    margin-right: var(--space-1);
+  }
+
+  .experience-contributions {
+    list-style: disc;
+    padding-left: var(--space-4);
+    margin: 0;
+  }
+
+  .contribution-item {
+    margin-bottom: var(--space-1);
+    color: var(--color-text-body);
+  }
+
+  /* Education - Simplified */
+  .education-item {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .education-degree {
+    font-size: var(--text-base);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-1) 0;
+    font-family: var(--font-serif);
+  }
+
+  .education-institution {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-1) 0;
+  }
+
+  .education-year {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-2) 0;
+    font-size: var(--text-sm);
+  }
+
+  .education-relevance {
+    color: var(--color-text-body);
+    line-height: var(--line-height-loose);
+    margin: 0;
+  }
+
+  /* Responsive Design - Mobile first */
+  @media (min-width: 481px) {
+    .cv-main {
+      padding: var(--space-6);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+
+    .profile-details {
+      text-align: left;
+    }
+
+    .cv-nav {
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+  }
+
+  /* Print Styles - Simplified */
+  @media print {
+    .cv-main {
+      max-width: none;
+      padding: var(--space-2);
+      font-size: 12px;
+    }
+
+    .cv-nav {
+      display: none;
+    }
+
+    .cv-section {
+      margin-bottom: var(--space-3);
+    }
+
+    .project-link {
+      color: var(--color-text-primary) !important;
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item {
+      break-inside: avoid;
+      padding: 0 var(--space-2) !important;
+      margin-bottom: var(--space-2) !important;
+    }
+  }
+</style>

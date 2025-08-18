@@ -143,7 +143,6 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
     /* Typography - Serif First */
     --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
     --font-serif-body: "Georgia", "Times New Roman", serif;
-    --font-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
     --font-mono: "Fira Code", "Monaco", monospace;
 
     /* Primary Colors - Red Accent on White */
@@ -353,7 +352,7 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
   }
 
   .lang-toggle {
-    font-family: var(--font-sans) !important;
+    font-family: var(--font-serif-body) !important;
     color: var(--color-text-muted) !important;
     font-size: var(--text-xs) !important;
     font-weight: var(--font-semibold) !important;
@@ -405,7 +404,7 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
   }
 
   .footer-content p {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif-body);
     color: var(--color-text-muted);
     font-size: var(--text-sm);
     letter-spacing: var(--letter-spacing-wide);
@@ -417,7 +416,7 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
   }
 
   .footer-links a {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif-body);
     color: var(--color-text-secondary);
     text-decoration: none;
     font-size: var(--text-sm);
