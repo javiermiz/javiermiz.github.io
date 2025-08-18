@@ -109,6 +109,7 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
       <div class="header-content">
         <a href={lang === "en" ? "/" : "/es"} class="site-logo">Javier Miz</a>
         <nav class="main-nav">
+          <a href={lang === "en" ? "/" : "/es/"}>Blog</a>
           <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
           <a href={toggleLangUrl} class="lang-toggle"
             >{lang === "en" ? "ES" : "EN"}</a
@@ -138,12 +139,45 @@ const toggleLangUrl = getToggleLangUrl(Astro.url.pathname, lang);
 </html>
 
 <style is:global>
+  /* Font Face Declarations */
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lora";
+    src: url("/fonts/Lora.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Domine";
+    src: url("/fonts/Domine.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("/fonts/SchibstedGrotesk.ttf") format("truetype");
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
   /* Classic Minimalism Design Tokens */
   :root {
-    /* Typography - Serif First */
-    --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
-    --font-serif-body: "Georgia", "Times New Roman", serif;
-    --font-mono: "Fira Code", "Monaco", monospace;
+    /* Typography - Custom Fonts with Fallbacks */
+    --font-serif: "Lora", "Domine", "Georgia", "Times New Roman", serif;
+    --font-serif-body: "Schibsted Grotesk", "Georgia", "Times New Roman", serif;
+    --font-mono: "Monaco", "Menlo", "Consolas", monospace;
 
     /* Primary Colors - Red Accent on White */
     --color-primary: #dc2626;
