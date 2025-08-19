@@ -55,7 +55,7 @@ function format_post_date(date: Date, language: SiteLanguage): string {
     year: "numeric",
     month: "short",
     day: "numeric",
-    timeZone: "UTC"
+    timeZone: "UTC",
   }).format(date);
 }
 
@@ -156,6 +156,8 @@ const has_posts = sorted_posts.length > 0;
     text-decoration: none;
     transition: color var(--transition-normal);
     border-color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: var(--space-4);
   }
 
   .post-article {
@@ -187,7 +189,6 @@ const has_posts = sorted_posts.length > 0;
     color: var(--color-text-primary);
     margin-bottom: var(--space-1);
     text-wrap: balance;
-    line-height: var(--leading-tight);
   }
 
   .post-description {

@@ -21,14 +21,14 @@ const { Content } = await post.render();
 // Format date helper function - timezone-safe
 function format_date(date: Date, language: "en" | "es"): string {
   const locale = language === "es" ? "es-ES" : "en-US";
-  
+
   // Use UTC methods to avoid timezone shifts
   // This ensures the date displays exactly as specified in frontmatter
   return new Intl.DateTimeFormat(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
-    timeZone: "UTC"
+    timeZone: "UTC",
   }).format(date);
 }
 
@@ -165,7 +165,6 @@ const page_description = post.data.seo_description || post.data.description;
     font-family: var(--font-serif);
     font-size: var(--text-xl);
     font-weight: var(--font-bold);
-    line-height: 1.3;
     margin-bottom: 0;
     color: var(--color-text-primary);
   }
