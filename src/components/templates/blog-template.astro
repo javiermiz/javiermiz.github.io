@@ -50,11 +50,13 @@ function format_post_date(date: Date, language: SiteLanguage): string {
     en: "en-US",
   };
 
-  return new Date(date).toLocaleDateString(locale_map[language], {
+  // Use UTC timezone to avoid date shifts from frontmatter dates
+  return new Intl.DateTimeFormat(locale_map[language], {
     year: "numeric",
     month: "short",
     day: "numeric",
-  });
+    timeZone: "UTC"
+  }).format(date);
 }
 
 function get_category_label(category: string, categories_data: any): string {

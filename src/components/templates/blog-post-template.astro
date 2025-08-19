@@ -18,13 +18,17 @@ const { post, language, back_link_url, back_link_text, updated_text } =
   Astro.props;
 const { Content } = await post.render();
 
-// Format date helper function
+// Format date helper function - timezone-safe
 function format_date(date: Date, language: "en" | "es"): string {
   const locale = language === "es" ? "es-ES" : "en-US";
+  
+  // Use UTC methods to avoid timezone shifts
+  // This ensures the date displays exactly as specified in frontmatter
   return new Intl.DateTimeFormat(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC"
   }).format(date);
 }
 
