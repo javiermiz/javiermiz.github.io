@@ -1,5 +1,5 @@
 ---
-title: "De no saber qué hacer de mi vida a ganar $200,000 MXN remoto"
+title: "De no saber qué hacer de mi vida a ganar $100,000 MXN remoto"
 description: "Siempre me preguntan cómo conseguí trabajo para empresas gringas. La verdad es que solo optimicé mi LinkedIn y me aventé a hablar inglés."
 published_date: 2025-01-18
 category: "personal"

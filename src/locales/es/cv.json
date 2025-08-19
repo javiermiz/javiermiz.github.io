@@ -81,7 +81,6 @@
       "icon": "/project-icons/maven-trading.png",
       "name": "Maven Trading - Forex Website Headless",
       "involvement": "Lead Frontend Developer - Arquitecté y desarrollé sitio web completo con Astro, implementando arquitectura headless con WooCommerce, sistema multi-idioma (ES/PT), y checkout personalizado con validación por países",
-      "url": "https://forex-website.maventesting.com",
       "buttonText": "Ver Proyecto",
       "note": "Proyecto con arquitectura headless moderna usando Astro, integración WooCommerce API, y sistema de trading challenges"
     },
