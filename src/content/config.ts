@@ -12,7 +12,6 @@ const blog_collection = defineCollection({
       "technology",
       "tecnología",
       "personal",
-      "personal-es",
       "productivity",
       "productividad",
       "tutorials",
