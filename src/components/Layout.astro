@@ -34,7 +34,10 @@ const toggle_lang_url = get_language_url(Astro.url.pathname, toggle_lang);
 console.log(toggle_lang_url);
 
 // Get localized UI text
-const ui_data = await getLocaleData({ language: lang, page: "layout" }) as any;
+const ui_data = (await getLocaleData({
+  language: lang,
+  page: "layout",
+})) as any;
 const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 ---
 
@@ -126,13 +129,15 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
     <!-- Support Button -->
     <div class="pre-footer">
-      <button 
-        id="support-button" 
+      <button
+        id="support-button"
         class="support-btn"
         aria-label={support_button_text}
       >
         <svg class="support-icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          ></path>
         </svg>
         {support_button_text}
       </button>
@@ -153,18 +158,23 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     <div id="kofi-modal" class="kofi-modal" style="display: none;">
       <div class="kofi-modal-overlay" id="kofi-modal-overlay"></div>
       <div class="kofi-modal-content">
-        <button class="kofi-modal-close" id="kofi-modal-close" aria-label="Close modal">
+        <button
+          class="kofi-modal-close"
+          id="kofi-modal-close"
+          aria-label="Close modal"
+        >
           <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            ></path>
           </svg>
         </button>
-        <iframe 
-          id='kofiframe' 
-          src='https://ko-fi.com/javiermiz/?hidefeed=true&widget=true&embed=true&preview=true' 
-          style='border:none;width:100%;background:#f9f9f9;' 
-          height='600' 
-          title='javiermiz'
-        ></iframe>
+        <iframe
+          id="kofiframe"
+          src="https://ko-fi.com/javiermiz/?hidefeed=true&widget=true&embed=true&preview=true"
+          style="border:none;width:100%;background:#f9f9f9;"
+          height="600"
+          title="javiermiz"></iframe>
       </div>
     </div>
   </body>
@@ -543,13 +553,6 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     text-decoration: none;
   }
 
-  /* Support Button Styles */
-  .pre-footer {
-    display: flex;
-    justify-content: center;
-    padding: var(--content-spacing-md) 0;
-  }
-
   .support-btn {
     display: inline-flex;
     align-items: center;
@@ -648,17 +651,17 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     color: var(--color-text-primary);
   }
 
+  .kofi-modal-content iframe {
+    height: 650px;
+  }
+
   @media (max-width: 480px) {
     .kofi-modal {
       padding: var(--space-2);
     }
-    
+
     .kofi-modal-content {
       max-height: 95vh;
-    }
-    
-    .kofi-modal-content iframe {
-      height: 500px;
     }
   }
 </style>
@@ -672,16 +675,16 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
   });
 
   // Ko-fi Modal functionality
-  document.addEventListener('DOMContentLoaded', () => {
-    const support_button = document.getElementById('support-button');
-    const kofi_modal = document.getElementById('kofi-modal');
-    const modal_overlay = document.getElementById('kofi-modal-overlay');
-    const modal_close = document.getElementById('kofi-modal-close');
+  document.addEventListener("DOMContentLoaded", () => {
+    const support_button = document.getElementById("support-button");
+    const kofi_modal = document.getElementById("kofi-modal");
+    const modal_overlay = document.getElementById("kofi-modal-overlay");
+    const modal_close = document.getElementById("kofi-modal-close");
 
     function open_modal() {
       if (kofi_modal) {
-        kofi_modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
+        kofi_modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
         // Focus trap for accessibility
         modal_close?.focus();
       }
@@ -689,21 +692,21 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
     function close_modal() {
       if (kofi_modal) {
-        kofi_modal.style.display = 'none';
-        document.body.style.overflow = '';
+        kofi_modal.style.display = "none";
+        document.body.style.overflow = "";
         // Return focus to support button
         support_button?.focus();
       }
     }
 
     // Event listeners for modal
-    support_button?.addEventListener('click', open_modal);
-    modal_close?.addEventListener('click', close_modal);
-    modal_overlay?.addEventListener('click', close_modal);
+    support_button?.addEventListener("click", open_modal);
+    modal_close?.addEventListener("click", close_modal);
+    modal_overlay?.addEventListener("click", close_modal);
 
     // Close modal with Escape key
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && kofi_modal?.style.display === 'flex') {
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && kofi_modal?.style.display === "flex") {
         close_modal();
       }
     });
