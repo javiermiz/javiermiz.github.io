@@ -2,6 +2,7 @@
 // Minimal Layout for Blog Project
 import { SITE_CONFIG, type SiteLanguage } from "./layout";
 import { get_language_url } from "../utils/language-manager";
+import { getLocaleData } from "../utils/i18n";
 
 interface Props {
   title?: string;
@@ -31,6 +32,10 @@ const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url);
 const toggle_lang = lang === "en" ? "es" : "en";
 const toggle_lang_url = get_language_url(Astro.url.pathname, toggle_lang);
 console.log(toggle_lang_url);
+
+// Get localized UI text
+const ui_data = await getLocaleData({ language: lang, page: "layout" }) as any;
+const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 ---
 
 <!doctype html>
@@ -124,12 +129,12 @@ console.log(toggle_lang_url);
       <button 
         id="support-button" 
         class="support-btn"
-        aria-label="Support me on Ko-fi"
+        aria-label={support_button_text}
       >
         <svg class="support-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
         </svg>
-        Support me on Ko-fi
+        {support_button_text}
       </button>
     </div>
     <footer class="site-footer">
