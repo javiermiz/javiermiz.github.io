@@ -8,7 +8,7 @@ seo_title: "Ganar bien vs. hacer lo que quieres"
 seo_description: "Si pudiera ganar lo mismo o menos haciendo contenido sobre lo que se me antoje, lo haría sin dudarlo. Y tengo el trabajo soñado en tech."
 ---
 
-Vi un [post en Reddit](https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/) que me hizo reflexionar más de lo que esperaba.
+Vi un <a href="https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/" target="_blank">post en Reddit</a> que me hizo reflexionar más de lo que esperaba.
 
 Era sobre un YouTuber de programación (Héctor de León) que respondió con emojis de "X" a un comentario crítico constructivo. El usuario había expresado desacuerdo con algunas explicaciones técnicas del video y el YouTuber simplemente respondió con "❌" sin argumentos.
 
@@ -28,7 +28,7 @@ Sin estos creadores, habría tardado mucho más en llegar donde estoy. Me enseñ
 
 ## Mi situación actual
 
-Para dar contexto: soy senior frontend developer, trabajo 100% remoto para una empresa estadounidense, gano $6,000 USD mensuales. Sin presiones, sin micromanagement, con un equipo genial.
+Para dar contexto: soy senior frontend developer, trabajo 100% remoto para una empresa estadounidense, gano un buen salario en dólares. Sin presiones, sin micromanagement, con un equipo genial.
 
 Literalmente tengo lo que muchos considerarían "el trabajo soñado" en tech. [Escribí sobre cómo llegué aquí](https://javiermiz.github.io/blog/from-lost-to-landing-remote-us-jobs-linkedin-story/) si te interesa la historia completa.
 

@@ -9,7 +9,7 @@ seo_title: "Earning well vs. doing what you want"
 seo_description: "If I could earn the same or less making content about whatever I want, I'd do it without hesitation. And I have the dream job in tech."
 ---
 
-I saw a [Reddit post](https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/) that made me reflect more than I expected.
+I saw a <a href="https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/" target="_blank">post on Reddit</a> that made me reflect more than I expected.
 
 It was about a programming YouTuber (Héctor de León) who responded with "X" emojis to constructive critical comments. The user had expressed disagreement with some technical explanations in the video and the YouTuber simply responded with "❌" without arguments.
 
@@ -29,7 +29,7 @@ So why the hate?
 
 ## My current situation
 
-To give context: I'm a senior frontend developer, I work 100% remote for a US company, I earn $6,000 USD monthly. No pressure, no micromanagement, with a great team.
+To give context: I'm a senior frontend developer, I work 100% remote for a US company, I earn a good salary in dollars. No pressure, no micromanagement, with a great team.
 
 I literally have what many would consider "the dream job" in tech. [I wrote about how I got here](https://javiermiz.github.io/blog/from-lost-to-landing-remote-us-jobs-linkedin-story/) if you're interested in the full story.
 
