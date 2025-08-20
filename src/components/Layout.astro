@@ -119,7 +119,19 @@ console.log(toggle_lang_url);
       <slot />
     </main>
 
-    <!-- Minimal Footer -->
+    <!-- Support Button -->
+    <div class="pre-footer">
+      <button 
+        id="support-button" 
+        class="support-btn"
+        aria-label="Support me on Ko-fi"
+      >
+        <svg class="support-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        Support me on Ko-fi
+      </button>
+    </div>
     <footer class="site-footer">
       <div class="footer-content">
         <p>&copy; 2025 Javier Miz Arévalo</p>
@@ -131,6 +143,25 @@ console.log(toggle_lang_url);
         </div>
       </div>
     </footer>
+
+    <!-- Ko-fi Modal -->
+    <div id="kofi-modal" class="kofi-modal" style="display: none;">
+      <div class="kofi-modal-overlay" id="kofi-modal-overlay"></div>
+      <div class="kofi-modal-content">
+        <button class="kofi-modal-close" id="kofi-modal-close" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+        <iframe 
+          id='kofiframe' 
+          src='https://ko-fi.com/javiermiz/?hidefeed=true&widget=true&embed=true&preview=true' 
+          style='border:none;width:100%;background:#f9f9f9;' 
+          height='600' 
+          title='javiermiz'
+        ></iframe>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -427,6 +458,16 @@ console.log(toggle_lang_url);
   }
 
   /* Footer Styles - Mobile-first approach */
+  .pre-footer {
+    text-align: center;
+    padding-bottom: var(--space-10);
+  }
+
+  .kofi-button {
+    border-radius: 0 !important;
+    border: 0 !important;
+  }
+
   .site-footer {
     border-top: 1px solid var(--color-border-subtle);
     padding: var(--space-4) 0;
@@ -496,6 +537,125 @@ console.log(toggle_lang_url);
     box-shadow: var(--shadow-subtle);
     text-decoration: none;
   }
+
+  /* Support Button Styles */
+  .pre-footer {
+    display: flex;
+    justify-content: center;
+    padding: var(--content-spacing-md) 0;
+  }
+
+  .support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    color: white;
+    border: none;
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-elegant);
+    font-family: var(--font-serif-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    cursor: pointer;
+    transition: all var(--transition-elegant);
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .support-btn:hover {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .support-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .support-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Ko-fi Modal Styles */
+  .kofi-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+  }
+
+  .kofi-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+  }
+
+  .kofi-modal-content {
+    position: relative;
+    background: white;
+    border-radius: var(--radius-elegant);
+    box-shadow: var(--shadow-elegant);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+
+  .kofi-modal-close {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all var(--transition-elegant);
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .kofi-modal-close:hover {
+    background: white;
+    transform: scale(1.1);
+  }
+
+  .kofi-modal-close svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-text-primary);
+  }
+
+  @media (max-width: 480px) {
+    .kofi-modal {
+      padding: var(--space-2);
+    }
+    
+    .kofi-modal-content {
+      max-height: 95vh;
+    }
+    
+    .kofi-modal-content iframe {
+      height: 500px;
+    }
+  }
 </style>
 
 <script>
@@ -504,5 +664,43 @@ console.log(toggle_lang_url);
   // Initialize language system when DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
     initialize_language_system();
+  });
+
+  // Ko-fi Modal functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const support_button = document.getElementById('support-button');
+    const kofi_modal = document.getElementById('kofi-modal');
+    const modal_overlay = document.getElementById('kofi-modal-overlay');
+    const modal_close = document.getElementById('kofi-modal-close');
+
+    function open_modal() {
+      if (kofi_modal) {
+        kofi_modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        // Focus trap for accessibility
+        modal_close?.focus();
+      }
+    }
+
+    function close_modal() {
+      if (kofi_modal) {
+        kofi_modal.style.display = 'none';
+        document.body.style.overflow = '';
+        // Return focus to support button
+        support_button?.focus();
+      }
+    }
+
+    // Event listeners for modal
+    support_button?.addEventListener('click', open_modal);
+    modal_close?.addEventListener('click', close_modal);
+    modal_overlay?.addEventListener('click', close_modal);
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && kofi_modal?.style.display === 'flex') {
+        close_modal();
+      }
+    });
   });
 </script>
