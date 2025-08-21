@@ -8,8 +8,6 @@ seo_title: "Why I only work when time runs out"
 seo_description: "An honest reflection on working under pressure, why my brain only cooperates with deadlines, and how I've learned to work with this pattern instead of fighting against it."
 ---
 
-# Why I only work when time runs out
-
 I'm writing this because I just realized something. The current sprint ends in two days and I have three tickets that have been sitting in my kanban for a week. And strangely, _now_ is when my brain decides to cooperate.
 
 It's frustrating. For days I look at those tickets, I know exactly what I need to do, but every time I open the code it's like my mind turns to jelly. Until the last day arrives and suddenly I become a problem-solving machine.

@@ -8,8 +8,6 @@ seo_title: "Por qué solo trabajo cuando se acaba el tiempo"
 seo_description: "Una reflexión honesta sobre trabajar bajo presión, por qué mi cerebro solo coopera con deadlines y cómo he aprendido a trabajar con este patrón en lugar de luchar contra él."
 ---
 
-# Por qué solo trabajo cuando se acaba el tiempo
-
 Estoy escribiendo esto porque acabo de darme cuenta de algo. El sprint actual termina en dos días y tengo tres tickets que han estado en mi kanban desde hace una semana. Y extrañamente, _ahora_ es cuando mi cerebro decide cooperar.
 
 Es frustrante. Durante días miro esos tickets, sé exactamente lo que tengo que hacer, pero cada vez que abro el código es como si mi mente fuera de gelatina. Hasta que llega el último día y de repente me convierto en una máquina de resolver problemas.
