@@ -59,7 +59,7 @@ Es como si la urgencia fuera el filtro perfecto para separar lo importante de lo
 
 **Body doubling**: Esto sí funciona mejor. Trabajar con alguien más (aunque sea virtualmente) crea una presión social suave pero efectiva.
 
-**Mi sistema híbrido**: Tengo [mi propio sistema de productividad](es/blog/my-simple-productivity-system/) que combina captura inmediata, kanban simple y time tracking. Funciona bien para la organización diaria, pero no resuelve el problema fundamental: esos tickets siguen ahí en mi "To Do" hasta que aparece la presión real.
+**Mi sistema híbrido**: Tengo [mi propio sistema de productividad](/es/blog/my-simple-productivity-system/) que combina captura inmediata, kanban simple y time tracking. Funciona bien para la organización diaria, pero no resuelve el problema fundamental: esos tickets siguen ahí en mi "To Do" hasta que aparece la presión real.
 
 ## Lo Que Realmente Ha Funcionado
 
