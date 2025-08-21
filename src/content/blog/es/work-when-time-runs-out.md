@@ -1,7 +1,7 @@
 ---
 title: "¿Por qué solo trabajo cuando se acaba el tiempo?"
 description: "Una reflexión honesta sobre trabajar bajo presión, por qué mi cerebro solo coopera con deadlines y cómo he aprendido a trabajar con este patrón en lugar de luchar contra él."
-published_date: 2025-08-20
+published_date: 2025-08-21
 category: "personal"
 draft: false
 seo_title: "Por qué solo trabajo cuando se acaba el tiempo"
