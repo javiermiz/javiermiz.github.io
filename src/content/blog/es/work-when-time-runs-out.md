@@ -36,7 +36,7 @@ Además, cuando no hay presión, mi mente se dispersa. Veo el ticket, pienso "ah
 
 ## La Calidad Bajo Presión (Plot Twist)
 
-Aquí viene lo más extraño: _mi mejor trabajo lo hago bajo presión_. No debería ser así, ¿verdad? Se supone que la prisa produce chapuzas.
+Aquí viene lo más extraño: _mi mejor trabajo lo hago bajo presión_. No debería ser así, ¿verdad? Se supone que la prisa produce cosas mediocres.
 
 Pero cuando tengo pocas horas y mucho que hacer, mi cerebro entra en un estado de flow rarísimo donde:
 
