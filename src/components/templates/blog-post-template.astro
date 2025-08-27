@@ -46,11 +46,11 @@ const page_description = post.data.seo_description || post.data.description;
   <article class="blog-post">
     <header class="post-header">
       <!-- Breadcrumb Navigation -->
-      <nav class="breadcrumb">
+      <!-- <nav class="breadcrumb">
         <a href={back_link_url}>Blog</a>
         <span class="separator">→</span>
         <span class="current">{post.data.title}</span>
-      </nav>
+      </nav> -->
 
       <!-- Post Meta -->
       <div class="post-meta">
@@ -579,9 +579,6 @@ const page_description = post.data.seo_description || post.data.description;
   }
 
   @media (min-width: 769px) {
-    .post-title {
-      font-size: var(--text-4xl);
-    }
     .featured-image {
       margin-top: var(--space-8);
       margin-bottom: var(--space-6);

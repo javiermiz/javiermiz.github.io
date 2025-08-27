@@ -68,7 +68,7 @@ This document outlines the design system and styling guidelines for the Javier M
   /* Font Families - Serif First */
   --font-primary: "Georgia", "Times New Roman", "Times", serif;
   --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
-  --font-body: "Georgia", "Times New Roman", "Times", serif;only */
+  --font-body: "Georgia", "Times New Roman", "Times", serif;
   --font-mono: "Fira Code", "Monaco", "Consolas", monospace;
 
   /* Font Sizes - Elegant Scale */
