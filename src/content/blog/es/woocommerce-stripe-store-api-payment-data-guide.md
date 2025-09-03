@@ -1,7 +1,7 @@
 ---
 title: "Cómo Arreglar WooCommerce Stripe Store API Payment Data (Documentación Desactualizada)"
 description: "Guía paso a paso para integrar pagos Stripe con WooCommerce Store API usando la estructura payment_data correcta que realmente funciona"
-published_date: 2025-03-03
+published_date: 2025-09-03
 category: "tutoriales"
 draft: false
 seo_title: "Cómo Arreglar WooCommerce Stripe Store API Payment Data (Documentación Desactualizada)"
