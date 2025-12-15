@@ -4,7 +4,6 @@ description: "If I could earn the same or less making content about whatever I w
 published_date: 2025-08-20
 category: "personal"
 draft: false
-slug: "earning-well-vs-doing-what-you-want"
 seo_title: "Earning well vs. doing what you want"
 seo_description: "If I could earn the same or less making content about whatever I want, I'd do it without hesitation. And I have the dream job in tech."
 ---

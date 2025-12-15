@@ -109,7 +109,7 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     <meta name="zoomment" content="68a748851df1320a1c874728" />
   </head>
 
-  <body class="font-serif">
+  <body>
     <!-- Minimal Header -->
     <header class="site-header">
       <div class="header-content">
@@ -151,17 +151,17 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
 <style is:global>
   @font-face {
-    font-family: "Lora";
-    src: url("/fonts/Lora.ttf") format("truetype");
-    font-weight: 400 700;
+    font-family: "Spectral";
+    src: url("/fonts/Spectral-Bold.ttf") format("truetype");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Schibsted Grotesk";
-    src: url("/fonts/SchibstedGrotesk.ttf") format("truetype");
-    font-weight: 400 900;
+    font-family: "Spectral";
+    src: url("/fonts/Spectral-Regular.ttf") format("truetype");
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
@@ -169,8 +169,8 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
   /* Classic Minimalism Design Tokens */
   :root {
     /* Typography - Custom Fonts with Fallbacks */
-    --font-serif: "Lora", serif;
-    --font-serif-body: "Lora", serif;
+    --font-serif: "Spectral", serif;
+    --font-serif-body: "Spectral", serif;
     --font-mono: "Monaco", "Menlo", "Consolas", monospace;
 
     /* Primary Colors - Red Accent on White */
@@ -202,9 +202,10 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     --color-bg-secondary: #fafafa;
     --color-bg-tertiary: #f5f5f5;
     --color-bg-code: #f8f8f8;
+    --color-site-bg: #faf8f3;
 
     /* Border Colors - Subtle Grays */
-    --color-border-light: #e5e5e5;
+    --color-border-light: #bbbbbb;
     --color-border-medium: #d4d4d4;
     --color-border-subtle: #f5f5f5;
     --color-border-elegant: #c0c0c0;
@@ -282,7 +283,7 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     --radius-elegant: 0.375rem;
 
     /* Layout - Classical Proportions */
-    --max-width-content: 800px;
+    --max-width-content: 860px;
     --max-width-wide: 1200px;
     --max-width-reading: 65ch;
   }
@@ -296,7 +297,7 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
   html {
     font-family: var(--font-serif-body);
-    font-size: 18px;
+    font-size: 22px;
     line-height: var(--line-height-relaxed);
     color: var(--color-text-body);
     background-color: var(--color-bg-primary);
@@ -319,16 +320,31 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
   }
 
   body {
+    background-color: var(--color-site-bg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 0;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   }
 
   /* Header Styles - Classic Minimalism */
   /* Mobile-first header design - compact layout */
   .site-header {
-    padding: var(--space-2) 0;
-    background-color: var(--color-bg-primary);
+    padding: var(--space-4) 0;
     box-shadow: var(--shadow-subtle);
   }
 
@@ -361,45 +377,34 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     align-items: center;
   }
 
-  .main-nav a {
+  .main-nav a:not(.lang-toggle) {
     color: var(--color-text-secondary);
     text-decoration: none;
-    font-size: var(--text-xs);
-    font-weight: var(--font-normal);
-    letter-spacing: var(--letter-spacing-normal);
     transition: color var(--transition-elegant);
-    position: relative;
   }
 
-  .main-nav a:hover {
+  .main-nav a:not(.lang-toggle):hover {
     color: var(--color-primary);
   }
-  .main-nav a:hover::after {
+  .main-nav a:not(.lang-toggle):hover::after {
     width: 100%;
   }
 
   .lang-toggle {
-    font-family: var(--font-serif-body) !important;
-    color: var(--color-text-muted) !important;
-    font-size: 0.7rem !important;
-    font-weight: var(--font-semibold) !important;
-    text-transform: uppercase;
-    letter-spacing: var(--letter-spacing-wider);
-    padding: 0.25rem 0.5rem !important;
-    border: 1px solid var(--color-border-subtle) !important;
-    background-color: var(--color-bg-primary) !important;
-    min-width: 2rem;
-    text-align: center;
-    border-radius: var(--border-radius-sm);
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--color-border-light);
+    transition: var(--transition-all);
   }
 
   .lang-toggle:hover {
-    color: var(--color-primary) !important;
-    background-color: var(--color-bg-tertiary) !important;
-  }
-
-  .lang-toggle::after {
-    display: none !important;
+    color: var(--color-primary);
+    background-color: var(--color-bg-tertiary);
   }
 
   form * {
@@ -413,7 +418,7 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     }
 
     .header-content {
-      padding: 0 var(--content-spacing-sm);
+      padding: 0 var(--space-4);
     }
 
     .site-logo {
@@ -426,12 +431,6 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
     .main-nav a {
       font-size: var(--text-sm);
-    }
-
-    .lang-toggle {
-      font-size: var(--text-xs) !important;
-      padding: var(--space-1) var(--space-2) !important;
-      min-width: 2.5rem;
     }
   }
 
@@ -510,20 +509,11 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
   .footer-links a {
     font-family: var(--font-serif-body);
     color: var(--color-text-secondary);
-    text-decoration: none;
-    font-size: var(--text-sm);
-    font-weight: var(--font-medium);
-    letter-spacing: var(--letter-spacing-wide);
     transition: all var(--transition-elegant);
-    padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-elegant);
   }
 
   .footer-links a:hover {
     color: var(--color-primary);
-    background-color: var(--color-bg-tertiary);
-    box-shadow: var(--shadow-subtle);
-    text-decoration: none;
   }
 
   .support-btn {
