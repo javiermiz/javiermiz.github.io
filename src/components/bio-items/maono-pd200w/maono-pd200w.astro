@@ -1,0 +1,179 @@
+---
+import { Image } from "astro:assets";
+import maonoPd200w from "./PD200W.jpg";
+---
+
+<div data-maono-pd200w>
+  <button
+    type="button"
+    data-maono-open
+    aria-haspopup="dialog"
+    aria-controls="maono-pd200w-dialog"
+  >
+    <div class="simple-card">
+      <Image src={maonoPd200w} alt="MAONO PD200W" width={100} height={100} />
+      <div class="content">
+        <h2>MAONO PD200W</h2>
+        <p>Micrófono Inalámbrico USB-C y XLR</p>
+      </div>
+    </div>
+  </button>
+
+  <dialog id="maono-pd200w-dialog" class="bio-dialog" data-maono-dialog>
+    <div class="bio-dialog-panel">
+      <div class="bio-dialog-header">
+        <h3 class="bio-dialog-title">Links para comprar</h3>
+        <form method="dialog">
+          <button class="bio-dialog-close" type="submit">Cerrar</button>
+        </form>
+      </div>
+
+      <div class="bio-dialog-links">
+        <a
+          class="bio-dialog-link"
+          href="https://bit.ly/3LrqFXr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="./images/mercado-libre.png"
+            alt="Mercado Libre"
+            width={24}
+            height={24}
+          />
+          Mercado Libre
+        </a>
+        <a
+          class="bio-dialog-link"
+          href="https://amzn.to/4pMeqm8"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="./images/amazon.png" alt="Amazon" width={24} height={24} />
+          Amazon
+        </a>
+        <a
+          class="bio-dialog-link"
+          href="https://bit.ly/4pZmEHT"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Maono.mx
+        </a>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<script>
+  document.querySelectorAll("[data-maono-pd200w]").forEach((root_element) => {
+    if (!(root_element instanceof HTMLElement)) return;
+
+    const open_button = root_element.querySelector("[data-maono-open]");
+    const dialog_element = root_element.querySelector("[data-maono-dialog]");
+
+    if (!(open_button instanceof HTMLButtonElement)) return;
+    if (!(dialog_element instanceof HTMLDialogElement)) return;
+
+    const open_dialog = () => {
+      if (dialog_element.open) return;
+      dialog_element.showModal();
+    };
+
+    const close_dialog = () => {
+      if (!dialog_element.open) return;
+      dialog_element.close();
+    };
+
+    open_button.addEventListener("click", open_dialog);
+
+    dialog_element.addEventListener("click", (event) => {
+      if (event.target !== dialog_element) return;
+      close_dialog();
+    });
+  });
+</script>
+
+<style>
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .bio-dialog {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 520px;
+    width: calc(100% - var(--space-4));
+    margin: auto;
+    inset: 0;
+  }
+
+  .bio-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .bio-dialog-panel {
+    background: var(--color-bg-primary);
+    padding: var(--space-4);
+  }
+
+  .bio-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-2) 0;
+  }
+
+  .bio-dialog-title {
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  .bio-dialog-close {
+    border: 1px solid var(--color-border-light);
+    background: var(--color-bg-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition:
+      border-color var(--transition-fast),
+      background-color var(--transition-fast);
+  }
+
+  .bio-dialog-close:hover {
+    border-color: var(--color-primary);
+    background: var(--color-bg-tertiary);
+  }
+
+  .bio-dialog-links {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .bio-dialog-link {
+    display: flex;
+    gap: var(--space-1);
+    border: 1px solid var(--color-border-light);
+    background: var(--color-bg-primary);
+    padding: var(--space-2);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    color: var(--color-text-primary);
+    align-items: center;
+
+    transition: border-color var(--transition-fast);
+  }
+
+  .bio-dialog-link:hover {
+    border-color: var(--color-primary);
+  }
+</style>

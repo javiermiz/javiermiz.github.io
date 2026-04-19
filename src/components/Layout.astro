@@ -13,6 +13,9 @@ interface Props {
   keywords?: string;
   author?: string;
   structuredData?: object;
+  hide_header?: boolean;
+  hide_footer?: boolean;
+  disable_main_padding?: boolean;
 }
 
 const {
@@ -24,6 +27,9 @@ const {
   keywords = SITE_CONFIG.metadata.keywords,
   author = SITE_CONFIG.creator,
   structuredData = SITE_CONFIG.metadata.structuredData,
+  hide_header = false,
+  hide_footer = false,
+  disable_main_padding = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, SITE_CONFIG.url);
@@ -111,41 +117,55 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
 
   <body>
     <!-- Minimal Header -->
-    <header class="site-header">
-      <div class="header-content">
-        <a href={lang === "en" ? "/" : "/es"} class="site-logo">Javier Miz</a>
-        <nav class="main-nav">
-          <a href={lang === "en" ? "/" : "/es/"}>Blog</a>
-          <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
-          <a
-            href={toggle_lang_url}
-            class="lang-toggle"
-            data-language-toggle
-            data-target-language={toggle_lang}
-          >
-            {lang === "en" ? "ES" : "EN"}
-          </a>
-        </nav>
-      </div>
-    </header>
+    {
+      !hide_header && (
+        <header class="site-header">
+          <div class="header-content">
+            <a href={lang === "en" ? "/" : "/es"} class="site-logo">
+              Javier Miz
+            </a>
+            <nav class="main-nav">
+              <a href={lang === "en" ? "/" : "/es/"}>Blog</a>
+              <a href={lang === "en" ? "/cv" : "/es/cv"}>CV</a>
+              <a
+                href={toggle_lang_url}
+                class="lang-toggle"
+                data-language-toggle
+                data-target-language={toggle_lang}
+              >
+                {lang === "en" ? "ES" : "EN"}
+              </a>
+            </nav>
+          </div>
+        </header>
+      )
+    }
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main
+      class:list={["main-content", disable_main_padding && "no-main-padding"]}
+    >
       <slot />
     </main>
 
     <!-- Support Button -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>&copy; 2025 Javier Miz Arévalo</p>
-        <div class="footer-links">
-          <a target="_blank" href="https://github.com/javiermiz">GitHub</a>
-          <a target="_blank" href="https://www.linkedin.com/in/javier-miz/"
-            >LinkedIn</a
-          >
-        </div>
-      </div>
-    </footer>
+    {
+      !hide_footer && (
+        <footer class="site-footer">
+          <div class="footer-content">
+            <p>&copy; 2025 Javier Miz Arévalo</p>
+            <div class="footer-links">
+              <a target="_blank" href="https://github.com/javiermiz">
+                GitHub
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/javier-miz/">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </footer>
+      )
+    }
   </body>
 </html>
 
@@ -211,6 +231,7 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     --color-border-elegant: #c0c0c0;
 
     /* Typography Scale - Elegant Proportions */
+    --text-2xs: 0.625rem;
     --text-xs: 0.8rem;
     --text-sm: 0.9rem;
     --text-base: 1.1rem;
@@ -442,6 +463,10 @@ const support_button_text = ui_data?.ui?.supportButton || "Support me on Ko-fi";
     padding: var(--space-10) var(--space-4);
     width: 100%;
     min-height: 50vh;
+  }
+
+  .no-main-padding {
+    padding: 0;
   }
 
   /* Footer Styles - Mobile-first approach */
