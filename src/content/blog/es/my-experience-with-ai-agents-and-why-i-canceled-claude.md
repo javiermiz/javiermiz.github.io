@@ -6,9 +6,9 @@ category: "tecnología"
 draft: false
 ---
 
-Todo empezó como empiezan casi todas estas historias: pagando una suscripción.
+Todo empezó como empiezan casi todas estas historias. Pagando una suscripción.
 
-Tenía Claude, el modelo de Anthropic, y pagaba mi mensualidad como cualquier persona que quiere usar IA en serio. Pero rápido me topé con el problema que todos conocemos: límites de mensajes, restricciones de uso, y la sensación de que estás pagando por algo que no terminas de aprovechar. No es que Claude sea malo, es que el modelo de suscripción te pone un techo artificial. Llegas a cierto punto y el sistema te dice "ya fue suficiente por hoy".
+Pagaba $20 dólares al mes por Claude Pro. Al principio no me parecía mal, pero luego me empecé a topar con los límites de mensajes y las restricciones de uso todo el tiempo. La única forma de tener más era pagar $200 dólares por el siguiente nivel, y honestamente no iba a hacer eso solo para tener límites más grandes. Se sentía como pagar un carro y que te dijeran cuántos kilómetros puedes manejar al mes.
 
 Esa frustración me llevó a investigar.
 
@@ -16,17 +16,17 @@ Esa frustración me llevó a investigar.
 
 Empecé a leer sobre modelos locales. La idea de correr inteligencia artificial en mi propia computadora, sin depender de internet, sin límites, sin pagar mensualidades. Sonaba demasiado bien.
 
-Y al principio, la verdad, no entendía nada. Había herramientas como **Ollama**, que básicamente es la forma más sencilla de bajar y ejecutar modelos locales — escribes un comando en la terminal y en segundos tienes un modelo funcionando. También **LM Studio** y **Cherry Studio**, que son interfaces gráficas para hacer lo mismo si no quieres tocar la terminal. Un montón de herramientas, cada una prometiendo hacerlo más fácil.
+Y al principio, la verdad, no entendía nada. Había herramientas como **Ollama**, que básicamente es la forma más sencilla de bajar y ejecutar modelos locales. Escribes un comando en la terminal y en segundos tienes un modelo funcionando. También **LM Studio** y **Cherry Studio**, que son interfaces gráficas para hacer lo mismo si no quieres tocar la terminal. Un montón de herramientas, cada una prometiendo hacerlo más fácil.
 
-Me sumergí en ese mundo y justo cuando empecé, Alibaba había lanzado **Qwen 3.6**, un modelo que entraba perfecto en mi MacBook Pro M4 Pro con 48GB de RAM. Lo instalé, lo probé, y ver un modelo respondiendo preguntas en mi propia máquina, sin internet, se sintió como magia. Le agregué **MCP**, que es el Model Context Protocol — un estándar que permite que los modelos se conecten con herramientas externas como archivos, bases de datos o lo que necesites. Las posibilidades se abrieron un montón.
+Me sumergí en ese mundo y justo cuando empecé, Alibaba había lanzado **Qwen 3.6**, un modelo que entraba perfecto en mi MacBook Pro M4 Pro con 48GB de RAM. Lo instalé, lo probé, y ver un modelo respondiendo preguntas en mi propia máquina, sin internet, se sintió como magia. Le agregué **MCP**, que es el Model Context Protocol, un estándar que permite que los modelos se conecten con herramientas externas como archivos, bases de datos o lo que necesites. Las posibilidades se abrieron un montón.
 
 Estuve así un rato, experimentando, viendo qué podía hacer. Y como todo en este mundo, quería más.
 
 ## OpenCLAW y el primer bajón
 
-Descubrí **OpenCLAW**, un framework más avanzado para construir sistemas agénticos. Lo configuré, lo puse a correr, y funcionaba... lentísimo. Fue overkill para mi laptop.
+Descubrí **OpenCLAW**, un framework más avanzado para construir sistemas agénticos. Lo configuré, lo puse a correr, y funcionaba. Lentísimo. Fue overkill para mi laptop.
 
-Ahí aprendí algo importante: el problema no era el modelo, era todo lo que le ponía alrededor. Estos frameworks te inyectan un prompt de sistema enorme para darte contexto, y procesar eso desde cero cada vez consume muchísimo tiempo. No importa qué tan rápido sea tu modelo si antes de responder tiene que masticar páginas enteras de instrucciones. Ese descubrimiento, aunque frustrante, me llevó a la siguiente herramienta.
+Ahí aprendí algo importante. El problema no era el modelo, era todo lo que le ponía alrededor. Estos frameworks te inyectan un prompt de sistema enorme para darte contexto, y procesar eso desde cero cada vez consume muchísimo tiempo. No importa qué tan rápido sea tu modelo si antes de responder tiene que masticar páginas enteras de instrucciones. Ese descubrimiento, aunque frustrante, me llevó a la siguiente herramienta.
 
 ## pi.dev, el game changer
 
@@ -38,9 +38,9 @@ pi.dev optimiza el prompt que le mandas al modelo para que sea eficiente. Su sys
 
 Pero igual sentía que me faltaba algo. Quería algo que pudiera controlar desde mi teléfono, que estuviera disponible donde sea, con lo que pudiera chatear y que pudiera controlar mi PC desde cualquier lugar.
 
-Ahí llegó **Hermes Agent**. Es un framework que te permite tener asistentes con personalidad conectados a Telegram, capaces de ejecutar código, investigar en internet, controlar archivos, todo desde un chat. Lo configuré en muy poco tiempo — el mismo sistema me guió — y en un rato tenía **3 bots de Telegram** funcionando, cada uno con su propósito y su personalidad distinta. Uno para research, otro para ayudarme con tareas técnicas, otro nomás por experimentar.
+Ahí llegó **Hermes Agent**. Es un framework que te permite tener asistentes con personalidad conectados a Telegram, capaces de ejecutar código, investigar en internet, controlar archivos. Todo desde un chat. Lo configuré en muy poco tiempo. El mismo sistema me guió. En un rato tenía **3 bots de Telegram** funcionando, cada uno con su propósito y su personalidad distinta. Uno para research, otro para ayudarme con tareas técnicas, otro nomás por experimentar.
 
-Pero cuando hice correr Hermes con mi modelo local, volvió el problema de siempre: la velocidad. Hacer tareas en paralelo con un modelo local simplemente no es viable, incluso con pi.dev optimizando todo. Y la magia de tener agentes se pierde cuando tienes que esperar 30 segundos por cada respuesta.
+Pero cuando hice correr Hermes con mi modelo local, volvió el problema de siempre. La velocidad. Hacer tareas en paralelo con un modelo local simplemente no es viable, incluso con pi.dev optimizando todo. Y la magia de tener agentes se pierde cuando tienes que esperar 30 segundos por cada respuesta.
 
 ## La lección de los cinco dólares
 
@@ -54,7 +54,7 @@ Fue irónico darme cuenta de que lo que resolvió todos mis problemas no fue má
 
 Al final aprendí que no hay una herramienta que haga todo perfecto. Cada una tiene su lugar, y el truco está en saber cuándo usar cada una.
 
-**Hermes** gestiona los proyectos, escribe planes y mantiene el contexto a largo plazo — y para eso usa Deepseek. Es ideal para tareas que requieren memoria, entender el contexto completo de un proyecto, y coordinar múltiples pasos.
+**Hermes** gestiona los proyectos, escribe planes y mantiene el contexto a largo plazo. Para eso usa Deepseek. Es ideal para tareas que requieren memoria, entender el contexto completo de un proyecto, y coordinar múltiples pasos.
 
 **pi.dev** lo uso para programar y ejecutar código rápido. Su system prompt corto y su capacidad de paralelizar tareas lo hacen mucho más eficiente para eso. Para desarrollo puro, sigue siendo mi herramienta principal.
 
