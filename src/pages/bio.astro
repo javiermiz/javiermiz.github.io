@@ -57,15 +57,22 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
 
     if (item_elements.length === 0) return;
 
+    const normalize = (text) =>
+      text
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
     const update = () => {
-      const normalized_query = search_input.value.trim().toLowerCase();
+      const normalized_query = normalize(search_input.value);
 
       let visible_count = 0;
       item_elements.forEach((item) => {
-        const search_text = item.dataset.search || "";
+        const search_text = normalize(item.dataset.search || "");
         const is_visible =
           normalized_query.length === 0 ||
-          search_text.toLowerCase().includes(normalized_query);
+          search_text.includes(normalized_query);
 
         item.hidden = !is_visible;
         if (is_visible) visible_count += 1;
