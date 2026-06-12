@@ -3,156 +3,37 @@ import { Image } from "astro:assets";
 import aulaF75 from "./F75.avif";
 ---
 
-<div data-aula-f75>
-  <button
-    type="button"
-    data-aula-open
-    aria-haspopup="dialog"
-    aria-controls="aula-f75-dialog"
-    data-goatcounter-click="bio-aula-f75-open"
-    data-goatcounter-title="AULA F75 - Abrir modal"
-  >
-    <div class="simple-card">
-      <Image src={aulaF75} alt="AULA F75" width={100} height={100} />
-      <div class="content">
-        <h2>AULA F75</h2>
-        <p>Teclado Mecánico 75% Inalámbrico</p>
-      </div>
+<a
+  class="bio-product-link"
+  href="https://s.click.aliexpress.com/e/_c4mdq9mV"
+  target="_blank"
+  rel="noreferrer"
+  data-search="aula f75 teclado mecanico keyboard inalámbrico wireless rgb gasket"
+  data-goatcounter-click="bio-aula-f75-aliexpress"
+  data-goatcounter-title="AULA F75 - AliExpress"
+>
+  <div class="simple-card">
+    <Image src={aulaF75} alt="AULA F75" width={100} height={100} />
+    <div class="content">
+      <h2>AULA F75</h2>
+      <p>Teclado Mecánico 75% Inalámbrico</p>
     </div>
-  </button>
-
-  <dialog id="aula-f75-dialog" class="bio-dialog" data-aula-dialog>
-    <div class="bio-dialog-panel">
-      <div class="bio-dialog-header">
-        <h3 class="bio-dialog-title">Links para comprar</h3>
-        <form method="dialog">
-          <button class="bio-dialog-close" type="submit">Cerrar</button>
-        </form>
-      </div>
-
-      <div class="bio-dialog-links">
-        <a
-          class="bio-dialog-link"
-          href="https://s.click.aliexpress.com/e/_c4mdq9mV"
-          target="_blank"
-          rel="noreferrer"
-          data-goatcounter-click="bio-aula-f75-aliexpress"
-          data-goatcounter-title="AULA F75 - AliExpress"
-        >
-          AliExpress
-        </a>
-      </div>
-    </div>
-  </dialog>
-</div>
-
-<script>
-  document.querySelectorAll("[data-aula-f75]").forEach((root_element) => {
-    if (!(root_element instanceof HTMLElement)) return;
-    const open_button = root_element.querySelector("[data-aula-open]");
-    const dialog_element = root_element.querySelector("[data-aula-dialog]");
-
-    if (!(open_button instanceof HTMLButtonElement)) return;
-    if (!(dialog_element instanceof HTMLDialogElement)) return;
-
-    const open_dialog = () => {
-      if (dialog_element.open) return;
-      dialog_element.showModal();
-    };
-
-    const close_dialog = () => {
-      if (!dialog_element.open) return;
-      dialog_element.close();
-    };
-
-    open_button.addEventListener("click", open_dialog);
-    dialog_element.addEventListener("click", (event) => {
-      if (event.target !== dialog_element) return;
-      close_dialog();
-    });
-  });
-</script>
+  </div>
+</a>
 
 <style>
-  button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    width: 100%;
-    text-align: left;
-  }
-
-  .bio-dialog {
-    border: none;
-    padding: 0;
-    background: transparent;
-    max-width: 520px;
-    width: calc(100% - var(--space-4));
-    margin: auto;
-    inset: 0;
-  }
-
-  .bio-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.55);
-  }
-
-  .bio-dialog-panel {
-    background: var(--color-bg-primary);
-    padding: var(--space-4);
-  }
-
-  .bio-dialog-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-2);
-    margin: 0 0 var(--space-2) 0;
-  }
-
-  .bio-dialog-title {
-    margin: 0;
-    font-size: var(--text-sm);
-  }
-
-  .bio-dialog-close {
-    border: 1px solid var(--color-border-light);
-    background: var(--color-bg-primary);
-    border-radius: var(--radius-md);
-    padding: var(--space-1) var(--space-2);
-    font-size: var(--text-xs);
-    color: var(--color-text-primary);
-    cursor: pointer;
-    transition:
-      border-color var(--transition-fast),
-      background-color var(--transition-fast);
-  }
-
-  .bio-dialog-close:hover {
-    border-color: var(--color-primary);
-    background: var(--color-bg-tertiary);
-  }
-
-  .bio-dialog-links {
-    display: grid;
-    gap: var(--space-2);
-  }
-
-  .bio-dialog-link {
-    display: flex;
-    gap: var(--space-1);
-    border: 1px solid var(--color-border-light);
-    background: var(--color-bg-primary);
-    padding: var(--space-2);
+  .bio-product-link {
+    display: block;
     text-decoration: none;
-    font-size: var(--text-sm);
-    color: var(--color-text-primary);
-    align-items: center;
-
-    transition: border-color var(--transition-fast);
+    color: inherit;
+    width: 100%;
   }
 
-  .bio-dialog-link:hover {
+  .bio-product-link:active {
+    transform: translateY(1px);
+  }
+
+  .bio-product-link:hover :global(.simple-card) {
     border-color: var(--color-primary);
   }
 </style>

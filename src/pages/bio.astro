@@ -38,12 +38,7 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
       >
         <MaonoPd200w />
       </div>
-      <div
-        data-bio-item
-        data-search="aula f75 teclado mecanico keyboard inalámbrico wireless rgb gasket"
-      >
-        <AulaF75 />
-      </div>
+      <AulaF75 />
     </div>
 
     <div class="bio-empty" data-bio-empty hidden>No results.</div>
@@ -57,7 +52,7 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
 
     const empty_element = document.querySelector("[data-bio-empty]");
     const item_elements = Array.from(
-      document.querySelectorAll("[data-bio-item]"),
+      document.querySelectorAll("[data-bio-item], [data-search]"),
     ).filter((item) => item instanceof HTMLElement);
 
     if (item_elements.length === 0) return;
