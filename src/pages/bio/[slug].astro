@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@components/Layout.astro";
+import products from "@data/products.json";
+
+const { slug } = Astro.params;
+const product = (products as any[]).find((p: any) => p.slug === slug);
+
+if (!product) {
+  return Astro.redirect("/bio");
+}
+
+// Resolve image at build time
+let resolvedImage: any = null;
+if (product.image) {
+  try {
+    const images = import.meta.glob("/src/components/bio-items/**/*.{jpg,jpeg,png,avif,webp}");
+    const key = `/src${product.image}`;
+    if (images[key]) {
+      const mod = await images[key]() as { default: any };
+      resolvedImage = mod.default;
+    }
+  } catch {}
+}
+---
+
+<Layout
+  lang="en"
+  title={`${product.name} — Javier Miz`}
+  description={product.description}
+  hide_header={true}
+  hide_footer={true}
+>
+  <section class="bio-landing">
+    <a href="/bio" class="bio-landing-back">← Volver</a>
+
+    <div class="bio-landing-hero">
+      {resolvedImage ? (
+        <Image
+          src={resolvedImage}
+          alt={product.name}
+          width={320}
+          height={320}
+          class="bio-landing-img"
+        />
+      ) : (
+        <div class="bio-landing-img-placeholder" />
+      )}
+    </div>
+
+    <div class="bio-landing-info">
+      <h1 class="bio-landing-name">{product.name}</h1>
+      <p class="bio-landing-tagline">{product.tagline}</p>
+    </div>
+
+    {product.specs && product.specs.length > 0 && (
+      <ul class="bio-landing-specs">
+        {product.specs.map((spec: string) => (
+          <li>{spec}</li>
+        ))}
+      </ul>
+    )}
+
+    <p class="bio-landing-desc">{product.description}</p>
+
+    <div class="bio-landing-cta">
+      <h2>Links para comprar</h2>
+      <div class="bio-landing-links">
+        {product.links.map((link: any) => (
+          <a
+            class="bio-landing-link"
+            href={link.url}
+            target="_blank"
+            rel="noreferrer"
+            data-goatcounter-click={`bio-landing-${product.slug}-${link.store.toLowerCase().replace(/\s+/g, '-')}`}
+            data-goatcounter-title={`${product.name} — ${link.store}`}
+          >
+            {link.icon ? (
+              <img src={link.icon} alt={link.store} width={24} height={24} />
+            ) : (
+              <span class="bio-landing-link-icon">🛒</span>
+            )}
+            <span>{link.store}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

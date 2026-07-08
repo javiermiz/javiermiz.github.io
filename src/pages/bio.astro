@@ -2,8 +2,12 @@
 import "@components/bio-page.css";
 
 import Layout from "@components/Layout.astro";
+import products from "@data/products.json";
 import MaonoPd200w from "@components/bio-items/maono-pd200w/maono-pd200w.astro";
 import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
+
+// Build code → slug map for the search box
+const codeMap = products.map((p: any) => ({ code: p.code, slug: p.slug }));
 ---
 
 <Layout
@@ -19,7 +23,9 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
     </div>
 
     <div class="bio-search" role="search">
-      <label class="bio-search-label" for="bio-search-input">Buscar</label>
+      <label class="bio-search-label" for="bio-search-input">
+        Escribe un código para acceder al producto
+      </label>
       <input
         id="bio-search-input"
         class="bio-search-input"
@@ -46,6 +52,11 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
 </Layout>
 
 <script>
+  // Code → slug map (injected at build time)
+  const CODE_MAP: Record<string, string> = JSON.parse(
+    document.getElementById("bio-code-map")?.textContent || "{}"
+  );
+
   document.addEventListener("DOMContentLoaded", () => {
     const search_input = document.querySelector("#bio-search-input");
     if (!(search_input instanceof HTMLInputElement)) return;
@@ -63,6 +74,17 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
+
+    // Check if input matches a product code
+    const checkCodeRedirect = (value: string) => {
+      const normalized = value.trim().toUpperCase();
+      const slug = CODE_MAP[normalized];
+      if (slug) {
+        window.location.href = `/bio/${slug}`;
+        return true;
+      }
+      return false;
+    };
 
     const update = () => {
       const normalized_query = normalize(search_input.value);
@@ -83,7 +105,24 @@ import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
       }
     };
 
+    // Redirect on Enter if code matches
+    search_input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        checkCodeRedirect(search_input.value);
+      }
+    });
+
     search_input.addEventListener("input", update);
     update();
   });
 </script>
+
+<!-- Inject code map for client-side redirect -->
+<script
+  type="application/json"
+  id="bio-code-map"
+  set:html={JSON.stringify(
+    Object.fromEntries(products.map((p: any) => [p.code, p.slug]))
+  )}
+/>
