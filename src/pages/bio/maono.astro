@@ -2,13 +2,6 @@
 import { Image } from "astro:assets";
 import Layout from "@components/Layout.astro";
 import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
-
-const brand = {
-  primary: "#FF6B00",
-  bg: "#1A1A1A",
-  text: "#FFFFFF",
-  muted: "#AAAAAA",
-};
 ---
 
 <Layout
@@ -20,33 +13,84 @@ const brand = {
   disable_main_padding={true}
 >
   <div class="landing">
-    <section class="section">
-      <div class="container">
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="hero-container">
         <a href="/bio" class="back">← Volver</a>
 
-        <div class="hero">
+        <div class="hero-content">
+          <span class="badge">USB-C &amp; XLR</span>
+          <h1 class="name">MAONO<br />PD200W</h1>
+          <p class="tagline">Micrófono Inalámbrico<br />Calidad de Estudio</p>
+        </div>
+
+        <div class="hero-image">
+          <div class="img-glow"></div>
           <Image src={maonoImg} alt="MAONO PD200W" width={600} height={600} class="img" />
         </div>
 
-        <div class="info">
-          <h1 class="name">MAONO PD200W</h1>
-          <p class="tagline">Micrófono Inalámbrico USB-C y XLR</p>
-        </div>
-
-        <div class="links">
-          <a class="link" href="https://bit.ly/3LrqFXr" target="_blank" rel="noreferrer">
-            <img src="/images/mercado-libre.png" alt="Mercado Libre" width={24} height={24} />
+        <div class="cta-group">
+          <a class="cta-primary" href="https://bit.ly/3LrqFXr" target="_blank" rel="noreferrer">
+            <img src="/images/mercado-libre.png" alt="" width={22} height={22} />
             <span>Comprar en Mercado Libre</span>
           </a>
-          <a class="link" href="https://amzn.to/4pMeqm8" target="_blank" rel="noreferrer">
-            <img src="/images/amazon.png" alt="Amazon" width={24} height={24} />
-            <span>Comprar en Amazon</span>
+          <a class="cta-secondary" href="https://amzn.to/4pMeqm8" target="_blank" rel="noreferrer">
+            <img src="/images/amazon.png" alt="" width={22} height={22} />
+            <span>Amazon</span>
           </a>
-          <a class="link" href="https://bit.ly/4pZmEHT" target="_blank" rel="noreferrer">
-            <span class="icon">🛒</span>
-            <span>Comprar en Maono.mx</span>
+          <a class="cta-secondary" href="https://bit.ly/4pZmEHT" target="_blank" rel="noreferrer">
+            <span class="cta-icon">🛒</span>
+            <span>Maono.mx</span>
           </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="specs-section">
+      <div class="specs-container">
+        <h2 class="specs-title">¿Por qué este micrófono?</h2>
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-icon">🎙️</div>
+            <div class="spec-text">
+              <strong>Dual USB-C / XLR</strong>
+              <span>Plug & play por USB o conecta con XLR para más control</span>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">🔇</div>
+            <div class="spec-text">
+              <strong>Cancelación de ruido</strong>
+              <span>Filtro integrado que elimina ruido de fondo</span>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">🎯</div>
+            <div class="spec-text">
+              <strong>Patrón cardiode</strong>
+              <span>Captura solo tu voz, rechaza ruidos laterales</span>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">⚡</div>
+            <div class="spec-text">
+              <strong>Sin drivers</strong>
+              <span>Conéctalo y funciona. Sin configuraciones complicadas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-section">
+      <div class="bottom-container">
+        <p class="bottom-text">El micrófono que uso para todos mis videos</p>
+        <a class="cta-bottom" href="https://bit.ly/3LrqFXr" target="_blank" rel="noreferrer">
+          Comprar ahora →
+        </a>
       </div>
     </section>
   </div>
@@ -54,127 +98,313 @@ const brand = {
 
 <style>
   :global(body) {
-    background: #1A1A1A !important;
+    background: #0f0f0f !important;
+    margin: 0;
+    padding: 0;
   }
 
   .landing {
     width: 100%;
     min-height: 100vh;
-    background: #1A1A1A;
-    color: #FFFFFF;
+    background: #0f0f0f;
+    color: #fff;
+    font-family: var(--font-serif);
   }
 
-  .section {
-    padding: 1rem 0;
+  /* ── Hero ── */
+  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem 0 2rem;
   }
 
-  .container {
-    padding: 0 1rem;
+  .hero-glow {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 1;
+    padding: 0 1.25rem;
     max-width: 440px;
-    margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .back {
-    display: inline-block;
-    font-family: var(--font-serif);
+    align-self: flex-start;
     font-size: 0.75rem;
-    color: #AAA;
+    color: #666;
     text-decoration: none;
-    min-height: 40px;
-    line-height: 40px;
-    margin-bottom: 0.5rem;
+    min-height: 44px;
+    line-height: 44px;
+    transition: color 0.2s;
   }
 
-  .back:hover {
+  .back:hover { color: #FF6B00; }
+
+  .hero-content {
+    margin-bottom: 1.5rem;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: #FF6B00;
-  }
-
-  .hero {
-    margin-bottom: 0.75rem;
-    text-align: center;
-  }
-
-  .img {
-    width: 240px;
-    height: 240px;
-    object-fit: contain;
-  }
-
-  .info {
-    text-align: center;
-    margin-bottom: 0.75rem;
+    background: rgba(255, 107, 0, 0.1);
+    border: 1px solid rgba(255, 107, 0, 0.25);
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
   }
 
   .name {
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #FF6B00;
-    line-height: 1.25;
-    margin: 0 0 0.15rem 0;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 0.5rem;
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .tagline {
-    font-family: var(--font-serif);
-    font-size: 0.7rem;
-    color: #AAA;
+    font-size: 0.8rem;
+    color: #888;
     margin: 0;
+    line-height: 1.5;
   }
 
-  .links {
+  /* ── Hero Image ── */
+  .hero-image {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .img-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+
+  .img {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(255, 107, 0, 0.15));
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* ── CTA Buttons ── */
+  .cta-group {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.6rem;
   }
 
-  .link {
+  .cta-primary {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    min-height: 52px;
-    padding: 0.6rem 0.75rem;
-    border: 1px solid #FF6B00;
-    background: transparent;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    min-height: 56px;
+    padding: 0 1rem;
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
     text-decoration: none;
-    font-family: var(--font-serif);
+    border-radius: 12px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
+  }
+
+  .cta-primary:active { transform: translateY(0); }
+
+  .cta-primary img { border-radius: 4px; }
+
+  .cta-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    min-height: 52px;
+    padding: 0 1rem;
+    background: rgba(255, 107, 0, 0.08);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    color: #FF6B00;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #FF6B00;
-    transition: background-color 0.15s, color 0.15s;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.15s, border-color 0.15s;
   }
 
-  .link:hover {
-    background: #FF6B00;
-    color: #1A1A1A;
+  .cta-secondary:hover {
+    background: rgba(255, 107, 0, 0.15);
+    border-color: #FF6B00;
   }
 
-  .link:active {
-    opacity: 0.85;
+  .cta-secondary img { border-radius: 4px; }
+  .cta-icon { font-size: 1rem; }
+
+  /* ── Specs ── */
+  .specs-section {
+    padding: 3rem 0;
+    background: #0f0f0f;
   }
 
-  .icon {
-    width: 20px;
+  .specs-container {
+    padding: 0 1.25rem;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .specs-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
     text-align: center;
-    font-size: 0.85rem;
+    margin: 0 0 1.5rem;
   }
 
+  .specs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .spec-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  }
+
+  .spec-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 107, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .spec-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .spec-text strong {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+
+  .spec-text span {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  /* ── Bottom CTA ── */
+  .bottom-section {
+    padding: 2rem 0 3rem;
+    background: #0f0f0f;
+  }
+
+  .bottom-container {
+    padding: 0 1.25rem;
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bottom-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 0 1rem;
+  }
+
+  .cta-bottom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .cta-bottom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
+  }
+
+  /* ── Desktop ── */
   @media (min-width: 768px) {
-    .img {
-      width: 300px;
-      height: 300px;
-    }
-
-    .name {
-      font-size: 1.5rem;
-    }
-
-    .tagline {
-      font-size: 0.85rem;
-    }
-
-    .link {
-      font-size: 0.95rem;
-    }
+    .name { font-size: 2.8rem; }
+    .tagline { font-size: 0.95rem; }
+    .img { width: 300px; height: 300px; }
+    .img-glow { width: 280px; height: 280px; }
+    .cta-primary { font-size: 1rem; }
+    .cta-secondary { font-size: 0.9rem; }
   }
 </style>
