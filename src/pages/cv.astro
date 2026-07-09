@@ -1,15 +1,15 @@
 ---
-import CvTemplate from '../components/templates/cv-template.astro';
-import { getLocaleData } from '../utils/i18n';
-import Layout from '../components/Layout.astro';
+import CvTemplate from "@components/templates/cv-template.astro";
+import { getLocaleData } from "../utils/i18n";
+import Layout from "@components/Layout.astro";
 
-const CV_DATA = await getLocaleData({ language: 'en', page: 'cv' });
+const CV_DATA = await getLocaleData({ language: "es", page: "cv" });
 ---
 
 <Layout
-  lang="en"
-  title="Javier Miz - Senior Frontend Developer | React.js Expert"
-  description="Senior Frontend Developer with 5+ years of experience in React.js, Next.js, TypeScript and modern web technologies. Available for freelance projects and full-time opportunities."
+  lang="es"
+  title="Javier Miz - Desarrollador Frontend Senior | Experto en React.js"
+  description="Desarrollador Frontend Senior con más de 5 años de experiencia en React.js, Next.js, TypeScript y tecnologías web modernas. Disponible para proyectos freelance y oportunidades a tiempo completo."
 >
   <CvTemplate data={CV_DATA} />
 </Layout>

@@ -1,25 +1,25 @@
 ---
 import BioLayout from "@components/BioLayout.astro";
-import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
+import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 ---
 
-<BioLayout title="SOLAKAKA E9 Pro — Javier Miz" description="Ratón Vertical Ergonómico 36000 DPI" bg="#0D0D12">
+<BioLayout title="AULA F75 — Javier Miz" description="Teclado Mecánico 75% Inalámbrico" bg="#080808">
   <div class="landing">
-    <a href="/bio" class="back">← Volver</a>
+    <a href="/" class="back">← Volver</a>
 
-    <div class="hero" style={`background-image: url(${e9Img.src})`}>
+    <div class="hero" style={`background-image: url(${aulaImg.src})`}>
       <div class="hero-glow"></div>
       <div class="fade-top"></div>
       <div class="fade-bottom"></div>
     </div>
 
     <div class="bottom">
-      <span class="badge">36000 DPI · Bluetooth</span>
-      <h1 class="name">SOLAKAKA E9 Pro</h1>
-      <p class="tagline">Ratón Vertical Ergonómico · Ultra Precisión</p>
+      <span class="badge">Gasket Mount · Tri-Mode</span>
+      <h1 class="name">AULA F75</h1>
+      <p class="tagline">Teclado Mecánico 75% · Sonido Premium</p>
 
       <div class="cta-group">
-        <a class="cta-primary" href="https://s.click.aliexpress.com/e/_c2IikIlz" target="_blank" rel="noreferrer">
+        <a class="cta-primary" href="https://s.click.aliexpress.com/e/_c4mdq9mV" target="_blank" rel="noreferrer">
           <span>🛒</span>
           <span>Comprar en AliExpress</span>
           <span class="cta-arrow">→</span>
@@ -52,7 +52,7 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     -webkit-tap-highlight-color: transparent;
   }
 
-  .back:hover { color: #7C5CFC; }
+  .back:hover { color: #00D4AA; }
 
   /* ── Hero ── */
   .hero {
@@ -70,8 +70,8 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     transform: translateX(-50%);
     width: 75vw;
     max-width: 420px;
-    aspect-ratio: 1;
-    background: radial-gradient(circle, rgba(124, 92, 252, 0.18) 0%, transparent 60%);
+    aspect-ratio: 4/3;
+    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.16) 0%, transparent 60%);
     pointer-events: none;
     animation: pulse 4s ease-in-out infinite;
   }
@@ -85,7 +85,7 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     position: absolute;
     inset: 0 0 auto;
     height: 25%;
-    background: linear-gradient(to bottom, rgba(13, 13, 18, 0.8), transparent);
+    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.8), transparent);
     pointer-events: none;
   }
 
@@ -93,7 +93,7 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     position: absolute;
     inset: auto 0 0;
     height: 45%;
-    background: linear-gradient(to top, #0D0D12, transparent);
+    background: linear-gradient(to top, #080808, transparent);
     pointer-events: none;
   }
 
@@ -117,9 +117,9 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #7C5CFC;
-    background: rgba(124, 92, 252, 0.08);
-    border: 1px solid rgba(124, 92, 252, 0.2);
+    color: #00D4AA;
+    background: rgba(0, 212, 170, 0.06);
+    border: 1px solid rgba(0, 212, 170, 0.15);
     padding: 0.25rem 0.7rem;
     border-radius: 100px;
     margin-bottom: 0.4rem;
@@ -131,7 +131,7 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     line-height: 1.05;
     letter-spacing: -0.02em;
     margin-bottom: 0.2rem;
-    background: linear-gradient(135deg, #7C5CFC, #A78BFA 50%, #C4B5FD);
+    background: linear-gradient(135deg, #00D4AA, #00FFCC 50%, #66FFE0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -155,12 +155,12 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
     justify-content: center;
     gap: 0.5rem;
     min-height: 54px;
-    background: linear-gradient(135deg, #7C5CFC, #A78BFA);
-    color: #fff;
+    background: linear-gradient(135deg, #00D4AA, #00FFCC);
+    color: #080808;
     font-size: 0.85rem;
     font-weight: 700;
     border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(124, 92, 252, 0.3), 0 0 0 1px rgba(124, 92, 252, 0.1);
+    box-shadow: 0 4px 24px rgba(0, 212, 170, 0.3), 0 0 0 1px rgba(0, 212, 170, 0.1);
     transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
     -webkit-tap-highlight-color: transparent;
     overflow: hidden;
@@ -176,7 +176,7 @@ import e9Img from "@components/bio-items/solakaka-e9/E9.avif";
 
   .cta-primary:hover {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 8px 32px rgba(124, 92, 252, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 212, 170, 0.4);
   }
 
   .cta-primary:active {

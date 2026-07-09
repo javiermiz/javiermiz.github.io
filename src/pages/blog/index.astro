@@ -2,7 +2,6 @@
 import BlogTemplate from "../../components/templates/blog-template.astro";
 import { getLocaleData } from "../../utils/i18n";
 
-// Get blog data from Spanish locale
 const blog_data = await getLocaleData({ language: "es", page: "blog" });
 ---
 

@@ -39,7 +39,7 @@ function sort_posts_by_date(posts: any[]): any[] {
 function generate_post_url(post_slug: string, language: SiteLanguage): string {
   if (language === "es") {
     const clean_slug = post_slug.replace("es/", "");
-    return `/es/blog/${clean_slug}/`;
+    return `/blog/${clean_slug}/`;
   }
   return `/blog/${post_slug}/`;
 }

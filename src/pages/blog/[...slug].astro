@@ -1,17 +1,21 @@
 ---
-// Dynamic blog post page
+// Dynamic blog post page for Spanish posts
 import { getCollection, type CollectionEntry } from "astro:content";
 import BlogPostTemplate from "../../components/templates/blog-post-template.astro";
 
-// Generate static paths for English blog posts only
+// Generate static paths for Spanish blog posts only
 export async function getStaticPaths() {
   const blog_posts = await getCollection("blog");
-  // Filter only English posts (those that don't start with "es/")
-  const english_posts = blog_posts.filter((post) => !post.slug.startsWith("es/"));
-  
-  return english_posts.map((post) => {
+  // Filter only Spanish posts (those that start with "es/")
+  const spanish_posts = blog_posts.filter((post) =>
+    post.slug.startsWith("es/"),
+  );
+
+  return spanish_posts.map((post) => {
+    // Remove "es/" prefix to get clean slug
+    const clean_slug = post.slug.replace("es/", "");
     return {
-      params: { slug: post.slug },
+      params: { slug: clean_slug },
       props: { post },
     };
   });
@@ -28,8 +32,8 @@ const { post } = Astro.props as Props;
 
 <BlogPostTemplate
   post={post}
-  language="en"
-  back_link_url="/"
-  back_link_text="Back to Blog"
-  updated_text="Last updated"
+  language="es"
+  back_link_url="/es"
+  back_link_text="Volver al Blog"
+  updated_text="Última actualización"
 />
