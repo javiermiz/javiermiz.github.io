@@ -15,14 +15,11 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   <div class="landing">
     <a href="/bio" class="back">← Volver</a>
 
-    <!-- Hero image -->
-    <div class="hero">
+    <div class="hero" style={`background-image: url(${aulaImg.src})`}>
       <div class="hero-glow"></div>
-      <Image src={aulaImg} alt="AULA F75" width={600} height={600} class="img" />
       <div class="fade"></div>
     </div>
 
-    <!-- Info + CTA -->
     <div class="bottom">
       <span class="badge">Gasket Mount · Tri-Mode</span>
       <h1 class="name">AULA F75</h1>
@@ -77,33 +74,22 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   .hero {
     position: relative;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 0;
+    background-size: contain;
+    background-position: center 30%;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
 
   .hero-glow {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     width: 400px;
     height: 300px;
-    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.12) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.14) 0%, transparent 65%);
     pointer-events: none;
-  }
-
-  .img {
-    position: relative;
-    z-index: 1;
-    max-width: 320px;
-    max-height: 45vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 8px 30px rgba(0, 212, 170, 0.1));
   }
 
   .fade {
@@ -111,9 +97,8 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%;
+    height: 45%;
     background: linear-gradient(to top, #080808 0%, transparent 100%);
-    z-index: 2;
     pointer-events: none;
   }
 
@@ -123,7 +108,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     z-index: 2;
     text-align: center;
     padding: 0 1.5rem 2rem;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
   }
 
   .badge {
@@ -185,7 +170,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   }
 
   @media (min-width: 768px) {
-    .img { max-width: 420px; max-height: 50vh; }
+    .hero { background-position: center 35%; }
     .name { font-size: 2rem; }
     .tagline { font-size: 0.85rem; }
     .cta-primary { font-size: 0.95rem; }

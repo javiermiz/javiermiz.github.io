@@ -15,14 +15,11 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
   <div class="landing">
     <a href="/bio" class="back">← Volver</a>
 
-    <!-- Hero image -->
-    <div class="hero">
+    <div class="hero" style={`background-image: url(${maonoImg.src})`}>
       <div class="hero-glow"></div>
-      <Image src={maonoImg} alt="MAONO PD200W" width={600} height={600} class="img" />
       <div class="fade"></div>
     </div>
 
-    <!-- Info + CTA -->
     <div class="bottom">
       <span class="badge">USB-C &amp; XLR</span>
       <h1 class="name">MAONO PD200W</h1>
@@ -87,33 +84,22 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
   .hero {
     position: relative;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 0;
+    background-size: contain;
+    background-position: center 30%;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
 
   .hero-glow {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     width: 350px;
     height: 350px;
-    background: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.18) 0%, transparent 65%);
     pointer-events: none;
-  }
-
-  .img {
-    position: relative;
-    z-index: 1;
-    max-width: 280px;
-    max-height: 50vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 8px 30px rgba(255, 107, 0, 0.15));
   }
 
   .fade {
@@ -121,9 +107,8 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%;
+    height: 45%;
     background: linear-gradient(to top, #0f0f0f 0%, transparent 100%);
-    z-index: 2;
     pointer-events: none;
   }
 
@@ -133,7 +118,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     z-index: 2;
     text-align: center;
     padding: 0 1.5rem 2rem;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
   }
 
   .badge {
@@ -197,10 +182,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
   }
 
-  .cta-row {
-    display: flex;
-    gap: 0.5rem;
-  }
+  .cta-row { display: flex; gap: 0.5rem; }
 
   .cta-secondary {
     flex: 1;
@@ -223,7 +205,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
   .cta-secondary img { border-radius: 3px; }
 
   @media (min-width: 768px) {
-    .img { max-width: 360px; max-height: 55vh; }
+    .hero { background-size: contain; background-position: center 35%; }
     .name { font-size: 2rem; }
     .tagline { font-size: 0.85rem; }
     .cta-primary { font-size: 0.95rem; }
