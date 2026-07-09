@@ -12,4 +12,9 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
+  },
 });

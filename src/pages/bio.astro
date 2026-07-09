@@ -3,11 +3,10 @@ import "@components/bio-page.css";
 
 import Layout from "@components/Layout.astro";
 import products from "@data/products.json";
-import MaonoPd200w from "@components/bio-items/maono-pd200w/maono-pd200w.astro";
-import AulaF75 from "@components/bio-items/aula-f75/aula-f75.astro";
 
-// Build code → slug map for the search box
-const codeMap = products.map((p: any) => ({ code: p.code, slug: p.slug }));
+const codeMap = Object.fromEntries(
+  (products as any[]).map((p: any) => [p.code, p.slug])
+);
 ---
 
 <Layout
@@ -16,69 +15,65 @@ const codeMap = products.map((p: any) => ({ code: p.code, slug: p.slug }));
   description="Link in bio page for content creation."
   hide_header={true}
   hide_footer={true}
+  disable_main_padding={true}
 >
-  <section class="bio-page" aria-label="Creator links">
-    <div class="bio-header">
-      <h1 class="bio-title">Javier Miz</h1>
-    </div>
+  <div class="bio-page">
+    <section class="bio-section">
+      <div class="bio-container">
+        <div class="bio-header">
+          <h1 class="bio-title">Javier Miz</h1>
+        </div>
 
-    <div class="bio-search" role="search">
-      <label class="bio-search-label" for="bio-search-input">
-        Escribe un código para acceder al producto
-      </label>
-      <input
-        id="bio-search-input"
-        class="bio-search-input"
-        type="search"
-        name="q"
-        placeholder="Buscar links..."
-        autocomplete="off"
-        inputmode="search"
-      />
-    </div>
+        <form class="bio-search" role="search" data-bio-form>
+          <input
+            id="bio-search-input"
+            class="bio-search-input"
+            type="search"
+            name="q"
+            placeholder="Escribe un código..."
+            autocomplete="off"
+            inputmode="search"
+          />
+          <button type="submit" class="bio-search-btn">Buscar</button>
+        </form>
 
-    <div class="bio-links" data-bio-links>
-      <div
-        data-bio-item
-        data-search="maono pd200w microfono inalámbrico usb-c xlr"
-      >
-        <MaonoPd200w />
+        <p class="bio-section-label">Códigos recientes</p>
+
+        <div class="bio-codes" data-bio-codes>
+          {(products as any[]).map((product: any) => (
+            <a
+              href={`/bio/${product.slug}`}
+              class="bio-code-tag"
+              data-code={product.code}
+              data-goatcounter-click={`bio-code-${product.slug}`}
+              data-goatcounter-title={`Código: ${product.code}`}
+            >
+              {product.code}
+            </a>
+          ))}
+        </div>
+
+        <div class="bio-empty" data-bio-empty hidden>Código no encontrado</div>
       </div>
-      <AulaF75 />
-    </div>
-
-    <div class="bio-empty" data-bio-empty hidden>No results.</div>
-  </section>
+    </section>
+  </div>
 </Layout>
 
-<script>
-  // Code → slug map (injected at build time)
-  const CODE_MAP: Record<string, string> = JSON.parse(
-    document.getElementById("bio-code-map")?.textContent || "{}"
-  );
-
+<script
+  is:inline
+  define:vars={{ codeMap: JSON.stringify(codeMap) }}
+>
   document.addEventListener("DOMContentLoaded", () => {
-    const search_input = document.querySelector("#bio-search-input");
-    if (!(search_input instanceof HTMLInputElement)) return;
+    const form = document.querySelector("[data-bio-form]");
+    const input = document.querySelector("#bio-search-input");
+    if (!(input instanceof HTMLInputElement)) return;
 
-    const empty_element = document.querySelector("[data-bio-empty]");
-    const item_elements = Array.from(
-      document.querySelectorAll("[data-bio-item], [data-search]"),
-    ).filter((item) => item instanceof HTMLElement);
+    const tags = Array.from(document.querySelectorAll("[data-code]"));
+    const empty = document.querySelector("[data-bio-empty]");
+    const parsed = JSON.parse(codeMap);
 
-    if (item_elements.length === 0) return;
-
-    const normalize = (text: string) =>
-      text
-        .trim()
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-
-    // Check if input matches a product code
-    const checkCodeRedirect = (value: string) => {
-      const normalized = value.trim().toUpperCase();
-      const slug = CODE_MAP[normalized];
+    const checkRedirect = (value) => {
+      const slug = parsed[value.trim().toUpperCase()];
       if (slug) {
         window.location.href = `/bio/${slug}`;
         return true;
@@ -86,43 +81,23 @@ const codeMap = products.map((p: any) => ({ code: p.code, slug: p.slug }));
       return false;
     };
 
-    const update = () => {
-      const normalized_query = normalize(search_input.value);
-
-      let visible_count = 0;
-      item_elements.forEach((item) => {
-        const search_text = normalize(item.dataset.search || "");
-        const is_visible =
-          normalized_query.length === 0 ||
-          search_text.includes(normalized_query);
-
-        item.hidden = !is_visible;
-        if (is_visible) visible_count += 1;
-      });
-
-      if (empty_element instanceof HTMLElement) {
-        empty_element.hidden = visible_count > 0;
-      }
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      checkRedirect(input.value);
     };
 
-    // Redirect on Enter if code matches
-    search_input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        checkCodeRedirect(search_input.value);
-      }
-    });
+    const filter = () => {
+      const q = input.value.trim().toLowerCase();
+      let visible = 0;
+      tags.forEach((tag) => {
+        const match = !q || tag.dataset.code.toLowerCase().includes(q);
+        tag.hidden = !match;
+        if (match) visible++;
+      });
+      if (empty) empty.hidden = visible > 0;
+    };
 
-    search_input.addEventListener("input", update);
-    update();
+    if (form) form.addEventListener("submit", handleSubmit);
+    input.addEventListener("input", filter);
   });
 </script>
-
-<!-- Inject code map for client-side redirect -->
-<script
-  type="application/json"
-  id="bio-code-map"
-  set:html={JSON.stringify(
-    Object.fromEntries(products.map((p: any) => [p.code, p.slug]))
-  )}
-/>
