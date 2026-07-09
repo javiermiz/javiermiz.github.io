@@ -30,6 +30,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
         <a class="cta-primary" href="https://s.click.aliexpress.com/e/_c4mdq9mV" target="_blank" rel="noreferrer">
           <span>🛒</span>
           <span>Comprar en AliExpress</span>
+          <span class="cta-arrow">→</span>
         </a>
       </div>
     </div>
@@ -68,7 +69,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     left: 0.75rem;
     z-index: 5;
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.4);
     text-decoration: none;
     min-height: 44px;
     line-height: 44px;
@@ -91,15 +92,21 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 
   .hero-glow {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 70vw;
-    max-width: 400px;
-    height: 50vw;
-    max-height: 300px;
-    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.14) 0%, transparent 65%);
+    width: 75vw;
+    max-width: 420px;
+    height: 55vw;
+    max-height: 320px;
+    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.16) 0%, transparent 60%);
     pointer-events: none;
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
   }
 
   .fade-top {
@@ -107,8 +114,8 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     top: 0;
     left: 0;
     right: 0;
-    height: 20%;
-    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.7) 0%, transparent 100%);
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.8) 0%, transparent 100%);
     pointer-events: none;
   }
 
@@ -117,7 +124,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%;
+    height: 45%;
     background: linear-gradient(to top, #080808 0%, transparent 100%);
     pointer-events: none;
   }
@@ -138,24 +145,25 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 
   .badge {
     display: inline-block;
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #00D4AA;
-    background: rgba(0, 212, 170, 0.08);
-    border: 1px solid rgba(0, 212, 170, 0.2);
-    padding: 0.2rem 0.6rem;
+    background: rgba(0, 212, 170, 0.06);
+    border: 1px solid rgba(0, 212, 170, 0.15);
+    padding: 0.25rem 0.7rem;
     border-radius: 100px;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
   }
 
   .name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 800;
-    line-height: 1.1;
-    margin: 0 0 0.15rem;
-    background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 100%);
+    line-height: 1.05;
+    margin: 0 0 0.2rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 50%, #66FFE0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -163,41 +171,64 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 
   .tagline {
     font-size: 0.65rem;
-    color: #666;
-    margin: 0 0 0.75rem;
+    color: #555;
+    margin: 0 0 1rem;
+    letter-spacing: 0.01em;
   }
 
   .cta-group {
-    max-width: 360px;
+    max-width: 340px;
     margin: 0 auto;
     width: 100%;
   }
 
   .cta-primary {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     width: 100%;
-    min-height: 52px;
+    min-height: 54px;
     background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 100%);
     color: #080808;
     font-size: 0.85rem;
     font-weight: 700;
     font-family: inherit;
     text-decoration: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3);
-    transition: transform 0.15s, box-shadow 0.15s;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0, 212, 170, 0.3), 0 0 0 1px rgba(0, 212, 170, 0.1);
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
     -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+  }
+
+  .cta-primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+    pointer-events: none;
   }
 
   .cta-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 212, 170, 0.4);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 8px 32px rgba(0, 212, 170, 0.4), 0 0 0 1px rgba(0, 212, 170, 0.2);
   }
 
-  .cta-primary:active { transform: translateY(0); }
+  .cta-primary:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 12px rgba(0, 212, 170, 0.25);
+  }
+
+  .cta-arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.2s;
+  }
+
+  .cta-primary:hover .cta-arrow {
+    transform: translateX(3px);
+  }
 
   /* ── Tablet ── */
   @media (min-width: 768px) {
@@ -212,17 +243,18 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
       padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
 
-    .badge { font-size: 0.65rem; }
+    .badge { font-size: 0.6rem; padding: 0.3rem 0.8rem; }
 
-    .name { font-size: 1.8rem; }
-    .tagline { font-size: 0.8rem; margin-bottom: 1rem; }
+    .name { font-size: 2rem; letter-spacing: -0.03em; }
+    .tagline { font-size: 0.8rem; margin-bottom: 1.25rem; }
 
-    .cta-primary { font-size: 0.95rem; min-height: 56px; }
+    .cta-primary { font-size: 0.95rem; min-height: 56px; border-radius: 16px; }
   }
 
   /* ── Desktop ── */
   @media (min-width: 1024px) {
-    .name { font-size: 2.2rem; }
+    .name { font-size: 2.4rem; }
     .tagline { font-size: 0.9rem; }
+    .cta-primary { font-size: 1rem; }
   }
 </style>

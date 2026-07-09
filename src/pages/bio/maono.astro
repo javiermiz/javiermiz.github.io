@@ -30,6 +30,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
         <a class="cta-primary" href="https://bit.ly/3LrqFXr" target="_blank" rel="noreferrer">
           <img src="/images/mercado-libre.png" alt="" width={20} height={20} />
           <span>Mercado Libre</span>
+          <span class="cta-arrow">→</span>
         </a>
         <div class="cta-row">
           <a class="cta-secondary" href="https://amzn.to/4pMeqm8" target="_blank" rel="noreferrer">
@@ -47,13 +48,13 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
 </Layout>
 
 <script is:inline>
-  document.documentElement.style.setProperty('--color-site-bg', '#0f0f0f', 'important');
-  document.body.style.setProperty('background-color', '#0f0f0f', 'important');
+  document.documentElement.style.setProperty('--color-site-bg', '#0a0a0a', 'important');
+  document.body.style.setProperty('background-color', '#0a0a0a', 'important');
 </script>
 
 <style>
   :global(body) {
-    background: #0f0f0f !important;
+    background: #0a0a0a !important;
     margin: 0;
     padding: 0;
   }
@@ -62,7 +63,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    background: #0f0f0f;
+    background: #0a0a0a;
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
@@ -78,7 +79,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     left: 0.75rem;
     z-index: 5;
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.4);
     text-decoration: none;
     min-height: 44px;
     line-height: 44px;
@@ -101,15 +102,21 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
 
   .hero-glow {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 60vw;
-    max-width: 350px;
-    height: 60vw;
-    max-height: 350px;
-    background: radial-gradient(circle, rgba(255, 107, 0, 0.18) 0%, transparent 65%);
+    width: 70vw;
+    max-width: 380px;
+    height: 70vw;
+    max-height: 380px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.2) 0%, transparent 60%);
     pointer-events: none;
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
   }
 
   .fade-top {
@@ -117,8 +124,8 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     top: 0;
     left: 0;
     right: 0;
-    height: 20%;
-    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.7) 0%, transparent 100%);
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, transparent 100%);
     pointer-events: none;
   }
 
@@ -127,8 +134,8 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%;
-    background: linear-gradient(to top, #0f0f0f 0%, transparent 100%);
+    height: 45%;
+    background: linear-gradient(to top, #0a0a0a 0%, transparent 100%);
     pointer-events: none;
   }
 
@@ -148,24 +155,25 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
 
   .badge {
     display: inline-block;
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #FF6B00;
-    background: rgba(255, 107, 0, 0.1);
-    border: 1px solid rgba(255, 107, 0, 0.25);
-    padding: 0.2rem 0.6rem;
+    background: rgba(255, 107, 0, 0.08);
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    padding: 0.25rem 0.7rem;
     border-radius: 100px;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
   }
 
   .name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 800;
-    line-height: 1.1;
-    margin: 0 0 0.15rem;
-    background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+    line-height: 1.05;
+    margin: 0 0 0.2rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 50%, #FFB366 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -173,12 +181,13 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
 
   .tagline {
     font-size: 0.65rem;
-    color: #777;
-    margin: 0 0 0.75rem;
+    color: #666;
+    margin: 0 0 1rem;
+    letter-spacing: 0.01em;
   }
 
   .cta-group {
-    max-width: 360px;
+    max-width: 340px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -187,30 +196,52 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
   }
 
   .cta-primary {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     width: 100%;
-    min-height: 52px;
+    min-height: 54px;
     background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
     color: #fff;
     font-size: 0.85rem;
     font-weight: 700;
     font-family: inherit;
     text-decoration: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
-    transition: transform 0.15s, box-shadow 0.15s;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(255, 107, 0, 0.35), 0 0 0 1px rgba(255, 107, 0, 0.1);
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
     -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+  }
+
+  .cta-primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+    pointer-events: none;
   }
 
   .cta-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 8px 32px rgba(255, 107, 0, 0.45), 0 0 0 1px rgba(255, 107, 0, 0.2);
   }
 
-  .cta-primary:active { transform: translateY(0); }
+  .cta-primary:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 12px rgba(255, 107, 0, 0.3);
+  }
+
+  .cta-arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.2s;
+  }
+
+  .cta-primary:hover .cta-arrow {
+    transform: translateX(3px);
+  }
 
   .cta-row { display: flex; gap: 0.4rem; }
 
@@ -221,19 +252,24 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     justify-content: center;
     gap: 0.35rem;
     min-height: 48px;
-    background: rgba(255, 107, 0, 0.06);
-    border: 1px solid rgba(255, 107, 0, 0.2);
-    color: #FF6B00;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #999;
     font-size: 0.7rem;
     font-weight: 600;
     font-family: inherit;
     text-decoration: none;
     border-radius: 10px;
-    transition: background 0.15s;
+    transition: all 0.2s;
     -webkit-tap-highlight-color: transparent;
   }
 
-  .cta-secondary:hover { background: rgba(255, 107, 0, 0.12); }
+  .cta-secondary:hover {
+    background: rgba(255, 107, 0, 0.06);
+    border-color: rgba(255, 107, 0, 0.2);
+    color: #FF6B00;
+  }
+
   .cta-secondary:active { opacity: 0.85; }
   .cta-secondary img { border-radius: 3px; }
 
@@ -250,18 +286,19 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
       padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
 
-    .badge { font-size: 0.65rem; }
+    .badge { font-size: 0.6rem; padding: 0.3rem 0.8rem; }
 
-    .name { font-size: 1.8rem; }
-    .tagline { font-size: 0.8rem; margin-bottom: 1rem; }
+    .name { font-size: 2rem; letter-spacing: -0.03em; }
+    .tagline { font-size: 0.8rem; margin-bottom: 1.25rem; }
 
-    .cta-primary { font-size: 0.95rem; min-height: 56px; }
+    .cta-primary { font-size: 0.95rem; min-height: 56px; border-radius: 16px; }
     .cta-secondary { font-size: 0.8rem; min-height: 52px; }
   }
 
   /* ── Desktop ── */
   @media (min-width: 1024px) {
-    .name { font-size: 2.2rem; }
+    .name { font-size: 2.4rem; }
     .tagline { font-size: 0.9rem; }
+    .cta-primary { font-size: 1rem; }
   }
 </style>
