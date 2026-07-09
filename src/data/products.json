@@ -46,5 +46,24 @@
         "icon": null
       }
     ]
+  },
+  {
+    "code": "SOLAKAKA",
+    "slug": "solakaka",
+    "name": "SOLAKAKA E9 Pro",
+    "tagline": "Ratón Vertical Ergonómico 36000 DPI",
+    "brand": {
+      "primary": "#7C5CFC",
+      "bg": "#0D0D12",
+      "text": "#FFFFFF",
+      "muted": "#888888"
+    },
+    "links": [
+      {
+        "store": "AliExpress",
+        "url": "https://s.click.aliexpress.com/e/_c2IikIlz",
+        "icon": null
+      }
+    ]
   }
 ]
