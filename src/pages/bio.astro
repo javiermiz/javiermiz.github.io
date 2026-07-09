@@ -11,51 +11,48 @@ const codeMap = Object.fromEntries(
 
 <Layout
   lang="en"
-  title="Javier Miz - Creator Links"
-  description="Link in bio page for content creation."
+  title="Javier Miz"
+  description="Link in bio"
   hide_header={true}
   hide_footer={true}
   disable_main_padding={true}
 >
   <div class="bio-page">
-    <section class="bio-section">
-      <div class="bio-container">
-        <div class="bio-header">
-          <h1 class="bio-title">Javier Miz</h1>
-        </div>
-
-        <form class="bio-search" role="search" data-bio-form>
-          <input
-            id="bio-search-input"
-            class="bio-search-input"
-            type="search"
-            name="q"
-            placeholder="Escribe un código..."
-            autocomplete="off"
-            inputmode="search"
-          />
-          <button type="submit" class="bio-search-btn">Buscar</button>
-        </form>
-
-        <p class="bio-section-label">Códigos recientes</p>
-
-        <div class="bio-codes" data-bio-codes>
-          {(products as any[]).map((product: any) => (
-            <a
-              href={`/bio/${product.slug}`}
-              class="bio-code-tag"
-              data-code={product.code}
-              data-goatcounter-click={`bio-code-${product.slug}`}
-              data-goatcounter-title={`Código: ${product.code}`}
-            >
-              {product.code}
-            </a>
-          ))}
-        </div>
-
-        <div class="bio-empty" data-bio-empty hidden>Código no encontrado</div>
+    <div class="bio-container">
+      <div class="bio-header">
+        <h1 class="bio-title">Javier Miz</h1>
+        <p class="bio-subtitle">Ingresa un código para ver el producto</p>
       </div>
-    </section>
+
+      <form class="bio-search" role="search" data-bio-form>
+        <input
+          id="bio-search-input"
+          class="bio-search-input"
+          type="search"
+          name="q"
+          placeholder="Escribe un código..."
+          autocomplete="off"
+          inputmode="search"
+        />
+        <button type="submit" class="bio-search-btn">Buscar</button>
+      </form>
+
+      <p class="bio-section-label">Códigos</p>
+
+      <div class="bio-codes" data-bio-codes>
+        {(products as any[]).map((product: any) => (
+          <a
+            href={`/bio/${product.slug}`}
+            class="bio-code-tag"
+            data-code={product.code}
+          >
+            {product.code}
+          </a>
+        ))}
+      </div>
+
+      <div class="bio-empty" data-bio-empty hidden>Código no encontrado</div>
+    </div>
   </div>
 </Layout>
 
@@ -81,12 +78,12 @@ const codeMap = Object.fromEntries(
       return false;
     };
 
-    const handleSubmit = (e) => {
+    if (form) form.addEventListener("submit", (e) => {
       e.preventDefault();
       checkRedirect(input.value);
-    };
+    });
 
-    const filter = () => {
+    input.addEventListener("input", () => {
       const q = input.value.trim().toLowerCase();
       let visible = 0;
       tags.forEach((tag) => {
@@ -95,9 +92,6 @@ const codeMap = Object.fromEntries(
         if (match) visible++;
       });
       if (empty) empty.hidden = visible > 0;
-    };
-
-    if (form) form.addEventListener("submit", handleSubmit);
-    input.addEventListener("input", filter);
+    });
   });
 </script>
