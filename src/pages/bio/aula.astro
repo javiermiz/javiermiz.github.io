@@ -1,17 +1,9 @@
 ---
-import { Image } from "astro:assets";
-import Layout from "@components/Layout.astro";
+import BioLayout from "@components/BioLayout.astro";
 import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 ---
 
-<Layout
-  lang="en"
-  title="AULA F75 — Javier Miz"
-  description="Teclado Mecánico 75% Inalámbrico"
-  hide_header={true}
-  hide_footer={true}
-  disable_main_padding={true}
->
+<BioLayout title="AULA F75 — Javier Miz" description="Teclado Mecánico 75% Inalámbrico" bg="#080808">
   <div class="landing">
     <a href="/bio" class="back">← Volver</a>
 
@@ -35,31 +27,15 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
       </div>
     </div>
   </div>
-</Layout>
-
-<script is:inline>
-  document.documentElement.style.setProperty('--color-site-bg', '#080808', 'important');
-  document.body.style.setProperty('background-color', '#080808', 'important');
-</script>
+</BioLayout>
 
 <style>
-  :global(body) {
-    background: #080808 !important;
-    margin: 0;
-    padding: 0;
-  }
-
   .landing {
-    width: 100%;
     height: 100vh;
     height: 100dvh;
-    background: #080808;
-    color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    position: relative;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
@@ -70,7 +46,6 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     z-index: 5;
     font-size: 0.7rem;
     color: rgba(255,255,255,0.4);
-    text-decoration: none;
     min-height: 44px;
     line-height: 44px;
     transition: color 0.2s;
@@ -83,49 +58,42 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   .hero {
     position: relative;
     height: 55vh;
+    flex-shrink: 0;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
-    flex-shrink: 0;
   }
 
   .hero-glow {
     position: absolute;
-    top: 10%;
-    left: 50%;
+    inset: 10% auto auto 50%;
     transform: translateX(-50%);
     width: 75vw;
     max-width: 420px;
-    height: 55vw;
-    max-height: 320px;
+    aspect-ratio: 4/3;
     background: radial-gradient(ellipse, rgba(0, 212, 170, 0.16) 0%, transparent 60%);
     pointer-events: none;
-    animation: glow-pulse 4s ease-in-out infinite;
+    animation: pulse 4s ease-in-out infinite;
   }
 
-  @keyframes glow-pulse {
+  @keyframes pulse {
     0%, 100% { opacity: 0.7; }
     50% { opacity: 1; }
   }
 
   .fade-top {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0 0 auto;
     height: 25%;
-    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.8) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.8), transparent);
     pointer-events: none;
   }
 
   .fade-bottom {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: auto 0 0;
     height: 45%;
-    background: linear-gradient(to top, #080808 0%, transparent 100%);
+    background: linear-gradient(to top, #080808, transparent);
     pointer-events: none;
   }
 
@@ -133,18 +101,18 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   .bottom {
     position: relative;
     z-index: 2;
-    text-align: center;
-    padding: 0 1.25rem;
-    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 1.25rem;
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
     min-height: 0;
   }
 
   .badge {
-    display: inline-block;
     font-size: 0.5rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -161,9 +129,9 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     font-size: 1.4rem;
     font-weight: 800;
     line-height: 1.05;
-    margin: 0 0 0.2rem;
     letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 50%, #66FFE0 100%);
+    margin-bottom: 0.2rem;
+    background: linear-gradient(135deg, #00D4AA, #00FFCC 50%, #66FFE0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -172,14 +140,12 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   .tagline {
     font-size: 0.65rem;
     color: #555;
-    margin: 0 0 1rem;
-    letter-spacing: 0.01em;
+    margin-bottom: 1rem;
   }
 
   .cta-group {
-    max-width: 340px;
-    margin: 0 auto;
     width: 100%;
+    max-width: 340px;
   }
 
   .cta-primary {
@@ -188,14 +154,11 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    width: 100%;
     min-height: 54px;
-    background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 100%);
+    background: linear-gradient(135deg, #00D4AA, #00FFCC);
     color: #080808;
     font-size: 0.85rem;
     font-weight: 700;
-    font-family: inherit;
-    text-decoration: none;
     border-radius: 14px;
     box-shadow: 0 4px 24px rgba(0, 212, 170, 0.3), 0 0 0 1px rgba(0, 212, 170, 0.1);
     transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
@@ -207,18 +170,17 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 50%);
     pointer-events: none;
   }
 
   .cta-primary:hover {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 8px 32px rgba(0, 212, 170, 0.4), 0 0 0 1px rgba(0, 212, 170, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 212, 170, 0.4);
   }
 
   .cta-primary:active {
     transform: translateY(0) scale(0.98);
-    box-shadow: 0 2px 12px rgba(0, 212, 170, 0.25);
   }
 
   .cta-arrow {
@@ -232,26 +194,14 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 
   /* ── Tablet ── */
   @media (min-width: 768px) {
-    .back {
-      top: 0.75rem;
-      left: 1rem;
-      font-size: 0.75rem;
-    }
-
-    .bottom {
-      padding: 0 2rem;
-      padding-bottom: max(2rem, env(safe-area-inset-bottom));
-    }
-
+    .back { top: 0.75rem; left: 1rem; font-size: 0.75rem; }
+    .bottom { padding: 0 2rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
     .badge { font-size: 0.6rem; padding: 0.3rem 0.8rem; }
-
-    .name { font-size: 2rem; letter-spacing: -0.03em; }
+    .name { font-size: 2rem; }
     .tagline { font-size: 0.8rem; margin-bottom: 1.25rem; }
-
     .cta-primary { font-size: 0.95rem; min-height: 56px; border-radius: 16px; }
   }
 
-  /* ── Desktop ── */
   @media (min-width: 1024px) {
     .name { font-size: 2.4rem; }
     .tagline { font-size: 0.9rem; }
