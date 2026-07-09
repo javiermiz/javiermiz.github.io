@@ -18,6 +18,7 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
     <div class="hero" style={`background-image: url(${maonoImg.src})`}>
       <div class="hero-glow"></div>
       <div class="fade"></div>
+      <div class="fade-bottom"></div>
     </div>
 
     <div class="bottom">
@@ -102,6 +103,16 @@ import maonoImg from "@components/bio-items/maono-pd200w/PD200W.jpg";
   }
 
   .fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.6) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .fade-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
