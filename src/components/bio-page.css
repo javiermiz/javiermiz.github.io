@@ -1,4 +1,10 @@
-/* ── /bio standalone — zero inheritance from / ── */
+/* ── /bio standalone — mobile-first responsive ── */
+
+/* Reset Layout body override */
+:global(body) {
+  background: #0a0a0a !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
 .bio-page {
   width: 100%;
@@ -9,30 +15,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .bio-container {
-  padding: 2rem 1.5rem;
-  max-width: 400px;
+  padding: 1.5rem 1.25rem;
+  max-width: 420px;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* ── Title ── */
 .bio-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .bio-title {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.25rem;
   letter-spacing: -0.02em;
 }
 
 .bio-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #555;
   margin: 0;
 }
@@ -41,7 +49,7 @@
 .bio-search {
   display: flex;
   gap: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .bio-search-input {
@@ -51,12 +59,15 @@
   border-right: none;
   border-radius: 10px 0 0 10px;
   background: #141414;
-  padding: 0.75rem 1rem;
+  padding: 0 0.85rem;
+  height: 48px;
   font-size: 0.85rem;
   font-family: inherit;
   color: #e5e5e5;
   outline: none;
   transition: border-color 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .bio-search-input::placeholder {
@@ -72,13 +83,16 @@
   border-radius: 0 10px 10px 0;
   background: #e5e5e5;
   color: #0a0a0a;
-  padding: 0.75rem 1.25rem;
+  padding: 0 1.1rem;
+  height: 48px;
   font-size: 0.8rem;
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .bio-search-btn:hover {
@@ -93,7 +107,7 @@
 .bio-section-label {
   font-size: 0.6rem;
   color: #444;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 500;
@@ -123,6 +137,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.15s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bio-code-tag:hover {
@@ -143,28 +158,48 @@
   text-align: center;
 }
 
-/* ── Desktop ── */
+/* ── Tablet (768px+) ── */
 @media (min-width: 768px) {
+  .bio-container {
+    padding: 2rem 2rem;
+  }
+
+  .bio-header {
+    margin-bottom: 2.25rem;
+  }
+
   .bio-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .bio-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .bio-search-input {
     font-size: 0.9rem;
-    padding: 0.85rem 1.25rem;
+    height: 52px;
   }
 
   .bio-search-btn {
     font-size: 0.85rem;
-    padding: 0.85rem 1.5rem;
+    height: 52px;
+    padding: 0 1.5rem;
   }
 
   .bio-code-tag {
     font-size: 0.85rem;
     padding: 0.6rem 1.25rem;
+  }
+}
+
+/* ── Desktop (1024px+) ── */
+@media (min-width: 1024px) {
+  .bio-container {
+    max-width: 440px;
+  }
+
+  .bio-title {
+    font-size: 2rem;
   }
 }
