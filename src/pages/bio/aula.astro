@@ -13,20 +13,20 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   disable_main_padding={true}
 >
   <div class="landing">
-    <div class="bg-glow"></div>
-
     <a href="/bio" class="back">← Volver</a>
 
-    <div class="content">
-      <div class="hero">
-        <Image src={aulaImg} alt="AULA F75" width={600} height={600} class="img" />
-      </div>
+    <!-- Hero image -->
+    <div class="hero">
+      <div class="hero-glow"></div>
+      <Image src={aulaImg} alt="AULA F75" width={600} height={600} class="img" />
+      <div class="fade"></div>
+    </div>
 
-      <div class="info">
-        <span class="badge">Gasket Mount · Tri-Mode</span>
-        <h1 class="name">AULA F75</h1>
-        <p class="tagline">Teclado Mecánico 75% · Sonido Premium</p>
-      </div>
+    <!-- Info + CTA -->
+    <div class="bottom">
+      <span class="badge">Gasket Mount · Tri-Mode</span>
+      <h1 class="name">AULA F75</h1>
+      <p class="tagline">Teclado Mecánico 75% · Sonido Premium</p>
 
       <div class="cta-group">
         <a class="cta-primary" href="https://s.click.aliexpress.com/e/_c4mdq9mV" target="_blank" rel="noreferrer">
@@ -46,7 +46,6 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   }
 
   .landing {
-    position: relative;
     width: 100%;
     height: 100vh;
     height: 100dvh;
@@ -56,26 +55,16 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     display: flex;
     flex-direction: column;
     overflow: hidden;
-  }
-
-  .bg-glow {
-    position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 212, 170, 0.1) 0%, transparent 60%);
-    pointer-events: none;
+    position: relative;
   }
 
   .back {
     position: absolute;
-    top: 1rem;
-    left: 1.25rem;
-    z-index: 2;
-    font-size: 0.75rem;
-    color: #555;
+    top: 0.75rem;
+    left: 1rem;
+    z-index: 3;
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.5);
     text-decoration: none;
     min-height: 44px;
     line-height: 44px;
@@ -84,38 +73,57 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
 
   .back:hover { color: #00D4AA; }
 
-  .content {
-    position: relative;
-    z-index: 1;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 1.5rem 2rem;
-    gap: 0;
-  }
-
+  /* ── Hero ── */
   .hero {
+    position: relative;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 0;
+    overflow: hidden;
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(0, 212, 170, 0.12) 0%, transparent 65%);
+    pointer-events: none;
   }
 
   .img {
-    max-width: 300px;
-    max-height: 38vh;
+    position: relative;
+    z-index: 1;
+    max-width: 320px;
+    max-height: 45vh;
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 10px 30px rgba(0, 212, 170, 0.12));
+    filter: drop-shadow(0 8px 30px rgba(0, 212, 170, 0.1));
   }
 
-  .info {
+  .fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, #080808 0%, transparent 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  /* ── Bottom ── */
+  .bottom {
+    position: relative;
+    z-index: 2;
     text-align: center;
-    margin-bottom: 1rem;
+    padding: 0 1.5rem 2rem;
+    margin-top: -2rem;
   }
 
   .badge {
@@ -129,14 +137,14 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
     border: 1px solid rgba(0, 212, 170, 0.2);
     padding: 0.2rem 0.6rem;
     border-radius: 100px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
 
   .name {
     font-size: 1.4rem;
     font-weight: 800;
     line-height: 1.1;
-    margin: 0 0 0.25rem;
+    margin: 0 0 0.2rem;
     background: linear-gradient(135deg, #00D4AA 0%, #00FFCC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,12 +154,12 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   .tagline {
     font-size: 0.7rem;
     color: #666;
-    margin: 0;
+    margin: 0 0 1rem;
   }
 
   .cta-group {
-    width: 100%;
     max-width: 360px;
+    margin: 0 auto;
   }
 
   .cta-primary {
@@ -177,7 +185,7 @@ import aulaImg from "@components/bio-items/aula-f75/F75.avif";
   }
 
   @media (min-width: 768px) {
-    .img { max-width: 400px; max-height: 42vh; }
+    .img { max-width: 420px; max-height: 50vh; }
     .name { font-size: 2rem; }
     .tagline { font-size: 0.85rem; }
     .cta-primary { font-size: 0.95rem; }
