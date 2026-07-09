@@ -42,7 +42,7 @@ const codeMap = Object.fromEntries(
         <div class="bio-codes" data-bio-codes>
           {(products as any[]).map((product: any) => (
             <a
-              href={`/${product.slug}`}
+              href={`/bio/${product.slug}`}
               class="bio-code-tag"
               data-code={product.code}
               data-goatcounter-click={`bio-code-${product.slug}`}
@@ -75,7 +75,7 @@ const codeMap = Object.fromEntries(
     const checkRedirect = (value) => {
       const slug = parsed[value.trim().toUpperCase()];
       if (slug) {
-        window.location.href = `/${slug}`;
+        window.location.href = `/bio/${slug}`;
         return true;
       }
       return false;
