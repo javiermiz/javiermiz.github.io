@@ -1,10 +1,16 @@
+:global(body) {
+  background: #111 !important;
+}
+
 .bio-page {
   width: 100%;
+  background: #111;
+  color: #e5e5e5;
 }
 
 .bio-section {
   padding: var(--space-4) 0;
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -25,7 +31,7 @@
   font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: var(--font-bold);
-  color: var(--color-primary);
+  color: #dc2626;
   margin: 0;
   line-height: var(--line-height-tight);
 }
@@ -39,28 +45,28 @@
 .bio-search-input {
   flex: 1;
   min-width: 0;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #2a2a2a;
   border-right: none;
-  background: var(--color-bg-primary);
+  background: #1a1a1a;
   padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
   font-family: var(--font-serif-body);
-  color: var(--color-text-primary);
+  color: #e5e5e5;
   outline: none;
 }
 
 .bio-search-input::placeholder {
-  color: var(--color-text-muted);
+  color: #555;
 }
 
 .bio-search-input:focus {
-  border-color: var(--color-primary);
+  border-color: #dc2626;
 }
 
 .bio-search-btn {
-  border: 1px solid var(--color-primary);
-  background: var(--color-primary);
-  color: var(--color-bg-primary);
+  border: 1px solid #dc2626;
+  background: #dc2626;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   font-family: var(--font-serif-body);
@@ -76,7 +82,7 @@
 .bio-section-label {
   font-family: var(--font-serif);
   font-size: 0.65rem;
-  color: var(--color-text-muted);
+  color: #555;
   margin: 0 0 0.4rem 0;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-wider);
@@ -95,26 +101,27 @@
   justify-content: center;
   min-height: 40px;
   padding: 0.4rem 0.75rem;
-  border: 1px solid var(--color-border-light);
-  background: var(--color-bg-primary);
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
   font-family: var(--font-serif);
   font-size: 0.7rem;
   font-weight: var(--font-bold);
-  color: var(--color-text-primary);
+  color: #e5e5e5;
   letter-spacing: var(--letter-spacing-wide);
   text-decoration: none;
   text-transform: uppercase;
+  transition: border-color 0.15s, color 0.15s;
 }
 
 .bio-code-tag:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: #dc2626;
+  color: #dc2626;
 }
 
 .bio-empty {
   margin: 0.5rem 0 0 0;
   font-size: 0.75rem;
-  color: var(--color-text-muted);
+  color: #555;
   text-align: center;
   font-family: var(--font-serif);
 }

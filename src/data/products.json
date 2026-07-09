@@ -1,17 +1,15 @@
 [
   {
     "code": "MAONO",
-    "slug": "maono-pd200w",
+    "slug": "maono",
     "name": "MAONO PD200W",
     "tagline": "Micrófono Inalámbrico USB-C y XLR",
-    "description": "Micrófono USB-C/XLR con cancelación de ruido. Ideal para streamers, podcasters y creadores de contenido que buscan calidad de estudio sin complicaciones.",
-    "specs": [
-      "Conexión USB-C y XLR",
-      "Cancelación de ruido",
-      "Patrón de captura cardiode",
-      "Plug & play — sin drivers"
-    ],
-    "image": "/components/bio-items/maono-pd200w/PD200W.jpg",
+    "brand": {
+      "primary": "#FF6B00",
+      "bg": "#1A1A1A",
+      "text": "#FFFFFF",
+      "muted": "#AAAAAA"
+    },
     "links": [
       {
         "store": "Mercado Libre",
@@ -32,17 +30,15 @@
   },
   {
     "code": "AULA",
-    "slug": "aula-f75",
+    "slug": "aula",
     "name": "AULA F75",
     "tagline": "Teclado Mecánico 75% Inalámbrico",
-    "description": "Teclado mecánico gasket-mount con rotary knob, RGB y conectividad tri-mode. Calidad premium a precio accesible.",
-    "specs": [
-      "Layout 75% con knob",
-      "Gasket mount — sonido profundo",
-      "Bluetooth / 2.4GHz / USB-C",
-      "RGB per-key"
-    ],
-    "image": "/components/bio-items/aula-f75/F75.avif",
+    "brand": {
+      "primary": "#00D4AA",
+      "bg": "#0D0D0D",
+      "text": "#FFFFFF",
+      "muted": "#888888"
+    },
     "links": [
       {
         "store": "AliExpress",

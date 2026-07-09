@@ -1,0 +1,165 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@components/Layout.astro";
+import aulaImg from "@components/bio-items/aula-f75/F75.avif";
+---
+
+<Layout
+  lang="en"
+  title="AULA F75 — Javier Miz"
+  description="Teclado Mecánico 75% Inalámbrico"
+  hide_header={true}
+  hide_footer={true}
+  disable_main_padding={true}
+>
+  <div class="landing">
+    <section class="section">
+      <div class="container">
+        <a href="/bio" class="back">← Volver</a>
+
+        <div class="hero">
+          <Image src={aulaImg} alt="AULA F75" width={600} height={600} class="img" />
+        </div>
+
+        <div class="info">
+          <h1 class="name">AULA F75</h1>
+          <p class="tagline">Teclado Mecánico 75% Inalámbrico</p>
+        </div>
+
+        <div class="links">
+          <a class="link" href="https://s.click.aliexpress.com/e/_c4mdq9mV" target="_blank" rel="noreferrer">
+            <span class="icon">🛒</span>
+            <span>Comprar en AliExpress</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  :global(body) {
+    background: #0D0D0D !important;
+  }
+
+  .landing {
+    width: 100%;
+    min-height: 100vh;
+    background: #0D0D0D;
+    color: #FFFFFF;
+  }
+
+  .section {
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+    max-width: 440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .back {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    color: #888;
+    text-decoration: none;
+    min-height: 40px;
+    line-height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .back:hover {
+    color: #00D4AA;
+  }
+
+  .hero {
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .img {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+  }
+
+  .info {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .name {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00D4AA;
+    line-height: 1.25;
+    margin: 0 0 0.15rem 0;
+  }
+
+  .tagline {
+    font-family: var(--font-serif);
+    font-size: 0.7rem;
+    color: #888;
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 52px;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #00D4AA;
+    background: transparent;
+    text-decoration: none;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #00D4AA;
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .link:hover {
+    background: #00D4AA;
+    color: #0D0D0D;
+  }
+
+  .link:active {
+    opacity: 0.85;
+  }
+
+  .icon {
+    width: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  @media (min-width: 768px) {
+    .img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .name {
+      font-size: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+    }
+
+    .link {
+      font-size: 0.95rem;
+    }
+  }
+</style>
