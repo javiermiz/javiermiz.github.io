@@ -1,365 +1,365 @@
 ---
-title: "How to Ruin Your 20s"
-description: "A step-by-step guide of what I did wrong. Do the opposite."
+title: "Cómo arruinar tus 20s"
+description: "Una guía paso a paso de lo que hice mal. Haz lo contrario."
 published_date: 2025-12-29
 category: "personal"
 draft: false
 ---
 
-I'm 28 years old and if I could go back to my early 20s, I'd probably hit myself in the head. Not for the stupid things I did—those at least make for good stories. I'd hit myself for the things I didn't do out of fear, laziness, or simply because I followed whatever path seemed most comfortable in the moment.
+Tengo 28 años y si pudiera regresar a mis 20, probablemente me daría un golpe en la cabeza. No por las cosas estúpidas que hice, esas al menos tienen gracia cuando las cuentas. Me pegaría por las cosas que dejé de hacer por miedo, por pereza, o porque simplemente seguí el camino que parecía más cómodo en cada momento.
 
-Turns out there's an almost perfect formula for wasting your 20s. And I know this because I followed it without realizing it for years. It's not complicated—in fact, it's so simple that's why it works so well. It's the default path. The one you take when you're not paying attention.
+Resulta que hay una fórmula casi perfecta para desperdiciar tus 20s. Y lo sé porque la seguí sin darme cuenta durante años. No es complicada, de hecho es tan simple que por eso funciona tan bien. Es el camino por defecto. El que tomas cuando no estás poniendo atención.
 
-This isn't a motivational sermon. I'm not going to tell you to wake up at 5am or do 47 things before breakfast. I'm just going to show you the pattern I followed, the pattern I see most people following, and why it's a trap disguised as comfort.
+Esto no es un sermón motivacional. No voy a decirte que despiertes a las 5am o que hagas 47 cosas antes del desayuno. Solo voy a mostrarte el patrón que yo seguí, el que veo que la mayoría sigue, y por qué es una trampa disfrazada de comodidad.
 
-Read this. Recognize what you're doing. Then do the opposite.
+Lee esto. Reconoce lo que estás haciendo. Y luego haz lo contrario.
 
-## 1. Stay connected all the time
+## 1. Mantente conectado todo el tiempo
 
-Start here. This is the one that seems most harmless of all. It's just your phone, right?
+Empieza aquí. Este es el que parece más inofensivo de todos. Es solo tu teléfono, ¿verdad?
 
-Check your phone every three minutes. Every time there's a pause in conversation, when you're waiting for the elevator, when you go to the bathroom, when you finish one task and before starting the next. Respond to every notification instantly as if it were an emergency. Keep all your apps open. Don't miss anything.
+Revisa tu teléfono cada tres minutos. Cada vez que hay una pausa en la conversación, cuando estás esperando el elevador, cuando vas al baño, cuando terminas una tarea y antes de empezar la siguiente. Responde cada notificación al instante como si fuera una emergencia. Mantén todas las apps abiertas. No te pierdas nada.
 
-FOMO is real, right? You can't disconnect because you might miss something important. A conversation in the WhatsApp group. A meme everyone's sharing. A story from someone you probably don't even care about that much but still need to see.
+El FOMO es real, ¿no? No puedes desconectar porque podrías perderte algo importante. Una conversación en el grupo de WhatsApp. Un meme que todos están compartiendo. Una historia de alguien que probablemente ni te importa tanto pero igual necesitas verla.
 
-Except the only thing you're really missing is your own life.
+Excepto que lo único que realmente te estás perdiendo es tu propia vida.
 
-Constant connection doesn't keep you connected to others. It disconnects you from yourself. You spend years never being fully present anywhere. Always halfway. Always with one eye on the screen. Always waiting for the next notification to tell you that you matter.
+La conexión constante no te mantiene conectado con los demás. Te desconecta de ti mismo. Pasas años sin estar completamente presente en ningún lugar. Siempre a medias. Siempre con un ojo en la pantalla. Siempre esperando la siguiente notificación que te diga que eres relevante.
 
-You eat with your family but you're checking Instagram. You watch a movie but you're scrolling Twitter. You try to work but every five minutes you check if someone responded. You're never where you are. And after years of this, you don't even know what it feels like to be completely present.
+Comes con tu familia pero estás checando Instagram. Ves una película pero estás scrolleando Twitter. Intentas trabajar pero cada cinco minutos revisas si alguien te respondió. Nunca estás donde estás. Y después de años de esto, ni siquiera sabes cómo se siente estar completamente presente.
 
-And worst of all, you never sit alone with your thoughts. You never experience real boredom. There's never genuine silence in your head because there's always digital noise filling every empty space.
+Y lo peor es que nunca te quedas a solas con tus pensamientos. Nunca experimentas el aburrimiento real. Nunca hay silencio genuino en tu cabeza porque siempre hay ruido digital llenando cada espacio vacío.
 
-You know what happens when you never get bored? You never think about anything real. Good ideas don't come when you're scrolling. They come when your mind has space to wander. But if you're always consuming other people's content, you never generate your own.
+¿Sabes qué pasa cuando nunca te aburres? Nunca piensas en nada real. Las ideas buenas no llegan cuando estás scrolleando. Llegan cuando tu mente tiene espacio para vagar. Pero si siempre estás consumiendo contenido de otras personas, nunca generas contenido propio.
 
-Without silence there's no clarity. And without clarity, you're basically living on autopilot following whatever Instagram tells you is important this week.
+Sin silencio no hay claridad. Y sin claridad, estás básicamente viviendo en piloto automático siguiendo lo que sea que Instagram te diga que es importante esta semana.
 
-Disconnect. Not all the time—I'm not telling you to throw your phone into the ocean. But regularly. Leave your phone in another room when you work. Turn it off an hour before sleep. Eat without looking at it. Walk without listening to anything. Sit with your thoughts even if it's uncomfortable.
+Desconecta. No todo el tiempo, no te estoy diciendo que tires tu teléfono al mar. Pero sí regularmente. Deja el teléfono en otra habitación cuando trabajas. Apágalo una hora antes de dormir. Come sin mirarlo. Camina sin escuchar nada. Siéntate con tus pensamientos aunque sea incómodo.
 
-Because that discomfort you feel when you have nothing to look at is exactly why you need to do it. Your brain is addicted to constant input and you need to break that cycle before an entire decade passes and you realize you never had an original thought.
+Porque esa incomodidad que sientes cuando no tienes nada que mirar es exactamente la razón por la que necesitas hacerlo. Tu cerebro está adicto al input constante y necesitas romper ese ciclo antes de que pase una década entera y te des cuenta de que nunca tuviste un pensamiento original.
 
-## 2. Consume everything, create nothing
+## 2. Consume todo, crea nada
 
-Once you're constantly connected, this is the natural next step. YouTube, Instagram, TikTok, Netflix, Reddit, Twitter. All day. Every day.
+Una vez que estás conectado todo el tiempo, esto es el siguiente paso natural. YouTube, Instagram, TikTok, Netflix, Reddit, Twitter. Todo el día. Todos los días.
 
-Watch what others build. Watch what others create. Watch how others live their lives. Observe, consume, repeat.
+Mira lo que otros construyen. Mira lo que otros crean. Mira cómo otros viven sus vidas. Observa, consume, repite.
 
-But you never do anything.
+Pero tú nunca hagas nada.
 
-Never put your ideas out there. Never risk looking stupid or imperfect. Never share something you made because it's "not good enough" or "someone else already did it better." Stay safe in the audience, applauding from the stands while others take the stage.
+Nunca pongas tus ideas afuera. Nunca arriesgues verte estúpido o imperfecto. Nunca compartas algo que hiciste porque "no es lo suficientemente bueno" o "ya alguien más lo hizo mejor". Quédate seguro en la audiencia, aplaudiendo desde las gradas mientras otros toman el escenario.
 
-Here's the trap nobody tells you about: there's a fundamental difference between people who build things and people who just observe. It's not talent. It's not luck. It's simply that some do and others don't. And that difference becomes your entire life.
+Aquí está la trampa que nadie te dice: hay una diferencia fundamental entre las personas que construyen cosas y las personas que solo observan. No es talento. No es suerte. Es simplemente que unos hacen y otros no. Y esa diferencia se convierte en toda tu vida.
 
-I spent years in this mode. Literally years thinking about creating things. I imagined projects. Planned blogs I never wrote. Designed things in my head I never made. I told myself "someday I'll start" while scrolling for hours watching what others had started.
+Yo pasé años en este modo. Literalmente años pensando en crear cosas. Imaginaba proyectos. Planeaba blogs que nunca escribí. Diseñaba en mi cabeza cosas que nunca hice. Me decía "algún día voy a empezar" mientras scrolleaba durante horas viendo lo que otros habían empezado.
 
-The problem isn't that consuming is bad. Reading, watching movies, learning from others—all of that is fine. The problem is the ratio. When you consume 10 hours a day and create zero, you're not a person with interests. You're a professional spectator of your own existence.
+El problema no es que consumir sea malo. Leer, ver películas, aprender de otros, todo eso está bien. El problema es el ratio. Cuando consumes 10 horas al día y creas cero, no eres una persona con intereses. Eres un espectador profesional de tu propia existencia.
 
-And what happens with just consuming is you get used to having impossible standards. You see the polished, finished work of people who've been doing it for years, and you compare that to your half-formed idea you've never tried to execute. Obviously your idea loses. So you don't do it.
+Y lo que pasa con solo consumir es que te acostumbras a tener estándares imposibles. Ves el trabajo pulido y terminado de gente que lleva años haciéndolo, y comparas eso con tu idea a medio formar que nunca has intentado ejecutar. Obviamente tu idea pierde. Entonces no la haces.
 
-But that's never going to get you to create anything. Because the only way to make something good is by making a bunch of bad things first. Everyone you admire made garbage at the beginning. The difference is they published the garbage anyway.
+Pero así nunca vas a crear nada. Porque la única forma de hacer algo bueno es haciendo un montón de cosas malas primero. Todo el mundo que admiras hizo basura al principio. La diferencia es que ellos publicaron la basura de todas formas.
 
-Plus, consuming without creating is like only inhaling and never exhaling. Eventually you suffocate on ideas that never left your head. You fill up with input without output and become anxious, restless, frustrated, without knowing exactly why.
+Además, consumir sin crear es como solo inhalar y nunca exhalar. Eventualmente te asfixias con ideas que nunca salieron de tu cabeza. Te llenas de input sin output y te vuelves ansioso, inquieto, frustrado, sin saber exactamente por qué.
 
-Create more than you consume. It doesn't need to be good. **It doesn't need to be seen by anyone**. A blog post nobody reads. A drawing that looks terrible. A website with no visitors. Whatever.
+Crea más de lo que consumes. No necesita ser bueno. **No necesita ser visto por nadie.** Un post de blog que nadie lee. Un dibujo que se ve horrible. Una página web que no tiene visitantes. Lo que sea.
 
-Creation builds competence. It teaches you to finish things. It shows you that you survive publishing something imperfect. It gives you tangible evidence that you can do something instead of just thinking about it.
+La creación construye competencia. Te enseña a terminar cosas. Te muestra que sobrevives a publicar algo imperfecto. Te da evidencia tangible de que puedes hacer algo en vez de solo pensarlo.
 
-Consumption, by itself, builds nothing except a list of things you watched while your life passed in front of you.
+El consumo, por sí solo, no construye nada excepto una lista de cosas que viste mientras tu vida pasaba frente a ti.
 
-## 3. Always choose what feels good right now
+## 3. Elige siempre lo que se siente bien ahora
 
-Once you're in constant consumption mode, the next step is obvious: always choose the option that requires less effort and gives more immediate dopamine.
+Una vez que ya estás en modo consumo constante, el siguiente paso es obvio: siempre elige la opción que requiere menos esfuerzo y da más dopamina inmediata.
 
-One more series instead of working on that project you've been keeping in your head. Infinite scroll instead of reading that book you bought six months ago. One more game instead of learning that skill you said you'd learn this year. TikTok instead of literally anything productive.
+Una serie más en vez de trabajar en ese proyecto que tienes guardado en tu cabeza. Scroll infinito en vez de leer ese libro que compraste hace seis meses. Un juego más en vez de aprender esa habilidad que dijiste que ibas a aprender este año. TikTok en vez de literalmente cualquier cosa productiva.
 
-It's comfortable. It's easy. And it mathematically guarantees that while others move forward, you stay exactly where you are.
+Es cómodo. Es fácil. Y garantiza matemáticamente que mientras otros avanzan, tú te quedas exactamente donde estás.
 
-Here's the thing: your brain doesn't distinguish between productive pleasure and empty pleasure. Dopamine is dopamine. So when you scroll for two hours, your brain thinks you did something. But you did nothing. You just looked at things. And when you're done, you feel the same or worse than when you started.
+Aquí está la cuestión: tu cerebro no distingue entre placer productivo y placer vacío. Dopamina es dopamina. Entonces cuando scrolleas durante dos horas, tu cerebro piensa que hiciste algo. Pero no hiciste nada. Solo miraste cosas. Y cuando terminas, te sientes igual o peor que cuando empezaste.
 
-Versus when you work on something real. At first it feels bad. It's hard. Your brain protests because it requires effort and there's no immediate reward. But when you finish, even a small part, you feel genuinely good. Not empty dopamine, but real satisfaction.
+Versus cuando trabajas en algo real. Al principio se siente mal. Es difícil. Tu cerebro protesta porque requiere esfuerzo y no hay recompensa inmediata. Pero cuando terminas, aunque sea una parte pequeña, te sientes bien de verdad. No dopamina vacía, sino satisfacción genuina.
 
-The problem is that the easy option is always available. Netflix doesn't judge you. Instagram doesn't tell you you've seen enough. TikTok never ends. So if you always choose based on what feels good in this exact second, you're going to choose distraction 100% of the time.
+El problema es que la opción fácil siempre está disponible. Netflix no te juzga. Instagram no te dice que ya viste suficiente. TikTok nunca se acaba. Entonces si siempre eliges basándote en lo que se siente bien en este segundo exacto, vas a elegir la distracción el 100% de las veces.
 
-And I'm not saying never relax or enjoy yourself. That would be stupid and miserable. But there's a giant difference between resting after working and avoiding working by using rest as an excuse.
+Y no estoy diciendo que nunca te relajes o disfrutes. Eso sería estúpido y miserable. Pero hay una diferencia gigante entre descansar después de trabajar y evitar trabajar usando el descanso como excusa.
 
-There's a difference between watching a movie because you really want to watch it, and watching three movies in a row because you don't want to face the hard thing you know you should be doing.
+Hay una diferencia entre ver una película porque realmente quieres verla, y ver tres películas seguidas porque no quieres enfrentar la cosa difícil que sabes que deberías estar haciendo.
 
-What happens is that every time you choose the easy over the important, you're voting for the kind of person you want to be. And if you vote enough times for "the person who avoids hard things," eventually that's what you become. Not by conscious decision, but by a thousand small decisions that accumulate.
+Lo que pasa es que cada vez que eliges lo fácil sobre lo importante, estás votando por el tipo de persona que quieres ser. Y si votas suficientes veces por "la persona que evita lo difícil", eventualmente eso es lo que te conviertes. No por decisión consciente, sino por mil decisiones pequeñas que se acumulan.
 
-Immediate pleasure feels good now but accumulates into years of feeling empty, frustrated, wondering why you're not moving forward while watching others achieve things.
+El placer inmediato se siente bien ahora pero se acumula en años de sentirte vacío, frustrado, preguntándote por qué no avanzas mientras ves a otros lograr cosas.
 
-Choose long-term satisfaction over immediate pleasure. Not always, because you're not a robot. But most of the time.
+Elige satisfacción a largo plazo sobre placer inmediato. No siempre, porque no eres un robot. Pero la mayoría del tiempo.
 
-Before opening Netflix or grabbing your phone, ask yourself: "Is this going to make me feel good after doing it, or only during?" If the answer is "only during," there's probably something better you should be doing.
+Antes de abrir Netflix o agarrar tu teléfono, pregúntate: "¿Esto me va a hacer sentir bien después de hacerlo, o solo durante?" Si la respuesta es "solo durante", probablemente hay algo mejor que deberías estar haciendo.
 
-Your future self isn't going to thank you for the 500 hours you spent scrolling. But they will thank you for the 500 hours you spent building something, even if it was imperfect.
+Tu yo del futuro no va a agradecer las 500 horas que pasaste scrolleando. Pero sí va a agradecer las 500 horas que pasaste construyendo algo, aunque fuera imperfecto.
 
-## 4. Convince yourself you have time
+## 4. Convéncete de que tienes tiempo
 
-This is the one that hurt most to write because it's the mistake that cost me the most.
+Este es el que me dolió más escribir porque es el error que más caro me salió.
 
-That project you want to start. That skill you want to learn. That change you want to make in your life. That business you want to build. That person you want to reconnect with.
+Ese proyecto que quieres empezar. Esa habilidad que quieres aprender. Ese cambio que quieres hacer en tu vida. Ese negocio que quieres construir. Esa persona con la que quieres reconectarte.
 
-You'll do it later. Next month. Next year. When you have more time. When you're more prepared. When you have more money. When you know exactly what to do. When it's the perfect moment.
+Lo harás después. El próximo mes. El próximo año. Cuando tengas más tiempo. Cuando estés más preparado. Cuando tengas más dinero. Cuando sepas exactamente qué hacer. Cuando sea el momento perfecto.
 
-You're in your 20-something. You have plenty of time, right?
+Tienes 20-y-algo. Tienes tiempo de sobra, ¿no?
 
-No. Absolutely not.
+No. Absolutamente no.
 
-This is the biggest and most dangerous lie your 20s will tell you. That you have unlimited time to figure things out. That you can afford to wait. That the future is so far away it doesn't matter what you do today.
+Esta es la mentira más grande y más peligrosa que tus 20s te dirán. Que tienes tiempo ilimitado para resolver las cosas. Que puedes permitirte esperar. Que el futuro es tan lejano que no importa lo que hagas hoy.
 
-But here's the mathematical truth nobody tells you until it's too late: every day you wait is a day you literally don't get back. You can't be 23 again. You can't redo your 20s. Time only goes in one direction and every "I'll do it later" accumulates into years of "I should have started."
+Pero aquí está la verdad matemática que nadie te dice hasta que ya es demasiado tarde: cada día que esperas es un día que literalmente no recuperas. No puedes volver a tener 23 años. No puedes rehacer tus 20s. El tiempo solo va en una dirección y cada "lo haré después" se acumula en años de "debí haber empezado".
 
-I was 22 when I said "I'm going to start writing seriously next year." Then 23. Then 24. Then "when I'm 25 it's going to be the year." And so the years kept passing while I waited for the perfect moment that never came because the perfect moment doesn't exist.
+Tenía 22 cuando dije "voy a empezar a escribir en serio el próximo año". Luego 23. Luego 24. Luego "cuando tenga 25 va a ser el año". Y así se fueron pasando los años mientras yo esperaba el momento perfecto que nunca llegó porque el momento perfecto no existe.
 
-You know what's the best time to start something? Five years ago. You know what's the second best time? Today. Not tomorrow. Not Monday. Today.
+¿Sabes cuál es el mejor momento para empezar algo? Hace cinco años. ¿Sabes cuál es el segundo mejor momento? Hoy. No mañana. No el lunes. Hoy.
 
-The problem with "I have time" is that it's technically true but practically devastating. Yes, you probably have decades of life ahead. But you don't have decades of your 20s. You don't have decades of youthful energy, fewer responsibilities, a plastic brain that learns fast, less fear of failure.
+El problema con "tengo tiempo" es que es técnicamente cierto pero prácticamente devastador. Sí, probablemente tienes décadas de vida por delante. Pero no tienes décadas de tus 20s. No tienes décadas de energía juvenil, de menos responsabilidades, de cerebro plástico que aprende rápido, de menos miedo al fracaso.
 
-And worst of all, procrastination compounds. Every thing you postpone makes it easier to postpone the next. You build a mental pattern where postponing is your default response to anything difficult. And eventually you don't even realize you're doing it.
+Y lo peor es que la procrastinación es compuesta. Cada cosa que postergas hace más fácil postergar la siguiente. Construyes un patrón mental donde posponer es tu respuesta default a cualquier cosa difícil. Y eventualmente ni siquiera te das cuenta de que lo estás haciendo.
 
-Plus, waiting doesn't make you more prepared. Most of the time it's just fear disguised as prudence. "I'm not ready" almost always means "I'm afraid of failing" or "I'm afraid it won't be perfect." But you're never going to be ready. Ready is a state you only reach by doing the thing, not by thinking about doing it.
+Además, esperar no te hace más preparado. La mayoría del tiempo es solo miedo disfrazado de prudencia. "No estoy listo" casi siempre significa "tengo miedo de fracasar" o "tengo miedo de que no sea perfecto". Pero nunca vas a estar listo. Listo es un estado que solo alcanzas haciendo la cosa, no pensando en hacerla.
 
-If something matters, start today. Literally today. Not next Monday. Not when you finish this other project. Today.
+Si algo importa, empieza hoy. Literalmente hoy. No el lunes que viene. No cuando termines este otro proyecto. Hoy.
 
-You don't need to start perfect. You don't need to have everything figured out. You just need to start. Write one line. Read one page. Send one message. Do the minimum viable thing that counts as starting.
+No necesitas empezar perfecto. No necesitas tener todo resuelto. Solo necesitas empezar. Escribe una línea. Lee una página. Manda un mensaje. Haz lo mínimo viable que cuente como empezar.
 
-Because the perfect moment doesn't exist and waiting for it is another elegant form of procrastinating. The difference between people who achieve things and those who don't isn't that some have more time or more talent. It's that some start and others keep waiting.
+Porque el momento perfecto no existe y esperarlo es otra forma elegante de procrastinar. La diferencia entre la gente que logra cosas y la que no, no es que unos tengan más tiempo o más talento. Es que unos empiezan y otros siguen esperando.
 
-## 5. Avoid anything that's hard
+## 5. Evita todo lo que sea difícil
 
-By this point you've got some pretty solid destructive momentum going. You're constantly connected, you only consume, you choose immediate pleasure, and you postpone everything. The natural next step is to avoid anything that requires real effort.
+Para este punto ya llevas un momentum destructivo bastante sólido. Estás conectado todo el tiempo, solo consumes, eliges placer inmediato, y pospones todo. El siguiente paso natural es evitar cualquier cosa que requiera esfuerzo real.
 
-Growth is uncomfortable. Change is scary. New things are uncertain. So avoid it all.
+El crecimiento es incómodo. El cambio da miedo. Lo nuevo es incierto. Así que evítalo todo.
 
-Stay with the same friends even though you have nothing in common anymore, even though the friendship feels forced, even though you know they're not helping you grow. Because making new connections requires vulnerability and effort.
+Quédate con los mismos amigos aunque ya no tengan nada en común, aunque la amistad se sienta forzada, aunque sabes que no te están ayudando a crecer. Porque hacer nuevas conexiones requiere vulnerabilidad y esfuerzo.
 
-Don't take risks. Not in your career, not in your relationships, not in anything. Because failing is embarrassing and what if you try something and it doesn't work and everyone realizes you're not as good as they thought.
+No tomes riesgos. Ni en tu carrera, ni en tus relaciones, ni en nada. Porque fallar da vergüenza y qué tal si intentas algo y no funciona y todos se dan cuenta de que no eres tan bueno como pensaban.
 
-Stay at the job you hate because looking for another one is hard. Stay in the relationship that doesn't make you happy because being alone is scary. Stay in the city where you don't want to be because moving is complicated.
+Quédate en el trabajo que odias porque buscar otro es difícil. Quédate en la relación que no te hace feliz porque estar solo da miedo. Quédate en la ciudad donde no quieres estar porque mudarte es complicado.
 
-If something is hard, it's probably not for you. If it requires sustained effort, you're probably not "made for it." If you fail on the first try, it's a sign from the universe that you should give up.
+Si algo es difícil, probablemente no es para ti. Si requiere esfuerzo sostenido, probablemente no estás "hecho para eso". Si fallas en el primer intento, es una señal del universo de que deberías rendirte.
 
-Follow this philosophy long enough and one day you'll wake up and realize you're exactly the same person you were at 20. Same fears. Same limitations. Same small life. Just now with more regrets and less time to do something about it.
+Sigue esta filosofía el tiempo suficiente y un día te despertarás y te darás cuenta de que eres exactamente la misma persona que eras a los 20. Mismos miedos. Mismas limitaciones. Misma vida pequeña. Solo que ahora con más arrepentimientos y menos tiempo para hacer algo al respecto.
 
-Here's what nobody tells you about the comfort zone: it's not comfortable. It's just familiar. And your brain confuses familiar with safe, when really all it is, is predictable. Predictably mediocre.
+Aquí está lo que nadie te dice sobre la zona de confort: no es confortable. Es solo familiar. Y tu cerebro confunde familiar con seguro, cuando en realidad lo único que es, es predecible. Predeciblemente mediocre.
 
-The comfort zone is a cell you build yourself, brick by brick, every time you choose the easy over the important. And the treacherous thing is it feels good while you're building it. It feels like protection. Like security. Until you realize you can't get out anymore.
+La zona de confort es una celda que tú mismo construyes, ladrillo por ladrillo, cada vez que eliges lo fácil sobre lo importante. Y lo traicionero es que se siente bien mientras la construyes. Se siente como protección. Como seguridad. Hasta que te das cuenta de que ya no puedes salir.
 
-Because what happens when you avoid the hard for years is your tolerance for discomfort becomes lower and lower. Things you could do before now seem impossible. Risks you would have taken now seem irresponsible. You become fragile without realizing it.
+Porque lo que pasa cuando evitas lo difícil durante años es que tu tolerancia a la incomodidad se vuelve cada vez más baja. Cosas que antes podías hacer ahora te parecen imposibles. Riesgos que antes tomarías ahora te parecen irresponsables. Te vuelves frágil sin darte cuenta.
 
-And eventually you reach a point where even small things seem monumental. Answering a difficult email. Having an uncomfortable conversation. Doing something you've never done. Everything feels like climbing Everest because you've spent years training your brain to avoid any type of resistance.
+Y eventualmente llegas a un punto donde incluso las cosas pequeñas te parecen monumentales. Contestar un email difícil. Tener una conversación incómoda. Hacer algo que nunca has hecho. Todo se siente como escalar el Everest porque has pasado años entrenando tu cerebro para evitar cualquier tipo de resistencia.
 
-Plus, avoiding the hard guarantees you never discover what you're really capable of. You live your whole life within the limits you set for yourself at 20 years old, when you knew nothing about nothing, and you never give yourself the chance to surprise yourself.
+Además, evitar lo difícil garantiza que nunca descubras de qué eres realmente capaz. Vives toda tu vida dentro de los límites que te pusiste a los 20 años, cuando no sabías nada de nada, y nunca te das la oportunidad de sorprenderte a ti mismo.
 
-Get comfortable with discomfort. Actively seek it out. Do something that scares you a little each week.
+Acostúmbrate a la incomodidad. Búscala activamente. Haz algo que te asuste un poco cada semana.
 
-Have the difficult conversation. Apply for the job you don't think you'll get. Talk to the stranger at the event. Start the project even though you don't know how it will end. Fail publicly and survive.
+Ten la conversación difícil. Aplica al trabajo que crees que no vas a conseguir. Habla con el extraño en el evento. Empieza el proyecto aunque no sepas cómo va a terminar. Falla públicamente y sobrevive.
 
-Because every time you avoid growing, you're choosing to stagnate. And stagnation in your 20s is basically death in slow motion for your 30s. You're going to hit 30 with the same capabilities you had at 20, but now with more responsibilities and fewer excuses.
+Porque cada vez que evitas crecer, estás eligiendo estancarte. Y el estancamiento en tus 20s es básicamente muerte en cámara lenta para tus 30s. Vas a llegar a los 30 con las mismas capacidades que tenías a los 20, pero ahora con más responsabilidades y menos excusas.
 
-Discomfort is the price of growth. And if you're not willing to pay it, you stay exactly where you are. Forever.
+La incomodidad es el precio del crecimiento. Y si no estás dispuesto a pagarlo, te quedas exactamente donde estás. Para siempre.
 
-## 6. Live for other people's approval
+## 6. Vive para la aprobación de otros
 
-This is where things get psychologically dark.
+Este es donde las cosas se ponen psicológicamente oscuras.
 
-Build a life that looks good in photos. That impresses when you tell it at gatherings. That generates likes when you post it. That makes people think "wow, they're doing well."
+Construye una vida que se vea bien en fotos. Que impresione cuando la cuentes en reuniones. Que genere likes cuando la publiques. Que haga que la gente piense "wow, le está yendo bien".
 
-Live for external validation. For what others think. To prove you're making it. So nobody can say you failed or wasted your time.
+Vive para la validación externa. Para lo que otros piensen. Para demostrar que lo estás logrando. Para que nadie pueda decir que fracasaste o que perdiste tu tiempo.
 
-But never, ever, ask yourself if you're actually happy with what you're building.
+Pero nunca, jamás, te preguntes si realmente eres feliz con lo que estás construyendo.
 
-Study the career your parents want. Work at the company that sounds prestigious. Date the person everyone approves of. Buy the things that demonstrate success. Live in the place that has status. Do everything you "should" be doing according to others' expectations.
+Estudia la carrera que tus papás quieren. Trabaja en la empresa que suena prestigiosa. Sal con la persona que todos aprueban. Compra las cosas que demuestran éxito. Vive en el lugar que tiene estatus. Haz todo lo que "deberías" estar haciendo según las expectativas de otros.
 
-And act every day. Act like you're fine. Act like you love your life. Act like this is the path you chose. Act your 20s instead of living them.
+Y actúa cada día. Actúa que estás bien. Actúa que amas tu vida. Actúa que este es el camino que elegiste. Actúa tus 20s en vez de vivirlos.
 
-This is especially insidious because it feels productive. It seems like you're building something. It seems like you're moving forward. You're checking all the boxes society says you should check. But you're building someone else's life. Not yours.
+Esto es especialmente insidioso porque se siente productivo. Parece que estás construyendo algo. Parece que estás avanzando. Estás checando todas las cajas que la sociedad dice que deberías checar. Pero estás construyendo la vida de alguien más. No la tuya.
 
-The problem is that external approval is a drug that never satisfies you. You always need more. You get the prestigious job and you need the promotion. You get the promotion and you need the better title. You get the likes and you need more followers. It's a bottomless pit because you're trying to fill an internal void with external validation.
+El problema es que la aprobación externa es una droga que nunca te satisface. Siempre necesitas más. Consigues el trabajo prestigioso y necesitas el ascenso. Consigues el ascenso y necesitas el título mejor. Consigues los likes y necesitas más followers. Es un pozo sin fondo porque estás tratando de llenar un vacío interno con validación externa.
 
-And worst of all, you know, somewhere deep that you try to ignore, that you're living the wrong life. But you've already invested so much in this version of yourself that admitting it's not what you wanted feels like admitting you wasted years. So you keep acting. Keep building. Keep impressing.
+Y lo peor es que sabes, en algún lugar profundo que tratas de ignorar, que estás viviendo la vida equivocada. Pero ya invertiste tanto en esta versión de ti mismo que admitir que no es lo que querías se siente como admitir que desperdiciaste años. Entonces sigues actuando. Sigues construyendo. Sigues impresionando.
 
-Until one day, probably in your 30s, you realize you built a beautiful life you don't want. A prestigious title in a field you hate. A relationship that looks perfect but feels empty. An expensive house in a city where you don't want to be. Friends who are really acquaintances who only know you superficially.
+Hasta que un día, probablemente en tus 30s, te das cuenta de que construiste una vida hermosa que no quieres. Un título prestigioso en un campo que odias. Una relación que se ve perfecta pero se siente vacía. Una casa cara en una ciudad donde no quieres estar. Amigos que realmente son conocidos que te conocen solo superficialmente.
 
-And the saddest part is you don't even know what you really want because you spent your entire formative decade asking others what you should want.
+Y lo más triste es que ni siquiera sabes qué es lo que realmente quieres porque pasaste toda tu década formativa preguntándole a otros qué deberías querer.
 
-Because when you live for others' approval, you outsource your value system. You let Instagram tell you what success is. You let your parents define what a good career is. You let your friends dictate what an interesting life is. And eventually you lose touch with what you, the real person underneath all the expectations, actually value.
+Porque cuando vives para la aprobación de otros, outsourceas tu sistema de valores. Dejas que Instagram te diga qué es éxito. Dejas que tus papás definan qué es una buena carrera. Dejas que tus amigos dicten qué es una vida interesante. Y eventualmente pierdes contacto con lo que tú, la persona real debajo de todas las expectativas, realmente valoras.
 
-Build a life that feels good, not just one that looks good. The approval of strangers, even well-meaning family and friends, is worth nothing compared to your own respect and satisfaction.
+Construye una vida que se sienta bien, no solo una que se vea bien. La aprobación de extraños, incluso de familia y amigos bien intencionados, no vale nada comparada con tu propio respeto y satisfacción.
 
-Ask yourself regularly: "If nobody knew about this, would I still do it?" If the answer is no, you're probably doing it for the wrong reasons.
+Pregúntate regularmente: "¿Si nadie supiera de esto, lo seguiría haciendo?" Si la respuesta es no, probablemente lo estás haciendo por las razones equivocadas.
 
-I'm not saying completely ignore others' opinions or be a rebel just to be a rebel. But when your important decisions are dictated by what others will think instead of what you actually want, you're basically renting your life to other people.
+No estoy diciendo que ignores completamente las opiniones de otros o que seas un rebelde por ser rebelde. Pero cuando tus decisiones importantes están dictadas por lo que otros van a pensar en vez de lo que tú realmente quieres, estás básicamente rentando tu vida a otras personas.
 
-And at the end of the day, they're not going to live with the consequences of your decisions. You will.
+Y al final del día, ellos no van a vivir con las consecuencias de tus decisiones. Tú sí.
 
-## 7. Completely ignore your body
+## 7. Ignora completamente tu cuerpo
 
-Now we're getting into serious territory. This was one of my biggest mistakes and the one with the longest-term consequences.
+Ahora estamos llegando a territorio serio. Este fue uno de mis errores más grandes y el que más consecuencias tiene a largo plazo.
 
-You feel fine now, so what does it matter? You're 20-something. Your body recovers from everything. You can sleep three hours and function. You can eat garbage for weeks and nothing happens. You can not exercise for months and still look more or less the same.
+Te sientes bien ahora, ¿entonces qué importa? Tienes 20-y-algo. Tu cuerpo se recupera de todo. Puedes dormir tres horas y funcionar. Puedes comer basura durante semanas y no pasa nada. Puedes no hacer ejercicio durante meses y todavía te ves más o menos igual.
 
-So eat whatever, whenever. Fast food five times a week because cooking is too much work. Zero vegetables because they don't taste as good as fries. Pure coffee and energy drinks to function.
+Así que come lo que sea, cuando sea. Comida rápida cinco veces a la semana porque cocinar da flojera. Cero verduras porque no saben tan bien como las papas fritas. Puro café y energéticas para funcionar.
 
-Sleep whenever. Three hours today, nine tomorrow, who knows the day after. Stay up until 4am every night because night is when you feel productive. Or more honestly, because it's when you scroll without anyone bothering you.
+Duerme cuando sea. Tres horas hoy, nueve mañana, quién sabe pasado mañana. Trasnocha hasta las 4am todos los días porque la noche es cuando te sientes productivo. O más honestamente, porque es cuando scrolleas sin que nadie te moleste.
 
-Exercise never. Going to the gym is too much work. Going for a walk is boring. Your body is fine like this. You can start "when you really need it."
+Ejercicio nunca. Ir al gimnasio da flojera. Salir a caminar es aburrido. Tu cuerpo está bien así. Puedes empezar "cuando realmente lo necesites".
 
-Ignore your mental health because you're too young to be burned out. Anxiety is normal. Constant sadness is just a phase. Chronic stress is part of being an adult. You don't need therapy, you just need to try harder.
+Ignora tu salud mental porque eres muy joven para estar quemado. La ansiedad es normal. La tristeza constante es solo una fase. El estrés crónico es parte de ser adulto. No necesitas terapia, solo necesitas echarle más ganas.
 
-Your body will handle it. Until it doesn't.
+Tu cuerpo lo aguantará. Hasta que no.
 
-Here's the truth nobody tells you until it's too late: your body is 20-something years old only once. And what you do to it during those years compounds. It doesn't disappear. It accumulates.
+Aquí está la verdad que nadie te dice hasta que ya es demasiado tarde: tu cuerpo tiene 20-y-algo años una sola vez. Y lo que le hagas durante esos años se compone. No desaparece. Se acumula.
 
-Those sleepless nights don't erase themselves. That junk food doesn't reset. That chronic stress doesn't evaporate. Everything stays in your system, accumulating silently, waiting to collect the bill in a few years.
+Esas noches sin dormir no se borran. Esa comida basura no se resetea. Ese estrés crónico no se evapora. Todo se queda en tu sistema, acumulándose silenciosamente, esperando cobrarte la cuenta en unos años.
 
-I spent my early 20s thinking my body was invincible. I could drink energy drinks to compensate for not sleeping. I could eat anything because my metabolism was fast. I could be constantly stressed because "that's life."
+Yo pasé mis early 20s pensando que mi cuerpo era invencible. Podía tomar energéticas para compensar el no dormir. Podía comer cualquier cosa porque mi metabolismo era rápido. Podía estar estresado constantemente porque "así es la vida".
 
-And technically it worked. My body handled it. Until I hit 26-27 and suddenly I wasn't recovering the same. One sleepless night destroyed me for two days. Junk food made me feel horrible. Stress gave me physical pains I didn't have before.
+Y técnicamente funcionó. Mi cuerpo aguantó. Hasta que llegué a los 26-27 y de repente ya no me recuperaba igual. Una noche sin dormir me destruía durante dos días. La comida basura me hacía sentir horrible. El estrés me daba dolores físicos que antes no tenía.
 
-And you know what the worst part is? By that point I'd already built years of horrible habits. Changing became exponentially harder because my body was already used to functioning in constant emergency mode.
+¿Y sabes qué es lo peor? Que para ese punto ya había construido años de hábitos horribles. Cambiar se volvió exponencialmente más difícil porque mi cuerpo ya estaba acostumbrado a funcionar en modo de emergencia constante.
 
-Plus, ignoring your body robs you of mental energy. When you sleep badly, you think worse. When you eat badly, your brain functions badly. When you don't move, your mood tanks. Everything is connected and when you neglect one thing, you neglect everything.
+Además, ignorar tu cuerpo te roba energía mental. Cuando duermes mal, piensas peor. Cuando comes mal, tu cerebro funciona mal. Cuando no te mueves, tu estado de ánimo se va al piso. Todo está conectado y cuando descuidas uno, descuidas todo.
 
-And mental health—we ignore that until we explode. We build years of untreated anxiety, ignored depression, unprocessed trauma, because we "don't have time" or "it's not that bad" or "others have it worse." Until one day you can't function anymore and you realize you should have sought help years ago.
+Y la salud mental, esa la ignoramos hasta que explotamos. Construimos años de ansiedad no tratada, depresión ignorada, trauma sin procesar, porque "no tenemos tiempo" o "no es tan grave" o "otros la tienen peor". Hasta que un día ya no puedes funcionar y te das cuenta de que debiste haber buscado ayuda hace años.
 
-The ironic thing is we treat our phones better than our bodies. We charge our phone every night. We protect it with a case. We update it regularly. But our body, the only one we're going to have, we treat it like we can buy a new one when this one breaks down.
+Lo irónico es que tratamos nuestros teléfonos mejor que nuestros cuerpos. El teléfono lo cargamos cada noche. Lo protegemos con funda. Lo actualizamos regularmente. Pero nuestro cuerpo, el único que vamos a tener, lo tratamos como si pudiéramos comprar uno nuevo cuando este se descomponga.
 
-Treat your body like it matters. Because it literally matters more than anything else. Without a functioning body there's no successful career, no happy relationships, no finished projects, nothing.
+Trata tu cuerpo como si importara. Porque literalmente importa más que cualquier otra cosa. Sin cuerpo funcional no hay carrera exitosa, ni relaciones felices, ni proyectos terminados, ni nada.
 
-Sleep enough. It's non-negotiable. Seven to eight hours, consistently. Your productivity will go up, not down.
+Duerme suficiente. No es negociable. Siete a ocho horas, consistentemente. Tu productividad va a subir, no a bajar.
 
-Move daily. You don't need to be an athlete. Just walk, stretch, do something. Your body is designed to move, not to sit 16 hours a day.
+Muévete diariamente. No necesitas ser atleta. Solo camina, estírate, haz algo. Tu cuerpo está diseñado para moverse, no para estar sentado 16 horas al día.
 
-Eat real food most of the time. You don't need to be perfect. But your body can't function optimally on pure garbage fuel.
+Come comida real la mayor parte del tiempo. No necesitas ser perfecto. Pero tu cuerpo no puede funcionar óptimamente con puro combustible basura.
 
-And take care of your mental health. Get therapy if you need it. It's not weakness, it's maintenance. It's as important as going to the dentist but for your brain.
+Y cuida tu salud mental. Busca terapia si la necesitas. No es debilidad, es mantenimiento. Es tan importante como ir al dentista pero para tu cerebro.
 
-Your 30-year-old, 40-year-old, 50-year-old self is literally begging you to do this now. Because they're going to live with the consequences of the decisions you make today. And they can't go back to fix it.
+Tu yo de 30 años, 40 años, 50 años, está literalmente rogando que hagas esto ahora. Porque ellos van a vivir con las consecuencias de las decisiones que tomes hoy. Y no pueden regresar a arreglarlo.
 
-## 8. Get into debt without control
+## 8. Endeúdate sin control
 
-And finally we arrive at the one with the most concrete and lasting consequences. The one that can literally chase you for decades.
+Y finalmente llegamos al que tiene las consecuencias más concretas y duraderas. El que literalmente te puede perseguir durante décadas.
 
-You're young. You deserve to treat yourself. You deserve to live well. You deserve that trip even though you don't have the money. You deserve those clothes even though your account is at zero. You deserve to eat out every day because you work hard and you earned it.
+Eres joven. Mereces darte gustos. Mereces vivir bien. Mereces ese viaje aunque no tengas el dinero. Mereces esa ropa aunque tu cuenta esté en ceros. Mereces salir a comer afuera todos los días porque trabajas duro y te lo ganaste.
 
-Swipe the card. Live your best life. YOLO and all those phrases that justify horrible financial decisions.
+Pasa la tarjeta. Vive tu mejor vida. YOLO y todas esas frases que justifican decisiones financieras horribles.
 
-Saving? Investing? That's for boring old people who don't know how to enjoy life anymore. That's for when you're 40 and established. Right now you're in your 20s. You're supposed to be free and do what you want, right?
+¿Ahorrar? ¿Invertir? Eso es para personas mayores aburridas que ya no saben disfrutar la vida. Eso es para cuando tengas 40 y estés establecido. Ahorita estás en tus 20s. Se supone que debes ser libre y hacer lo que quieras, ¿no?
 
-Wrong. Completely wrong.
+Equivocado. Completamente equivocado.
 
-Drowning in debt isn't freedom. It's exactly the opposite. It's a cage you build at 21% annual interest. And that cage gets smaller every month you only pay the minimum.
+Ahogarte en deudas no es libertad. Es exactamente lo opuesto. Es una jaula que construyes a 21% de interés anual. Y esa jaula se hace más pequeña cada mes que solo pagas el mínimo.
 
-Here's what credit cards don't tell you, but you discover when it's too late: they're designed to keep you in debt. The compound interest that in investments is your best friend, in debt is your worst enemy.
+Aquí está lo que las tarjetas de crédito no te dicen, pero que descubres cuando ya es tarde: están diseñadas para mantenerte endeudado. El interés compuesto que en las inversiones es tu mejor amigo, en las deudas es tu peor enemigo.
 
-You buy something for $1000 with your card. Doesn't seem like much. You pay the minimum. That $1000 becomes $1200, then $1440, then $1728. And that's just one year. Two years and that "small" purchase already cost you double. Three years and it's triple.
+Compras algo de $1000 pesos con tu tarjeta. No te parece mucho. Pagas el mínimo. Ese $1000 se convierte en $1200, luego en $1440, luego en $1728. Y eso es solo un año. Dos años y esa compra "pequeña" ya te costó el doble. Tres años y es el triple.
 
-And you don't make just one purchase. You make dozens. Hundreds. All "small." All "justified." All silently accumulating into a mountain of debt that eventually crushes you.
+Y no haces una sola compra. Haces docenas. Cientos. Todas "pequeñas". Todas "justificadas". Todas acumulándose silenciosamente en una montaña de deuda que eventualmente te aplasta.
 
-What happens is that debts rob the future to pay for the present. Every dollar you owe is a dollar your future self has to work to pay. You're literally borrowing money from your future to treat yourself now for things you probably won't even remember in six months.
+Lo que pasa es que las deudas te roban el futuro para pagar el presente. Cada peso que debes es un peso que tu yo del futuro tiene que trabajar para pagar. Estás literalmente tomando dinero prestado de tu futuro para darte gustos ahora que probablemente ni recuerdas en seis meses.
 
-And it's not just the money. It's the freedom. Because when you're in debt you can't quit the job you hate. You can't take risks in your career. You can't move where you want. You can't take time to find what you really want to do. You're trapped because you have to pay your debts.
+Y no es solo el dinero. Es la libertad. Porque cuando estás endeudado no puedes renunciar al trabajo que odias. No puedes tomar riesgos en tu carrera. No puedes mudarte a donde quieras. No puedes tomarte tiempo para encontrar qué realmente quieres hacer. Estás atrapado porque tienes que pagar tus deudas.
 
-That "freedom" you thought you were buying with your card turned out to be the thing that took away all your real freedom.
+Esa "libertad" que pensaste que estabas comprando con tu tarjeta resultó ser la cosa que te quitó toda tu libertad real.
 
-And don't fool yourself thinking "I'm not one of those people who gets into bad debt." We all think that. We all think we're going to pay everything next month. We all think it's just temporary. And for some it's true. But for most, "temporary" becomes years. Decades.
+Y no te engañes pensando "yo no soy de esos que se endeudan feo". Todos pensamos eso. Todos pensamos que vamos a pagar todo el próximo mes. Todos pensamos que solo es temporal. Y para algunos es cierto. Pero para la mayoría, "temporal" se convierte en años. En décadas.
 
-Credit card companies count on you thinking short-term. They bet you won't do the math. They bet immediate gratification will win over long-term planning. And in most cases, they win that bet.
+Las compañías de tarjetas cuentan con que pienses a corto plazo. Apuestan a que no vas a hacer las matemáticas. Apuestan a que la gratificación inmediata va a ganar sobre la planificación a largo plazo. Y en la mayoría de los casos, ganan esa apuesta.
 
-Plus, spending money you don't have disconnects you from reality. When you pay with a card you don't feel the pain of spending like when you pay cash. So you spend more, without realizing it, building a financial prison brick by brick.
+Además, gastar dinero que no tienes te desconecta de la realidad. Cuando pagas con tarjeta no sientes el dolor de gastar como cuando pagas en efectivo. Entonces gastas más, sin darte cuenta, construyendo una prisión financiera ladrillo por ladrillo.
 
-Live below your means. Not to be cheap or miserable. To be free.
+Vive por debajo de tus posibilidades. No para ser tacaño o miserable. Para ser libre.
 
-Every dollar you save today is freedom you buy for tomorrow. Every dollar you invest is a small machine that works for you while you sleep.
+Cada peso que ahorras hoy es libertad que compras para mañana. Cada peso que inviertes es una pequeña máquina que trabaja para ti mientras duermes.
 
-If you have debts, pay them aggressively. Make it your number one priority. Because every month that passes, compound interest is destroying you.
+Si tienes deudas, págalas agresivamente. Hazlo tu prioridad número uno. Porque cada mes que pasa, el interés compuesto te está destruyendo.
 
-If you don't have debts, don't make them. Use a credit card only if you can pay the total each month. If you can't pay for something in cash, don't buy it. It's that simple.
+Si no tienes deudas, no las hagas. Usa tarjeta de crédito solo si puedes pagar el total cada mes. Si no puedes pagar algo en efectivo, no lo compres. Es así de simple.
 
-And learn about basic finances. You don't need to be an expert. You just need to understand compound interest, the difference between assets and liabilities, and how money works. Your future self is going to live a completely different life depending on whether you learn this now or in 10 years.
+Y aprende sobre finanzas básicas. No necesitas ser experto. Solo necesitas entender interés compuesto, la diferencia entre activos y pasivos, y cómo funciona el dinero. Tu yo del futuro va a vivir una vida completamente diferente dependiendo de si aprendes esto ahora o en 10 años.
 
-Because here's the truth: your financial decisions in your 20s have more impact than in any other decade. Because of the time you have ahead. Because of compound interest. Because of the habits you build.
+Porque la verdad es esta: tus decisiones financieras en tus 20s tienen más impacto que en cualquier otra década. Por el tiempo que tienes por delante. Por el interés compuesto. Por los hábitos que construyes.
 
-You can build a foundation that gives you freedom for the rest of your life. Or you can build a burden that chases you for decades.
+Puedes construir una base que te dé libertad por el resto de tu vida. O puedes construir una carga que te persiga durante décadas.
 
-The choice is yours. But choose consciously, not by default.
+La elección es tuya. Pero elige consciente, no por default.
 
 ---
 
-## The pattern you probably recognize
+## El patrón que probablemente reconoces
 
-If you got here and you're recognizing yourself in several of these points, breathe. Don't panic. And definitely don't beat yourself up.
+Si llegaste hasta aquí y te estás reconociendo en varios de estos puntos, respira. No entres en pánico. Y definitivamente no te flageles.
 
-You're not broken. You're not behind. You're not a failure. You're just following the default path.
+No estás roto. No vas atrasado. No eres un fracaso. Solo estás siguiendo el camino por defecto.
 
-The path of least resistance. The one everyone follows because it's easiest. The one designed by algorithms, social expectations, and your own brain seeking dopamine, to keep you comfortable, distracted, and basically stuck in the same place.
+El camino de menor resistencia. El que todos siguen porque es el más fácil. El que está diseñado por algoritmos, expectativas sociales, y tu propio cerebro buscando dopamina, para mantenerte cómodo, distraído y básicamente atorado en el mismo lugar.
 
-And worst of all, this path feels normal because everyone around you is following it too. Everyone is connected 24/7. Everyone is in debt. Everyone is postponing. Everyone is building lives for Instagram. So it seems like that's how it's supposed to be.
+Y lo peor es que este camino se siente normal porque todos a tu alrededor lo están siguiendo también. Todos están conectados 24/7. Todos están endeudados. Todos están posponiendo. Todos están construyendo vidas para Instagram. Entonces parece que así es como se supone que sea.
 
-But normal doesn't mean right. And common doesn't mean inevitable.
+Pero normal no significa correcto. Y común no significa inevitable.
 
-Here's the good part, the only good thing in this entire post: you can get off this path whenever you want. Today if you want. You don't need anyone's permission. You don't need a perfect 47-step plan. You don't need to wait for the new year or Monday or for the stars to align.
+Aquí está lo bueno, la única cosa buena de este post completo: puedes salirte de este camino cuando quieras. Hoy mismo si quieres. No necesitas permiso de nadie. No necesitas un plan perfecto de 47 pasos. No necesitas esperar al año nuevo o al lunes o a que las estrellas se alineen.
 
-You just need to decide you're going to do something different. And then do it.
+Solo necesitas decidir que vas a hacer algo diferente. Y luego hacerlo.
 
-It can be one small thing. Disconnect your phone for an hour. Write one page of something you want to create. Exercise for 20 minutes. Pay extra on your credit card. Say no to something you really don't want to do.
+Puede ser una cosa pequeña. Desconectar tu teléfono por una hora. Escribir una página de algo que quieres crear. Hacer ejercicio por 20 minutos. Pagar extra en tu tarjeta de crédito. Decir que no a algo que realmente no quieres hacer.
 
-One thing. And then tomorrow another. And eventually those small decisions compound into a completely different direction.
+Una cosa. Y luego mañana otra. Y eventualmente esas decisiones pequeñas se componen en una dirección completamente diferente.
 
-The problem isn't that you don't know what to do. The problem is that knowing isn't enough. You have to do something with that knowledge. And that "something" can start ridiculously small.
+El problema no es que no sepas qué hacer. El problema es que saber no es suficiente. Tienes que hacer algo con ese conocimiento. Y ese "algo" puede empezar ridículamente pequeño.
 
-## What changes when you do the opposite
+## Qué cambia cuando haces lo opuesto
 
-The difference between following the default path and doing the opposite isn't dramatic at first. You're not going to wake up transformed after one day of doing things right.
+La diferencia entre seguir el camino por defecto y hacer lo opuesto no es dramática al principio. No vas a despertar transformado después de un día de hacer las cosas bien.
 
-But the changes compound. And compound interest works in all areas of your life, not just finances.
+Pero los cambios se componen. Y el interés compuesto funciona en todas las áreas de tu vida, no solo en las finanzas.
 
-When you stop waiting and start doing, you build momentum. The first day is hard. The second too. But the tenth is easier. The twentieth is almost automatic. And after three months you have real evidence that you can do things, not just think about doing them.
+Cuando dejas de esperar y empiezas a hacer, construyes momentum. El primer día es difícil. El segundo también. Pero el décimo ya es más fácil. El vigésimo es casi automático. Y después de tres meses tienes evidencia real de que puedes hacer cosas, no solo pensar en hacerlas.
 
-When you prioritize long-term over short-term, you build freedom. Every time you choose the hard option that benefits you in the future over the easy one that benefits you now, you're buying a bit of future freedom. And those small purchases accumulate into a freedom account that eventually allows you to do things others can't.
+Cuando priorizas el largo plazo sobre el corto, construyes libertad. Cada vez que eliges la opción difícil que te beneficia en el futuro sobre la fácil que te beneficia ahora, estás comprando un poco de libertad futura. Y esas pequeñas compras se acumulan en una cuenta de libertad que eventualmente te permite hacer cosas que otros no pueden.
 
-When you create instead of just consuming, you build competence. Not just the skill to do the thing, but the skill to finish things. To publish imperfect things. To survive criticism. To improve with practice. Those are the skills that actually matter.
+Cuando creas en vez de solo consumir, construyes competencia. No solo la habilidad de hacer la cosa, sino la habilidad de terminar cosas. De publicar cosas imperfectas. De sobrevivir a la crítica. De mejorar con la práctica. Esas son las habilidades que realmente importan.
 
-When you take care of your body, you build energy. Not just physical, mental too. You think better. You feel better. You have more capacity to face the problems life throws at you. Your baseline wellbeing goes up, so bad days feel less bad and good days feel amazing.
+Cuando cuidas tu cuerpo, construyes energía. No solo física, mental también. Piensas mejor. Te sientes mejor. Tienes más capacidad para enfrentar los problemas que la vida te tira. Tu baseline de bienestar sube, entonces los días malos se sienten menos malos y los días buenos se sienten increíbles.
 
-When you disconnect regularly, you build clarity. In silence you find what you really want versus what Instagram tells you you should want. You find ideas that are actually yours. You find peace of mind that's impossible when you're constantly bombarded with others' input.
+Cuando te desconectas regularmente, construyes claridad. En el silencio encuentras qué realmente quieres versus qué Instagram te dice que deberías querer. Encuentras ideas que son realmente tuyas. Encuentras paz mental que es imposible cuando estás constantemente bombardeado con input de otros.
 
-When you live for yourself instead of for others' approval, you build a life you actually want. And that life might look completely different from what others expect. It might be simpler. It might be weirder. It might not make sense to anyone except you. And that's perfect because it's your life, not theirs.
+Cuando vives para ti mismo en vez de para la aprobación de otros, construyes una vida que realmente quieres. Y esa vida puede verse completamente diferente a lo que otros esperan. Puede ser más simple. Puede ser más rara. Puede no tener sentido para nadie excepto para ti. Y eso está perfecto porque es tu vida, no la de ellos.
 
-This isn't complicated. It's not advanced science. But it's definitely not easy.
+Esto no es complicado. No es ciencia avanzada. Pero definitivamente no es fácil.
 
-Because doing the opposite of what everyone does requires courage. It requires that you feel uncomfortable regularly. It requires that you look different. It requires that you choose delayed gratification when everyone around you is choosing immediate gratification.
+Porque hacer lo opuesto de lo que todos hacen requiere valor. Requiere que te sientas incómodo regularmente. Requiere que te veas diferente. Requiere que elijas gratificación retrasada cuando todos a tu alrededor están eligiendo gratificación inmediata.
 
-It requires that you're willing to be misunderstood. For your friends to ask why you don't go out as much. For your family to question your decisions. For strangers on the internet to have opinions about your life.
+Requiere que estés dispuesto a ser malentendido. A que tus amigos te pregunten por qué ya no sales tanto. A que tu familia cuestione tus decisiones. A que extraños en internet opinen sobre tu vida.
 
-But that's exactly why it works.
+Pero es exactamente por eso que funciona.
 
-Because everyone else is ruining their 20s by following the easy path. And in five years, in ten years, they're going to be in exactly the same place or worse, wondering what happened.
+Porque todos los demás están arruinando sus 20s siguiendo el camino fácil. Y en cinco años, en diez años, van a estar en exactamente el mismo lugar o peor, preguntándose qué pasó.
 
-You don't have to be one of them.
+Tú no tienes que ser uno de ellos.
 
 ---
 
-I'm 28. I'm closer to 30 than to 20 and that feels weird to admit.
+Tengo 28. Estoy más cerca de los 30 que de los 20 y eso se siente raro de admitir.
 
-I made enough of these mistakes to recognize the pattern. I spent years constantly connected, consuming instead of creating, choosing Netflix over progress, waiting for the perfect moment that never came, avoiding everything that scared me, worrying about what others thought, neglecting my body because I thought I was invincible.
+Cometí suficientes de estos errores como para reconocer el patrón. Pasé años conectado constantemente, consumiendo en vez de crear, eligiendo Netflix sobre progreso, esperando el momento perfecto que nunca llegó, evitando todo lo que me daba miedo, preocupándome por lo que otros pensaban, descuidando mi cuerpo porque pensaba que era invencible.
 
-I fixed some of these. I'm still working on others. And there are probably some I haven't even realized I'm still doing.
+Algunos de estos los arreglé. Otros todavía estoy trabajando en ellos. Y probablemente hay algunos que ni siquiera me he dado cuenta que sigo haciendo.
 
-But I also did enough things right to know that changing direction really works. That you don't need to have everything figured out. That you can start from where you are. That it's better to start imperfect than never start.
+Pero también hice suficientes cosas bien como para saber que cambiar de dirección realmente funciona. Que no necesitas tener todo resuelto. Que puedes empezar desde donde estés. Que es mejor empezar imperfecto que nunca empezar.
 
-The difference between the person I was at 22 and who I am now isn't that I'm perfect now or have everything figured out. It's that I now know which path leads where. And when I find myself on the wrong path, which still happens often, at least I know I'm on the wrong path. That's already something.
+La diferencia entre la persona que era a los 22 y la que soy ahora no es que ahora sea perfecto o que tenga todo resuelto. Es que ahora sé qué camino lleva a dónde. Y cuando me encuentro en el camino equivocado, que todavía pasa seguido, al menos sé que estoy en el camino equivocado. Eso ya es algo.
 
-It doesn't matter where you are in your 20s. If you're 21 and just starting, perfect, you have an advantage. If you're 27 and feel like you wasted time, you still have time. If you're 29 and panicking, breathe—your 30s aren't the end of the world and you can still make significant changes.
+No importa dónde estés en tus 20s. Si tienes 21 y apenas empiezas, perfecto, tienes ventaja. Si tienes 27 y sientes que desperdiciaste tiempo, todavía tienes tiempo. Si tienes 29 y estás entrando en pánico, respira, los 30s no son el fin del mundo y todavía puedes hacer cambios significativos.
 
-But that time, although it still exists, runs out faster than you think. Every day you wait is a day you don't get back. Not to scare you, just to be honest.
+Pero ese tiempo, aunque todavía existe, se acaba más rápido de lo que crees. Cada día que esperas es un día que no recuperas. No para asustarte, solo para ser honesto.
 
-So if any of this resonated with you, if you recognized yourself in some of these patterns, take that as useful information. Not as a reason to feel bad, but as a map showing you where you're standing and where the different paths lead.
+Así que si algo de esto resonó contigo, si te reconociste en algunos de estos patrones, toma eso como información útil. No como razón para sentirte mal, sino como un mapa que te muestra dónde estás parado y hacia dónde llevan los diferentes caminos.
 
-And then choose your path consciously. Not by default. Not because it's what everyone does. Not because it's easiest.
+Y luego elige tu camino conscientemente. No por default. No porque es lo que todos hacen. No porque es lo más fácil.
 
-Choose the path that in five years you'll be grateful you took.
+Elige el camino que en cinco años vas a agradecer haber tomado.
 
-Start today.
+Empieza hoy.

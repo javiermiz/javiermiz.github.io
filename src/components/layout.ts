@@ -47,12 +47,8 @@ export const SITE_CONFIG = {
     linkedin: "https://www.linkedin.com/in/javier-miz/",
   },
   i18n: {
-    defaultLang: "en" as const,
+    defaultLang: "es" as const,
     languages: {
-      en: {
-        code: "en",
-        name: "English",
-      },
       es: {
         code: "es",
         name: "Español",

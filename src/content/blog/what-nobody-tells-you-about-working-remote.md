@@ -1,82 +1,82 @@
 ---
-title: "What nobody tells you about working remotely"
-description: "People always ask me how I work remotely. The truth is it's not that hard, but there are things nobody tells you until you're already in."
+title: "Lo que nadie te dice sobre trabajar remoto"
+description: "Siempre me preguntan cómo le hago para trabajar remoto. La verdad es que no es tan difícil, pero hay cosas que nadie te dice hasta que estás adentro."
 published_date: 2026-06-08
 category: "personal"
 ---
 
-People always ask me the same thing. "How do you work remotely?" "What do I need to get started?" "Isn't it really hard?"
+Siempre me preguntan lo mismo. "¿Cómo consigues trabajar remoto?" "¿Qué necesito para empezar?" "¿No es difícil?"
 
-And the honest answer is that it's not as complicated as people make it seem. But it's also not as easy as TikTok makes it look where everyone's a digital nomad in Bali answering emails from a hammock.
+Y la respuesta honesta es que no es tan complicado como la gente cree. Pero tampoco es tan fácil como lo pintan en TikTok donde todos son nómadas digitales desde Bali contestando correos en una hamaca.
 
-What I have noticed is that there are things nobody tells you before you start. Things I learned the hard way, and that I see most people repeating over and over.
+Lo que sí he notado es que hay cosas que nadie te dice antes de empezar. Cosas que aprendí yo por las malas, y que veo que la mayoría repite una y otra vez.
 
-## You think you need to be a programmer
+## Piensas que necesitas ser programador
 
-When people hear "remote work" they immediately think tech. That you need to know how to code, that you need a data background, that you need an engineering degree. And yeah, there are a lot of opportunities in tech, but those aren't the only ones.
+Cuando la gente escucha "trabajo remoto" piensa inmediatamente en tech. Que necesitas saber programar, que necesitas saber de datos, que necesitas un título en ingeniería. Y sí, hay muchas oportunidades en tech, pero no son las únicas.
 
-I started working at a trading company that isn't even a tech company. My job is frontend, sure, but the company does something completely different. And before that I worked at a delivery company where I was the only developer and everyone else was in operations, marketing, customer support.
+Yo empecé trabajando en una empresa de trading que ni siquiera es de tecnología. Mi trabajo es frontend, sí, pero la empresa se dedica a otra cosa completamente diferente. Y antes de eso trabajé en una empresa de delivery donde era el único desarrollador y todo el resto del equipo era de operations, marketing, customer support.
 
-What US companies look for isn't whether you're a programmer. They look for whether you can do something well and whether you can communicate in English. That's it. If you know how to do something a company needs and you do it well, you've got 80% of the path covered.
+Lo que las empresas gringas buscan no es que seas programador. Buscan que sepas hacer algo bien y que puedas comunicarte en inglés. Eso. Si sabes hacer algo que una empresa necesita y lo haces bien, ya tienes el 80% del camino.
 
-## The setup doesn't matter as much as you think
+## El setup no importa tanto como crees
 
-There's a culture around remote work that's basically a product catalog. Standing desk, ergonomic chair, ultrawide monitor, 4K webcam, RGB lighting. You see the setup and think you need to spend $3,000 USD on equipment before you can start working.
+Hay una cultura alrededor del trabajo remoto que es básicamente un catálogo de productos. Standing desk, silla ergonómica, monitor ultrawide, webcam 4K, iluminaciónRGB. Te ven el setup y piensas que necesitas gastar $50,000 pesos en equipo antes de poder trabajar.
 
-My first remote setup was a beat-up Toshiba Satellite on my kitchen table. No mouse, no external monitor, no chair worth mentioning. Just the laptop, open, and me typing. That's it. And somehow I made it work.
+Mi primer setup remoto fue una Toshiba Satellite viejita en la mesa de la casa. Sin mouse, sin monitor externo, sin silla de las buenas. Solo la laptop, abierta, y yo escribiendo. Eso era todo. Y de alguna forma hice que funcionara.
 
-Now I have a more complete setup, but that's because after years of doing it I know what I need. Not the other way around. It's not "first the perfect setup, then I'll start looking for jobs." It's "first I get the job, then I improve my setup as I figure out what I actually need."
+Ahora tengo un setup más completo, pero es porque ya sé qué necesito después de años de hacerlo. No al revés. No es "primero el setup perfecto y luego empiezo a buscar trabajo". Es "primero consigo el trabajo y después voy mejorando mi setup conforme descubro qué me hace falta".
 
-People spend months buying equipment instead of sending their resumes. That doesn't make sense.
+La gente se queda meses comprando equipo en vez de mandar su CV. Y eso no tiene sentido.
 
-## Your English doesn't have to be perfect
+## El inglés no tiene que ser perfecto
 
-This was my biggest fear. I spoke English but with mistakes, slow, insecure. I thought no company would hire me like that.
+Este fue mi mayor miedo. Yo hablaba inglés pero con errores, lento, inseguro. Pensaba que ninguna empresa me iba a contratar así.
 
-And technically I was right in part. Nobody hires someone who can't communicate. But communicating isn't the same as being perfect.
+Y técnicamente tenía razón en parte. Nadie contrata a alguien que no puede comunicarse. Pero comunicarse no es lo mismo que ser perfecto.
 
-In my interviews with US companies I speak with errors. Sometimes I search for words. Sometimes I mess up pronunciation. But I communicate. And that's what matters.
+En mis entrevistas con empresas estadounidenses hablo con errores. A veces busco palabras. A veces me equivoco en la pronunciación. Pero me comunico. Y eso es lo que importa.
 
-What I discovered is that confidence matters more than grammar. When you stop being afraid of sounding bad, you speak better. Not because your vocabulary improves overnight, but because you stop blocking yourself.
+Lo que descubrí es que la confianza importa más que la gramática. Cuando dejas de tener miedo a sonar mal, hablas mejor. No porque tu vocabulario mejore de la noche a la mañana, sino porque dejas de bloquearte.
 
-My English isn't perfect. But it works. And that's enough.
+Mi inglés no es perfecto. Pero funciona. Y eso es suficiente.
 
-## You don't need remote experience to start
+## No necesitas experiencia remota para empezar
 
-People think there's an impossible catch-22. "I can't get a remote job because I don't have remote experience, but how do I get remote experience if nobody gives me a remote job first?"
+La gente piensa que hay un catch-22 imposible. "No consigo trabajo remoto porque no tengo experiencia remota, pero ¿cómo gano experiencia remoto si nadie me da trabajo?"
 
-But the reality is that if you've already worked with digital tools, if you've already communicated with clients through chat or email, if you've already organized projects in any system, if you've already worked independently without someone hovering over you... you already have remote experience. You're just not seeing it that way.
+Pero la realidad es que si ya has trabajado con herramientas digitales, si ya has comunicado con clientes por chat o email, si ya has organizado proyectos en cualquier sistema, si ya has trabajado de forma independiente sin que alguien esté encima tuyo... ya tienes experiencia remota. Solo que no la estás viendo así.
 
-What companies need isn't that you've worked from home before. They need to know you can solve problems without someone supervising every minute. And if you've done that in any job, you already have what's necessary.
+Lo que las empresas necesitan no es que hayas trabajado antes desde tu casa. Necesitan que sepas resolver problemas sin que alguien te esté supervisando cada minuto. Y si has hecho eso en cualquier trabajo, ya tienes lo necesario.
 
-## The real benefit isn't the money
+## El verdadero beneficio no es el dinero
 
-Okay, yes. The money is a huge benefit. I went from earning $15,000 MXN at a presencial job in Mexico to $120,000 MXN working remotely for a US company. That's no small thing.
+Bueno, sí. El dinero es un beneficio enorme. Pasé de ganar $15,000 pesos en un trabajo presencial en México a $120,000 pesos remoto para una empresa gringa. Eso no es poca cosa.
 
-But what actually changed my life wasn't the salary. It was the time.
+Pero lo que realmente cambió mi vida no fue el sueldo. Fue el tiempo.
 
-Before I used to lose 2 hours a day in traffic. Back and forth. Energy burned just getting to an office to sit in front of a computer, exactly what I could have done from home.
+Antes perdía 2 horas diarias en tráfico. Idas y vueltas. Energía quemada en llegar a una oficina para sentarme frente a una computadora, exactamente lo que podría haber hecho desde mi casa.
 
-Now I use those 2 hours for my own projects, to be with my family, to exercise, to actually live. And when you work remotely and have extra time, you can build things on your own. Start a side hustle. Learn something new. Or simply do nothing, which is also worth something.
+Ahora esas 2 horas las uso para trabajar en mis propios proyectos, para estar con mi familia, para hacer ejercicio, para vivir. Y cuando trabajas remoto y tienes tiempo extra, puedes construir cosas por tu cuenta. Empezar un side hustle. Aprender algo nuevo. O simplemente no hacer nada, que también vale.
 
-## You don't have to be a digital nomad
+## No tienes que ser nómada digital
 
-There's this idea that working remotely means traveling constantly. That you go from Airbnb to Airbnb, that you're in a different country every month, that your life is a roller coaster of experiences.
+Hay una idea de que trabajar remoto significa viajar constantemente. Que vives en Airbnb de Airbnb, que estás en un país diferente cada mes, que tu vida es una montaña rusa de experiencias.
 
-I did it. I lived in Cancún, traveled, worked from different places. And it's fine if that's what you want. But it's not the only way to live remotely.
+Yo lo hice. Viví en Cancún, viajé, trabajé desde distintos lugares. Y está bien, si eso es lo que quieres. Pero no es la única forma de vivir remoto.
 
-I work from home now. I have an office, I have my routine, I have my neighborhood. And I'm just as remote as the guy in Bali. The difference is I don't need to document my life to make it look interesting. I just need to do my job and live my life.
+Yo ahora trabajo desde mi casa. Tengo una oficina, tengo mi rutina, tengo mi barrio. Y soy igual de remoto que el que está en Bali. La diferencia es que yo no necesito documentar mi vida para que se vea interesante. Solo necesito hacer mi trabajo y vivir mi vida.
 
-The luxury of remote work isn't traveling. It's choosing. Choosing where you work, with whom, and how you organize your time. If that means staying in your city, perfect. If that means traveling, also perfect. There's no right way to do it.
+El lujo del trabajo remoto no es viajar. Es elegir. Elegir dónde trabajas, con quién, y cómo organizas tu tiempo. Si eso significa quedarte en tu ciudad, perfecto. Si significa viajar, también perfecto. No hay una forma correcta de hacerlo.
 
-## What you actually need
+## Lo que realmente necesitas
 
-If you're thinking about starting to work remotely, you don't need a perfect setup, or a college degree, or specific experience, or to be a programmer.
+Si estás pensando en empezar a trabajar remoto, no necesitas un setup perfecto, ni un título universitario, ni experiencia específica, ni ser programador.
 
-You need a skill that someone is willing to pay for. You need to know how to communicate in English, even if it's imperfect. You need a LinkedIn that looks professional. And you need to start sending applications even though you feel like you're not ready.
+Necesitas una habilidad que alguien esté dispuesto a pagar. Necesitas saber comunicarte en inglés, aunque sea imperfecto. Necesitas un LinkedIn que se vea profesional. Y necesitas empezar a mandar candidaturas aunque sientas que no estás listo.
 
-Because nobody feels ready. I didn't feel ready when I sent my first resume to a US company. I didn't feel ready when I had my first interview in English. I didn't feel ready when I started working without anyone supervising me.
+Porque nadie se siente listo. Yo no me sentía listo cuando mandé mi primer CV a una empresa gringa. No me sentía listo cuando tuve mi primera entrevista en inglés. No me sentía listo cuando empecé a trabajar sin nadie supervisándome.
 
-But I did it anyway. And that's how things get built. Not by waiting until you're ready, but by starting and figuring it out along the way.
+Pero lo hice de todas formas. Y así se construyen las cosas. No esperando a estar listo, sino empezando y figuranlo sobre la marcha.
 
-It's not that complicated. It's just simpler than people want to admit. And that's what nobody tells you about working remotely.
+No es tan complicado. Solo es más simple de lo que la gente quiere admitir. Y eso es lo que nadie te dice sobre trabajar remoto.

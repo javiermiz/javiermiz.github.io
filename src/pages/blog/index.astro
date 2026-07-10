@@ -2,7 +2,7 @@
 import BlogTemplate from "../../components/templates/blog-template.astro";
 import { getLocaleData } from "../../utils/i18n";
 
-const blog_data = await getLocaleData({ language: "es", page: "blog" });
+const blog_data = await getLocaleData({ page: "blog" });
 ---
 
-<BlogTemplate blog_data={blog_data} lang="es" />
+<BlogTemplate blog_data={blog_data} />

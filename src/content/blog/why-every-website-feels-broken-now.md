@@ -1,69 +1,69 @@
 ---
-title: "Why Every Website Feels Broken Now"
-description: "I just wanted to read an article and ended up navigating through a digital minefield"
+title: "Por qué cada sitio web parece diseñado para fastidiarme la experiencia"
+description: "Solo quería leer una noticia y terminé navegando por un campo minado digital"
 published_date: 2025-08-27
 category: "personal"
 draft: false
-seo_title: "Why Every Website Feels Broken Now"
-seo_description: "I just wanted to read an article and ended up navigating through a digital minefield"
+seo_title: "Por qué cada sitio web parece diseñado para fastidiarme la experiencia"
+seo_description: "Solo quería leer una noticia y terminé navegando por un campo minado digital"
 ---
 
-I no longer enjoy browsing the internet.
+Ya no disfruto navegar por internet.
 
-It's not that I've become a digital curmudgeon or that I'm being nostalgic without reason. It's that every time I try to do something as basic as reading an article, I end up navigating through a minefield of interruptions.
+No es que me haya vuelto un anciano digital o que esté nostálgico sin razón. Es que cada vez que intento hacer algo tan básico como leer una noticia, termino navegando por un campo minado de interrupciones.
 
-Yesterday I saw an interesting article on Instagram, so I decided to click through to read it. Upon entering the site, I was immediately greeted with **"Accept our 847 cookies or manually configure each one"**. Fine, I accept everything because I want to read, not become a privacy lawyer.
+Ayer vi una noticia interesante en Instagram, así que decidí entrar a leerla, pero al entrar me encontré con **"Acepta nuestras 847 cookies o configura manualmente cada una"**. Ok, acepto todo porque quiero leer, no convertirme en abogado de privacidad.
 
-The article appears and I start reading the first paragraph when suddenly **"Subscribe to our newsletter!"** covers half my screen. I close it and continue reading, but in the second paragraph **"Allow notifications?"** pops up. No thanks. By the third paragraph, a video starts auto-playing about something completely different from the article, so I pause it.
+Aparece el artículo y empiezo a leer el primer párrafo cuando de repente **"¡Suscríbete a nuestro newsletter!"** me cubre la mitad de la pantalla. Lo cierro y sigo leyendo, pero en el segundo párrafo me aparece **"Permitir notificaciones?"**. No, gracias. Para el tercer párrafo, un video se reproduce automáticamente sobre algo completamente diferente al artículo, así que lo pauso.
 
-Fourth paragraph: **"Sign in to continue reading"**.
+Cuarto párrafo: **"Inicia sesión para continuar leyendo"**.
 
-I close the tab. Open another article from another site. Same problem. Different order.
+Cierro la pestaña. Abro otra noticia de otro sitio. Mismo problema. Diferente orden.
 
-## It's Not Just Nostalgia
+## No es solo nostalgia
 
-I remember when the web was people sharing things because they enjoyed sharing. Personal blogs with terrible designs but honest content. Hobby sites created by people who actually knew their subject matter.
+Recuerdo cuando la web era personas compartiendo cosas porque les gustaba compartir. Blogs personales con diseños horribles pero contenido honesto. Sitios de hobbies hechos por gente que realmente sabía del tema.
 
-Now everything is designed to extract every penny from my digital existence. Every click, every scroll, every second of attention monetized to exhaustion.
+Ahora todo está diseñado para extraer cada centavo de mi existencia digital. Cada click, cada scroll, cada segundo de atención monetizado hasta el cansancio.
 
-Articles are written to appear on Google, not to answer your question. **2,500 words to explain something that needed 3 paragraphs**. But of course, SEO says more words equals better ranking.
+Los artículos están escritos para aparecer en Google, no para responder tu pregunta. **2,500 palabras para explicar algo que necesitaba 3 párrafos**. Pero claro, el SEO dice que más palabras es mejor ranking.
 
-## I Understand They Need to Make Money
+## Entiendo que necesitan ganar dinero
 
-Look, I get it perfectly. Sites need revenue. But the experience has become hostile.
+Mira, lo entiendo perfectamente. Los sitios necesitan ingresos. Pero la experiencia se volvió hostil.
 
-Every site seems designed under the premise that I'm a fool who needs to be manipulated into doing what they want. Microscopic "No thanks" buttons. Pre-checked checkboxes. Pop-ups that appear just when you're about to click something else.
+Cada sitio parece diseñado bajo la premisa de que soy un tonto que necesita ser manipulado para hacer lo que ellos quieren. Botones de "No gracias" microscópicos. Checkboxes ya marcados. Pop-ups que aparecen justo cuando estás a punto de hacer click en algo más.
 
-It's as if they've forgotten there's a **real person** on the other side.
+Es como si hubieran olvidado que hay una **persona real** del otro lado.
 
-## What Really Bothers Me
+## Lo que realmente me molesta
 
-It's not just advertising. Advertising has always existed. It's that **every interaction** is designed to benefit them, not to help me.
+No es solo la publicidad. Siempre existió publicidad. Es que **cada interacción** está diseñada para beneficiarlos a ellos, no para ayudarme a mí.
 
-Want to read an article? First I must navigate through 6 obstacles that have nothing to do with the content.
+¿Quiero leer un artículo? Primero debo pasar por 6 obstáculos que no tienen nada que ver con el contenido.
 
-Looking for specific information? They give me generic content optimized for keywords, not the real answer.
+¿Busco información específica? Me dan contenido genérico optimizado para palabras clave, no la respuesta real.
 
-Trying to close something? The button is hidden or so small I need a magnifying glass.
+¿Intento cerrar algo? El botón está escondido o es tan pequeño que necesito lupa.
 
-**Everything is designed to frustrate me until I give up and do what they want.**
+**Todo está diseñado para frustrarme hasta que me rinda y haga lo que quieren.**
 
-## The Irony of It All
+## La ironía de todo esto
 
-The saddest part is that this strategy is killing what made the web valuable.
+Lo más triste es que esta estrategia está matando lo que la web tenía de bueno.
 
-I no longer bookmark sites because I know that the next time I visit, it'll be the same nightmare. I no longer explore new sites because I assume they'll be identical.
+Ya no guardo bookmarks porque sé que la próxima vez que visite ese sitio va a ser la misma pesadilla. Ya no exploro sitios nuevos porque asumo que van a ser iguales.
 
-**They turned the web into something I don't want to use.**
+**Convirtieron la web en algo que no quiero usar.**
 
-Then they wonder why people use ad blockers, why nobody trusts websites, why we prefer to stick to the same 5 familiar platforms.
+Después se preguntan por qué la gente usa ad blockers, por qué nadie confía en los sitios web, por qué preferimos quedarnos en las mismas 5 plataformas conocidas.
 
-## Maybe This Is How It Has to Be
+## Tal vez así tiene que ser
 
-Maybe this is just the price of "progress". Maybe this is how it works when everyone's online and everything needs to be monetized.
+Tal vez esto es solo el precio del "progreso". Tal vez así funciona cuando todo el mundo está online y hay que monetizar todo.
 
-But it saddens me to think about people discovering the web now who believe **this is normal**. Who don't know what they missed when the web was a place for sharing, not extracting.
+Pero me da tristeza pensar en las personas que están descubriendo la web ahora y creen que **esto es normal**. Que no saben lo que se perdieron cuando la web era un lugar para compartir, no para extraer.
 
-Maybe I'm just another old guy complaining about change. But every time I have to close 4 pop-ups to read two paragraphs, I think something broke along the way.
+Tal vez soy solo otro viejo quejándose del cambio. Pero cada vez que tengo que cerrar 4 pop-ups para leer dos párrafos, pienso que algo se rompió en el camino.
 
-And honestly, I don't know if it can be fixed.
+Y sinceramente, no sé si tiene arreglo.

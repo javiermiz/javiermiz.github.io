@@ -1,47 +1,47 @@
 ---
-title: "Back to Analog"
-description: "A reflection on leaving behind mindless technology and recovering physical things as a form of entertainment"
+title: "Volver a lo analógico"
+description: "Una reflexión sobre dejar la tecnología sin sentido y recuperar lo físico como forma de diversión"
 published_date: 2025-12-15
 category: "personal"
 draft: false
 ---
 
-I've thought about eliminating technology from my life. Not all of it, because that would be impossible. I work on the computer, I communicate through my phone, we watch movies together. But yes, **that part of technology that distracts me instead of helping me**. The part I open out of habit, without thinking, without really needing it.
+He pensado en eliminar la tecnología de mi vida. No toda, porque eso sería imposible. Trabajo en la computadora, me comunico por celular, vemos películas cuando nos reunimos. Pero sí **esa parte de la tecnología que me distrae en lugar de ayudarme**. Esa que abro por inercia, sin pensar, sin necesitarla realmente.
 
-I've been mulling this over for years. I've deleted social media from my phone, then I look for it on the computer. Now I have it blocked there too. It's a strange dance between wanting to disconnect and not knowing how. Between recognizing the problem and not finding a way to solve it. _There's always an excuse, always something that makes me come back._
+Llevo años dándole vueltas a esto. He borrado redes sociales del teléfono, luego las busco en la computadora. Ahora las tengo bloqueadas ahí también. Es un baile raro entre querer desconectarme y no saber cómo. Entre reconocer el problema y no encontrar la forma de solucionarlo. _Siempre hay una excusa, siempre hay algo que me hace volver._
 
-## The TV
+## La tele
 
-A few weeks ago the TV stopped working. It simply wouldn't turn on. I postponed calling the technician for almost a month, though it looks like it'll be covered under warranty. During those weeks, all I felt was peace. I no longer wasted time sitting there, browsing YouTube aimlessly, letting the algorithm decide what to watch. My wife felt it more because she loves watching series, and it's the only TV we have in the house. But for me it was a relief. **As if someone had turned off background noise I didn't even know was there.**
+Hace unas semanas la tele dejó de funcionar. Simplemente no quiso encender. Pospuse casi un mes llamar al técnico, aunque parece que va a entrar en garantía. Durante esas semanas, lo único que sentí fue tranquilidad. Ya no perdía tiempo sentado ahí, navegando por YouTube sin rumbo, dejando que el algoritmo decidiera qué ver. Mi esposa lo sintió más porque le encanta ver series, y es la única tele que tenemos en casa. Pero para mí fue un respiro. **Como si alguien hubiera apagado un ruido de fondo que ni siquiera sabía que estaba ahí.**
 
-That accidental disconnection showed me something important: _I can let go of these devices and do something different_. I don't need to always have something on, something playing, something moving on a screen. And right in that moment of silence I started asking myself what I could do instead.
+Esa desconexión accidental me mostró algo importante: _sí puedo soltar estos dispositivos y hacer algo diferente_. No necesito tener siempre algo prendido, algo sonando, algo moviéndose en una pantalla. Y justo en ese momento de silencio empecé a preguntarme qué podría hacer en su lugar.
 
-## Going analog
+## Lo analógico
 
-That's when I started finding many recommendations about returning to analog. Journals in notebooks, handwritten lists, old digital cameras. People who documented how they stopped depending so much on their phones and started using simpler tools. Like going back to the 2000s, **when technology was an extra for doing interesting things, not a tool designed to optimize every second of your existence**. When things didn't have to be perfect, they just had to exist.
+Fue cuando empecé a encontrar muchas recomendaciones sobre volver a lo analógico. Diarios en libretas, listas a mano, cámaras digitales de las viejas. Gente que documentó cómo dejó de depender tanto de sus teléfonos y empezó a usar herramientas más simples. Como regresar a los 2000, **cuando la tecnología era un extra para hacer cosas interesantes, no una herramienta diseñada para optimizar cada segundo de tu existencia**. Cuando las cosas no tenían que ser perfectas, solo tenían que existir.
 
-I like that idea. It's been running through my head all the time. It feels increasingly closer, more achievable.
+Me gusta esa idea. Me ronda en la cabeza todo el tiempo. La siento cada vez más cercana, más alcanzable.
 
-## The manga
+## El manga
 
-I decided to try. I recently bought the first volume of the One Piece manga and I'm fascinated. Seeing the author's notes in the margins, the drawings in detail, feeling the paper between my fingers. There's something tactile there I can't quite explain. Although I love audiovisual media for how music conveys feelings that paper can't replicate, for those moments when a song hits you just when it should, there's something special about carrying the manga in my bag and reading it during dead time. When I'm waiting for Kathia to finish something, when I have five minutes between one thing and another. **Those moments I used to fill with my phone.**
+Decidí probar. Hace poco compré el primer volumen del manga de One Piece y estoy fascinado. Ver las anotaciones del autor en los márgenes, el dibujo en detalle, sentir el papel entre los dedos. Hay algo táctil ahí que no puedo explicar bien. Aunque me encanta el audiovisual por cómo la música transmite sentimientos que el papel no puede replicar, por esos momentos donde una canción te golpea justo cuando debe, hay algo especial en traer el manga en la bolsa y leerlo en esos tiempos muertos. Cuando espero a que Kathia termine algo, cuando tengo cinco minutos entre una cosa y otra. **Esos momentos que antes llenaba con el celular.**
 
-It's curious how a physical object anchors you to the moment. _You can't scroll infinitely through a manga. It ends. You close the book and that's it._ I like that.
+Es curioso cómo un objeto físico te ancla al momento. _No puedes hacer scroll infinito en un manga. Se termina. Cierras el libro y ya._ Eso me gusta.
 
-The manga made me think about other things I could make physical. I was writing my journal a year ago in Notion. Supposedly so I'd never lose it, so I could reread it someday from any device. The cloud would give me that eternal security. But now I think that if I write it in notebooks, fill them and keep them in a drawer or on a shelf, it's the same. And even more valuable because it's physical, **it's my handwriting that changes over the years, it's my way of thinking captured in ink that can't be edited later**. There's no way to cheat and change what you felt in that moment.
+El manga me hizo pensar en otras cosas que podría volver físicas. Escribía mi diario hace un año en Notion. Supuestamente para no perderlo nunca, para poder releerlo algún día desde cualquier dispositivo. La nube me daría esa seguridad eterna. Pero ahora pienso que si lo escribo en libretas, las lleno y las guardo en un cajón o en un estante, es lo mismo. Y hasta más valioso porque es físico, **es mi letra la que cambia con los años, es mi forma de pensar plasmada en tinta que no se puede editar después**. No hay forma de hacer trampa y cambiar lo que sentiste en ese momento.
 
-## Permanence
+## Lo permanente
 
-That used to stop me. That I couldn't erase it, that I couldn't move it, reorganize it, make it look professional. I spent more time thinking about how it should look than actually writing it. But the reality is that I'll probably be the only one reading it. **Just by existing it already has the value it needs. Just by having written it, it's already fulfilled its purpose.**
+Eso me detenía antes. Que no pudiera borrarlo, que no pudiera moverlo, reorganizarlo, hacer que se viera profesional. Pasaba más tiempo pensando en cómo debería verse que en realmente escribirlo. Pero la realidad es que probablemente solo lo vaya a leer yo. **Con que exista ya tiene el valor que necesita. Con que lo haya escrito, ya cumplió su función.**
 
-The same thing happened with drawing. I have a sketchbook I almost never use. I bought it with every intention of filling it, of drawing anything, without pressure. But I didn't do it because _analog doesn't forgive_. A stroke stays there. There's no ctrl+z. And that paralyzed me. As if it had to be worthy of showing from the first attempt. But in the end, I'm the one who gives it value. No one else has to see them. No one else has to approve them.
+Lo mismo pasaba con dibujar. Tengo una libreta para sketches que casi nunca uso. La compré con toda la intención de llenarla, de dibujar cualquier cosa, sin presión. Pero no lo hacía porque _lo analógico no perdona_. Un trazo queda ahí. No hay ctrl+z. Y eso me paralizaba. Como si tuviera que ser digno de mostrarse desde el primer intento. Pero al final, el valor se lo doy yo mismo. Nadie más tiene que verlos. Nadie más tiene que aprobarlos.
 
-I think that fear of permanence had pushed me away from all this. I've spent so much time in the digital realm where everything can be undone, edited, perfected, that **I forgot the freedom of simply making things**. Imperfect things, half-finished things, things that simply exist because they do. And that's exactly what I want to recover.
+Creo que ese miedo a lo permanente me había alejado de todo esto. He pasado tanto tiempo en lo digital donde todo se puede deshacer, editar, perfeccionar, que **olvidé la libertad de simplemente hacer cosas**. Cosas imperfectas, cosas a medio terminar, cosas que simplemente existen porque sí. Y eso es exactamente lo que quiero recuperar.
 
-I'm going to start having more analog things. Returning to this blog also feels good, even though it sounds contradictory to talk about disconnecting while writing on the internet. But this space is different. **It's not a social network where I compete for attention. It's just a place to put ideas.** I had it abandoned because I was "busy" with things that really only consumed my time in a bad way. Time that went to scrolling, to short videos, to nothing worth remembering.
+Voy a empezar a tener más cosas analógicas. Retomar este blog también me gusta, aunque suene contradictorio hablar de desconectarme mientras escribo en internet. Pero este espacio es diferente. **No es una red social donde compito por atención. Es solo un lugar donde poner ideas.** Lo tenía abandonado por estar "ocupado" en cosas que realmente solo me consumían tiempo de mala manera. Tiempo que se iba en scroll, en videos cortos, en nada que valiera la pena recordar.
 
-Returning to analog in many things seems like a good idea. I don't need my work to-do list on my phone all the time. In fact, I think having it there makes me ignore it more easily. It's too accessible, too easy to open and close without doing anything. A paper list is different. _You see it. It's there. You can't swipe the notification away and forget about it._
+Volver a lo analógico en muchas cosas me parece una buena idea. No necesito mi lista de tareas en el celular todo el tiempo. De hecho, creo que tenerla ahí hace que la ignore más fácil. Es demasiado accesible, demasiado fácil de abrir y cerrar sin hacer nada. Una lista en papel es diferente. _La ves. Está ahí. No puedes deslizar la notificación y olvidarte de ella._
 
-I want to enjoy that feeling of filling notebooks. Of finishing one and starting another. Of watching them accumulate over time, full of ideas, bad drawings, lists, whatever. Maybe that's my purpose for 2026: more physical books on the shelf, more notebooks to scribble in without fear of making mistakes. **Recovering those spaces where technology doesn't decide for me what to do.**
+Quiero disfrutar esa sensación de llenar libretas. De terminar una y empezar otra. De ver cómo se acumulan con el tiempo, llenas de ideas, de dibujos malos, de listas, de lo que sea. Quizá ese sea mi propósito para 2026: más libros físicos en el librero, más libretas donde rayar sin miedo a equivocarme. **Recuperar esos espacios donde la tecnología no decide por mí qué hacer.**
 
-I don't know if I'll achieve it completely. Probably not. But I want to try. I want to at least recover some of that time that slips away on screens without me noticing. _I want my hands to do something more than scroll._
+No sé si lo voy a lograr completamente. Probablemente no. Pero quiero intentarlo. Quiero al menos recuperar algo de ese tiempo que se me va en pantallas sin darme cuenta. _Quiero que mis manos hagan algo más que dar scroll._

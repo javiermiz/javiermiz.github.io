@@ -7,24 +7,18 @@ import { SITE_CONFIG } from "../layout";
 // Define props interface
 interface Props {
   post: CollectionEntry<"blog">;
-  language: "en" | "es";
   back_link_url: string;
   back_link_text: string;
   updated_text: string;
 }
 
 // Get props
-const { post, language, back_link_url, back_link_text, updated_text } =
-  Astro.props;
+const { post, back_link_url, back_link_text, updated_text } = Astro.props;
 const { Content } = await post.render();
 
-// Format date helper function - timezone-safe
-function format_date(date: Date, language: "en" | "es"): string {
-  const locale = language === "es" ? "es-ES" : "en-US";
-
-  // Use UTC methods to avoid timezone shifts
-  // This ensures the date displays exactly as specified in frontmatter
-  return new Intl.DateTimeFormat(locale, {
+// Format date helper function - timezone-safe (UTC avoids frontmatter shifts)
+function format_date(date: Date): string {
+  return new Intl.DateTimeFormat("es-ES", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -40,7 +34,6 @@ const page_description = post.data.seo_description || post.data.description;
 <Layout
   title={`${page_title} | ${SITE_CONFIG.title}`}
   description={page_description}
-  lang={language}
 >
   <!-- Article Header -->
   <article class="blog-post">
@@ -55,7 +48,7 @@ const page_description = post.data.seo_description || post.data.description;
       <!-- Post Meta -->
       <div class="post-meta">
         <time datetime={post.data.published_date.toISOString()}>
-          {format_date(post.data.published_date, language)}
+          {format_date(post.data.published_date)}
         </time>
         <span class="separator">•</span>
         <span class="category">{post.data.category}</span>
@@ -88,7 +81,7 @@ const page_description = post.data.seo_description || post.data.description;
       {
         post.data.updated_date && (
           <p class="updated-date">
-            {updated_text}: {format_date(post.data.updated_date, language)}
+            {updated_text}: {format_date(post.data.updated_date)}
           </p>
         )
       }
@@ -100,10 +93,9 @@ const page_description = post.data.seo_description || post.data.description;
 
     <!-- Comments -->
     <div
-      data-language={language === "es" ? "es" : "en"}
       id="zoomment"
       data-theme="light"
-      data-language="en"
+      data-language="es"
       data-gravatar="monsterid"
       data-emotions="❤️,😀,🪄,🥸,🙌,🤔,💩,😢"
     >

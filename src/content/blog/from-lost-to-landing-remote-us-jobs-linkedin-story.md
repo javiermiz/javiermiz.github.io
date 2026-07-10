@@ -1,135 +1,135 @@
 ---
-title: "From not knowing what to do with my life to earning $6k USD remote"
-description: "People always ask how I got work with US companies. Honestly, I just optimized my LinkedIn and forced myself to speak English."
+title: "De no saber qué hacer de mi vida a ganar $100,000 MXN remoto"
+description: "Siempre me preguntan cómo conseguí trabajo para empresas gringas. La verdad es que solo optimicé mi LinkedIn y me aventé a hablar inglés."
 published_date: 2025-01-18
 category: "personal"
 draft: false
-seo_title: "How to get remote work with US companies by optimizing LinkedIn"
-seo_description: "The real strategy that took me from uncertainty to earning $6k USD monthly. Everything changed when I optimized my LinkedIn properly."
+seo_title: "Cómo conseguir trabajo remoto para empresas gringas optimizando LinkedIn"
+seo_description: "La estrategia real que me llevó de la incertidumbre a ganar $6k USD mensuales. Todo cambió cuando optimicé mi LinkedIn correctamente."
 ---
 
-People always ask me how I got the job I have. "How do you get US companies to contact you?" "What should I do to get job offers?"
+Siempre me preguntan cómo conseguí el trabajo que tengo. "¿Cómo le haces para que te contacten empresas estadounidenses?" "¿Qué debería hacer para que me lleguen ofertas?"
 
-Honestly, I feel like I haven't done anything special. Mostly just optimized my LinkedIn and forced myself to speak English even when I sucked at it.
+La verdad es que siento que no he hecho nada especial. Más que nada optimicé mi LinkedIn y me aventé a hablar inglés aunque fuera mal.
 
-Sounds too simple, but let me tell you why it works.
+Suena demasiado simple, pero déjame contarte por qué funciona.
 
-## In 2021 I wasn't sure what would become of my life
+## En 2021 no estaba seguro de qué sería de mi vida
 
-I was 24, knew how to code, but had no direction. I'd see $800-1000 USD job offers and think "well, that's just how things are."
+Tenía 24 años, sabía programar, pero no tenía dirección. Veía ofertas de $15k-20k pesos y pensaba "bueno, así son las cosas".
 
-My LinkedIn was basic. Generic headline, boring summary, everything in Spanish. I was invisible.
+Mi LinkedIn era básico. Headline genérico, resumen aburrido, todo en español. Era invisible.
 
-Until I got a message from Klever Cookie. It was on-site, not remote, but they gave me a chance. What scared me most was that they had US clients and I'd have to speak English.
+Hasta que me llegó un mensaje de Klever Cookie. Era presencial, no remoto, pero me dieron chance. Lo que me daba más miedo era que tenían clientes estadounidenses y había que hablar en inglés.
 
-I told them I was scared because I spoke super slowly and had zero practice. They said "don't worry, your teammates can help translate if you want to speak Spanish."
+Les dije que me daba miedo porque hablaba súper lento y tenía cero práctica. Me dijeron "no te preocupes, tus compañeros te pueden ayudar a traducir si quieres hablar en español".
 
-But I went for it. I started speaking English even though it was bad, slow, full of mistakes. I didn't stay in my comfort zone.
+Pero yo me aventé. Empecé a hablar en inglés aunque fuera mal, lento, con errores. No me quedé en mi zona de comfort.
 
-Everything changed from there.
+De ahí todo cambió.
 
-## What actually happened
+## Lo que realmente pasó
 
-I improved my confidence speaking English. Not so much my vocabulary, but definitely my confidence. I wasn't scared of speaking badly anymore.
+Mejoré mi confianza hablando inglés. No tanto mi vocabulario, pero sí mi confianza. Ya no me daba miedo hablar mal.
 
-I added English to my LinkedIn. Changed my entire profile to English. Stopped limiting myself to the Mexican market.
+Agregué el inglés a mi LinkedIn. Cambié mi perfil completo al inglés. Dejé de limitarme al mercado mexicano.
 
-And that's when good opportunities started coming. All in English, all requiring English.
+Y ahí empezaron a llegar las propuestas buenas. Todas en inglés, todas requieren inglés.
 
-IBM contacted me. Then Maven Trading, where I work now earning $6k USD per month, 100% remote. I've also worked on projects like Home Depot's delivery system and McDonald's campaigns.
+IBM me contactó. Luego Maven Trading, donde trabajo ahora ganando $6k USD al mes, 100% remoto. También he trabajado en proyectos como el sistema de delivery de Home Depot y campañas de McDonald's.
 
-## The pattern I discovered
+## El patrón que descubrí
 
-All the opportunities that were worth it:
+Todas las oportunidades que han valido la pena:
 
-- Came through LinkedIn
-- Were in English
-- Required English
+- Llegaron por LinkedIn
+- Fueron en inglés
+- Requerían inglés
 
-Spanish job posts are still $800-1200 USD. English job posts start at $3k USD and go up to $6k+ USD.
+Las propuestas en español siguen siendo de $15k-25k pesos. Las propuestas en inglés empiezan en $60k pesos y llegan hasta $120k+ pesos.
 
-Not a coincidence.
+No es casualidad.
 
-## What I changed on my LinkedIn
+## Lo que cambié en mi LinkedIn
 
-**Before:**
+**Antes:**
 
-- Headline: "Web Developer"
-- Spanish summary listing technologies
-- Basic experience
-- Invisible to international recruiters
+- Headline: "Desarrollador Web"
+- Resumen en español listando tecnologías
+- Experiencia básica
+- Invisible para reclutadores internacionales
 
-**After:**
+**Después:**
 
 - Headline: "Frontend Developer | Next.js Specialist | Remote Work"
-- English summary explaining value
-- Detailed experience with keywords
-- Visible to the global market
+- Resumen en inglés explicando valor
+- Experiencia detallada con keywords
+- Visible para el mercado global
 
-Not rocket science, but most people don't do it.
+No es rocket science, pero la mayoría no lo hace.
 
-## The English part nobody tells you
+## La parte del inglés que nadie te dice
 
-You don't need to be perfect. I still don't have the best vocabulary, but I'm not scared to speak anymore.
+No necesitas ser perfecto. Yo todavía no tengo el mejor vocabulario, pero ya no me da miedo hablar.
 
-What matters is confidence. When you stop being afraid of sounding bad, you start communicating better.
+Lo importante es la confianza. Cuando dejas de tener miedo a sonar mal, empiezas a comunicarte mejor.
 
-In my interviews with US companies I speak normally, make mistakes, but I communicate. That's enough.
+En mis entrevistas con empresas estadounidenses hablo normal, cometo errores, pero me comunico. Eso es suficiente.
 
-## The results without exaggeration
+## Los resultados sin exagerar
 
-Since these changes:
+Desde estos cambios:
 
-- 5-8 recruiter messages per month
-- Offers from companies like IBM, Maven Trading
-- Salary from $1.5k USD to $6k USD
-- 100% remote
+- 5-8 mensajes de reclutadores al mes
+- Ofertas de empresas como IBM, Maven Trading
+- Salario de $25k pesos a $120k pesos
+- 100% remoto
 
-And something curious: even though my resume says I studied Computer Systems Engineering, nobody has ever asked for it. No certificate, no diploma, nothing. They care more about what you can do.
+Y algo curioso: aunque mi CV dice que estudié Ingeniería en Sistemas, nunca nadie me la ha pedido. Ni certificado, ni título, nada. Les importa más lo que puedes hacer.
 
-## What you should do
+## Lo que deberías hacer
 
-**1. Change your LinkedIn to English**
-If you want global market, think global.
+**1. Cambia tu LinkedIn al inglés**
+**Si quieres mercado global, piensa global.**
 
-**2. Don't be afraid to speak badly**
-I started speaking terribly. Confidence builds through practice.
+**2. No tengas miedo de hablar mal**
+Yo empecé hablando súper mal. La confianza se construye practicando.
 
-**3. Be specific in your headline**
-"Web Developer" vs "Frontend Developer | React Specialist"
+**3. Sé específico en tu headline**
+"Desarrollador Web" vs "Frontend Developer | React Specialist"
 
-**4. Add English to your profile**
-Even if you're not perfect. Confidence counts more than perfection.
+**4. Agrega inglés a tu perfil**
+Aunque no seas perfecto. La confianza cuenta más que la perfección.
 
-**5. Keep everything updated**
-Simple but effective.
+**5. Mantén todo actualizado**
+Simple pero efectivo.
 
-## Why this works
+## Por qué funciona
 
-LinkedIn is global, but most people use it only in their native language. When you use it in English, you access a much bigger market with better salaries.
+LinkedIn es global, pero la mayoría de mexicanos lo usa solo en español. Cuando tú lo usas en inglés, accedes a un mercado mucho más grande con mejores salarios.
 
-It's simple math: more opportunities = better offers.
+Es matemática simple: más oportunidades = mejores ofertas.
 
-## My current situation
+## Mi situación actual
 
-I work for Maven Trading, US trading company. $6k USD monthly, 100% remote, best job I've ever had.
+Trabajo para Maven Trading, empresa estadounidense de trading. $6k USD mensuales, 100% remoto, mejor trabajo que he tenido.
 
-I still get offers even when I'm not looking. My profile works 24/7.
+Sigo recibiendo ofertas aunque no busque. Mi perfil trabaja 24/7.
 
-## If you're where I was
+## Si estás donde yo estaba
 
-You probably think "my English isn't good enough" or "I need to improve before trying."
+Probablemente pienses "mi inglés no es suficiente" o "necesito mejorar antes de intentar".
 
-I thought the same thing. But the reality is you'll never feel "ready." Better to start badly than not start at all.
+Yo pensaba lo mismo. Pero la realidad es que nunca te vas a sentir "listo". Mejor empezar mal que no empezar.
 
-You don't need to be perfect. You need confidence to communicate.
+No necesitas ser perfecto. Necesitas confianza para comunicarte.
 
-You don't need a university degree (nobody has ever asked me for mine). You need to prove you can do the job.
+No necesitas título universitario (nunca me lo han pedido). Necesitas demostrar que puedes hacer el trabajo.
 
-You don't need special connections. You need a LinkedIn that communicates value.
+No necesitas contactos especiales. Necesitas un LinkedIn que comunique valor.
 
-## The reality
+## La realidad
 
-The local market in most countries is saturated and underpaid. The global English market has better opportunities and better salaries.
+El mercado mexicano en español está saturado y mal pagado. El mercado global en inglés tiene mejores oportunidades y mejores salarios.
 
-Changing your LinkedIn to English won't magically get you a job, but it will open doors you didn't even know existed.
+Cambiar tu LinkedIn al inglés no te va a conseguir trabajo mágicamente, pero sí te va a abrir puertas que ni sabías que existían.

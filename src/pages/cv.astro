@@ -3,7 +3,7 @@ import CvTemplate from "@components/templates/cv-template.astro";
 import { getLocaleData } from "../utils/i18n";
 import Layout from "@components/Layout.astro";
 
-const CV_DATA = await getLocaleData({ language: "es", page: "cv" });
+const CV_DATA = await getLocaleData({ page: "cv" });
 ---
 
 <Layout

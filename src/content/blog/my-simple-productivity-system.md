@@ -1,283 +1,283 @@
 ---
-title: "My stupidly simple productivity system"
-description: "After trying GTD, time blocking and pomodoro, I created a hybrid system that actually works: immediate capture, two simple categories and real-time tracking."
+title: "Mi sistema de productividad estúpidamente simple"
+description: "Después de probar GTD, time blocking y pomodoro, creé un sistema híbrido que realmente funciona: captura inmediata, dos categorías simples y tracking de tiempo real."
 published_date: 2025-08-19
-category: "productivity"
+category: "productividad"
 draft: false
-seo_title: "Simple productivity system that actually works - My personal experience"
-seo_description: "How I created a hybrid productivity system that combines the best of GTD, time blocking and pomodoro without the complexity that makes them fail."
+seo_title: "Sistema de productividad simple que realmente funciona - Mi experiencia personal"
+seo_description: "Cómo creé un sistema de productividad híbrido que combina lo mejor de GTD, time blocking y pomodoro sin la complejidad que los hace fallar."
 ---
 
-I've tried more productivity systems than I care to admit. GTD, time blocking, pomodoro, bullet journaling, PARA method. They all promised to be "the definitive system" and they all ended up being too complex to maintain.
+He probado más sistemas de productividad de los que me da vergüenza admitir. GTD, time blocking, pomodoro, bullet journaling, PARA method. Todos prometían ser "el sistema definitivo" y todos terminaron siendo demasiado complejos para mantener.
 
-After years of frustration, I created something ridiculously simple that actually works for me. It's not revolutionary, but it's sustainable.
+Después de años de frustración, creé algo ridículamente simple que en realidad funciona para mí. No es revolucionario, pero es sostenible.
 
-## The problem with popular systems
+## El problema con los sistemas populares
 
-### GTD overwhelmed me with infinite lists
+### GTD me abrumó con listas infinitas
 
-Getting Things Done has a brilliant idea: capture everything immediately to get it out of your head. I loved that part.
+Getting Things Done tiene una idea brillante: capturar todo inmediatamente para sacarlo de tu cabeza. Esa parte me encantó.
 
-The problem came after. Contexts, projects, someday/maybe lists, weekly reviews. I ended up with 15 different lists and spending more time organizing tasks than doing them.
+El problema vino después. Contexts, projects, someday/maybe lists, reviews semanales. Terminé con 15 listas diferentes y gastando más tiempo organizando tareas que haciéndolas.
 
-A concrete example: I had "call dentist" in my @calls list, "buy toothpaste" in @errands, and "research dental insurance" in someday/maybe. Three related tasks scattered across three different places.
+Un ejemplo concreto: tenía "llamar al dentista" en mi lista de @calls, "comprar pasta de dientes" en @errands, y "investigar seguros dentales" en someday/maybe. Tres tareas relacionadas desperdigadas en tres lugares diferentes.
 
-It was technically "correct" according to GTD, but impractical.
+Era técnicamente "correcto" según GTD, pero poco práctico.
 
-### Time blocking crashed against reality
+### Time blocking chocó con la realidad
 
-Time blocking looked perfect in theory. Specific blocks for specific tasks, everything planned in advance.
+Time blocking se veía perfecto en teoría. Bloques específicos para tareas específicas, todo planeado con anticipación.
 
-In practice, I'm terrible at estimating time. Some tasks I thought would take 2 hours I finished in 30 minutes. Others I thought were quick ate up half my day.
+En la práctica, soy terrible estimando tiempo. Algunas tareas que pensé tomarían 2 horas las terminé en 30 minutos. Otras que creí rápidas me comieron medio día.
 
-My calendar became a constant lie. By 10 AM I was already two hours behind schedule. By 2 PM I had thrown in the towel and the whole system would collapse.
+Mi calendario se volvió una mentira constante. A las 10 AM ya iba dos horas atrasado del plan. Para las 2 PM había tirado la toalla y todo el sistema se desmoronaba.
 
-It's not that time blocking is bad, it's that it requires estimation precision that I simply don't have.
+No es que time blocking sea malo, es que requiere una precisión en estimación que simplemente no tengo.
 
-### Pomodoro interrupted me at the worst moments
+### Pomodoro me interrumpía en los peores momentos
 
-Pomodoro works for many people, but I hate forced interruptions.
+El pomodoro funciona para muchas personas, pero odio las interrupciones forzadas.
 
-Just when I was getting into flow while programming, the timer would tell me "stop, take a break." Or worse, when I had 2 minutes left to finish something, pomodoro would force me to stop.
+Justo cuando entraba en flow programando, el timer me decía "para, toma un break". O peor, cuando tenía 2 minutos para terminar algo, el pomodoro me forzaba a parar.
 
-I prefer to work until I finish something or until I naturally need a break. Artificial interruptions throw me off my rhythm.
+Prefiero trabajar hasta terminar algo o hasta que naturalmente necesite un descanso. Las interrupciones artificiales me sacan del ritmo.
 
-## My current hybrid system
+## Mi sistema híbrido actual
 
-After so much experimentation, I took what I liked from each method and discarded what didn't work.
+Después de tanto experimento, tomé lo que me gustó de cada método y descarté lo que no funcionaba.
 
-### Immediate capture (the best of GTD)
+### Captura inmediata (lo mejor de GTD)
 
-When something pops into my head, I capture it immediately. No excuses, no "I'll remember later."
+Cuando algo aparece en mi cabeza, lo capturo inmediatamente. Sin excusas, sin "lo recordaré después".
 
-I use my phone for this. Voice assistant if I'm driving, quick notes if I'm at my desk.
+Uso mi teléfono para esto. Assistant de voz si estoy manejando, notas rápidas si estoy en el escritorio.
 
-The key is not to think too much at the moment of capture. Just get it out of my head.
+La clave es no pensar mucho en el momento de captura. Solo sacarlo de la cabeza.
 
-### Only two categories
+### Dos categorías únicamente
 
-Here's the trick that changed everything: I only have two types of things.
+Aquí está el truco que cambió todo: solo tengo dos tipos de cosas.
 
-**Reminders:** "Do X on Y date"
+**Recordatorios:** "Hacer X en Y fecha"
 
-- Call mom on Sunday
-- Buy gift for Juan's birthday
-- Renew license before the 15th
+- Llamar a mamá el domingo
+- Comprar regalo para cumpleaños de Juan
+- Renovar licencia antes del 15
 
-**Tasks:** "I need to work on this"
+**Tareas:** "Necesito trabajar en esto"
 
-- Fix login bug
-- Update portfolio
-- Prepare project presentation
+- Arreglar bug de login
+- Actualizar portfolio
+- Preparar presentación del proyecto
 
-That's it. No contexts, projects, someday/maybe. If it doesn't fit in these two categories, it's probably not important.
+Eso es todo. Nada de contexts, projects, someday/maybe. Si no encaja en estas dos categorías, probablemente no es importante.
 
-### Simple kanban for tasks
+### Kanban simple para tareas
 
-All tasks go to a basic kanban: To Do → Doing → Done.
+Todas las tareas van a un kanban básico: To Do → Doing → Done.
 
-I use TickTick but any app works. Even a notebook with three columns.
+Uso TickTick pero cualquier app funciona. Incluso una libreta con tres columnas.
 
-The kanban is purely visual. I like moving things to "Done" because it feels good. There's no complex science behind it.
+El kanban es puramente visual. Me gusta mover cosas a "Done" porque se siente bien. No hay ciencia compleja detrás.
 
-### Timer for awareness, not control
+### Timer para awareness, no control
 
-Here's the part I took from pomodoro but adapted: I use a timer to track time, not to control it.
+Aquí está la parte que tomé de pomodoro pero adapté: uso timer para trackear tiempo, no para controlarlo.
 
-When I start a task, I start the timer. If I need a break, I pause it. If I get interrupted, I pause it. The point is to know how much real time I spent on something.
+Cuando empiezo una tarea, inicio el timer. Si necesito un break, lo pauso. Si me interrumpen, lo pauso. El punto es saber cuánto tiempo real gasté en algo.
 
-It's not pomodoro because it doesn't force me to stop every 25 minutes. It's just time awareness.
+No es pomodoro porque no me fuerza a parar cada 25 minutos. Es solo awareness de tiempo.
 
-## My current daily workflow
+## Mi workflow diario actual
 
-### Capture during the day
+### Captura durante el día
 
-Something pops into my head → I capture it immediately on my phone.
+Algo aparece en mi cabeza → lo capturo inmediatamente en mi teléfono.
 
-I don't categorize in the moment. Just capture and continue with what I was doing.
+No categorizo en el momento. Solo capturar y seguir con lo que estaba haciendo.
 
-### Process at the end of the day
+### Proceso al final del día
 
-I review everything I captured and classify it:
+Reviso todo lo que capturé y lo clasifico:
 
-- Is it something for a specific date? → Reminder and I forget about it
-- Is it something I need to work on? → Goes to the kanban
+- ¿Es algo para una fecha específica? → Recordatorio y me olvido
+- ¿Es algo en lo que necesito trabajar? → Va al kanban
 
-This process takes 5-10 minutes maximum.
+Este proceso toma 5-10 minutos máximo.
 
-### Work with time tracking
+### Trabajo con tiempo tracking
 
-I pick something from "To Do," move it to "Doing," start the timer and work.
+Escojo algo del "To Do", lo muevo a "Doing", inicio el timer y trabajo.
 
-There's no specific order. Sometimes I work on the most urgent thing, other times on what I feel like doing.
+No hay orden específico. Algunas veces trabajo en lo más urgente, otras en lo que tengo ganas de hacer.
 
-When I finish or need to stop, I pause/stop the timer and move the task to "Done."
+Cuando termino o necesito parar, pauso/detengo el timer y muevo la tarea a "Done".
 
-## Specific examples
+## Ejemplos específicos
 
-**Scenario 1: Production bug**
+**Escenario 1: Bug en producción**
 
-- I get a report → "Fix checkout bug" goes directly to kanban
-- I move it to "Doing," start timer
-- I fix it, record that it took 45 minutes
-- I move it to "Done"
+- Me llega un reporte → "Arreglar bug de checkout" va directo al kanban
+- Lo muevo a "Doing", inicio timer
+- Lo arreglo, registro que tomó 45 minutos
+- Lo muevo a "Done"
 
-**Scenario 2: Important call**
+**Escenario 2: Llamada importante**
 
-- I need to call the bank on Friday → Reminder for Friday
-- On Friday the notification arrives, I make the call
-- It doesn't go to kanban because it's not "work," it's just a reminder
+- Necesito llamar al banco el viernes → Recordatorio para el viernes
+- El viernes me llega la notificación, hago la llamada
+- No va al kanban porque no es "trabajo", es solo un recordatorio
 
-**Scenario 3: Personal project**
+**Escenario 3: Proyecto personal**
 
-- I want to update my portfolio → Goes to kanban
-- When I have free time, I move it to "Doing"
-- I discover it takes longer than expected, but that's okay because I didn't have a specific expectation
+- Quiero actualizar mi portfolio → Va al kanban
+- Cuando tengo tiempo libre, lo muevo a "Doing"
+- Descubro que toma más tiempo del esperado, pero está bien porque no tenía expectativa específica
 
-## What I've learned from time tracking
+## Lo que he aprendido del time tracking
 
-After months of tracking time, I've discovered interesting patterns:
+Después de meses trackeando tiempo, he descubierto patterns interesantes:
 
-### My estimates are terrible
+### Mis estimaciones son terribles
 
-I consistently underestimate complex tasks and overestimate simple tasks.
+Consistently subestimo tareas complejas y sobreestimo tareas simples.
 
-"Fix this CSS" that I thought would take 10 minutes turned into 2 hours of debugging.
+"Arreglar este CSS" que pensé tomaría 10 minutos se convirtió en 2 horas de debugging.
 
-"Set up this new feature" that I feared as an all-day project I finished in 45 minutes.
+"Configurar este nuevo feature" que temía como proyecto de todo el día lo terminé en 45 minutos.
 
-### Context switching kills productivity
+### Context switching mata la productividad
 
-Days where I jump between many small tasks are much less productive than days where I focus on few big things.
+Los días donde salto entre muchas tareas pequeñas son mucho menos productivos que los días donde me enfoco en pocas cosas grandes.
 
-This isn't surprising, but seeing it in real numbers is different.
+Esto no es sorprendente, pero verlo en números reales es diferente.
 
-### Estimation improves with data
+### La estimación mejora con data
 
-Now when I see a task similar to something I've already tracked, I have a better idea of how long it really takes.
+Ahora cuando veo una tarea similar a algo que ya trackeé, tengo mejor idea de cuánto tiempo realmente toma.
 
-I don't use this data for time blocking (because I already proved that doesn't work for me), but it helps me decide what to do when I have 30 minutes free vs 3 hours.
+No uso esta data para time blocking (porque ya probé que no funciona para mí), pero me ayuda a decidir qué hacer cuando tengo 30 minutos libres vs 3 horas.
 
-## Edge cases and how I handle them
+## Edge cases y cómo los manejo
 
-### What happens with tasks I didn't finish?
+### ¿Qué pasa con tareas que no terminé?
 
-If something stays in "Doing" at the end of the day, I move it back to "To Do." I don't overcomplicate it.
+Si algo se queda en "Doing" al final del día, lo regreso a "To Do". No me complico.
 
-Some tasks are bigger than I thought. That's okay.
+Algunas tareas son más grandes de lo que pensé. Está bien.
 
-### How do I handle interruptions?
+### ¿Cómo manejo interrupciones?
 
-I pause the timer, attend to the interruption, come back and continue.
+Pauso el timer, atiendo la interrupción, regreso y continúo.
 
-If the interruption generates a new task, I quickly capture it and return to what I was doing.
+Si la interrupción genera una nueva tarea, la capturo rápidamente y vuelvo a lo que estaba haciendo.
 
-### What about recurring tasks?
+### ¿Qué pasa con tareas recurrentes?
 
-For things I do regularly (like code reviews at work), I don't put them in the kanban. I just track them when I do them.
+Para cosas que hago regularmente (como reviews de código en el trabajo), no las pongo en el kanban. Solo las trackeo cuando las hago.
 
-For recurring personal things (like exercise), I use weekly reminders.
+Para cosas personales recurrentes (como ejercicio), uso recordatorios semanales.
 
-## Why it works for me
+## Por qué funciona para mí
 
-### It's sustainable
+### Es sostenible
 
-It doesn't require constant maintenance of complex lists. Two categories are easy to handle.
+No requiere mantenimiento constante de listas complejas. Dos categorías son fáciles de manejar.
 
-### It adapts to reality
+### Se adapta a la realidad
 
-It doesn't force me into perfect estimations or artificial interruptions. I work with my natural rhythm.
+No me fuerza a estimaciones perfectas o interrupciones artificiales. Trabajo con mi ritmo natural.
 
-### It gives insights without overhead
+### Da insights sin overhead
 
-Time tracking gives me useful information without adding complexity. Just press start/stop.
+El time tracking me da información útil sin agregar complejidad. Solo presionar start/stop.
 
-### It works with any tool
+### Funciona en cualquier herramienta
 
-It doesn't depend on specific apps or complex setups. Reminders + simple list + timer. Any phone can do this.
+No depende de apps específicas o setups complejos. Recordatorios + lista simple + timer. Cualquier teléfono puede hacer esto.
 
-## How to adapt it to your situation
+## Cómo adaptarlo a tu situación
 
-### If you're a developer like me
+### Si eres developer como yo
 
-- Bugs/features go to kanban
-- Meetings/calls go as reminders
-- I track code reviews but don't plan them
+- Bugs/features van al kanban
+- Meetings/calls van como recordatorios
+- Code reviews las trackeo pero no las planifico
 
-### If your work is more meeting-heavy
+### Si tu trabajo es más meeting-heavy
 
-- You might need an additional category for "prepare for meeting X"
-- Reminders will be more important than the kanban
+- Tal vez necesites una categoría adicional para "preparar para meeting X"
+- Los recordatorios serán más importantes que el kanban
 
-### If you work on large projects
+### Si trabajas en proyectos grandes
 
-- You can divide large projects into smaller tasks for the kanban
-- Or track time by project instead of individual task
+- Puedes dividir proyectos grandes en tareas más pequeñas para el kanban
+- O trackear tiempo por proyecto en lugar de por tarea individual
 
-### If you hate technology
+### Si odias la tecnología
 
-- Notebook with three columns for kanban
-- Physical calendar for reminders
-- Kitchen timer for tracking
+- Libreta con tres columnas para el kanban
+- Calendario físico para recordatorios
+- Timer de cocina para tracking
 
-## What this system is NOT
+## Lo que NO es este sistema
 
-### It's not perfect
+### No es perfecto
 
-I still procrastinate. I still underestimate time. I still have unproductive days.
+Todavía procrastino. Todavía subestimo tiempo. Todavía tengo días improductivos.
 
-The difference is that the system doesn't break when I have a bad day.
+La diferencia es que el sistema no se rompe cuando tengo un mal día.
 
-### It's not for everyone
+### No es para todos
 
-If time blocking works for you, great. If you like GTD, keep using it.
+Si time blocking funciona para ti, genial. Si GTD te gusta, síguelo usando.
 
-This system is for people who, like me, found popular methods too complex.
+Este sistema es para personas que, como yo, encontraron los métodos populares demasiado complejos.
 
-### It's not innovative
+### No es innovador
 
-I'm combining ideas that already exist. The "innovation" is the simplification.
+Estoy combinando ideas que ya existen. La "innovación" es la simplificación.
 
-## After 8 months using this
+## Después de 8 meses usando esto
 
-### What keeps working
+### Lo que sigue funcionando
 
-- Immediate capture is still a game-changer
-- Two categories are still enough
-- Time tracking still gives me useful insights
+- Captura inmediata sigue siendo game-changer
+- Dos categorías siguen siendo suficientes
+- Time tracking me sigue dando insights útiles
 
-### What I've adjusted
+### Lo que he ajustado
 
-- Added simple tags in kanban (work/personal) to filter when I want
-- Use different timers for work vs personal projects
-- Made daily review more flexible - sometimes I do it the next morning
+- Agregué tags simples en el kanban (work/personal) para filtrar cuando quiero
+- Uso diferentes timers para trabajo vs proyectos personales
+- Hago el review diario más flexible - a veces lo hago en la mañana del día siguiente
 
-### Metrics that matter to me
+### Métricas que me importan
 
-- Am I capturing things or forgetting them?
-- Does the kanban reflect what I'm actually working on?
-- Am I learning something useful from time tracking?
+- ¿Estoy capturando cosas o se me olvidan?
+- ¿El kanban refleja en qué realmente estoy trabajando?
+- ¿Estoy aprendiendo algo útil del time tracking?
 
-If the answers are yes, the system is working.
+Si las respuestas son sí, el sistema está funcionando.
 
-## To start tomorrow
+## Para empezar mañana
 
-If you want to try something similar:
+Si quieres probar algo similar:
 
-1. **Choose your tools**: Reminder app + task app + timer
-2. **Define your two categories**: How do you distinguish between "remember to do" vs "work on"?
-3. **Capture everything for a week**: Don't optimize, just capture
-4. **Review at the end of each day**: 5 minutes to classify what you captured
-5. **Track time on 3 tasks**: Just to see how it feels
+1. **Escoge tus herramientas**: App de recordatorios + app de tareas + timer
+2. **Define tus dos categorías**: ¿Cómo distingues entre "recordar hacer" vs "trabajar en"?
+3. **Captura todo por una semana**: No optimices, solo captura
+4. **Revisa al final de cada día**: 5 minutos para clasificar lo que capturaste
+5. **Trackea tiempo en 3 tareas**: Solo para ver cómo se siente
 
-Don't try to implement everything perfectly from day 1. The beauty of this system is that you can start simple and adjust as needed.
+No trates de implementar todo perfectamente desde el día 1. La belleza de este sistema es que puedes empezar simple y ajustar según necesites.
 
-## The final point
+## El punto final
 
-There's no perfect productivity system. There are systems that work for you at this moment in your life.
+No hay sistema perfecto de productividad. Hay sistemas que funcionan para ti en este momento de tu vida.
 
-This system works for me because it adapts to how I actually work, not how I think I should work.
+Este sistema funciona para mí porque se adapta a cómo realmente trabajo, no a cómo creo que debería trabajar.
 
-If you're frustrated with complex systems, maybe the answer isn't finding a better system, but making a simpler one.
+Si estás frustrado con sistemas complejos, tal vez la respuesta no es encontrar un sistema mejor, sino hacer uno más simple.
 
-Productivity doesn't have to be complicated.
+La productividad no tiene que ser complicada.

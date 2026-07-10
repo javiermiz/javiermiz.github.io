@@ -1,37 +1,37 @@
 ---
-title: "I Don't Know If This Ever Goes Away"
-description: "On constant comparison, at 28, and having no idea if it ever stops."
+title: "No sé si esto se supera"
+description: "Sobre la comparación constante, a los 28, y no tener ni idea de si algún día deja de pasar."
 published_date: 2026-05-10
 category: "personal"
 draft: false
 ---
 
-I've been thinking about this for days.
+He estado pensando en esto desde hace días.
 
-Yesterday I saw a video of a guy on TikTok. He was 21, showing his setup, his apartment, his income. He was making more than me at 28. He spoke with a confidence I didn't even have at 25. I closed the app and stared at the ceiling for a while.
+Ayer vi un video de un chico en TikTok. Tenía 21 años, mostraba su setup, su departamento, sus ingresos. Ganaba más que yo a los 28. Hablaba con una seguridad que yo no tenía ni a los 25. Cerré la app y me quedé viendo el techo un rato.
 
-It's not the first time.
+No es la primera vez que me pasa.
 
-When I graduated college I watched my friends get stable jobs. I jumped from project to project not knowing what was next. They were saving, buying things, posting photos of their offices. I celebrated with them but there was always that knot. That feeling that they had arrived and I was still on the way.
+Cuando salí de la universidad veía a mis amigos consiguiendo trabajos estables. Yo saltaba de proyecto en proyecto sin saber bien qué iba a pasar. Ellos ahorraban, se compraban cosas, publicaban fotos de sus oficinas. Y yo los veía y celebraba con ellos pero siempre quedaba ese nudo. Esa sensación de que ellos ya llegaron y yo todavía estoy en el camino.
 
-Then I got the job I have now. Remote, paid in dollars. A salary my 23-year-old self couldn't even imagine. For a while I felt like I'd made it.
+Después conseguí el trabajo que tengo ahora. Remoto, en dólares. Un sueldo que el yo de 23 años ni siquiera imaginaba. Por un tiempo sentí que ya la había hecho.
 
-But no.
+Pero no.
 
-Now it's not my friends. It's 19-year-olds on YouTube who edit better than me, who have bigger audiences, who live off what they do. It's creators on TikTok who at 22 already have a loyal following. People I don't even know, living in another country, people I'll probably never meet. But seeing their success makes me wonder if I'm doing something wrong.
+Ahora no son mis amigos. Son chavitos de 19 años en YouTube que editan mejor que yo, que tienen más audiencia, que viven de lo que hacen. Son creadores en TikTok que a los 22 ya tienen un público fiel. Gente que ni conozco, que vive en otro país, que probablemente nunca voy a conocer. Pero ver su éxito me hace preguntarme si estoy haciendo algo mal.
 
-And then there's the other thing.
+Y luego está lo otro.
 
-A few months ago I posted a photo on Instagram. Ended up scrolling through profiles of guys who are 20, 21, jacked, defined. And here I am carrying extra weight. Without consistency, without discipline. I know what I need to do, I've always known. But I struggle to actually do it. Motivation comes in bursts and leaves just as fast. Weeks go by without progress.
+Hace unos meses subí una foto a Instagram. Terminé viendo perfiles de chicos de 20, 21 años, musculosos, marcados. Y yo aquí con obesidad. Sin constancia, sin consistencia. Sé lo que tengo que hacer, siempre lo he sabido. Pero batallo para hacerlo. La motivación llega en ráfagas y se va igual de rápido. Y pasan semanas sin mover nada.
 
-The weird part is things are going well. Objectively well. Job, wife, home, health. I have no reason to complain.
+Lo raro es que las cosas van bien. Objetivamente bien. Trabajo, esposa, techo, salud. No tendría por qué quejarme.
 
-But comparison doesn't check your situation before it attacks. It shows up on an ordinary night, scrolling TikTok, and makes you forget everything you've built. It leaves you with just what others have and you don't.
+Pero la comparación no revisa tu situación antes de atacar. Aparece en una noche cualquiera, viendo TikTok, y te hace olvidar todo lo que has construido. Te deja solo con lo que otros tienen y tú no.
 
-I'm not writing this because I found the answer. I'm not going to say I stopped comparing myself. I'd be lying. I still watch those videos, I still see those bodies, I still feel like I'm behind. But at least I don't ignore it anymore. I stop and think: this is happening, this hurts, it's okay to say it.
+No estoy escribiendo esto porque haya encontrado la respuesta. Ni voy a decir que ya no me comparo. Mentiría. Sigo viendo esos videos, sigo viendo esos cuerpos, sigo sintiendo que voy detrás. Pero al menos ya no lo ignoro. Me detengo y pienso: esto está pasando, esto duele, está bien decirlo.
 
-Maybe comparison doesn't go away. Maybe you just learn to live with it. Like background noise you can't turn off but you can turn down.
+Tal vez la comparación no se supera. Tal vez solo se aprende a vivir con ella. Como un ruido de fondo que no puedes apagar pero puedes bajarle el volumen.
 
-I don't know if I'll still feel this at 30. Probably yes.
+No sé si a los 30 siga sintiendo esto. Probablemente sí.
 
-But today, writing it out, it weighs a little less.
+Pero hoy, escribiéndolo, pesa un poco menos.

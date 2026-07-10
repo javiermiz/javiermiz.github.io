@@ -1,114 +1,114 @@
 ---
-title: "Earning well vs. doing what you want"
-description: "If I could earn the same or less making content about whatever I want, I'd do it without hesitation. And I have the dream job in tech."
+title: "Ganar bien vs. hacer lo que quieres"
+description: "Si pudiera ganar lo mismo o menos haciendo contenido sobre lo que se me antoje, lo haría sin dudarlo. Y tengo el trabajo soñado en tech."
 published_date: 2025-08-20
 category: "personal"
 draft: false
-seo_title: "Earning well vs. doing what you want"
-seo_description: "If I could earn the same or less making content about whatever I want, I'd do it without hesitation. And I have the dream job in tech."
+seo_title: "Ganar bien vs. hacer lo que quieres"
+seo_description: "Si pudiera ganar lo mismo o menos haciendo contenido sobre lo que se me antoje, lo haría sin dudarlo. Y tengo el trabajo soñado en tech."
 ---
 
-I saw a <a href="https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/" target="_blank">post on Reddit</a> that made me reflect more than I expected.
+Vi un <a href="https://www.reddit.com/r/programacion/comments/1mupwin/comment/n9l35nc/" target="_blank">post en Reddit</a> que me hizo reflexionar más de lo que esperaba.
 
-It was about a programming YouTuber (Héctor de León) who responded with "X" emojis to constructive critical comments. The user had expressed disagreement with some technical explanations in the video and the YouTuber simply responded with "❌" without arguments.
+Era sobre un YouTuber de programación (Héctor de León) que respondió con emojis de "X" a un comentario crítico constructivo. El usuario había expresado desacuerdo con algunas explicaciones técnicas del video y el YouTuber simplemente respondió con "❌" sin argumentos.
 
-The post turned into a typical discussion about programming YouTubers. Comments ranged from "they're snake oil salesmen" to "they don't contribute anything real." And then came the comment that made me reflect:
+El post se convirtió en una discusión típica sobre YouTubers de programación. Los comentarios iban desde "son vendehumos" hasta "no aportan nada real". Y luego llegó el comentario que me hizo reflexionar:
 
-> "If they were good they wouldn't be working as YouTubers, they'd be making dollars as seniors at companies abroad."
+> "Si fuesen buenos no estarían trabajando de YouTubers, estarían generando dólares como senior en una empresa de afuera."
 
-**That logic has a problem: it assumes we all want the same thing.**
+**Esa lógica tiene un problema: asume que todos queremos lo mismo.**
 
-## I don't understand the hate toward YouTubers
+## No entiendo el hate a los YouTubers
 
-Honestly, I don't understand the hatred toward programming YouTubers.
+Honestamente, no entiendo el odio hacia los YouTubers de programación.
 
-I work as a senior earning in dollars for a US company, I have the best conditions in the world, but much of what I know I learned from free content on YouTube. _I've never paid for anyone's courses._
+Yo trabajo como senior ganando en dólares para una empresa estadounidense, tengo las mejores condiciones del mundo, pero gran parte de lo que sé lo aprendí de contenido gratuito en YouTube. _Nunca he pagado por cursos de nadie._
 
-Without these creators, it would have taken me much longer to get where I am. They taught me frameworks, best practices, how to think about complex problems. **All for free.**
+Sin estos creadores, habría tardado mucho más en llegar donde estoy. Me enseñaron frameworks, mejores prácticas, cómo pensar sobre problemas complejos. **Todo gratis.**
 
-So why the hate?
+¿Por qué el hate entonces?
 
-## My current situation
+## Mi situación actual
 
-To give context: I'm a senior frontend developer, I work 100% remote for a US company, I earn a good salary in dollars. No pressure, no micromanagement, with a great team.
+Para dar contexto: soy senior frontend developer, trabajo 100% remoto para una empresa estadounidense, gano un buen salario en dólares. Sin presiones, sin micromanagement, con un equipo genial.
 
-I literally have what many would consider **"the dream job"** in tech. [I wrote about how I got here](/blog/from-lost-to-landing-remote-us-jobs-linkedin-story/) if you're interested in the full story.
+Literalmente tengo lo que muchos considerarían **"el trabajo soñado"** en tech. [Escribí sobre cómo llegué aquí](/es/blog/from-lost-to-landing-remote-us-jobs-linkedin-story/) si te interesa la historia completa.
 
-I have financial stability, flexibility, good salary. On paper, I shouldn't want anything more.
+Tengo estabilidad financiera, flexibilidad, buen salario. En papel, no debería querer nada más.
 
-## And now I understand why those who switch to YouTube do it
+## Y ahora comprendo por qué los que se pasan a YouTube lo hacen
 
-But earning well and having ideal conditions hadn't changed what I really wanted.
+Pero ganar bien y tener condiciones ideales no había cambiado lo que realmente quería.
 
-**If I could earn the same making content about whatever I want, I'd do it without hesitation.**
+**Si pudiera ganar lo mismo haciendo contenido sobre lo que se me antoje, lo haría sin dudarlo.**
 
-It's not that I hate my job. Actually, I like it. But there's a fundamental difference between building others' dreams and building your own.
+No es que odie mi trabajo. De hecho, me gusta. Pero hay una diferencia fundamental entre construir los sueños de otros y construir los tuyos.
 
-When I program for my company, I'm solving problems _they_ consider important. When I make content, I talk about what _genuinely interests me_.
+Cuando programo para mi empresa, estoy resolviendo problemas que _ellos_ consideran importantes. Cuando hago contenido, hablo de lo que _genuinamente me interesa_.
 
-**It's the difference between having a good job and having total creative freedom.**
+**Es la diferencia entre tener un buen trabajo y tener libertad creativa total.**
 
-## The uncomfortable question
+## La pregunta incómoda
 
-How many of us are in that situation? Jobs that are objectively fine, but aren't exactly what we'd choose if we didn't have to worry about money.
+¿Cuántos de nosotros estamos en esa situación? Trabajos que objetivamente están bien, pero que no son exactamente lo que elegiríamos si no tuviéramos que preocuparnos por dinero.
 
-Because that's what many of us in tech do:
+Porque eso es lo que hacemos muchos en tech:
 
-- We have good salaries, benefits, remote work
-- We tell ourselves we've "made it" because we earn well and have flexibility
-- But we're still working on others' priorities
-- We're still building products others decided on
-- We're still in meetings about things others consider important
+- Tenemos buenos salarios, benefits, trabajo remoto
+- Nos decimos que "llegamos" porque ganamos bien y tenemos flexibilidad
+- Pero seguimos trabajando en las prioridades de otros
+- Seguimos construyendo productos que otros decidieron
+- Seguimos en meetings sobre cosas que otros consideran importantes
 
-And that's okay. Not everyone has to be entrepreneurs or content creators. **Stability is valid and necessary.**
+Y está bien. No todos tenemos que ser emprendedores o creadores de contenido. **La estabilidad es válida y necesaria.**
 
-But it seems hypocritical to judge those who decided to try something different.
+Pero me parece hipócrita juzgar a quienes decidieron intentar algo diferente.
 
-## Why some leave "security"
+## Por qué algunos dejan la "seguridad"
 
-The YouTubers we criticize aren't necessarily _"failed developers who couldn't get jobs at US companies."_
+Los YouTubers que criticamos no son necesariamente _"developers fracasados que no pudieron conseguir trabajo en empresas gringas."_
 
-Some simply decided they preferred betting on the uncertainty of creating something of their own rather than following others' rules forever.
+Algunos simplemente decidieron que preferían apostar por la incertidumbre de crear algo propio que seguir las reglas de otros para siempre.
 
-It's a risky bet, yes. But I understand the motivation.
+Es una apuesta arriesgada, sí. Pero entiendo la motivación.
 
-## The real privilege
+## El verdadero privilegio
 
-Having a good job in tech is an enormous privilege. But **having the freedom to work on what genuinely passions you is another level.**
+Tener un buen trabajo en tech es un privilegio enorme. Pero **tener la libertad de trabajar en lo que genuinamente te apasiona es otro nivel.**
 
-Not everyone can afford the risk of leaving a stable job. But those who can and do it aren't necessarily "failing" at life.
+No todos pueden permitirse el riesgo de dejar un trabajo estable. Pero quienes pueden y lo hacen, no necesariamente están "fracasando" en la vida.
 
-Maybe they're choosing a different definition of success.
+Tal vez están eligiendo una definición diferente de éxito.
 
-## My personal reflection
+## Mi reflexión personal
 
-I'm not going to quit my job tomorrow to do YouTube. I have responsibilities, financial goals, a life to maintain.
+No voy a dejar mi trabajo mañana para hacer YouTube. Tengo responsabilidades, metas financieras, una vida que mantener.
 
-But I understand those who do it.
+Pero comprendo a quienes lo hacen.
 
-I understand the idea that maybe there's something more satisfying than optimizing conversion rates for someone else's ecommerce, no matter how well they pay you.
+Comprendo la idea de que tal vez hay algo más satisfactorio que optimizar conversion rates para el ecommerce de alguien más, por muy bien que te paguen.
 
-**I understand the temptation to create something that's 100% yours, even if the path is more uncertain.**
+**Comprendo la tentación de crear algo que sea 100% tuyo, aunque el camino sea más incierto.**
 
-## The real question
+## La pregunta real
 
-It's not "why would someone leave a good job for YouTube?"
+No es "¿por qué alguien dejaría un buen trabajo por YouTube?"
 
-**The real question is: "What are you willing to sacrifice for financial security?"**
+**La pregunta real es: "¿Qué estás dispuesto a sacrificar por seguridad financiera?"**
 
-For some, the answer is _"my creativity and freedom, and that's okay."_
+Para algunos, la respuesta es _"mi creatividad y libertad, y está bien."_
 
-For others, the answer is _"nothing, I prefer the risk."_
+Para otros, la respuesta es _"nada, prefiero el riesgo."_
 
-Both answers are valid.
+Ambas respuestas son válidas.
 
-## What do you prefer?
+## ¿Y ustedes qué prefieren?
 
-**Earning well doing something that doesn't passion you 100%, or earning less (at least initially) doing exactly what you want?**
+**¿Ganar bien haciendo lo que no los apasiona al 100%, o ganar menos (al menos inicialmente) haciendo exactamente lo que quieren?**
 
-- Financial security or creative freedom?
-- Working on others' dreams with good pay, or building your own with uncertainty?
+- ¿Seguridad financiera o libertad creativa?
+- ¿Trabajar en los sueños de otros con buen sueldo, o construir los propios con incertidumbre?
 
-There's no right answer. But there is an honest answer.
+No hay respuesta correcta. Pero sí hay una respuesta honesta.
 
-**What's yours?**
+**¿Cuál es la suya?**

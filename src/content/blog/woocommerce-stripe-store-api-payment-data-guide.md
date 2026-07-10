@@ -1,63 +1,63 @@
 ---
-title: "How to Fix WooCommerce Stripe Store API Payment Data (When Documentation is Outdated)"
-description: "Step-by-step guide to integrate Stripe payments with WooCommerce Store API using the correct payment_data structure that actually works"
+title: "Cómo Arreglar WooCommerce Stripe Store API Payment Data (Porque la Documentación está Desactualizada)"
+description: "Guía paso a paso para integrar pagos Stripe con WooCommerce Store API usando la estructura payment_data correcta que realmente funciona"
 published_date: 2025-09-03
-category: "tutorials"
+category: "tutoriales"
 draft: false
-seo_title: "How to Fix WooCommerce Stripe Store API Payment Data (When Documentation is Outdated)"
-seo_description: "Step-by-step guide to integrate Stripe payments with WooCommerce Store API using the correct payment_data structure that actually works"
+seo_title: "Cómo Arreglar WooCommerce Stripe Store API Payment Data (Porque la Documentación está Desactualizada)"
+seo_description: "Guía paso a paso para integrar pagos Stripe con WooCommerce Store API usando la estructura payment_data correcta que realmente funciona"
 ---
 
-Building a headless WooCommerce checkout should be straightforward. You separate the frontend from WordPress, use the Store API for cart operations, and integrate Stripe for payments. Simple, right?
+Construir un checkout headless de WooCommerce debería ser sencillo. Separas el frontend de WordPress, usas la Store API para operaciones del carrito, e integras Stripe para pagos. Simple, ¿verdad?
 
-**Wrong.**
+**Falso.**
 
-What should have been a two-day integration turned into a week-long detective story. The WooCommerce documentation is not just incomplete—it's actively misleading. It references deprecated Stripe methods that haven't worked properly in over two years.
+Lo que debería haber sido una integración de dos días se convirtió en una historia detectivesca de una semana. La documentación de WooCommerce no solo está incompleta—es activamente engañosa. Referencias métodos deprecados de Stripe que no han funcionado correctamente en más de dos años.
 
-If you're building a headless WooCommerce store with Stripe payments, this guide will save you from the same frustration I went through. More importantly, it shows you how to dig into plugin source code when documentation fails you.
+Si estás construyendo una tienda WooCommerce headless con pagos de Stripe, esta guía te ahorrará la misma frustración que pasé. Más importante, te muestra cómo investigar el código fuente del plugin cuando la documentación te falla.
 
-## The Problem with WooCommerce Stripe Documentation
+## El Problema con la Documentación de WooCommerce Stripe
 
-The official WooCommerce Store API documentation for Stripe payments tells you to use `stripe_source`:
+La documentación oficial de WooCommerce Store API para pagos con Stripe te dice que uses `stripe_source`:
 
 > "For further information on generating a stripe_source please check the Stripe documentation."
 
-**`stripe_source` has been deprecated by Stripe for years.** The modern approach uses Payment Methods and Payment Intents, but WooCommerce's docs haven't caught up.
+**`stripe_source` ha estado deprecado por Stripe durante años.** El enfoque moderno usa Payment Methods y Payment Intents, pero la documentación de WooCommerce no se ha actualizado.
 
-When you try to follow the official documentation, you get cryptic errors like:
+Cuando intentas seguir la documentación oficial, obtienes errores crípticos como:
 
 ```
 Invalid parameter(s): payment_data
 ```
 
-No explanation of what's actually expected. No examples of working implementations. Just a dead end.
+Sin explicación de qué se espera realmente. Sin ejemplos de implementaciones que funcionen. Solo un callejón sin salida.
 
-## The Real Architecture: Headless WooCommerce + Stripe
+## La Arquitectura Real: WooCommerce Headless + Stripe
 
-Before we dive into the solution, let's establish what we're actually building:
+Antes de sumergirnos en la solución, establecemos qué estamos construyendo realmente:
 
-**Frontend (Astro/React/etc.)** ↔ **Store API** ↔ **WooCommerce Backend**
+**Frontend (Astro/React/etc.)** ↔ **Store API** ↔ **Backend WooCommerce**
 
-The frontend handles:
+El frontend maneja:
 
-- Product display and selection
-- Stripe Elements for secure card input
-- Creating Stripe Payment Methods
-- Sending checkout data to Store API
+- Visualización y selección de productos
+- Stripe Elements para entrada segura de tarjetas
+- Creación de Stripe Payment Methods
+- Envío de datos de checkout a Store API
 
-WooCommerce handles:
+WooCommerce maneja:
 
-- Cart management via Store API
-- Order processing
-- Payment confirmation with Stripe
+- Gestión del carrito vía Store API
+- Procesamiento de órdenes
+- Confirmación de pagos con Stripe
 
-The critical piece is that **payment_data** structure that bridges your frontend Stripe integration with WooCommerce's expectations.
+La pieza crítica es esa estructura **payment_data** que conecta tu integración frontend de Stripe con las expectativas de WooCommerce.
 
-## How I Found the Real Solution
+## Cómo Encontré la Solución Real
 
-After days of trying different approaches based on outdated documentation, I took a different route: **I read the actual plugin source code**.
+Después de días intentando diferentes enfoques basados en documentación desactualizada, tomé un rumbo diferente: **leí el código fuente real del plugin**.
 
-In `/wp-content/plugins/woocommerce-gateway-stripe/`, I found the function that actually processes Store API payments:
+En `/wp-content/plugins/woocommerce-gateway-stripe/`, encontré la función que realmente procesa los pagos de Store API:
 
 ```javascript
 const buildBlocksAPIPaymentData = ({
@@ -90,24 +90,24 @@ const buildBlocksAPIPaymentData = ({
 };
 ```
 
-**This changed everything.** The plugin doesn't use `stripe_source` at all. It expects `wc-stripe-payment-method` with a Stripe Payment Method ID.
+**Esto cambió todo.** El plugin no usa `stripe_source` para nada. Espera `wc-stripe-payment-method` con un ID de Payment Method de Stripe.
 
-## The Correct Payment Data Structure
+## La Estructura Correcta de Payment Data
 
-Based on the actual plugin code, this is what you need to send to `/wp-json/wc/store/v1/checkout`:
+Basado en el código real del plugin, esto es lo que necesitas enviar a `/wp-json/wc/store/v1/checkout`:
 
 ```json
 {
   "billing_address": {
-    "first_name": "John",
-    "last_name": "Doe",
-    "email": "john@example.com",
+    "first_name": "Juan",
+    "last_name": "Pérez",
+    "email": "juan@ejemplo.com",
     "phone": "+1234567890",
-    "address_1": "123 Main St",
-    "city": "Anytown",
-    "state": "CA",
-    "postcode": "12345",
-    "country": "US"
+    "address_1": "Calle Principal 123",
+    "city": "Madrid",
+    "state": "Madrid",
+    "postcode": "28001",
+    "country": "ES"
   },
   "payment_method": "stripe",
   "payment_data": [
@@ -127,412 +127,197 @@ Based on the actual plugin code, this is what you need to send to `/wp-json/wc/s
 }
 ```
 
-**Key insights:**
+**Puntos clave:**
 
-- Use `wc-stripe-payment-method`, not `payment_method_id` or `stripe_source`
-- Set `wc-stripe-is-deferred-intent` to `true`
-- Only include `wc-stripe-confirmation-token` if you have 3D Secure authentication
-- Omit empty fields rather than sending `null` values
+- Usa `wc-stripe-payment-method`, no `payment_method_id` o `stripe_source`
+- Configura `wc-stripe-is-deferred-intent` como `true`
+- Solo incluye `wc-stripe-confirmation-token` si tienes autenticación 3D Secure
+- Omite campos vacíos en lugar de enviar valores `null`
 
-## Frontend Integration: Complete Stripe Elements Setup
+## Integración Frontend: Setup Esencial de Stripe
 
-Stripe Elements provides secure, pre-built UI components for collecting payment information. Here's the complete implementation from scratch:
+En el frontend, necesitas crear Stripe Payment Methods usando la API moderna:
 
-### Step 1: Include Stripe.js Script
-
-First, add Stripe.js to your HTML. This should be loaded directly from Stripe's CDN:
+### Setup Rápido de Stripe
 
 ```html
+<!-- Incluir Stripe.js -->
 <script src="https://js.stripe.com/v3/"></script>
+
+<!-- Contenedores para inputs de tarjeta -->
+<div id="card-number-element"></div>
+<div id="card-expiry-element"></div>
+<div id="card-cvc-element"></div>
+<div id="card-errors"></div>
 ```
-
-Add this in your HTML `<head>` section before any other Stripe-related code.
-
-### Step 2: HTML Structure for Checkout Form
-
-Create a complete checkout form with Stripe Elements containers:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://js.stripe.com/v3/"></script>
-    <style>
-      .StripeElement {
-        padding: 10px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin-bottom: 10px;
-      }
-      .StripeElement--focus {
-        border-color: #007cba;
-      }
-      .error-message {
-        color: #e74c3c;
-        font-size: 14px;
-        margin-top: 5px;
-      }
-      .hidden {
-        display: none !important;
-      }
-      #submit-button:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-      }
-    </style>
-  </head>
-  <body>
-    <form id="checkout-form">
-      <!-- Billing Information -->
-      <h3>Billing Information</h3>
-      <input type="text" id="first-name" placeholder="First Name" required />
-      <input type="text" id="last-name" placeholder="Last Name" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="tel" id="phone" placeholder="Phone" required />
-      <input type="text" id="address" placeholder="Address" required />
-      <input type="text" id="city" placeholder="City" required />
-      <input type="text" id="state" placeholder="State" required />
-      <input type="text" id="postcode" placeholder="Postal Code" required />
-      <select id="country" required>
-        <option value="US">United States</option>
-        <option value="CA">Canada</option>
-        <option value="GB">United Kingdom</option>
-      </select>
-
-      <!-- Stripe Elements -->
-      <h3>Payment Information</h3>
-      <div id="card-number-element" class="StripeElement">
-        <!-- Stripe Elements will create form elements here -->
-      </div>
-      <div id="card-expiry-element" class="StripeElement">
-        <!-- Stripe Elements will create form elements here -->
-      </div>
-      <div id="card-cvc-element" class="StripeElement">
-        <!-- Stripe Elements will create form elements here -->
-      </div>
-
-      <!-- Error display -->
-      <div id="card-errors" class="error-message" role="alert"></div>
-
-      <!-- Submit button -->
-      <button type="submit" id="submit-button">
-        <span id="button-text">Complete Order</span>
-        <span id="spinner" class="hidden">Processing...</span>
-      </button>
-    </form>
-  </body>
-</html>
-```
-
-### Step 3: Initialize Stripe Elements
-
-After including the Stripe.js script, initialize Stripe with your publishable key:
 
 ```javascript
-// Initialize Stripe (replace with your actual publishable key)
-const stripe = Stripe("pk_test_51234567890abcdef"); // Your publishable key here
-
-// Create Elements instance
+// Inicializar y montar Stripe Elements
+const stripe = Stripe("pk_test_tu_clave_publica");
 const elements = stripe.elements();
-```
 
-### Step 4: Create and Style Card Elements
-
-```javascript
-// Custom styling for Stripe Elements
-const elementStyles = {
-  base: {
-    color: "#32325d",
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-    fontSmoothing: "antialiased",
-    fontSize: "16px",
-    "::placeholder": {
-      color: "#aab7c4",
-    },
-  },
-  invalid: {
-    color: "#fa755a",
-    iconColor: "#fa755a",
-  },
-};
-
-// Create individual card elements (recommended approach)
-const cardNumber = elements.create("cardNumber", { style: elementStyles });
-const cardExpiry = elements.create("cardExpiry", { style: elementStyles });
-const cardCvc = elements.create("cardCvc", { style: elementStyles });
-```
-
-### Step 5: Mount Elements to DOM
-
-```javascript
-// Mount each element to its container
+const cardNumber = elements.create("cardNumber");
 cardNumber.mount("#card-number-element");
-cardExpiry.mount("#card-expiry-element");
-cardCvc.mount("#card-cvc-element");
 
-// Set up real-time validation
-const errorElement = document.getElementById("card-errors");
-
-function handleCardChange(event) {
-  if (event.error) {
-    errorElement.textContent = event.error.message;
-  } else {
-    errorElement.textContent = "";
-  }
-}
-
-// Listen for changes on all card elements
-cardNumber.on("change", handleCardChange);
-cardExpiry.on("change", handleCardChange);
-cardCvc.on("change", handleCardChange);
-```
-
-### Step 6: Complete Form Handling Implementation
-
-```javascript
-// Handle form submission
-const form = document.getElementById("checkout-form");
-const submitButton = document.getElementById("submit-button");
-const buttonText = document.getElementById("button-text");
-const spinner = document.getElementById("spinner");
-
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
-
-  // Disable submit button and show loading state
-  setSubmitButtonState(true);
-
-  try {
-    // Collect form data
-    const billingData = collectBillingData();
-
-    // Create Payment Method with Stripe
-    const paymentMethod = await createPaymentMethod(billingData);
-    if (!paymentMethod) {
-      setSubmitButtonState(false);
-      return; // Error already displayed
-    }
-
-    // Submit order to WooCommerce
-    await submitOrderToWooCommerce(paymentMethod, billingData);
-  } catch (error) {
-    console.error("Payment failed:", error);
-    errorElement.textContent = "Payment failed. Please try again.";
-    setSubmitButtonState(false);
-  }
+// Crear Payment Method al procesar pago
+const { paymentMethod, error } = await stripe.createPaymentMethod({
+  type: "card",
+  card: cardNumber,
+  billing_details: {
+    name: `${first_name} ${last_name}`,
+    email: email,
+  },
 });
 
-// Collect billing data from form
-function collectBillingData() {
-  return {
-    first_name: document.getElementById("first-name").value,
-    last_name: document.getElementById("last-name").value,
-    email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    address_1: document.getElementById("address").value,
-    city: document.getElementById("city").value,
-    state: document.getElementById("state").value,
-    postcode: document.getElementById("postcode").value,
-    country: document.getElementById("country").value,
-  };
-}
-
-// Create Payment Method with Stripe
-async function createPaymentMethod(billingData) {
-  const { paymentMethod, error } = await stripe.createPaymentMethod({
-    type: "card",
-    card: cardNumber,
-    billing_details: {
-      name: `${billingData.first_name} ${billingData.last_name}`,
-      email: billingData.email,
-      phone: billingData.phone,
-      address: {
-        line1: billingData.address_1,
-        city: billingData.city,
-        state: billingData.state,
-        postal_code: billingData.postcode,
-        country: billingData.country,
-      },
-    },
-  });
-
-  if (error) {
-    errorElement.textContent = error.message;
-    return null;
-  }
-
-  console.log("Payment Method created:", paymentMethod.id);
-  return paymentMethod;
-}
-
-// Submit order to WooCommerce via your API
-async function submitOrderToWooCommerce(paymentMethod, billingData) {
-  const checkoutData = {
-    billing_address: billingData,
-    payment_method: "stripe",
-    payment_data: [
-      {
-        key: "payment_method",
-        value: "stripe",
-      },
-      {
-        key: "wc-stripe-payment-method",
-        value: paymentMethod.id,
-      },
-      {
-        key: "wc-stripe-is-deferred-intent",
-        value: true,
-      },
-    ],
-  };
-
-  console.log("Sending checkout data:", checkoutData);
-
-  const response = await fetch("/api/woocommerce/orders/create", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(checkoutData),
-  });
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-
-  const result = await response.json();
-  console.log("WooCommerce response:", result);
-
-  if (result.success) {
-    // Order created successfully
-    console.log("Order created:", result.order.id);
-
-    // Handle potential 3D Secure authentication
-    if (result.order.payment_result?.status === "requires_action") {
-      await handle3DSecure(result.order.payment_result);
-    } else {
-      // Redirect to success page
-      window.location.href = "/order-confirmation";
-    }
-  } else {
-    errorElement.textContent = result.message || "Order creation failed";
-    setSubmitButtonState(false);
-  }
-}
-
-// Handle 3D Secure authentication if required
-async function handle3DSecure(paymentResult) {
-  if (paymentResult.client_secret) {
-    const { error } = await stripe.confirmCardPayment(
-      paymentResult.client_secret,
-    );
-
-    if (error) {
-      errorElement.textContent = error.message;
-      setSubmitButtonState(false);
-    } else {
-      // Authentication successful, redirect to success page
-      window.location.href = "/order-confirmation";
-    }
-  }
-}
-
-// Manage submit button loading state
-function setSubmitButtonState(loading) {
-  if (loading) {
-    submitButton.disabled = true;
-    buttonText.classList.add("hidden");
-    spinner.classList.remove("hidden");
-  } else {
-    submitButton.disabled = false;
-    buttonText.classList.remove("hidden");
-    spinner.classList.add("hidden");
-  }
-}
+// Usar paymentMethod.id en tu request a WooCommerce
 ```
 
-## Handling 3D Secure Authentication
+La clave está en usar `stripe.createPaymentMethod()` para obtener un Payment Method ID, luego enviar ese ID a WooCommerce con el nombre de campo correcto.
 
-Modern payment processing often requires 3D Secure authentication. When this happens:
+## Cómo Encontrar Lo Que WooCommerce Realmente Espera
 
-1. Stripe returns a Payment Intent with `status: 'requires_action'`
-2. You call `stripe.confirmCardPayment()` to handle the authentication
-3. User completes authentication in their bank's interface
-4. Stripe provides a Confirmation Token
-5. You include this token in a second checkout attempt
+Cuando la documentación oficial falla, necesitas convertirte en detective. El proceso es directo pero requiere paciencia:
 
-```json
-{
-  "key": "wc-stripe-confirmation-token",
-  "value": "ctok_confirmation_token_id"
-}
+### Método 1: Leer el Código Fuente del Plugin
+
+El enfoque más confiable es examinar los archivos reales del plugin de Stripe:
+
+1. **Navega a tu instalación de WordPress**
+2. **Ve a** `/wp-content/plugins/woocommerce-gateway-stripe/`
+3. **Busca** el directorio `includes/` y archivos relacionados con "Store API" o "Blocks"
+4. **Encuentra funciones** que manejen el procesamiento de `payment_data`
+
+Aquí es donde encontré `buildBlocksAPIPaymentData()` - la función que reveló la estructura real.
+
+### Método 2: Inspeccionar Requests de Red
+
+Usa las herramientas de desarrollador de tu navegador en un checkout WooCommerce funcional:
+
+1. **Abre una tienda WooCommerce en vivo** con Stripe habilitado
+2. **Abre Herramientas de Desarrollador** (F12) → pestaña Network
+3. **Completa una compra de prueba** y observa los requests
+4. **Encuentra el request POST** a `/wp-json/wc/store/v1/checkout`
+5. **Examina el payload** para ver la estructura real de payment_data
+
+### Método 3: Habilitar Debug Logging
+
+Obtén información detallada de errores desde WooCommerce:
+
+```php
+// Agregar a wp-config.php
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+
+// Revisar logs en /wp-content/debug.log
+// También revisar WooCommerce → Status → Logs
 ```
 
-## Environment Variables You Actually Need
+### Método 4: Investigación en Repositorio GitHub
+
+Busca en los repositorios oficiales por cambios recientes:
+
+- **WooCommerce Core:** `woocommerce/woocommerce`
+- **Plugin Stripe:** `woocommerce/woocommerce-gateway-stripe`
+
+Busca commits que mencionen "Store API", "Blocks", o "payment_data" para entender cambios recientes.
+
+## Configuración Requerida de WooCommerce
+
+Más allá de obtener la estructura payment_data correcta, necesitas configuración apropiada de WooCommerce:
+
+### Variables de Entorno Requeridas
 
 ```bash
-# WooCommerce REST API (for products, gateways, orders)
-WORDPRESS_BASE_URL=https://your-woocommerce-site.com
-WOO_CONSUMER_KEY=ck_your_consumer_key
-WOO_CONSUMER_SECRET=cs_your_consumer_secret
+# Acceso a WooCommerce REST API
+WORDPRESS_BASE_URL=https://tu-sitio-woocommerce.com
+WOO_CONSUMER_KEY=ck_tu_consumer_key
+WOO_CONSUMER_SECRET=cs_tu_consumer_secret
 
-# Stripe integration (for frontend)
-PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key
+# Integración frontend Stripe
+PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_tu_clave_publica
 ```
 
-**Note:** You don't need `STRIPE_SECRET_KEY` if you're letting WooCommerce handle all payment processing through the Store API. The secret key is only required if you need to validate Payment Methods server-side before sending to WooCommerce.
+### Checklist de Configuración WooCommerce
 
-## Testing and Debugging Your Integration
+**Configuración Store API:**
 
-### Common Errors and What They Mean
+- Habilitar Store API (debería estar activo por defecto)
+- Configurar headers CORS para tu dominio frontend
+- Probar que operaciones de carrito funcionen desde tu frontend
+
+**Setup Gateway Stripe:**
+
+- Instalar y activar plugin WooCommerce Stripe
+- Configurar con credenciales de tu cuenta Stripe
+- Habilitar método de pago "Stripe"
+- Probar con tarjetas de prueba de Stripe
+
+**Headers CORS (Crítico):**
+Agregar esto a tu `functions.php` de WordPress o plugin personalizado:
+
+```php
+add_action('rest_api_init', function() {
+    remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');
+    add_filter('rest_pre_serve_request', function($value) {
+        header('Access-Control-Allow-Origin: https://tu-dominio-frontend.com');
+        header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+        header('Access-Control-Allow-Headers: Content-Type, Authorization, Cart-Token');
+        return $value;
+    });
+});
+```
+
+## Testing y Debugging de Tu Integración
+
+### Errores Comunes y Qué Significan
 
 **`"payment_data[X][value] is not of type string,boolean"`**
 
-- You're sending `null` or `undefined` values
-- **Solution:** Send empty strings `""` or omit the field entirely
+- Estás enviando valores `null` o `undefined`
+- **Solución:** Envía strings vacíos `""` u omite el campo completamente
 
 **`"Invalid parameter(s): payment_data"`**
 
-- Wrong field names or structure
-- **Solution:** Use exactly `wc-stripe-payment-method`, not `payment_method_id`
+- Nombres de campos o estructura incorrectos
+- **Solución:** Usa exactamente `wc-stripe-payment-method`, no `payment_method_id`
 
 **`"Payment processing failed"`**
 
-- Usually a Stripe configuration issue
-- **Solution:** Check WooCommerce logs and verify Stripe plugin setup
+- Usualmente un problema de configuración de Stripe
+- **Solución:** Revisar logs de WooCommerce y verificar setup del plugin Stripe
 
-### Debug Process
+### Proceso de Debug
 
-1. **Start with minimal payload** - only required fields
-2. **Add fields one by one** - easier to isolate problems
-3. **Check WooCommerce logs** - WooCommerce → Status → Logs
-4. **Test with Stripe test cards** - use `4242424242424242` for success
-5. **Verify Cart-Token** - ensure you're sending a valid cart token
+1. **Empezar con payload mínimo** - solo campos requeridos
+2. **Agregar campos de uno en uno** - más fácil aislar problemas
+3. **Revisar logs de WooCommerce** - WooCommerce → Status → Logs
+4. **Probar con tarjetas de prueba Stripe** - usar `4242424242424242` para éxito
+5. **Verificar Cart-Token** - asegurar que envías un cart token válido
 
-### Essential Testing Checklist
+### Checklist Esencial de Testing
 
-- [ ] Can create Payment Method with Stripe.js
-- [ ] Cart operations work (add item, get cart)
-- [ ] Basic checkout succeeds with minimal data
-- [ ] 3D Secure cards work properly
-- [ ] Error handling displays user-friendly messages
+- [ ] Puede crear Payment Method con Stripe.js
+- [ ] Operaciones de carrito funcionan (agregar item, obtener carrito)
+- [ ] Checkout básico funciona con datos mínimos
+- [ ] Tarjetas 3D Secure funcionan correctamente
+- [ ] Manejo de errores muestra mensajes amigables al usuario
 
-## Backend API Endpoint Example
+## Ejemplo de Endpoint Backend API
 
-Your `/api/woocommerce/orders/create` endpoint should handle the checkout data:
+Tu endpoint `/api/woocommerce/orders/create` debería manejar los datos de checkout:
 
 ```javascript
-// Example for Astro API route: src/pages/api/woocommerce/orders/create.ts
+// Ejemplo para ruta API de Astro: src/pages/api/woocommerce/orders/create.ts
 export async function POST({ request }) {
   try {
     const checkoutData = await request.json();
 
-    // Add cart_token if you're managing cart state
+    // Agregar cart_token si estás gestionando estado de carrito
     if (!checkoutData.cart_token) {
       checkoutData.cart_token = await getCartToken(request);
     }
 
-    // Send to WooCommerce Store API
+    // Enviar a WooCommerce Store API
     const response = await fetch(
       `${process.env.WORDPRESS_BASE_URL}/wp-json/wc/store/v1/checkout`,
       {
@@ -562,7 +347,7 @@ export async function POST({ request }) {
       return new Response(
         JSON.stringify({
           success: false,
-          message: result.message || "Checkout failed",
+          message: result.message || "Checkout falló",
         }),
         {
           status: 400,
@@ -571,11 +356,11 @@ export async function POST({ request }) {
       );
     }
   } catch (error) {
-    console.error("Checkout error:", error);
+    console.error("Error de checkout:", error);
     return new Response(
       JSON.stringify({
         success: false,
-        message: "Internal server error",
+        message: "Error interno del servidor",
       }),
       {
         status: 500,
@@ -586,59 +371,59 @@ export async function POST({ request }) {
 }
 ```
 
-## Why Documentation Fails (And How to Overcome It)
+## Por Qué Falla la Documentación (Y Cómo Superarlo)
 
-This experience highlights a bigger problem in the WordPress ecosystem: **documentation lags behind code changes**.
+Esta experiencia destaca un problema mayor en el ecosistema de WordPress: **la documentación se queda atrás de los cambios de código**.
 
-WooCommerce's Stripe integration has evolved significantly:
+La integración Stripe de WooCommerce ha evolucionado significativamente:
 
-- Old: Sources API (`stripe_source`)
-- Current: Payment Methods API (`wc-stripe-payment-method`)
-- Future: Payment Element (unified payment UI)
+- Viejo: Sources API (`stripe_source`)
+- Actual: Payment Methods API (`wc-stripe-payment-method`)
+- Futuro: Payment Element (UI unificada de pago)
 
-But the documentation still references the old approach.
+Pero la documentación todavía referencia el enfoque viejo.
 
-**When documentation fails you:**
+**Cuando la documentación te falla:**
 
-1. **Read the plugin source code** - It's the ultimate source of truth
-2. **Check recent GitHub commits** - Look for API changes and new features
-3. **Inspect working examples** - Use browser dev tools on live WooCommerce checkouts
-4. **Test incrementally** - Build your integration step by step, validating each piece
+1. **Lee el código fuente del plugin** - Es la fuente definitiva de verdad
+2. **Revisa commits recientes en GitHub** - Busca cambios de API y nuevas características
+3. **Inspecciona ejemplos funcionales** - Usa herramientas dev del navegador en checkouts WooCommerce en vivo
+4. **Prueba incrementalmente** - Construye tu integración paso a paso, validando cada pieza
 
-## The Complete Working Flow
+## El Flujo de Trabajo Completo que Funciona
 
-The end-to-end process that actually works:
+El proceso end-to-end que realmente funciona:
 
-1. **Initialize session:** GET `/wp-json/wc/store/v1/cart` to get cart token
-2. **Add products:** POST to `/wp-json/wc/store/v1/cart/add-item` with cart token
-3. **Collect payment:** Create Stripe Payment Method on frontend
-4. **Process checkout:** POST to `/wp-json/wc/store/v1/checkout` with proper payment_data
-5. **Handle authentication:** Process 3D Secure if required
-6. **Complete order:** WooCommerce processes payment and creates order
+1. **Inicializar sesión:** GET `/wp-json/wc/store/v1/cart` para obtener cart token
+2. **Agregar productos:** POST a `/wp-json/wc/store/v1/cart/add-item` con cart token
+3. **Recopilar pago:** Crear Stripe Payment Method en frontend
+4. **Procesar checkout:** POST a `/wp-json/wc/store/v1/checkout` con payment_data apropiado
+5. **Manejar autenticación:** Procesar 3D Secure si se requiere
+6. **Completar orden:** WooCommerce procesa pago y crea orden
 
-## Moving Forward
+## Avanzando
 
-The WooCommerce + Stripe integration will continue evolving. Stripe is pushing toward their new Payment Element, and WooCommerce will eventually update their APIs to match.
+La integración WooCommerce + Stripe continuará evolucionando. Stripe está empujando hacia su nuevo Payment Element, y WooCommerce eventualmente actualizará sus APIs para coincidir.
 
-**Stay ahead of changes:**
+**Manténte adelante de los cambios:**
 
-- Follow the WooCommerce GitHub repository for API updates
-- Test your integration regularly with different card types
-- Monitor Stripe's developer changelog for breaking changes
-- Keep your WooCommerce and Stripe plugin versions updated
+- Sigue el repositorio GitHub de WooCommerce para actualizaciones de API
+- Prueba tu integración regularmente con diferentes tipos de tarjetas
+- Monitorea el changelog de desarrollador de Stripe para cambios breaking
+- Mantén tus versiones de WooCommerce y plugin Stripe actualizadas
 
-## Key Takeaways
+## Puntos Clave
 
-Building headless WooCommerce with Stripe doesn't have to be painful, but you need the right information:
+Construir WooCommerce headless con Stripe no tiene que ser doloroso, pero necesitas la información correcta:
 
-- **Ignore the official documentation** for Stripe payment_data - it's outdated
-- **Use `wc-stripe-payment-method`** with Payment Method IDs, not stripe_source
-- **Read plugin source code** when documentation fails you
-- **Handle 3D Secure properly** with Confirmation Tokens
-- **Test with real cards** that trigger different authentication flows
+- **Ignora la documentación oficial** para payment_data de Stripe - está desactualizada
+- **Usa `wc-stripe-payment-method`** con Payment Method IDs, no stripe_source
+- **Lee código fuente del plugin** cuando la documentación te falle
+- **Maneja 3D Secure apropiadamente** con Confirmation Tokens
+- **Prueba con tarjetas reales** que desencadenen diferentes flujos de autenticación
 
-The integration is actually straightforward once you know what WooCommerce actually expects. The hard part is finding that information when the docs point you in the wrong direction.
+La integración es realmente directa una vez que sabes lo que WooCommerce realmente espera. La parte difícil es encontrar esa información cuando los docs te apuntan en la dirección equivocada.
 
-This guide should save you the week of frustration I went through. But more importantly, it shows you how to dig deeper when official documentation isn't enough.
+Esta guía debería ahorrarte la semana de frustración que pasé. Pero más importante, te muestra cómo profundizar cuando la documentación oficial no es suficiente.
 
-**Have questions about headless WooCommerce integrations?** The comment section is open, and I'm always happy to help solve these kinds of technical puzzles.
+**¿Tienes preguntas sobre integraciones WooCommerce headless?** La sección de comentarios está abierta, y siempre estoy feliz de ayudar a resolver este tipo de puzzles técnicos.

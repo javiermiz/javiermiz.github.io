@@ -1,96 +1,96 @@
 ---
-title: "Why I only work when time runs out?"
-description: "An honest reflection on working under pressure, why my brain only cooperates with deadlines, and how I've learned to work with this pattern instead of fighting against it."
+title: "¿Por qué solo trabajo cuando se acaba el tiempo?"
+description: "Una reflexión honesta sobre trabajar bajo presión, por qué mi cerebro solo coopera con deadlines y cómo he aprendido a trabajar con este patrón en lugar de luchar contra él."
 published_date: 2025-08-21
 category: "personal"
 draft: false
-seo_title: "Why I only work when time runs out"
-seo_description: "An honest reflection on working under pressure, why my brain only cooperates with deadlines, and how I've learned to work with this pattern instead of fighting against it."
+seo_title: "Por qué solo trabajo cuando se acaba el tiempo"
+seo_description: "Una reflexión honesta sobre trabajar bajo presión, por qué mi cerebro solo coopera con deadlines y cómo he aprendido a trabajar con este patrón en lugar de luchar contra él."
 ---
 
-I'm writing this because I just realized something. The current sprint ends in two days and I have three tickets that have been sitting in my kanban for a week. And strangely, _now_ is when my brain decides to cooperate.
+Estoy escribiendo esto porque acabo de darme cuenta de algo. El sprint actual termina en dos días y tengo tres tickets que han estado en mi kanban desde hace una semana. Y extrañamente, _ahora_ es cuando mi cerebro decide cooperar.
 
-It's frustrating. For days I look at those tickets, I know exactly what I need to do, but every time I open the code it's like my mind turns to jelly. Until the last day arrives and suddenly I become a problem-solving machine.
+Es frustrante. Durante días miro esos tickets, sé exactamente lo que tengo que hacer, pero cada vez que abro el código es como si mi mente fuera de gelatina. Hasta que llega el último día y de repente me convierto en una máquina de resolver problemas.
 
-I don't have diagnosed ADHD, but this pattern has been haunting me forever. And after years of feeling guilty about it, I'm starting to understand what's really happening.
+No tengo ADHD diagnosticado, pero este patrón me persigue desde siempre. Y después de años de sentirme culpable por ello, empiezo a entender qué está pasando realmente.
 
-## The Neuroscience of Pressure
+## La Neurociencia de la Presión
 
-Turns out our brain has two main systems for making decisions:
+Resulta que nuestro cerebro tiene dos sistemas principales para tomar decisiones:
 
-**The automatic system** handles routine and familiar tasks. It's efficient but boring.
+**El sistema automático** maneja las tareas rutinarias y conocidas. Es eficiente pero aburrido.
 
-**The executive system** activates when there's urgency, novelty, or risk. It consumes more energy, but also gives us that intense mental clarity.
+**El sistema ejecutivo** se activa cuando hay urgencia, novedad o riesgo. Consume más energía, pero también nos da esa claridad mental intensa.
 
-The problem is that the executive system needs a compelling reason to turn on. And apparently, my brain doesn't consider "delivering quality code" compelling enough. But "delivering code before I get in trouble" definitely is.
+El problema es que el sistema ejecutivo necesita una razón convincente para encenderse. Y aparentemente, mi cerebro considera que "entregar código de calidad" no es suficientemente convincente. Pero "entregar código antes de que me regañen" sí lo es.
 
-Dopamine also plays a key role. When there's a deadline nearby, our brain releases dopamine anticipating both the relief of completing the task and the possible consequence of not doing it. It's like natural productivity drugs that only activate under pressure.
+La dopamina también juega un papel clave. Cuando hay una deadline cerca, nuestro cerebro libera dopamina anticipando tanto el alivio de completar la tarea como la posible consecuencia de no hacerlo. Es como una droga natural de productividad que solo se activa bajo presión.
 
-## Why Tickets Become Invisible
+## Por Qué Los Tickets Se Vuelven Invisibles
 
-I've noticed something curious: the longer my tickets sit untouched, the more invisible they become. It's like my brain develops selective blindness toward them.
+He notado algo curioso: mientras más tiempo tienen mis tickets sin tocar, más invisibles se vuelven. Es como si mi cerebro desarrollara una ceguera selectiva hacia ellos.
 
-I think it happens because when something doesn't have immediate urgency, our brain categorizes it as "optional" regardless of how objectively important it is. And optional things simply... don't exist until they stop being optional.
+Creo que pasa porque cuando algo no tiene urgencia inmediata, nuestro cerebro lo categoriza como "opcional" sin importar qué tan importante sea objetivamente. Y las cosas opcionales simplemente... no existen hasta que dejan de serlo.
 
-Plus, when there's no pressure, my mind scatters. I see the ticket, think "oh yeah, this," but immediately get distracted by Slack, checking if there's something more urgent, reorganizing my desk. Anything except starting.
+Además, cuando no hay presión, mi mente se dispersa. Veo el ticket, pienso "ah sí, esto", pero inmediatamente me distraigo con Slack, con revisar si hay algo más urgente, con reorganizar mi escritorio. Cualquier cosa menos empezar.
 
-## Quality Under Pressure (Plot Twist)
+## La Calidad Bajo Presión (Plot Twist)
 
-Here comes the strangest part: _I do my best work under pressure_. It shouldn't be this way, right? Rush is supposed to produce sloppy work.
+Aquí viene lo más extraño: _mi mejor trabajo lo hago bajo presión_. No debería ser así, ¿verdad? Se supone que la prisa produce cosas mediocres.
 
-But when I have few hours and much to do, my brain enters this weird flow state where:
+Pero cuando tengo pocas horas y mucho que hacer, mi cerebro entra en un estado de flow rarísimo donde:
 
-- There's no time to doubt every decision
-- I focus on essentials, not perfecting details
-- Pressure eliminates analysis paralysis
-- Every line of code has clear purpose
+- No hay tiempo para dudar cada decisión
+- Me enfoco en lo esencial, no en perfeccionar detalles
+- La presión elimina la paralización por análisis
+- Cada línea de código tiene propósito claro
 
-It's like urgency is the perfect filter for separating important from irrelevant.
+Es como si la urgencia fuera el filtro perfecto para separar lo importante de lo irrelevante.
 
-## Strategies I've Tried (And Their Real Results)
+## Estrategias Que He Probado (Y Sus Resultados Reales)
 
-**Making artificial deadlines**: Failed completely. My brain knows perfectly well which dates are real and which I made up.
+**Hacer deadlines artificiales**: Falló completamente. Mi cerebro sabe perfectamente cuáles son las fechas reales y cuáles me inventé.
 
-**Breaking into smaller tasks**: Helps a little, but I still postpone even the micro-tasks.
+**Dividir en tareas más pequeñas**: Ayuda un poco, pero sigo posponiendo incluso las micro-tareas.
 
-**Time blocking**: Works... until the block time arrives and I simply ignore it.
+**Time blocking**: Funciona... hasta que llega la hora del bloque y simplemente lo ignoro.
 
-**Pomodoro**: Useful once I manage to start, but doesn't help me overcome initial resistance.
+**Pomodoro**: Útil cuando ya logré empezar, pero no me ayuda a vencer la resistencia inicial.
 
-**Body doubling**: This works better. Working with someone else (even virtually) creates gentle but effective social pressure.
+**Body doubling**: Esto sí funciona mejor. Trabajar con alguien más (aunque sea virtualmente) crea una presión social suave pero efectiva.
 
-**My hybrid system**: I have [my own productivity system](/blog/my-simple-productivity-system/) that combines immediate capture, simple kanban, and time tracking. It works well for daily organization, but doesn't solve the fundamental problem: those tickets still sit there in my "To Do" until real pressure appears.
+**Mi sistema híbrido**: Tengo [mi propio sistema de productividad](/es/blog/my-simple-productivity-system/) que combina captura inmediata, kanban simple y time tracking. Funciona bien para la organización diaria, pero no resuelve el problema fundamental: esos tickets siguen ahí en mi "To Do" hasta que aparece la presión real.
 
-## What Has Actually Worked
+## Lo Que Realmente Ha Funcionado
 
-**Creating friction for procrastination**: Instead of trying to force myself to work, I make procrastinating harder. Block sites, leave phone in another room, close Slack.
+**Crear fricción para procrastinar**: En lugar de tratar de forzarme a trabajar, hago más difícil procrastinar. Bloqueo sitios, dejo el teléfono en otro cuarto, cierro Slack.
 
-**The 2-minute trick**: If I can do something in less than 2 minutes, I do it immediately without thinking. Sometimes those "2 minutes" become 30 and I'm already in flow.
+**El truco de los 2 minutos**: Si puedo hacer algo en menos de 2 minutos, lo hago inmediatamente sin pensar. A veces esos "2 minutos" se convierten en 30 y ya estoy en flow.
 
-**Deadline stacking**: When I have multiple tickets, I organize them to have staggered deadlines. The pressure from one pushes me to work on all. My kanban becomes more active when there's real urgency.
+**Deadline stacking**: Cuando tengo múltiples tickets, los organizo para que tengan deadlines escalonados. La presión de uno me impulsa a trabajar en todos. Mi kanban se vuelve más activo cuando hay urgencia real.
 
-**Changing environment**: Sometimes simply moving to another place (café, living room, even another desk) resets my mental state.
+**Cambiar de ambiente**: A veces simplemente moverme a otro lugar (café, sala, incluso otro escritorio) reinicia mi estado mental.
 
-## Radical Acceptance
+## La Aceptación Radical
 
-After years of fighting this, I'm starting to work _with_ my pattern instead of against it.
+Después de años de luchar contra esto, estoy empezando a trabajar _con_ mi patrón en lugar de contra él.
 
-I accept that I'm a deadline procrastinator. I accept that my best work comes under pressure. I accept that my brain needs urgency to function optimally.
+Acepto que soy un procrastinador de deadlines. Acepto que mi mejor trabajo sale bajo presión. Acepto que mi cerebro necesita urgencia para funcionar óptimamente.
 
-But I also accept that this isn't sustainable long-term. The chronic stress of always living on the edge accumulates. And there are limits to how much you can stretch this system before something breaks.
+Pero también acepto que esto no es sostenible a largo plazo. El estrés crónico de vivir siempre al límite se acumula. Y hay límites a cuánto puedes estirar este sistema antes de que algo se rompa.
 
-## The Search for Balance
+## La Búsqueda de Balance
 
-I don't want to completely eliminate pressure - clearly my brain needs it to function. But I do want to be more intentional about when and how I use it.
+No quiero eliminar completamente la presión - claramente mi cerebro la necesita para funcionar. Pero sí quiero ser más intencional sobre cuándo y cómo la uso.
 
-My goal isn't to become someone who works constantly with weeks of anticipation. That goes against my nature. But I do want to reduce the level of chaos and anxiety.
+Mi objetivo no es convertirme en alguien que trabaja constantemente con semanas de anticipación. Eso va contra mi naturaleza. Pero sí quiero reducir el nivel de caos y ansiedad.
 
-Maybe the answer isn't to fight this pattern, but to better design my deadlines. Create systems that give me the pressure I need without unnecessary drama.
+Tal vez la respuesta no sea luchar contra este patrón, sino diseñar mejor mis deadlines. Crear sistemas que me den la presión que necesito sin el drama innecesario.
 
-## A Final Reflection
+## Una Reflexión Final
 
-Writing this has made me realize something: maybe I'm not as broken as I thought. Maybe my brain simply works differently, and instead of trying to completely change it, I can learn to optimize it.
+Escribir esto me ha hecho darme cuenta de algo: tal vez no estoy tan roto como pensaba. Tal vez mi cerebro simplemente funciona diferente, y en lugar de intentar cambiarlo completamente, puedo aprender a optimizarlo.
 
-Deadlines are my fuel. Pressure is my catalyst. And it's okay if that's my formula, as long as I'm conscious of it and use it intelligently.
+Los deadlines son mi combustible. La presión es mi catalizador. Y está bien si esa es mi fórmula, siempre y cuando sea consciente de ella y la use de manera inteligente.
 
-Now, if you'll excuse me, I have to move those tickets from "To Do" to "Doing" before the sprint ends.
+Ahora, si me disculpan, tengo que mover esos tickets de "To Do" a "Doing" antes de que termine el sprint.

@@ -1,71 +1,71 @@
 ---
-title: "My Experience With AI Agents and Why I Canceled My Claude Subscription"
-description: "From paying subscriptions to running 3 Telegram bots on a $5 API credit. My journey with local models, Hermes, pi.dev, and Deepseek."
+title: "Mi experiencia con los agentes de IA y por qué cancelé mi suscripción de Claude"
+description: "De pagar suscripciones a tener 3 bots de Telegram por $5 de API. Mi viaje con modelos locales, Hermes, pi.dev y Deepseek."
 published_date: 2026-05-07
-category: "technology"
+category: "tecnología"
 draft: false
 ---
 
-It all started like most of these stories do. With a subscription.
+Todo empezó como empiezan casi todas estas historias. Pagando una suscripción.
 
-I was paying $20 a month for Claude Pro. At first it felt reasonable, you know? But I kept hitting message limits and usage restrictions. The only way to get more was paying $200 for their next tier and honestly, I was not about to do that just to get bigger limits. It felt like paying for a car and being told how many miles you can drive each month.
+Pagaba $20 dólares al mes por Claude Pro. Al principio no me parecía mal, pero luego me empecé a topar con los límites de mensajes y las restricciones de uso todo el tiempo. La única forma de tener más era pagar $200 dólares por el siguiente nivel, y honestamente no iba a hacer eso solo para tener límites más grandes. Se sentía como pagar un carro y que te dijeran cuántos kilómetros puedes manejar al mes.
 
-That frustration sent me down a rabbit hole.
+Esa frustración me llevó a investigar.
 
-## The Local Models Rabbit Hole
+## El agujero de los modelos locales
 
-I started reading about local models. The idea of running artificial intelligence on my own computer, without depending on the internet, without limits, without monthly payments. It sounded too good to be true.
+Empecé a leer sobre modelos locales. La idea de correr inteligencia artificial en mi propia computadora, sin depender de internet, sin límites, sin pagar mensualidades. Sonaba demasiado bien.
 
-And at first, honestly, I didn't understand anything. There were tools like <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">**Ollama**</a>, basically the simplest way to download and run local models. You type a command in the terminal and seconds later you have a model running. Also <a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">**LM Studio**</a> and <a href="https://www.cherry-ai.com/" target="_blank" rel="noopener noreferrer">**Cherry Studio**</a>, which are graphical interfaces to do the same thing if you don't want to touch the terminal. A ton of tools, each one promising to make it easier.
+Y al principio, la verdad, no entendía nada. Había herramientas como <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">**Ollama**</a>, que básicamente es la forma más sencilla de bajar y ejecutar modelos locales. Escribes un comando en la terminal y en segundos tienes un modelo funcionando. También <a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">**LM Studio**</a> y <a href="https://www.cherry-ai.com/" target="_blank" rel="noopener noreferrer">**Cherry Studio**</a>, que son interfaces gráficas para hacer lo mismo si no quieres tocar la terminal. Un montón de herramientas, cada una prometiendo hacerlo más fácil.
 
-I dove into that world, and right when I started, Alibaba had just released <a href="https://github.com/QwenLM/Qwen" target="_blank" rel="noopener noreferrer">**Qwen 3.6**</a>, a model that fit perfectly on my MacBook Pro M4 Pro with 48GB of RAM. I installed it, tested it, and watching a model answer questions on my own machine, with no internet, felt like magic. I added <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">**MCP**</a> (Model Context Protocol), a standard that lets models connect with external tools like files, databases, or whatever you need. The possibilities opened up significantly.
+Me sumergí en ese mundo y justo cuando empecé, Alibaba había lanzado <a href="https://github.com/QwenLM/Qwen" target="_blank" rel="noopener noreferrer">**Qwen 3.6**</a>, un modelo que entraba perfecto en mi MacBook Pro M4 Pro con 48GB de RAM. Lo instalé, lo probé, y ver un modelo respondiendo preguntas en mi propia máquina, sin internet, se sintió como magia. Le agregué <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">**MCP**</a>, que es el Model Context Protocol, un estándar que permite que los modelos se conecten con herramientas externas como archivos, bases de datos o lo que necesites. Las posibilidades se abrieron un montón.
 
-I spent a while like that, experimenting, seeing what I could do. And like everything in this world, I wanted more.
+Estuve así un rato, experimentando, viendo qué podía hacer. Y como todo en este mundo, quería más.
 
-## OpenCLAW and the First Letdown
+## OpenCLAW y el primer bajón
 
-I discovered <a href="https://openclaw.ai/" target="_blank" rel="noopener noreferrer">**OpenCLAW**</a>, a more advanced framework for building agentic systems. I set it up, ran it, and it worked. Painfully slow. It was overkill for my laptop.
+Descubrí <a href="https://openclaw.ai/" target="_blank" rel="noopener noreferrer">**OpenCLAW**</a>, un framework más avanzado para construir sistemas agénticos. Lo configuré, lo puse a correr, y funcionaba. Lentísimo. Fue overkill para mi laptop.
 
-That's when I learned something important. The problem wasn't the model. It was everything I was putting around it. These frameworks inject a massive system prompt to give you context, and processing that from scratch every single time takes forever. It doesn't matter how fast your model is if it has to chew through pages of instructions before it can even respond. That discovery, frustrating as it was, led me to the next tool.
+Ahí aprendí algo importante. El problema no era el modelo, era todo lo que le ponía alrededor. Estos frameworks te inyectan un prompt de sistema enorme para darte contexto, y procesar eso desde cero cada vez consume muchísimo tiempo. No importa qué tan rápido sea tu modelo si antes de responder tiene que masticar páginas enteras de instrucciones. Ese descubrimiento, aunque frustrante, me llevó a la siguiente herramienta.
 
-## pi.dev, the Game Changer
+## pi.dev, el game changer
 
-That's when I found <a href="https://pi.dev/" target="_blank" rel="noopener noreferrer">**pi.dev**</a>. And this actually changed things.
+Ahí fue cuando encontré <a href="https://pi.dev/" target="_blank" rel="noopener noreferrer">**pi.dev**</a>. Y esto sí cambió las cosas.
 
-pi.dev optimizes the prompt you send to the model so it's efficient. Its system prompt is short, well structured, no bloat. Suddenly my local model was flying. It could solve complex problems, write code, reason through multiple steps. Everything worked the way it should. It was the best experience I had in that whole phase. For the first time I felt like running a local model wasn't an experiment. It was actually useful.
+pi.dev optimiza el prompt que le mandas al modelo para que sea eficiente. Su system prompt es corto, bien estructurado, sin grasa. De repente mi modelo local volaba. Era capaz de resolver problemas complejos, escribir código, pensar en varios pasos. Todo funcionaba como debería. Fue lo mejor que experimenté en toda esa etapa. Por primera vez sentí que tener un modelo local no era un experimento, sino algo realmente útil.
 
-## Enter Hermes and the Need for Something Bigger
+## Llegó Hermes y la necesidad de algo más grande
 
-But I still felt like something was missing. I wanted something I could control from my phone, something available anywhere, something I could chat with that could also control my PC from wherever I was.
+Pero igual sentía que me faltaba algo. Quería algo que pudiera controlar desde mi teléfono, que estuviera disponible donde sea, con lo que pudiera chatear y que pudiera controlar mi PC desde cualquier lugar.
 
-That's when <a href="https://nousresearch.com/hermes-agent/" target="_blank" rel="noopener noreferrer">**Hermes Agent**</a> came in. It's a framework that lets you have assistants with personality, connected to Telegram, capable of executing code, researching the web, controlling files. All from a chat. I had it configured in no time. The system itself guided me through it. Within a while I had **3 Telegram bots** running, each with its own purpose and distinct personality. One for research, one to help with technical tasks, one just to experiment.
+Ahí llegó <a href="https://nousresearch.com/hermes-agent/" target="_blank" rel="noopener noreferrer">**Hermes Agent**</a>. Es un framework que te permite tener asistentes con personalidad conectados a Telegram, capaces de ejecutar código, investigar en internet, controlar archivos. Todo desde un chat. Lo configuré en muy poco tiempo. El mismo sistema me guió. En un rato tenía **3 bots de Telegram** funcionando, cada uno con su propósito y su personalidad distinta. Uno para research, otro para ayudarme con tareas técnicas, otro nomás por experimentar.
 
-But when I ran Hermes with my local model, the same old problem came back. Speed. Running parallel tasks with a local model simply isn't viable, even with pi.dev optimizing everything. And the magic of having agents fades when you're waiting 30 seconds for every response.
+Pero cuando hice correr Hermes con mi modelo local, volvió el problema de siempre. La velocidad. Hacer tareas en paralelo con un modelo local simplemente no es viable, incluso con pi.dev optimizando todo. Y la magia de tener agentes se pierde cuando tienes que esperar 30 segundos por cada respuesta.
 
-## The Five Dollar Lesson
+## La lección de los cinco dólares
 
-That's when I remembered that two years ago I had bought **five dollars worth of Deepseek API credit**. I had never used it. It was just sitting there, untouched.
+Ahí recordé que hacía dos años había comprado **cinco dólares de crédito en la API de Deepseek**. No los había usado nunca. Estaban ahí, intactos.
 
-I connected it. And suddenly everything worked amazingly. Fast, fluid, no artificial limits. My three bots started running on <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">**Deepseek V4 Flash**</a> and the difference was night and day. They do research, help me with day to day tasks, and even role-play with the personalities I gave them, because honestly I find it fun to see how they respond. Five dollars. Two years later, I still have credit left.
+Los conecté. Y de pronto todo funcionó increíble. Rápido, fluido, sin límites artificiales. Mis tres bots empezaron a trabajar con <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">**Deepseek V4 Flash**</a> y la diferencia fue abismal. Hacen research, me ayudan con el día a día, y hasta rolean con las personalidades que les puse, porque honestamente me parece divertido ver cómo responden. Cinco dólares. Después de dos años todavía tengo saldo.
 
-It was ironic to realize that what solved all my problems wasn't better hardware, more configuration, or more tools. It was connecting an API I had bought two years ago and forgotten about.
+Fue irónico darme cuenta de que lo que resolvió todos mis problemas no fue más hardware, más configuración, ni más herramientas. Fue conectar una API que compré hace dos años y había olvidado.
 
-## My Setup Today
+## Mi setup hoy
 
-In the end, I learned that no single tool does everything perfectly. Each one has its place, and the trick is knowing when to use each.
+Al final aprendí que no hay una herramienta que haga todo perfecto. Cada una tiene su lugar, y el truco está en saber cuándo usar cada una.
 
-<a href="https://nousresearch.com/hermes-agent/" target="_blank" rel="noopener noreferrer">**Hermes**</a> manages projects, writes plans, and keeps long-term context. For that it uses <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">Deepseek</a>. It's ideal for tasks that require memory, understanding the full context of a project, and coordinating multiple steps.
+<a href="https://nousresearch.com/hermes-agent/" target="_blank" rel="noopener noreferrer">**Hermes**</a> gestiona los proyectos, escribe planes y mantiene el contexto a largo plazo. Para eso usa <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">Deepseek</a>. Es ideal para tareas que requieren memoria, entender el contexto completo de un proyecto, y coordinar múltiples pasos.
 
-<a href="https://pi.dev/" target="_blank" rel="noopener noreferrer">**pi.dev**</a> I use for programming and running code quickly. Its short system prompt and ability to parallelize tasks make it much more efficient for that. For pure development, it's still my main tool.
+<a href="https://pi.dev/" target="_blank" rel="noopener noreferrer">**pi.dev**</a> lo uso para programar y ejecutar código rápido. Su system prompt corto y su capacidad de paralelizar tareas lo hacen mucho más eficiente para eso. Para desarrollo puro, sigue siendo mi herramienta principal.
 
-Deepseek V4 Flash runs on both. So far I've found it excellent.
+Deepseek V4 Flash corre en ambos. Hasta ahora lo he encontrado súper.
 
-## What I'm Taking Away From All This
+## Lo que me llevo de todo esto
 
-Local models are incredible for learning and experimenting. They give you an understanding of how this technology really works that you'd never get from just using APIs. They force you to understand prompts, context, limits. Everything that's normally abstracted away when you're just clicking in a chat.
+Los modelos locales son increíbles para aprender y experimentar. Te dan una comprensión de cómo funciona realmente esta tecnología que nunca tendrías si solo usas APIs. Te obligan a entender prompts, contextos, limits, y todo lo que normalmente está abstraído cuando solo haces clic en un chat.
 
-But when you want speed, reliability, and parallel tasks, a cheap API is unbeatable. You don't need to spend a hundred dollars a month. With five dollars of credit I bought two years ago and still haven't finished, I have more capability from my phone than I had sitting at my computer paying subscriptions.
+Pero cuando quieres velocidad, confiabilidad y tareas en paralelo, una API barata es imbatible. No necesitas gastar cien dólares al mes. Con cinco dólares de crédito que compré hace dos años y todavía no termino, tengo más capacidad desde mi teléfono que la que tenía sentado frente a mi computadora pagando suscripciones.
 
-Goodbye Claude with its restrictive limits. Goodbye to paying monthly for something you only halfway use. Today I have three bots running from Telegram, I control my computer from anywhere, and I wrote this post from my phone while I was out of the house, dictating to one of my agents who helped me structure it and correct it without losing my voice.
+Adiós Claude con sus límites restrictivos. Adiós a pagar mensualidades por algo que usas a medias. Hoy tengo tres bots funcionando desde Telegram, controlo mi computadora desde donde sea, y escribí este post desde el teléfono mientras estaba fuera de casa, dictándole a uno de mis agentes que me ayudó a estructurarlo y corregirlo sin perder mi voz.
 
-And the best part? This is just the beginning. Every week I discover something new I can do with this setup. And the feeling of building your own system, with your own rules, without a subscription telling you how far you can go. There's nothing like it.
+¿Y lo mejor de todo? Esto es apenas el inicio. Cada semana descubro algo nuevo que puedo hacer con este setup. Y la sensación de estar construyendo tu propio sistema, con tus propias reglas, sin que una suscripción te diga hasta dónde puedes llegar, no se compara con nada.

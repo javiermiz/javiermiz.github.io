@@ -1,77 +1,77 @@
 ---
-title: "I got promoted to team leader"
-description: "Two weeks ago they told me I'd be a team leader. My first mental reaction was 'me? why?' But I said yes immediately."
+title: "Me ascendieron a líder de equipo"
+description: "Hace dos semanas me dijeron que sería líder. Mi primera reacción mental fue '¿yo? ¿por qué?' Pero dije que sí inmediatamente."
 published_date: 2025-08-18
 category: "personal"
 draft: false
-seo_title: "I got promoted to team leader - why you should always say yes"
-seo_description: "The story of how I got promoted to team leader unexpectedly and why I decided to say yes even though I didn't feel qualified."
+seo_title: "Me ascendieron a líder de equipo - por qué siempre hay que decir que sí"
+seo_description: "La historia de cómo me ascendieron a líder sin esperarlo y por qué decidí decir que sí aunque no me sintiera calificado."
 ---
 
-I didn't expect them to tell me this. Two weeks ago my boss asked me for an unexpected meeting. I was on lunch break, had gone out to eat with my wife, and when I saw the notification I thought "what did I do wrong?"
+No esperaba que me dijeran esto. Hace dos semanas mi jefe me pidió un meeting inesperado. Yo estaba en hora de comida, había salido a comer con mi esposa, y cuando vi la notificación pensé "¿qué hice mal?"
 
-Honestly, I thought it was going to be a call-out. I rushed back, connected expecting the worst, and he says: "We're promoting you to team leader."
+Honestamente pensé que era una llamada de atención. Me regresé rápido, me conecté esperando lo peor, y me dice: "Te vamos a ascender a líder de equipo."
 
-On the outside I told him yes, that I was willing, that it seemed great. Inside my reaction was literally "me? why?"
+Por fuera le dije que sí, que estaba dispuesto, que me parecía genial. Por dentro mi reacción fue literalmente "¿yo? ¿por qué?"
 
-## That's when I understood what impostor syndrome is
+## Ahí entendí qué es el síndrome del impostor
 
-I had always heard about impostor syndrome, but I had never felt it so intensely. In my mind it was "me? really?" There are people with more experience, people who know more, people who look more like leaders than me.
+Siempre había escuchado del síndrome del impostor, pero nunca lo había sentido tan intenso. En mi mente era "¿yo? ¿en serio?" Hay gente con más experiencia, gente que sabe más, gente que se ve más líder que yo.
 
-But I said yes immediately.
+Pero le dije que sí de inmediato.
 
-Why? Because something I've learned is that opportunities won't wait for you until you feel "ready". It never happens.
+¿Por qué? Porque algo que he aprendido es que las oportunidades no te van a esperar hasta que te sientas "listo". Nunca pasa.
 
-## If they chose me, it's for a reason
+## Si me eligieron es por algo
 
-I've been programming for 6 years. My boss has seen my work, my efficiency, how quickly I solve problems. He knows how I work better than I do sometimes.
+Llevo 6 años programando. Mi jefe ha visto mi trabajo, mi eficiencia, qué tan rápido resuelvo problemas. Sabe cómo trabajo mejor que yo mismo a veces.
 
-If he decided I should lead this frontend team, it wasn't just because. He sees something I don't see, or that I don't believe yet.
+Si decidió que yo debería liderar este equipo de frontend, no fue porque sí. Ve algo que yo no veo, o que no me creo todavía.
 
-And that's the point: I have to own it.
+Y ahí está el punto: tengo que creérmela.
 
-## They threw me to the wolves (and that's okay)
+## Me aventaron a los leones (y está bien)
 
-They didn't give me training. They didn't tell me "study this first". It was more like "here's your team, see you later".
+No me dieron training. No me dijeron "estudia esto primero". Fue más bien "aquí está tu equipo, ahí nos vemos".
 
-The first week doing code reviews was weird. Being the one reviewing other devs' code when I also make mistakes. But I realized something: I've always helped my friends when they ask me about code. This isn't that different.
+La primera semana haciendo code reviews fue rara. Estar revisando código de otros devs cuando yo también cometo errores. Pero me di cuenta de algo: siempre he ayudado a mis amigos cuando me preguntan sobre código. Esto no es tan diferente.
 
-I'm liking it more than I thought. Being able to help make the team's code better, seeing how they improve, making technical decisions. It feels good.
+Me está gustando más de lo que pensé. Poder ayudar a que el código del equipo sea mejor, ver cómo van mejorando, tomar decisiones técnicas. Se siente bien.
 
-## Why you should always say yes
+## Por qué siempre hay que decir que sí
 
-I've seen many people reject opportunities because they "don't feel ready". I've done it myself before.
+He visto a mucha gente rechazar oportunidades porque "no se sienten listos". Yo mismo lo he hecho antes.
 
-The truth is that nobody ever feels ready. Not even your company's CEO felt ready when they started. Not even the most experienced senior developer felt ready at their first job.
+La verdad es que nadie se siente listo nunca. Ni el CEO de tu empresa se sintió listo cuando empezó. Ni el senior developer más experimentado se sintió listo en su primer trabajo.
 
-Impostor syndrome never goes away. But you can decide what to do with it.
+El síndrome del impostor nunca se va. Pero puedes decidir qué hacer con él.
 
-You can use it as an excuse not to advance, or you can say "okay, I feel this way, but I'm going to do it anyway".
+Puedes usarlo como excusa para no avanzar, o puedes decir "ok, me siento así, pero voy a hacerlo de todas formas".
 
-## What I've learned so far
+## Lo que he aprendido hasta ahora
 
-Two weeks later, I still don't feel 100% qualified. But I'm learning fast.
+Dos semanas después, sigo sin sentirme 100% calificado. Pero estoy aprendiendo rápido.
 
-The devs on my team don't see me as an impostor. They ask me questions, trust my feedback, see value in what I tell them.
+Los devs de mi equipo no me ven como un impostor. Me hacen preguntas, confían en mi feedback, ven valor en lo que les digo.
 
-Sometimes impostor syndrome is just your brain being dramatic.
+A veces el síndrome del impostor es solo tu cerebro siendo dramático.
 
-## If you're in a similar situation
+## Si estás en una situación similar
 
-Someone will probably offer you an opportunity that feels "too much" for you. A promotion, an important project, a new role.
+Probablemente alguien te va a ofrecer una oportunidad que se sienta "demasiado" para ti. Un ascenso, un proyecto importante, un rol nuevo.
 
-Your first reaction will be to think of all the reasons why you're not the right person.
+Tu primera reacción va a ser pensar en todas las razones por las que no eres la persona correcta.
 
-But consider this: if they're offering you the opportunity, it's because someone else already evaluated whether you can do it. Trust their judgment more than your insecurity.
+Pero considera esto: si te están ofreciendo la oportunidad, es porque alguien más ya evaluó si puedes hacerlo. Confía en su criterio más que en tu inseguridad.
 
-Say yes. Learn on the way. It works itself out.
+Di que sí. Aprende en el camino. Se va resolviendo.
 
-## The reality
+## La realidad
 
-I don't know if I'm going to be a good leader. But I know I'm going to try my best.
+No sé si voy a ser un buen líder. Pero sé que voy a intentarlo con todo.
 
-And that, in the end, is all you can do when life gives you an opportunity you didn't expect.
+Y eso, al final, es lo único que puedes hacer cuando la vida te da una oportunidad que no esperabas.
 
-Don't waste opportunities because of impostor syndrome. It feels bad, but it's not real.
+No desperdicies oportunidades por síndrome del impostor. Se siente feo, pero no es real.
 
-The opportunities are real.
+Las oportunidades sí lo son.

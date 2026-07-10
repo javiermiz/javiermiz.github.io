@@ -1,57 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../Layout.astro";
-import type { SiteLanguage } from "../layout";
+
+type BlogPost = CollectionEntry<"blog">;
 
 interface Props {
   blog_data: any;
-  lang: SiteLanguage;
 }
 
-const { blog_data, lang } = Astro.props;
+const { blog_data } = Astro.props;
 
-// Helper functions for clean code and scalability
-function extract_language_from_slug(slug: string): SiteLanguage {
-  if (slug.startsWith("es/")) return "es";
-  return "en";
-}
-
-function is_post_in_language(
-  entry: any,
-  target_language: SiteLanguage,
-): boolean {
-  const post_language = extract_language_from_slug(entry.slug);
-  return post_language === target_language;
-}
-
-function is_post_published(entry: any): boolean {
-  return !entry.data.draft;
-}
-
-function sort_posts_by_date(posts: any[]): any[] {
-  return posts.sort(
-    (a, b) =>
-      new Date(b.data.published_date).getTime() -
-      new Date(a.data.published_date).getTime(),
-  );
-}
-
-function generate_post_url(post_slug: string, language: SiteLanguage): string {
-  if (language === "es") {
-    const clean_slug = post_slug.replace("es/", "");
-    return `/blog/${clean_slug}/`;
-  }
-  return `/blog/${post_slug}/`;
-}
-
-function format_post_date(date: Date, language: SiteLanguage): string {
-  const locale_map = {
-    es: "es-ES",
-    en: "en-US",
-  };
-
+function format_post_date(date: Date): string {
   // Use UTC timezone to avoid date shifts from frontmatter dates
-  return new Intl.DateTimeFormat(locale_map[language], {
+  return new Intl.DateTimeFormat("es-ES", {
     year: "numeric",
     month: "short",
     day: "numeric",
@@ -63,19 +24,21 @@ function get_category_label(category: string, categories_data: any): string {
   return categories_data[category] || category;
 }
 
-// Get and filter blog posts
-const all_posts = await getCollection("blog", (entry) => {
-  return is_post_in_language(entry, lang) && is_post_published(entry);
-});
-
-const sorted_posts = sort_posts_by_date(all_posts);
+// Get published blog posts, newest first
+const published_posts = await getCollection(
+  "blog",
+  (entry: BlogPost) => !entry.data.draft,
+);
+const sorted_posts = published_posts.sort(
+  (a, b) =>
+    b.data.published_date.getTime() - a.data.published_date.getTime(),
+);
 const has_posts = sorted_posts.length > 0;
 ---
 
 <Layout
   title={blog_data.metadata.title}
   description={blog_data.metadata.description}
-  lang={lang}
 >
   <div class="blog-container">
     <main class="blog-main">
@@ -87,10 +50,9 @@ const has_posts = sorted_posts.length > 0;
                 post.data.category,
                 blog_data.categories,
               );
-              const post_url = generate_post_url(post.slug, lang);
+              const post_url = `/blog/${post.slug}/`;
               const formatted_date = format_post_date(
                 post.data.published_date,
-                lang,
               );
 
               return (

@@ -1,135 +1,135 @@
 ---
-title: "Unpaid work disguised as code challenges"
-description: "How code challenges became an excuse to get unpaid work from desperate developers"
+title: "Trabajo no remunerado disfrazado como code challenges"
+description: "Como los code challenges se convirtieron en una excusa para obtener trabajo no remunerado de developers desesperados"
 published_date: 2025-08-26
 category: "personal"
 draft: false
-seo_title: "Unpaid work disguised as code challenges"
-seo_description: "How code challenges became an excuse to get unpaid work from desperate developers"
+seo_title: "Trabajo no remunerado disfrazado como code challenges"
+seo_description: "Como los code challenges se convirtieron en una excusa para obtener trabajo no remunerado de developers desesperados"
 ---
 
-I saw <a href="https://www.reddit.com/r/webdev/comments/1n0jxu2/company_sends_me_a_suspicious_takehome_assignment/" target="_blank">a Reddit post</a> that made me angry.
+Vi <a href="https://www.reddit.com/r/webdev/comments/1n0jxu2/company_sends_me_a_suspicious_takehome_assignment/" target="_blank">un post en Reddit</a> que me hizo enojar.
 
-A company sent a candidate a "take-home assignment" that was basically building a complete real estate system with admin panel, authentication, database, React frontend, TypeScript backend... all in one week.
+Una empresa envió a un candidato un "take-home assignment" que básicamente era construir un sistema completo de bienes raíces con admin panel, autenticación, base de datos, frontend con React, backend con TypeScript... todo en una semana.
 
-**This wasn't a technical test. It was free work in disguise.**
+**No era una prueba técnica. Era trabajo gratis disfrazado.**
 
-And this isn't an isolated case.
+Y esto no es un caso aislado.
 
-A friend of mine has received three similar "assignments" in recent months. All following the same pattern: projects that would normally take weeks or months of development, requested as a "simple test" with impossible deadlines.
+Un amigo mío ha recibido ya tres "asignaciones" similares en los últimos meses. Todas con el mismo patrón: proyectos que normalmente tomarían semanas o meses de desarrollo, pedidos como "simple prueba" con plazos imposibles.
 
-## The numbers don't lie
+## Los números no mienten
 
-Let's do basic math on the assignment I saw:
+Hagamos matemáticas básicas del assignment que vi:
 
-- Complete real estate property system
-- React frontend with Vite + TailwindCSS + shadcn/ui
-- Backend with TypeScript, Fastify, TypeORM, PostgreSQL
-- Complete admin panel with CRUD
-- File and image uploads
-- Filter and search system
-- Dynamic theming
-- Tests for both frontend and backend
+- Sistema completo de propiedades inmobiliarias
+- Frontend React con Vite + TailwindCSS + shadcn/ui
+- Backend con TypeScript, Fastify, TypeORM, PostgreSQL
+- Panel de admin completo con CRUD
+- Subida de archivos e imágenes
+- Sistema de filtros y búsqueda
+- Theming dinámico
+- Tests tanto frontend como backend
 
-**Real estimated time:** 150-200 hours of development
-**Time given:** 7 days
-**Payment:** $0
+**Tiempo estimado real:** 150-200 horas de desarrollo
+**Tiempo dado:** 7 días
+**Pago:** $0
 
-If you charge $50/hour (conservative rate for a full-stack), we're talking about $7,500-10,000 of free work for a "job opportunity."
+Si cobras $50/hora (tarifa conservadora para un full-stack), estamos hablando de $7,500-10,000 de trabajo gratuito por "oportunidad laboral".
 
-## The repeating pattern
+## El patrón que se repite
 
-My friend told me about his experiences, and honestly they're all variations of the same nightmare.
+Mi amigo me contó sobre sus experiencias, y honestamente todas son variaciones de la misma pesadilla.
 
-The first one was a complete e-commerce platform with shopping cart, payment processing, inventory management, and a full admin dashboard. They gave him five days. Five days for what would realistically be a three-month project for a small team.
+La primera fue una plataforma completa de e-commerce con carrito de compras, procesamiento de pagos, gestión de inventario y panel de administración completo. Le dieron cinco días. Cinco días para lo que realisticamente sería un proyecto de tres meses para un equipo pequeño.
 
-The second assignment was even more ridiculous. An analytics dashboard with multiple API integrations, complex data visualizations, user role management, and real-time notifications. Four days for that one.
+La segunda asignación fue aún más ridícula. Un dashboard de analytics con múltiples integraciones de APIs, visualizaciones complejas de datos, gestión de roles de usuario y notificaciones en tiempo real. Cuatro días para eso.
 
-The third was a project management system that basically replicated half of what Jira does, complete with roles, permissions, notifications, and detailed reporting features. Six days.
+La tercera fue un sistema de gestión de proyectos que básicamente replicaba la mitad de lo que hace Jira, completo con roles, permisos, notificaciones y funciones detalladas de reportes. Seis días.
 
-In every single case, he did what any reasonable person would do. He sent incomplete versions with detailed explanations about why the scope was impossible given the timeframe.
+En cada caso, hizo lo que cualquier persona razonable haría. Envió versiones incompletas con explicaciones detalladas sobre por qué el alcance era imposible dado el tiempo.
 
-The response? Complete radio silence. Not even a "thanks but no thanks" email.
+La respuesta? Silencio total. Ni siquiera un email de "gracias pero no".
 
-## The new scam: AI Companies
+## La nueva estafa: AI Companies
 
-What really bothered me about the Reddit post were the obvious fraud signals.
+Lo que realmente me molestó del post de Reddit fueron las señales obvias de fraude.
 
-The "company" behind this assignment had all the hallmarks of a complete AI-generated operation. Their LinkedIn profile looked like it was copy-pasted from a template, every single email they sent had that distinctive robotic tone that screams ChatGPT, and they claimed to be building some revolutionary "AI startup in real estate."
+La "empresa" detrás de esta asignación tenía todas las características de una operación completamente generada por IA. Su perfil de LinkedIn parecía copiado y pegado de una plantilla, cada email que enviaban tenía ese tono robótico distintivo que grita ChatGPT, y afirmaban estar construyendo una revolucionaria "startup de IA en bienes raíces."
 
-Which is basically tech bro bingo at this point.
+Que básicamente es bingo de tech bros en este punto.
 
-The work they were requesting matched exactly what they'd need to launch their supposed platform. This wasn't a test to see if you could code. This was them trying to get their entire MVP built for free by rotating through desperate job seekers.
+El trabajo que estaban solicitando coincidía exactamente con lo que necesitarían para lanzar su supuesta plataforma. Esta no era una prueba para ver si podías programar. Era intentar que les construyeran su MVP completo gratis rotando entre buscadores de empleo desesperados.
 
-They probably aren't even a real company. Just someone who figured out they could use AI tools to create fake corporate identities and harvest free labor from developers who are struggling to find work.
+Probablemente ni siquiera son una empresa real. Solo alguien que descubrió que podía usar herramientas de IA para crear identidades corporativas falsas y cosechar trabajo gratuito de developers que luchan por encontrar empleo.
 
-## How to identify disguised free work
+## Como identificar trabajo gratis disfrazado
 
-### Immediate red flags:
+### Red flags inmediatas:
 
-**Disproportionate scope**
-If they ask for more than 8-12 hours of work, it's suspicious. If they ask for more than 20, it's definitely abusive.
+**El scope es desproporcionado**
+Si piden más de 8-12 horas de trabajo, es sospechoso. Si piden más de 20, es definitivamente abusivo.
 
-**Overly detailed specifications**
-Technical tests evaluate skills. Real projects have detailed specs because they need specific functionality.
+**Especificaciones demasiado detalladas**
+Las pruebas técnicas evalúan habilidades. Los proyectos reales tienen specs detalladas porque necesitan funcionalidad específica.
 
-**Impossible deadlines + "complete" work**
-"Complete this system in 3 days" is code for "send us whatever you can do for free and we'll finish it."
+**Plazos imposibles + trabajo "completo"**
+"Completa este sistema en 3 días" es código para "envíanos lo que puedas hacer gratis y nosotros lo terminamos".
 
-**Completely automated communication**
-If all emails sound AI-generated and you never talk to real humans, run.
+**Comunicación completamente automatizada**
+Si todos los emails suenan generados por IA y nunca hablas con humanos reales, corre.
 
-**They request code ownership**
-"Code submitted becomes company property" is literally asking you for free work with extra steps.
+**Piden ownership del código**
+"El código enviado se convierte en propiedad de la empresa" es literalmente pedirte trabajo gratis con extra steps.
 
-## The reality of timeframes
+## La realidad de los timeframes
 
-That real estate system from the Reddit post requires:
+Ese sistema de bienes raíces del Reddit post requiere:
 
-- **Initial setup:** 4-6 hours
-- **Complete backend API:** 25-35 hours
-- **Frontend with all features:** 30-40 hours
-- **Admin panel:** 15-20 hours
-- **Testing and debugging:** 10-15 hours
-- **Documentation and deployment:** 5-8 hours
+- **Setup inicial:** 4-6 horas
+- **Backend API completo:** 25-35 horas
+- **Frontend con todas las features:** 30-40 horas
+- **Admin panel:** 15-20 horas
+- **Testing y debugging:** 10-15 horas
+- **Documentation y deployment:** 5-8 horas
 
-**Real total:** 165-240 hours
+**Total real:** 165-240 horas
 
-**What they expect in 7 days:** 168 available hours, but you need to sleep, eat, and possibly work at your current job.
+**Lo que esperan en 7 días:** 168 horas disponibles, pero necesitas dormir, comer, y posiblemente trabajar en tu empleo actual.
 
-**Realistic available hours:** 20-30 hours maximum
+**Horas realistas disponibles:** 20-30 horas máximo
 
-It's mathematically impossible to complete it well. _And that's exactly the point._
+Es matemáticamente imposible completarlo bien. _Y eso es exactamente el punto._
 
-## Why this scam works
+## Por que funciona esta estafa
 
-Look, I get it. When you're job hunting, especially in this market, you start second-guessing everything.
+Mira, lo entiendo. Cuando estás buscando trabajo, especialmente en este mercado, empiezas a dudar de todo.
 
-You see an assignment that would take months to build properly, and your brain starts doing these mental gymnastics. "Maybe they just want to see my approach to the problem." "Perhaps they don't expect it to be perfect." "If I can just impress them with what I can deliver in the time I have..."
+Ves una asignación que tomaría meses construir correctamente, y tu cerebro empieza a hacer estos gimnasios mentales. "Tal vez solo quieren ver mi enfoque al problema." "Quizás no esperan que sea perfecto." "Si puedo impresionarlos con lo que puedo entregar en el tiempo que tengo..."
 
-**Legitimate companies don't operate this way.** They understand that your time is valuable, and they design their interview process accordingly.
+**Las empresas legítimas no operan así.** Entienden que tu tiempo es valioso, y diseñan su proceso de entrevista acordemente.
 
-Scam operations are counting on your desperation. They know that if they cast a wide enough net with these impossible assignments, some people will attempt them, and they'll get free work out of the deal regardless of whether they ever hire anyone.
+Las operaciones fraudulentas están contando con tu desesperación. Saben que si lanzan una red lo suficientemente amplia con estas asignaciones imposibles, algunas personas las intentarán, y obtendrán trabajo gratis del trato sin importar si alguna vez contratan a alguien.
 
-## What to do instead
+## Que hacer en su lugar
 
-**For serious companies:**
-Do technical tests of 2-4 hours maximum. Focus on problem-solving, not delivery of complete products.
+**Para companies serias:**
+Hagan pruebas técnicas de 2-4 horas máximo. Enfóquense en problem-solving, no en delivery de productos completos.
 
-**For developers:**
+**Para developers:**
 
-- If scope exceeds 8 hours, negotiate payment or reject
-- Ask to speak with current developers on the team
-- Ask specifically what they evaluate and how
-- If they can't explain the process clearly, it's a red flag
+- Si el scope supera 8 horas, negocia payment o rechaza
+- Pide hablar con desarrolladores actuales del equipo
+- Pregunta específicamente que evalúan y como
+- Si no pueden explicar el proceso claramente, es red flag
 
-**For the industry:**
-Let's normalize rejecting free work. The more people say no, the less profitable this practice becomes.
+**Para la industria:**
+Normalicemos rechazar trabajo gratis. Entre más gente diga no, menos profitable se vuelve esta práctica.
 
-## The real cost
+## El costo real
 
-It's not just the wasted time. It's normalizing that our work is worth nothing. It's training companies to expect free labor. It's creating a precedent where exploiting developers becomes standard practice.
+No es solo el tiempo perdido. Es la normalización de que nuestro trabajo no vale nada. Es entrenar a las empresas a que esperen labor gratuita. Es crear un precedente donde explotar developers se vuelve standard practice.
 
-Every time someone completes one of these "assignments," they make it harder for the rest of us to be respected as professionals.
+Cada vez que alguien completa uno de estos "assignments", hace más difícil para el resto de nosotros ser respetados como profesionales.
 
-**Your time has value. Your work has value. Don't give them away.**
+**Tu tiempo tiene valor. Tu trabajo tiene valor. No los regales.**
