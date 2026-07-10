@@ -7,8 +7,6 @@
       "@constants/*": ["src/constants/*"],
       "@icons/*": ["src/icons/*"],
       "@data/*": ["src/data/*"]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    }
   }
 }
