@@ -3,26 +3,28 @@
     "code": "MAONO",
     "slug": "maono",
     "name": "MAONO PD200W",
-    "tagline": "Micrófono Inalámbrico USB-C y XLR",
-    "brand": {
-      "primary": "#FF6B00",
-      "bg": "#1A1A1A",
-      "text": "#FFFFFF",
-      "muted": "#AAAAAA"
-    },
+    "badge": "USB-C & XLR",
+    "tagline": "Micrófono Inalámbrico · Calidad de Estudio",
+    "description": "Micrófono Inalámbrico USB-C y XLR",
+    "bg": "#0a0a0a",
+    "accent": "#FF6B00",
+    "ctaText": "#ffffff",
     "links": [
       {
         "store": "Mercado Libre",
+        "label": "Mercado Libre",
         "url": "https://bit.ly/3LrqFXr",
         "icon": "/images/mercado-libre.png"
       },
       {
         "store": "Amazon",
+        "label": "Amazon",
         "url": "https://amzn.to/4pMeqm8",
         "icon": "/images/amazon.png"
       },
       {
         "store": "Maono.mx",
+        "label": "Maono.mx",
         "url": "https://bit.ly/4pZmEHT",
         "icon": null
       }
@@ -32,16 +34,16 @@
     "code": "AULA",
     "slug": "aula",
     "name": "AULA F75",
-    "tagline": "Teclado Mecánico 75% Inalámbrico",
-    "brand": {
-      "primary": "#00D4AA",
-      "bg": "#0D0D0D",
-      "text": "#FFFFFF",
-      "muted": "#888888"
-    },
+    "badge": "Gasket Mount · Tri-Mode",
+    "tagline": "Teclado Mecánico 75% · Sonido Premium",
+    "description": "Teclado Mecánico 75% Inalámbrico",
+    "bg": "#080808",
+    "accent": "#00D4AA",
+    "ctaText": "#080808",
     "links": [
       {
         "store": "AliExpress",
+        "label": "Comprar en AliExpress",
         "url": "https://s.click.aliexpress.com/e/_c4mdq9mV",
         "icon": null
       }
@@ -51,16 +53,16 @@
     "code": "SOLAKAKA",
     "slug": "solakaka",
     "name": "SOLAKAKA E9 Pro",
-    "tagline": "Ratón Vertical Ergonómico 36000 DPI",
-    "brand": {
-      "primary": "#7C5CFC",
-      "bg": "#0D0D12",
-      "text": "#FFFFFF",
-      "muted": "#888888"
-    },
+    "badge": "36000 DPI · Bluetooth",
+    "tagline": "Ratón Vertical Ergonómico · Ultra Precisión",
+    "description": "Ratón Vertical Ergonómico 36000 DPI",
+    "bg": "#0D0D12",
+    "accent": "#7C5CFC",
+    "ctaText": "#ffffff",
     "links": [
       {
         "store": "AliExpress",
+        "label": "Comprar en AliExpress",
         "url": "https://s.click.aliexpress.com/e/_c2IikIlz",
         "icon": null
       }

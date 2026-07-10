@@ -1,10 +1,14 @@
 ---
 import BioLayout from "@components/BioLayout.astro";
-import products from "@data/products.json";
+import productsData from "@data/products.json";
 
-const codeMap = Object.fromEntries(
-  (products as any[]).map((p: any) => [p.code, p.slug])
-);
+interface BioProduct {
+  code: string;
+  slug: string;
+}
+
+const products = productsData as BioProduct[];
+const codeMap = Object.fromEntries(products.map((p) => [p.code, p.slug]));
 ---
 
 <BioLayout title="Javier Miz" bg="#0a0a0a">
@@ -28,15 +32,13 @@ const codeMap = Object.fromEntries(
       <p class="bio-label">Códigos</p>
 
       <div class="bio-tags" data-bio-codes>
-        {(products as any[]).map((product: any) => (
-          <a
-            href={`/${product.slug}`}
-            class="bio-tag"
-            data-code={product.code}
-          >
-            {product.code}
-          </a>
-        ))}
+        {
+          products.map((product) => (
+            <a href={`/${product.slug}`} class="bio-tag" data-code={product.code}>
+              {product.code}
+            </a>
+          ))
+        }
       </div>
 
       <p class="bio-empty" data-bio-empty hidden>Código no encontrado</p>
@@ -44,10 +46,7 @@ const codeMap = Object.fromEntries(
   </main>
 </BioLayout>
 
-<script
-  is:inline
-  define:vars={{ codeMap: JSON.stringify(codeMap) }}
->
+<script is:inline define:vars={{ codeMap }}>
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("[data-bio-form]");
     const input = document.querySelector("#bio-search-input");
@@ -55,19 +54,20 @@ const codeMap = Object.fromEntries(
 
     const tags = Array.from(document.querySelectorAll("[data-code]"));
     const empty = document.querySelector("[data-bio-empty]");
-    const parsed = JSON.parse(codeMap);
 
-    if (form) form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const slug = parsed[input.value.trim().toUpperCase()];
-      if (slug) window.location.href = `/${slug}`;
-    });
+    if (form)
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const slug = codeMap[input.value.trim().toUpperCase()];
+        if (slug) window.location.href = `/${slug}`;
+      });
 
     input.addEventListener("input", () => {
       const q = input.value.trim().toLowerCase();
       let visible = 0;
       tags.forEach((tag) => {
-        const match = !q || tag.dataset.code.toLowerCase().includes(q);
+        const code = tag.dataset.code || "";
+        const match = !q || code.toLowerCase().includes(q);
         tag.hidden = !match;
         if (match) visible++;
       });
