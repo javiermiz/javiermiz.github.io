@@ -9,22 +9,25 @@
     "bg": "#0a0a0a",
     "accent": "#FF6B00",
     "ctaText": "#ffffff",
+    "features": [
+      "Conexión USB-C y XLR",
+      "Cápsula dinámica, sonido de estudio",
+      "Control táctil de silencio y ganancia",
+      "Iluminación RGB personalizable"
+    ],
     "links": [
       {
         "store": "Mercado Libre",
-        "label": "Mercado Libre",
         "url": "https://bit.ly/3LrqFXr",
         "icon": "/images/mercado-libre.png"
       },
       {
         "store": "Amazon",
-        "label": "Amazon",
         "url": "https://amzn.to/4pMeqm8",
         "icon": "/images/amazon.png"
       },
       {
         "store": "Maono.mx",
-        "label": "Maono.mx",
         "url": "https://bit.ly/4pZmEHT",
         "icon": null
       }
@@ -40,10 +43,15 @@
     "bg": "#080808",
     "accent": "#00D4AA",
     "ctaText": "#080808",
+    "features": [
+      "Formato 75% compacto",
+      "Montaje Gasket, escritura suave",
+      "Tri-Mode: 2.4G, Bluetooth y USB-C",
+      "Switches hot-swap y RGB"
+    ],
     "links": [
       {
         "store": "AliExpress",
-        "label": "Comprar en AliExpress",
         "url": "https://s.click.aliexpress.com/e/_c4mdq9mV",
         "icon": null
       }
@@ -59,10 +67,15 @@
     "bg": "#0D0D12",
     "accent": "#7C5CFC",
     "ctaText": "#ffffff",
+    "features": [
+      "Diseño vertical ergonómico",
+      "Sensor de hasta 36000 DPI",
+      "Inalámbrico 2.4G y Bluetooth",
+      "Batería recargable"
+    ],
     "links": [
       {
         "store": "AliExpress",
-        "label": "Comprar en AliExpress",
         "url": "https://s.click.aliexpress.com/e/_c2IikIlz",
         "icon": null
       }

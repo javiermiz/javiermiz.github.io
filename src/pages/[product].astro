@@ -5,7 +5,6 @@ import type { ImageMetadata } from "astro";
 
 interface ProductLink {
   store: string;
-  label: string;
   url: string;
   icon: string | null;
 }
@@ -20,6 +19,7 @@ interface Product {
   bg: string;
   accent: string;
   ctaText: string;
+  features?: string[];
   links: ProductLink[];
 }
 
@@ -42,8 +42,6 @@ const heroEntry = Object.entries(heroImages).find(([path]) =>
 );
 const heroSrc = heroEntry?.[1].default.src ?? "";
 
-const [primaryLink, ...secondaryLinks] = product.links;
-
 const trackId = (store: string) =>
   `bio-${product.slug}-${store.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 ---
@@ -52,6 +50,7 @@ const trackId = (store: string) =>
   title={`${product.name} — Javier Miz`}
   description={product.description}
   bg={product.bg}
+  ogImage={heroSrc}
 >
   <div
     class="landing"
@@ -70,48 +69,36 @@ const trackId = (store: string) =>
       <h1 class="name">{product.name}</h1>
       <p class="tagline">{product.tagline}</p>
 
-      <div class="cta-group">
-        <a
-          class="cta-primary"
-          href={primaryLink.url}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          data-goatcounter-click={trackId(primaryLink.store)}
-          data-goatcounter-title={`${product.name} - ${primaryLink.store}`}
-        >
-          {
-            primaryLink.icon ? (
-              <img src={primaryLink.icon} alt="" width={20} height={20} />
-            ) : (
-              <span>🛒</span>
-            )
-          }
-          <span>{primaryLink.label}</span>
-          <span class="cta-arrow">→</span>
-        </a>
+      {
+        product.features && product.features.length > 0 && (
+          <ul class="specs">
+            {product.features.map((feature) => (
+              <li>{feature}</li>
+            ))}
+          </ul>
+        )
+      }
 
+      <div class="buy-group">
         {
-          secondaryLinks.length > 0 && (
-            <div class="cta-row">
-              {secondaryLinks.map((link) => (
-                <a
-                  class="cta-secondary"
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  data-goatcounter-click={trackId(link.store)}
-                  data-goatcounter-title={`${product.name} - ${link.store}`}
-                >
-                  {link.icon ? (
-                    <img src={link.icon} alt="" width={18} height={18} />
-                  ) : (
-                    <span>🛒</span>
-                  )}
-                  <span>{link.label}</span>
-                </a>
-              ))}
-            </div>
-          )
+          product.links.map((link) => (
+            <a
+              class="buy-btn"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              data-goatcounter-click={trackId(link.store)}
+              data-goatcounter-title={`${product.name} - ${link.store}`}
+            >
+              {link.icon ? (
+                <img src={link.icon} alt="" width={22} height={22} />
+              ) : (
+                <span class="buy-glyph">🛒</span>
+              )}
+              <span>Comprar en {link.store}</span>
+              <span class="buy-arrow">→</span>
+            </a>
+          ))
         }
       </div>
     </div>
@@ -119,12 +106,12 @@ const trackId = (store: string) =>
 </BioLayout>
 
 <style>
+  /* Scroll-safe: grows past the viewport when content is tall instead of clipping */
   .landing {
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     padding: env(safe-area-inset-top) env(safe-area-inset-right)
       env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
@@ -149,7 +136,7 @@ const trackId = (store: string) =>
   /* ── Hero ── */
   .hero {
     position: relative;
-    height: 55vh;
+    height: 42vh;
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
@@ -212,8 +199,7 @@ const trackId = (store: string) =>
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1.25rem;
-    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+    padding: 1rem 1.25rem max(1.5rem, env(safe-area-inset-bottom));
     min-height: 0;
   }
 
@@ -253,108 +239,94 @@ const trackId = (store: string) =>
     margin-bottom: 1rem;
   }
 
-  .cta-group {
+  /* ── Specs (per-product personalization) ── */
+  .specs {
+    list-style: none;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .specs li {
+    position: relative;
+    text-align: left;
+    padding-left: 1.1rem;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: #b0b0b0;
+  }
+
+  .specs li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ── Buy buttons: every store has equal weight ── */
+  .buy-group {
     width: 100%;
     max-width: 340px;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.5rem;
   }
 
-  .cta-primary {
+  .buy-btn {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    min-height: 54px;
-    background: linear-gradient(
-      135deg,
-      var(--accent),
-      color-mix(in srgb, var(--accent) 75%, white)
-    );
-    color: var(--cta-text);
-    font-size: 0.85rem;
-    font-weight: 700;
+    gap: 0.55rem;
+    min-height: 56px;
+    padding: 0 1rem;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border: 1.5px solid color-mix(in srgb, var(--accent) 40%, transparent);
     border-radius: 14px;
-    box-shadow:
-      0 4px 24px color-mix(in srgb, var(--accent) 35%, transparent),
-      0 0 0 1px color-mix(in srgb, var(--accent) 10%, transparent);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
     transition:
       transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+      background 0.2s,
+      border-color 0.2s,
       box-shadow 0.2s;
     -webkit-tap-highlight-color: transparent;
-    overflow: hidden;
   }
 
-  .cta-primary::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.18),
-      transparent 50%
-    );
-    pointer-events: none;
+  .buy-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--cta-text);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px color-mix(in srgb, var(--accent) 40%, transparent);
   }
 
-  .cta-primary:hover {
-    transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 8px 32px color-mix(in srgb, var(--accent) 45%, transparent);
+  .buy-btn:active {
+    transform: translateY(0) scale(0.99);
   }
 
-  .cta-primary:active {
-    transform: translateY(0) scale(0.98);
+  .buy-btn img {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    flex-shrink: 0;
   }
 
-  .cta-primary img {
-    border-radius: 3px;
+  .buy-glyph {
+    font-size: 1.05rem;
   }
 
-  .cta-arrow {
-    margin-left: 0.25rem;
+  .buy-arrow {
     transition: transform 0.2s;
   }
 
-  .cta-primary:hover .cta-arrow {
+  .buy-btn:hover .buy-arrow {
     transform: translateX(3px);
-  }
-
-  .cta-row {
-    display: flex;
-    gap: 0.4rem;
-  }
-
-  .cta-secondary {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.35rem;
-    min-height: 48px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #999;
-    font-size: 0.7rem;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: all 0.2s;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .cta-secondary:hover {
-    background: color-mix(in srgb, var(--accent) 6%, transparent);
-    border-color: color-mix(in srgb, var(--accent) 20%, transparent);
-    color: var(--accent);
-  }
-
-  .cta-secondary:active {
-    opacity: 0.85;
-  }
-
-  .cta-secondary img {
-    border-radius: 3px;
   }
 
   /* ── Tablet ── */
@@ -364,9 +336,11 @@ const trackId = (store: string) =>
       left: 1rem;
       font-size: 0.75rem;
     }
+    .hero {
+      height: 46vh;
+    }
     .bottom {
-      padding: 0 2rem;
-      padding-bottom: max(2rem, env(safe-area-inset-bottom));
+      padding: 1.25rem 2rem max(2rem, env(safe-area-inset-bottom));
     }
     .badge {
       font-size: 0.6rem;
@@ -379,14 +353,13 @@ const trackId = (store: string) =>
       font-size: 0.8rem;
       margin-bottom: 1.25rem;
     }
-    .cta-primary {
-      font-size: 0.95rem;
-      min-height: 56px;
-      border-radius: 16px;
+    .specs li {
+      font-size: 0.78rem;
     }
-    .cta-secondary {
-      font-size: 0.8rem;
-      min-height: 52px;
+    .buy-btn {
+      font-size: 0.95rem;
+      min-height: 58px;
+      border-radius: 16px;
     }
   }
 
@@ -396,9 +369,6 @@ const trackId = (store: string) =>
     }
     .tagline {
       font-size: 0.9rem;
-    }
-    .cta-primary {
-      font-size: 1rem;
     }
   }
 </style>

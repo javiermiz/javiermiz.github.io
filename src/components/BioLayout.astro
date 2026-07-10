@@ -3,19 +3,24 @@ interface Props {
   title: string;
   description?: string;
   bg?: string;
+  ogImage?: string;
 }
 
 const {
   title,
   description = "Link in bio",
   bg = "#0a0a0a",
+  ogImage,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, "https://javiermiz.github.io");
+const ogImageURL = ogImage
+  ? new URL(ogImage, "https://javiermiz.github.io")
+  : undefined;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -27,6 +32,15 @@ const canonicalURL = new URL(Astro.url.pathname, "https://javiermiz.github.io");
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
+    {ogImageURL && <meta property="og:image" content={ogImageURL} />}
+    {
+      ogImageURL && (
+        <>
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:image" content={ogImageURL} />
+        </>
+      )
+    }
   </head>
   <body style={`background:${bg}`}>
     <slot />
